@@ -7,7 +7,9 @@ import torch.nn.functional
 
 import config as cfg
 
-sys.path.append(glob.glob("/kaggle/input/**/cg-lib", recursive=True)[0])
+_cg_lib = glob.glob("/kaggle/input/**/cg-lib", recursive=True)
+if _cg_lib:
+    sys.path.append(_cg_lib[0])
 
 from cg.api import (
     AreaType,

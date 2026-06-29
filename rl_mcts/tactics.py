@@ -24,10 +24,37 @@ from dataclasses import dataclass, replace
 from typing import TYPE_CHECKING
 
 from agent import Agent, MCTSConfig
-from rewards import RewardFn
+from rewards import (
+    HandDisruptionConfig,
+    RewardFn,
+    compose_shapes,
+    make_hand_disruption_shape,
+    prize_pressure,
+    win_loss,
+)
 
 if TYPE_CHECKING:
     from deck_predict import PredictionResult
+
+
+# --- specialised counter-tactic shapes (DELTAS composed onto the selected shape) ---
+#
+# These live HERE, not in rewards.py: rewards.py holds the general building
+# blocks; per-matchup tactics are assembled here and registered in
+# build_registry(). apply_tactic composes each tactic's shape ON TOP of the
+# agent's selected base shape, so a tactic only needs to add its delta.
+
+# vs Alakazam ex: it leans on a big hand -> reward stripping MORE of it
+# (target 4 vs the default 2). Set vs_alakazam_hand.baseline each turn before
+# searching: vs_alakazam_hand.baseline = obs.current.players[1 - your_index].handCount
+vs_alakazam_hand = HandDisruptionConfig(target=4, weight=0.15)
+vs_alakazam = RewardFn(
+    terminal=win_loss.terminal,
+    shape=compose_shapes(
+        make_hand_disruption_shape(vs_alakazam_hand),
+        prize_pressure.shape,
+    ),
+)
 
 
 @dataclass
@@ -44,9 +71,15 @@ class TacticRegistry:
 
     def __init__(self) -> None:
         self._tactics: dict[str, ArchetypeTactic] = {}
+        self._default: ArchetypeTactic | None = None
 
     def register(self, archetype_name: str, tactic: ArchetypeTactic) -> "TacticRegistry":
         self._tactics[archetype_name] = tactic
+        return self
+
+    def set_default(self, tactic: ArchetypeTactic) -> "TacticRegistry":
+        """Tactic for unknown/unregistered archetypes. Absorbs their prob mass."""
+        self._default = tactic
         return self
 
     def blend(self, archetype_probs: dict[str, float]) -> ArchetypeTactic:
@@ -54,15 +87,21 @@ class TacticRegistry:
 
         Numeric fields: weighted average across archetypes that define them.
         RewardFn: blended by weighting each terminal/shape call by archetype prob.
-        Unregistered archetypes are ignored (their weight flows to default).
+        Probability mass on unregistered archetypes flows to the default tactic
+        (if set via set_default), otherwise it is dropped.
         """
         entries = [
             (prob, self._tactics[name])
             for name, prob in archetype_probs.items()
             if name in self._tactics
         ]
+        if self._default is not None:
+            known = sum(p for p, _ in entries)
+            unknown = sum(archetype_probs.values()) - known
+            if unknown > 0.0:
+                entries.append((unknown, self._default))
         if not entries:
-            return ArchetypeTactic()
+            return self._default if self._default is not None else ArchetypeTactic()
 
         total_w = sum(p for p, _ in entries)
         if total_w == 0.0:
@@ -99,7 +138,12 @@ class TacticRegistry:
 
 
 def apply_tactic(agent: Agent, tactic: ArchetypeTactic) -> Agent:
-    """Return a shallow copy of agent with tactic overrides applied."""
+    """Return a shallow copy of agent with tactic overrides applied.
+
+    The tactic's reward_fn is treated as a DELTA: its shape is composed onto the
+    agent's base shape (base runs first, tactic adds on top), so the base reward
+    is never dropped. The tactic's terminal overrides the base terminal.
+    """
     cfg = agent.mcts_cfg
     new_cfg = replace(
         cfg,
@@ -107,8 +151,26 @@ def apply_tactic(agent: Agent, tactic: ArchetypeTactic) -> Agent:
         policy_temperature=tactic.policy_temperature if tactic.policy_temperature is not None else cfg.policy_temperature,
         unvisited_penalty=tactic.unvisited_penalty if tactic.unvisited_penalty is not None else cfg.unvisited_penalty,
     )
-    return replace(
-        agent,
-        mcts_cfg=new_cfg,
-        reward_fn=tactic.reward_fn if tactic.reward_fn is not None else agent.reward_fn,
-    )
+
+    base = agent.reward_fn
+    if tactic.reward_fn is not None:
+        reward = RewardFn(
+            terminal=tactic.reward_fn.terminal,
+            shape=compose_shapes(base.shape, tactic.reward_fn.shape),
+        )
+    else:
+        reward = base
+
+    return replace(agent, mcts_cfg=new_cfg, reward_fn=reward)
+
+
+def build_registry() -> TacticRegistry:
+    """Default archetype counter-tactics, keyed by OPPONENT archetype name.
+
+    Each reward_fn is a DELTA composed onto the agent's base reward by
+    apply_tactic. Add matchups here as deck predictions cover more archetypes.
+    """
+    registry = TacticRegistry()
+    # vs Alakazam ex: it leans on a big hand -> reward shrinking it.
+    registry.register("Alakazam ex", ArchetypeTactic(reward_fn=vs_alakazam))
+    return registry

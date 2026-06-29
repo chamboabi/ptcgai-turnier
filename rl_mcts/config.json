@@ -11,7 +11,7 @@
     "num_layers_decoder": 1
   },
   "mcts": {
-    "search_count": 10,
+    "search_count": 3000,
     "max_action_combinations": 64,
     "ucb_exploration": 0.4,
     "policy_temperature": 10.0,
