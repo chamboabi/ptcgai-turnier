@@ -1,0 +1,31 @@
+{
+  "model": {
+    "encoder_size": 22000,
+    "num_words_encoder": 24,
+    "decoder_main_feature": 8,
+    "decoder_attack_offset": 14,
+    "d_model": 128,
+    "num_heads": 2,
+    "d_feedforward": 256,
+    "num_layers_encoder": 1,
+    "num_layers_decoder": 1
+  },
+  "mcts": {
+    "search_count": 10,
+    "max_action_combinations": 64,
+    "ucb_exploration": 0.4,
+    "policy_temperature": 10.0,
+    "unvisited_penalty": 0.03
+  },
+  "training": {
+    "learning_rate": 3e-4,
+    "huber_delta_encoder": 0.2,
+    "huber_delta_decoder": 0.1,
+    "outer_iterations": 5,
+    "eval_games": 50,
+    "collect_games": 100,
+    "td_lambda": 0.9,
+    "batch_size": 128,
+    "rollback_threshold": 0.1
+  }
+}
