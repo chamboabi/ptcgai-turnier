@@ -1,1 +1,0 @@
-- [Submission env no numpy](submission-no-numpy.md) — submission/arena has torch but not numpy; bundled cg older than parent cg

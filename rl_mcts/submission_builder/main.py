@@ -18,7 +18,7 @@ import torch
 import torch.nn
 import torch.nn.functional
 
-import deck_predict_lite
+import deck_predict
 import rewards
 
 from cg.api import (
@@ -561,7 +561,7 @@ def _load_archetype_model():
     if not os.path.exists(path):
         return None
     try:
-        return deck_predict_lite.load_model(path)
+        return deck_predict.load_model(path)
     except Exception:
         return None  # never let a bad asset break the agent
 

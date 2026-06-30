@@ -30,8 +30,8 @@ HERE = Path(__file__).parent
 SRC_CG = HERE / "cg"
 SRC_MAIN = HERE / "main.py"
 # extra modules main.py now imports (shaping + opponent-deck prediction)
-SRC_REWARDS = HERE.parent / "rewards.py"
-SRC_PREDICT = HERE / "deck_predict_lite.py"
+SRC_REWARDS = HERE.parent / "rewards"
+SRC_PREDICT = HERE.parent / "deck_predict.py"
 SRC_ARCHETYPES = HERE.parent / "data" / "archetypes.json"
 
 
@@ -75,8 +75,8 @@ def build_submission(
 
     # 1) main.py + bundled modules/assets it imports
     shutil.copy2(SRC_MAIN, out_dir / "main.py")
-    shutil.copy2(SRC_REWARDS, out_dir / "rewards.py")
-    shutil.copy2(SRC_PREDICT, out_dir / "deck_predict_lite.py")
+    shutil.copytree(SRC_REWARDS, out_dir / "rewards", ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+    shutil.copy2(SRC_PREDICT, out_dir / "deck_predict.py")
     shutil.copy2(SRC_ARCHETYPES, out_dir / "archetypes.json")
 
     # 2) deck.csv — one ID per line (main.py / example reader expects 60 lines)
@@ -94,7 +94,7 @@ def build_submission(
 
     print(f"Built submission: {out_dir}")
     print(f"  main.py   ({(out_dir / 'main.py').stat().st_size} bytes)")
-    print(f"  rewards.py + deck_predict_lite.py + archetypes.json bundled")
+    print(f"  rewards/ + deck_predict.py + archetypes.json bundled")
     print(f"  deck.csv  (60 cards)")
     print(f"  cg/       ({sum(1 for _ in (out_dir / 'cg').rglob('*') if _.is_file())} files)")
     print(f"  model.pth {'included' if weights else 'OMITTED (random init)'}")
