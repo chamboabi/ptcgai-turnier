@@ -242,7 +242,7 @@ def _fetch_card_meta() -> dict:
 
 def build_model(
     decklist_dir: str = "data/decks/decklists",
-    n_clusters: int = 10,
+    n_clusters: int = 21,
 ) -> ArchetypeModel:
     """Cluster decklists into archetypes. Save result with model.save()."""
     decks, deck_names = _load_decks(decklist_dir)

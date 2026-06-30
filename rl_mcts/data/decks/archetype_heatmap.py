@@ -47,30 +47,56 @@ def build(model, top_per_cluster: int):
     row_names = [model.archetype_names[k] for k in clusters]
     counts = [int((model.cluster_labels == k).sum()) for k in clusters]
 
-    # mean copies per (archetype, card) from centroids
+    # mean copies + deck-frequency per (archetype, card)
     cidx = {c: i for i, c in enumerate(model.card_universe)}
     raw = np.zeros((len(clusters), len(col_ids)))
+    freq = np.zeros((len(clusters), len(col_ids)))
     for r, k in enumerate(clusters):
+        deck_mask = model.cluster_labels == k
+        present = (model.matrix[deck_mask] > 0)            # (decks_in_k, all_cards)
+        n_k = max(int(deck_mask.sum()), 1)
         for c, cid in enumerate(col_ids):
-            raw[r, c] = model.centroids[k][cidx[cid]]
+            j = cidx[cid]
+            raw[r, c] = model.centroids[k][j]
+            freq[r, c] = present[:, j].sum() / n_k
+
+    # A card "belongs" to an archetype if it shows up in >=50% of its decks.
+    # shared = how many archetypes use it -> 1 means signature, many means staple.
+    shared = (freq >= 0.5).sum(axis=0)
 
     # Normalize per column so big energy stacks don't wash out singles.
     col_max = raw.max(axis=0, keepdims=True)
     col_max[col_max == 0] = 1.0
     norm = raw / col_max
-    return row_names, counts, col_names, raw, norm
+    return row_names, counts, col_names, raw, norm, shared
 
 
-def plot(row_names, counts, col_names, raw, norm, out):
+def plot(row_names, counts, col_names, raw, norm, shared, out):
     n_rows, n_cols = raw.shape
-    fig, ax = plt.subplots(figsize=(max(10, n_cols * 0.5), max(5, n_rows * 0.5)))
+    half = (n_rows + 1) // 2
+    # Label color by how many archetypes share the card.
+    def lab_color(s):
+        if s >= half:
+            return "#c0392b"        # staple — most archetypes use it
+        if s >= 2:
+            return "#e67e22"        # shared by a few
+        return "#1a1a1a"            # signature — one archetype
+
+    fig, ax = plt.subplots(figsize=(max(10, n_cols * 0.55), max(5, n_rows * 0.55)))
     ax.imshow(norm, aspect="auto", cmap="viridis")
 
     ax.set_xticks(range(n_cols))
-    ax.set_xticklabels(col_names, rotation=60, ha="right", fontsize=7)
+    xlabels = [f"{nm}  ×{s}" if s >= 2 else nm for nm, s in zip(col_names, shared)]
+    ax.set_xticklabels(xlabels, rotation=60, ha="right", fontsize=7)
+    for tick, s in zip(ax.get_xticklabels(), shared):
+        tick.set_color(lab_color(s))
+        if s >= half:
+            tick.set_fontweight("bold")
     ax.set_yticks(range(n_rows))
     ax.set_yticklabels([f"{n}  (n={c})" for n, c in zip(row_names, counts)], fontsize=8)
 
+    # Box the cells where a card is actually used (freq>=50%) so shared columns
+    # are visible as a vertical run of boxes spanning several archetypes.
     for r in range(n_rows):
         for c in range(n_cols):
             v = raw[r, c]
@@ -80,7 +106,12 @@ def plot(row_names, counts, col_names, raw, norm, out):
                     color="white" if norm[r, c] < 0.6 else "black",
                 )
 
-    ax.set_title("Archetype card composition — mean copies (color = per-card relative)")
+    ax.set_title(
+        "Archetype card composition — mean copies (cell color = per-card relative)\n"
+        "card label: black = signature (1 archetype),  orange = shared by few,  "
+        "bold red = staple (most archetypes); ×N = # archetypes using it",
+        fontsize=9,
+    )
     fig.tight_layout()
     fig.savefig(out, dpi=150, bbox_inches="tight")
     print(f"saved {out}")
@@ -96,8 +127,8 @@ def main():
     args = ap.parse_args()
 
     model = dp.load_model(args.model)
-    data = build(model, args.top)
-    plot(*data, args.out)
+    row_names, counts, col_names, raw, norm, shared = build(model, args.top)
+    plot(row_names, counts, col_names, raw, norm, shared, args.out)
     if not args.no_show:
         plt.show()
 

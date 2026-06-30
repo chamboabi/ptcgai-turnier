@@ -19,7 +19,24 @@ from pathlib import Path
 
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.patches import Ellipse
 from sklearn.preprocessing import normalize
+
+
+def cluster_ellipse(pts: np.ndarray, color, n_std: float = 1.5):
+    """Covariance confidence ellipse enclosing a cluster's points."""
+    if len(pts) < 3:
+        return None
+    cov = np.cov(pts, rowvar=False)
+    vals, vecs = np.linalg.eigh(cov)
+    order = vals.argsort()[::-1]
+    vals, vecs = vals[order], vecs[:, order]
+    angle = np.degrees(np.arctan2(vecs[1, 0], vecs[0, 0]))
+    w, h = 2 * n_std * np.sqrt(np.maximum(vals, 0))
+    return Ellipse(
+        pts.mean(axis=0), w, h, angle=angle,
+        facecolor=color, edgecolor=color, alpha=0.12, lw=1.6, ls="--",
+    )
 
 HERE = Path(__file__).resolve().parent
 DEFAULT_MODEL = HERE.parent / "archetypes.json"          # data/archetypes.json
@@ -66,10 +83,14 @@ def plot(xy: np.ndarray, labels: np.ndarray, names: dict, method: str, out: str)
     fig, ax = plt.subplots(figsize=(12, 9))
     for n, k in enumerate(clusters):
         mask = labels == k
+        color = cmap(n % cmap.N)
         label = f"{names.get(k, f'Cluster {k}')} ({int(mask.sum())})"
+        ell = cluster_ellipse(xy[mask], color)
+        if ell is not None:
+            ax.add_patch(ell)
         ax.scatter(
             xy[mask, 0], xy[mask, 1],
-            s=40, alpha=0.75, color=cmap(n % cmap.N),
+            s=40, alpha=0.75, color=color,
             edgecolors="white", linewidths=0.4, label=label,
         )
         # Archetype name at cluster centroid.
