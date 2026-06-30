@@ -1,6 +1,7 @@
 import os
 import random
 import sys
+from pathlib import Path
 
 import torch
 import torch.optim
@@ -9,10 +10,35 @@ from cg.api import to_observation_class
 from cg.game import battle_finish, battle_select, battle_start
 
 import config as cfg
+import rewards
 from agent import Agent, MCTSConfig
 from mcts import LearnSample, mcts_agent
 from model import MyModel, SparseVector
-from rewards import win_loss
+
+HERE = Path(__file__).parent
+ABOMASNOW_DECK_CSV = HERE / "data" / "decks" / "customdecks" / "abamasnow.csv"
+
+# Reward used to SHAPE the self-play search (and thus the value targets the model
+# learns). Train on the same shape you want the submission to behave like.
+TRAIN_REWARD = rewards.abomasnow
+
+
+def load_deck(path: Path) -> list[int]:
+    text = path.read_text().replace(",", "\n")
+    return [int(tok) for tok in text.split() if tok.strip()]
+
+
+def set_base_baselines(cur: dict) -> None:
+    """Refresh the shared base-shape hand baselines from the ACTING player's view.
+
+    The abomasnow/base shapes read rewards.base_shape_config; only one side acts
+    per step, so reset it from the current perspective before each search call so
+    the hand-disruption / hand-build deltas read correctly (mirrors run_match).
+    """
+    yi = cur["yourIndex"]
+    players = cur["players"]
+    rewards.base_shape_config.disruption.baseline = players[1 - yi]["handCount"]
+    rewards.base_shape_config.build.baseline = players[yi]["handCount"]
 
 
 class LearnInput:
@@ -87,7 +113,9 @@ mcts_cfg = MCTSConfig(
     unvisited_penalty=cfg.mcts["unvisited_penalty"],
 )
 
-agent = Agent(deck=sample_deck, model=model, mcts_cfg=mcts_cfg, reward_fn=win_loss)
+# Train on the real submission deck so the model is tuned for what it'll play.
+train_deck = load_deck(ABOMASNOW_DECK_CSV) if ABOMASNOW_DECK_CSV.exists() else sample_deck
+agent = Agent(deck=train_deck, model=model, mcts_cfg=mcts_cfg, reward_fn=TRAIN_REWARD)
 
 optimizer = torch.optim.AdamW(model.parameters(), lr=cfg.training["learning_rate"])
 loss_fn_enc = torch.nn.HuberLoss(delta=cfg.training["huber_delta_encoder"])
@@ -126,6 +154,7 @@ for counter in range(cfg.training["outer_iterations"]):
                 if obs["current"]["result"] >= 0:
                     break
                 if obs["current"]["yourIndex"] == your_index:
+                    set_base_baselines(obs["current"])
                     selected, _ = mcts_agent(obs, agent)
                 else:
                     selected = random_agent(obs)
@@ -162,6 +191,7 @@ for counter in range(cfg.training["outer_iterations"]):
             while True:
                 if obs["current"]["result"] >= 0:
                     break
+                set_base_baselines(obs["current"])
                 selected, sample = mcts_agent(obs, agent)
                 samples[obs["current"]["yourIndex"]].append(sample)
                 obs = battle_select(selected)

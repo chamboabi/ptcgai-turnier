@@ -18,6 +18,9 @@ import torch
 import torch.nn
 import torch.nn.functional
 
+import deck_predict_lite
+import rewards
+
 from cg.api import (
     AreaType,
     Card,
@@ -50,7 +53,7 @@ DECODER_ATTACK_OFFSET = 14
 
 # MCTS knobs. SEARCH_COUNT trades strength for time; raise for stronger play if
 # the per-turn time budget allows (repo training used 3000).
-SEARCH_COUNT = 200
+SEARCH_COUNT = 300
 MAX_ACTION_COMBINATIONS = 64
 UCB_EXPLORATION = 0.4
 POLICY_TEMPERATURE = 10.0
@@ -354,19 +357,69 @@ class Node:
             self.parent.backprop(value)
 
 
-def _terminal_value(obs, your_index):
-    result = obs.current.result
-    if result == 2:
-        return 0.0
-    return 1.0 if result == your_index else -1.0
+# --- opponent deck prediction (mirror of mcts._sample_opponent_deck) ---
+def _opponent_known_cards(opp: PlayerState) -> list[int]:
+    known: list[int] = []
+
+    def _add_pokemon(p) -> None:
+        known.append(p.id)
+        for c in p.preEvolution:
+            known.append(c.id)
+        for c in p.energyCards:
+            known.append(c.id)
+        for c in p.tools:
+            known.append(c.id)
+
+    for p in opp.active:
+        if p is not None:
+            _add_pokemon(p)
+    for p in opp.bench:
+        _add_pokemon(p)
+    for c in opp.discard:
+        known.append(c.id)
+    for c in opp.prize:
+        if c is not None:
+            known.append(c.id)
+    return known
 
 
-def create_node(parent, search_state, your_index, deck, model):
+def _sample_opponent_deck(archetype_model, opp: PlayerState):
+    """Return (deck, prize, hand) card-ID lists using per-card predictions.
+
+    Bernoulli-sample inclusion from P(card in deck), then add E[copies | in deck]
+    rounded copies. Falls back to _UNKNOWN filler when no archetype model is loaded.
+    """
+    deck_n = opp.deckCount
+    prize_n = len(opp.prize)
+    hand_n = opp.handCount
+    total = deck_n + prize_n + hand_n
+
+    if archetype_model is None:
+        return [_UNKNOWN] * deck_n, [1] * prize_n, [1] * hand_n
+
+    known = _opponent_known_cards(opp)
+    result = archetype_model.predict(known)
+
+    pool: list[int] = []
+    for pred in result.card_predictions:
+        if random.random() < pred.probability:
+            conditional_mean = pred.expected_copies / max(pred.probability, 1e-9)
+            pool.extend([pred.card_id] * max(1, round(conditional_mean)))
+
+    random.shuffle(pool)
+    pool = pool[:total]
+    pool += [_UNKNOWN] * (total - len(pool))
+    random.shuffle(pool)
+
+    return pool[:deck_n], pool[deck_n : deck_n + prize_n], pool[deck_n + prize_n : total]
+
+
+def create_node(parent, search_state, your_index, deck, model, reward_fn):
     node = Node(parent, search_state)
     obs = search_state.observation
     state = obs.current
     if state.result >= 0:
-        node.value = _terminal_value(obs, your_index)
+        node.value = reward_fn.terminal(obs, your_index)
         node.backprop(node.value)
     else:
         actions = []
@@ -386,7 +439,10 @@ def create_node(parent, search_state, your_index, deck, model):
         sv_enc = get_encoder_input(obs, deck)
         sv_dec = get_decoder_input(obs, actions)
         value, policy = eval_nn(sv_enc, sv_dec, model)
-        v = value if state.yourIndex == your_index else -value
+        # shape bends the NN value before it is backed up through the tree, so it
+        # steers MCTS toward good intermediate states (same as training mcts.py).
+        shaped = reward_fn.shape(obs, your_index, value)
+        v = shaped if state.yourIndex == your_index else -shaped
         node.value = v
         node.backprop(v)
 
@@ -400,21 +456,29 @@ def create_node(parent, search_state, your_index, deck, model):
     return node
 
 
-def mcts_agent(obs_dict, deck, model):
+def mcts_agent(obs_dict, deck, model, reward_fn, archetype_model):
     obs = to_observation_class(obs_dict)
     your_index = obs.current.yourIndex
     state = obs.current
     opp = state.players[1 - your_index]
+
+    # Refresh the shared base-shape hand baselines from the acting player's view
+    # so hand-disruption / hand-build deltas read correctly this turn (the arena
+    # entry point is stateless, so this must happen every call — see run_match).
+    rewards.base_shape_config.disruption.baseline = opp.handCount
+    rewards.base_shape_config.build.baseline = state.players[your_index].handCount
+
+    opp_deck, opp_prize, opp_hand = _sample_opponent_deck(archetype_model, opp)
     search_state = search_begin(
         obs,
         your_deck=random.sample(deck, state.players[your_index].deckCount),
         your_prize=random.sample(deck, len(state.players[your_index].prize)),
-        opponent_deck=[_UNKNOWN] * opp.deckCount,
-        opponent_prize=[1] * len(opp.prize),
-        opponent_hand=[1] * opp.handCount,
+        opponent_deck=opp_deck,
+        opponent_prize=opp_prize,
+        opponent_hand=opp_hand,
         opponent_active=[_UNKNOWN] if len(opp.active) > 0 and opp.active[0] is None else [],
     )
-    root = create_node(None, search_state, your_index, deck, model)
+    root = create_node(None, search_state, your_index, deck, model, reward_fn)
 
     for _ in range(SEARCH_COUNT):
         current = root
@@ -440,7 +504,7 @@ def mcts_agent(obs_dict, deck, model):
                 break
             if next_child.node is None:
                 step_state = search_step(current.state.searchId, next_child.select)
-                next_child.node = create_node(current, step_state, your_index, deck, model)
+                next_child.node = create_node(current, step_state, your_index, deck, model, reward_fn)
                 break
             current = next_child.node
             if current.state.observation.current.result >= 0:
@@ -463,13 +527,16 @@ def mcts_agent(obs_dict, deck, model):
 
 # --- bundled-asset loading (deck + weights live next to main.py) ---
 def _asset_path(name: str) -> str:
-    here = os.path.join(os.path.dirname(os.path.abspath(__file__)), name)
-    if os.path.exists(here):
-        return here
+    # __file__ is undefined when Kaggle exec()s the agent, so derive dir defensively.
+    base = globals().get("__file__")
+    if base:
+        here = os.path.join(os.path.dirname(os.path.abspath(base)), name)
+        if os.path.exists(here):
+            return here
     kaggle = "/kaggle_simulations/agent/" + name
     if os.path.exists(kaggle):
         return kaggle
-    return here
+    return os.path.abspath(name)
 
 
 def read_deck_csv() -> list[int]:
@@ -488,8 +555,22 @@ def _build_model() -> MyModel:
     return model.to(device).eval()
 
 
+def _load_archetype_model():
+    """Load the bundled opponent-deck predictor, or None if absent (-> filler)."""
+    path = _asset_path("archetypes.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        return deck_predict_lite.load_model(path)
+    except Exception:
+        return None  # never let a bad asset break the agent
+
+
 _DECK = read_deck_csv()
 _MODEL = _build_model()
+_ARCH = _load_archetype_model()
+# P0 = Abomasnow deck -> abomasnow shape (matches training run_match.py).
+_REWARD = rewards.abomasnow
 
 
 # --- optional turn-path logging (artifact you can pull after a match) ---
@@ -579,4 +660,4 @@ def agent(obs_dict: dict) -> list[int]:
     if obs.select is None:
         return _DECK
     with torch.inference_mode():
-        return mcts_agent(obs_dict, _DECK, _MODEL)
+        return mcts_agent(obs_dict, _DECK, _MODEL, _REWARD, _ARCH)

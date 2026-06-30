@@ -320,16 +320,16 @@ def make_bench_keep_shape(config: BenchKeepConfig) -> RewardShapeFn:
 @dataclass
 class AbomasnowConfig:
     main_id: int = 723  # Mega Abomasnow ex (main attacker)
-    main_target: int = 2  # energy it wants
-    main_max: int = 3  # energy it can still use
-    secondary_id: int = 721  # Kyogre (soaks leftover energy)
+    main_target: int = 2  # energy it wants; surplus past this should go to Kyogre
+    secondary_id: int = 721  # Kyogre (soaks energy past main's target)
     secondary_max: int = 3
     pre_id: int = 722  # Snover (pre-evolution of main)
     pre_target: int = 2  # energy to pre-load before evolving
     main_value: float = 1.0
-    secondary_value: float = 0.5
+    secondary_value: float = 0.7  # bumped so Kyogre's pull beats target-agnostic energy reward
     pre_value: float = 0.7
-    weight: float = 0.1
+    overflow_penalty: float = 0.5  # penalty for energy stuck on main past its target
+    weight: float = 0.2  # bumped so this targeted signal beats _attached_energy_shape
 
 
 def _find(board, cid):
@@ -343,11 +343,14 @@ def make_abomasnow_shape(config: AbomasnowConfig) -> RewardShapeFn:
     """Energy priority for the Abomasnow team.
 
     Waterfall (highest value first, normalized so leftover flows down):
-      723 main  -> wants 2 energy, small extra credit for a 3rd.
-      721 secondary -> soaks energy not needed by the others.
-      722 Snover -> credited ONLY if it's your only Pokemon, OR it can evolve
-                    into 723 next turn (723 in hand, Snover settled) AND the
-                    main attacker already has enough energy.
+      723 main      -> wants `main_target` energy, then FLAT (no reward for more).
+      721 secondary -> soaks energy past main's target. Energy stuck on main past
+                       its target while Kyogre still has room is PENALIZED, so the
+                       search moves the next energy onto Kyogre instead of piling
+                       a 4th/5th/... onto an already-powered main.
+      722 Snover    -> credited ONLY if it's your only Pokemon, OR it can evolve
+                       into 723 next turn (723 in hand, Snover settled) AND the
+                       main attacker already has enough energy.
     """
     c = config
 
@@ -359,25 +362,31 @@ def make_abomasnow_shape(config: AbomasnowConfig) -> RewardShapeFn:
         total_value = 0.0
         earned = 0.0
 
-        # --- main 723: target 2, bonus for 3rd ---
+        # --- main 723: credit up to target, then flat (surplus is wasted) ---
         main = _find(board, c.main_id)
         main_satisfied = False
+        main_overflow = 0
         if main is not None:
             e = len(main.energyCards)
-            base = min(e, c.main_target) / c.main_target
-            span = max(1, c.main_max - c.main_target)
-            extra = max(0, min(e, c.main_max) - c.main_target) / span
-            score = base * 0.9 + extra * 0.1
+            score = min(e, c.main_target) / c.main_target
             total_value += c.main_value
             earned += c.main_value * score
             main_satisfied = e >= c.main_target
+            main_overflow = max(0, e - c.main_target)
 
-        # --- secondary 721: soak overflow ---
+        # --- secondary 721: soak energy past main's target ---
         sec = _find(board, c.secondary_id)
         if sec is not None:
-            score = min(len(sec.energyCards), c.secondary_max) / c.secondary_max
+            se = len(sec.energyCards)
+            score = min(se, c.secondary_max) / c.secondary_max
             total_value += c.secondary_value
             earned += c.secondary_value * score
+            # energy piled on main past its target is wasted while Kyogre still
+            # has room -> penalize so the next energy goes onto Kyogre instead.
+            room = max(0, c.secondary_max - se)
+            if main_overflow > 0 and room > 0:
+                waste = min(main_overflow, room) / c.secondary_max
+                earned -= c.secondary_value * c.overflow_penalty * waste
 
         # --- pre-evo 722: only under its condition ---
         pre = _find(board, c.pre_id)
@@ -393,7 +402,7 @@ def make_abomasnow_shape(config: AbomasnowConfig) -> RewardShapeFn:
 
         if total_value <= 0:
             return nn_value
-        signal = earned / total_value
+        signal = max(0.0, earned / total_value)  # penalty can push earned below 0
         return nn_value * (1.0 - c.weight) + signal * c.weight
 
     return shape

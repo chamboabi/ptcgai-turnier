@@ -20,6 +20,7 @@ from pathlib import Path
 
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent.parent                       # rl_mcts/
@@ -68,7 +69,26 @@ def build(model, top_per_cluster: int):
     col_max = raw.max(axis=0, keepdims=True)
     col_max[col_max == 0] = 1.0
     norm = raw / col_max
+
+    # Order columns by how many archetypes use the card (×N), descending.
+    order = sorted(range(len(col_ids)), key=lambda c: (-shared[c], c))
+    col_names = [col_names[c] for c in order]
+    raw = raw[:, order]
+    norm = norm[:, order]
+    shared = shared[order]
+
+    # Order rows by deck usage: most-played archetype on top.
+    row_order = sorted(range(len(row_names)), key=lambda r: counts[r], reverse=True)
+    row_names = [row_names[r] for r in row_order]
+    counts = [counts[r] for r in row_order]
+    raw = raw[row_order, :]
+    norm = norm[row_order, :]
     return row_names, counts, col_names, raw, norm, shared
+
+
+SIGNATURE_COLOR = "#1a1a1a"   # one archetype
+SHARED_COLOR = "#e67e22"      # shared by a few
+STAPLE_COLOR = "#c0392b"      # most archetypes use it
 
 
 def plot(row_names, counts, col_names, raw, norm, shared, out):
@@ -77,13 +97,15 @@ def plot(row_names, counts, col_names, raw, norm, shared, out):
     # Label color by how many archetypes share the card.
     def lab_color(s):
         if s >= half:
-            return "#c0392b"        # staple — most archetypes use it
+            return STAPLE_COLOR
         if s >= 2:
-            return "#e67e22"        # shared by a few
-        return "#1a1a1a"            # signature — one archetype
+            return SHARED_COLOR
+        return SIGNATURE_COLOR
 
     fig, ax = plt.subplots(figsize=(max(10, n_cols * 0.55), max(5, n_rows * 0.55)))
-    ax.imshow(norm, aspect="auto", cmap="viridis")
+    im = ax.imshow(norm, aspect="auto", cmap="Blues")
+    cbar = fig.colorbar(im, ax=ax, fraction=0.025, pad=0.02)
+    cbar.set_label("per-card relative usage", fontsize=8)
 
     ax.set_xticks(range(n_cols))
     xlabels = [f"{nm}  ×{s}" if s >= 2 else nm for nm, s in zip(col_names, shared)]
@@ -103,15 +125,29 @@ def plot(row_names, counts, col_names, raw, norm, shared, out):
             if v >= 0.05:
                 ax.text(
                     c, r, f"{v:.1f}", ha="center", va="center", fontsize=6,
-                    color="white" if norm[r, c] < 0.6 else "black",
+                    color="white" if norm[r, c] >= 0.6 else "black",
                 )
 
     ax.set_title(
-        "Archetype card composition — mean copies (cell color = per-card relative)\n"
-        "card label: black = signature (1 archetype),  orange = shared by few,  "
-        "bold red = staple (most archetypes); ×N = # archetypes using it",
-        fontsize=9,
+        "Archetype card composition — mean copies (cell color = per-card relative)",
+        fontsize=10,
     )
+
+    legend_handles = [
+        Patch(facecolor=SIGNATURE_COLOR, label="signature — 1 archetype"),
+        Patch(facecolor=SHARED_COLOR, label="shared by a few archetypes"),
+        Patch(facecolor=STAPLE_COLOR, label="staple — most archetypes (bold; ×N = # using it)"),
+    ]
+    ax.legend(
+        handles=legend_handles,
+        title="card label color",
+        loc="upper left",
+        bbox_to_anchor=(1.06, 1.0),
+        fontsize=8,
+        title_fontsize=8,
+        frameon=True,
+    )
+
     fig.tight_layout()
     fig.savefig(out, dpi=150, bbox_inches="tight")
     print(f"saved {out}")

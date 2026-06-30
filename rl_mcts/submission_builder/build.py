@@ -29,6 +29,10 @@ from pathlib import Path
 HERE = Path(__file__).parent
 SRC_CG = HERE / "cg"
 SRC_MAIN = HERE / "main.py"
+# extra modules main.py now imports (shaping + opponent-deck prediction)
+SRC_REWARDS = HERE.parent / "rewards.py"
+SRC_PREDICT = HERE / "deck_predict_lite.py"
+SRC_ARCHETYPES = HERE.parent / "data" / "archetypes.json"
 
 
 def _load_deck(deck) -> list[int]:
@@ -57,6 +61,9 @@ def build_submission(
         raise FileNotFoundError(f"Missing agent source: {SRC_MAIN}")
     if not SRC_CG.is_dir():
         raise FileNotFoundError(f"Missing cg/ library: {SRC_CG}")
+    for src in (SRC_REWARDS, SRC_PREDICT, SRC_ARCHETYPES):
+        if not src.exists():
+            raise FileNotFoundError(f"Missing required asset: {src}")
 
     ids = _load_deck(deck)
     out_dir = Path(out_dir)
@@ -66,8 +73,11 @@ def build_submission(
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
 
-    # 1) main.py
+    # 1) main.py + bundled modules/assets it imports
     shutil.copy2(SRC_MAIN, out_dir / "main.py")
+    shutil.copy2(SRC_REWARDS, out_dir / "rewards.py")
+    shutil.copy2(SRC_PREDICT, out_dir / "deck_predict_lite.py")
+    shutil.copy2(SRC_ARCHETYPES, out_dir / "archetypes.json")
 
     # 2) deck.csv — one ID per line (main.py / example reader expects 60 lines)
     (out_dir / "deck.csv").write_text("\n".join(str(c) for c in ids) + "\n")
@@ -84,6 +94,7 @@ def build_submission(
 
     print(f"Built submission: {out_dir}")
     print(f"  main.py   ({(out_dir / 'main.py').stat().st_size} bytes)")
+    print(f"  rewards.py + deck_predict_lite.py + archetypes.json bundled")
     print(f"  deck.csv  (60 cards)")
     print(f"  cg/       ({sum(1 for _ in (out_dir / 'cg').rglob('*') if _.is_file())} files)")
     print(f"  model.pth {'included' if weights else 'OMITTED (random init)'}")
