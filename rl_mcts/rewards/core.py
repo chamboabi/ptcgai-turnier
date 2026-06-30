@@ -8,15 +8,17 @@ Import from here when writing a new compound reward module:
     )
 """
 
+from collections import Counter
 from dataclasses import dataclass
 from typing import Callable
 
-from cg.api import CardType, Observation, all_attack, all_card_data
+from cg.api import AreaType, CardType, LogType, Observation, all_attack, all_card_data
 
 ENERGY_IDS = frozenset(
     cd.cardId for cd in all_card_data() if cd.cardType in (CardType.BASIC_ENERGY, CardType.SPECIAL_ENERGY)
 )
 ATTACK_BY_ID = {a.attackId: a for a in all_attack()}
+CARD_BY_ID = {cd.cardId: cd for cd in all_card_data()}
 ENERGY_NEEDED = {
     cd.cardId: max(
         (len(ATTACK_BY_ID[aid].energies) for aid in cd.attacks if aid in ATTACK_BY_ID),
@@ -35,10 +37,13 @@ class RewardFn:
     shape: RewardShapeFn
 
 
-# --- terminals ---
+# ============================================================
+#  Terminals
+# ============================================================
 
 
 def win_loss_terminal(obs: Observation, your_index: int) -> float:
+    """+1 win, -1 loss, 0 draw."""
     result = obs.current.result
     if result == 2:
         return 0.0
@@ -46,6 +51,7 @@ def win_loss_terminal(obs: Observation, your_index: int) -> float:
 
 
 def fast_win_terminal(obs: Observation, your_index: int) -> float:
+    """Win/loss scaled toward earlier turns: faster wins pay more, slower less."""
     result = obs.current.result
     if result == 2:
         return 0.0
@@ -54,14 +60,36 @@ def fast_win_terminal(obs: Observation, your_index: int) -> float:
     return sign * (0.8 + 0.2 * turn_factor)
 
 
-# --- primitive shapes ---
+# ============================================================
+#  Misc shapes
+# ============================================================
 
 
 def identity_shape(obs: Observation, your_index: int, nn_value: float) -> float:
+    """Pass nn_value through unchanged (no shaping)."""
     return nn_value
 
 
+def win_game_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 1.0) -> float:
+    """Add a flat bonus when you have won the game; symmetric penalty on a loss.
+
+    Draws and unfinished games pass nn_value through unchanged.
+    """
+    result = obs.current.result
+    if result == your_index:
+        return nn_value + weight
+    if result == 1 - your_index:
+        return nn_value - weight
+    return nn_value
+
+
+# ============================================================
+#  Prize shapes
+# ============================================================
+
+
 def prize_pressure_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Blend nn_value with your prize-card lead (fewer prizes left vs opponent)."""
     state = obs.current
     your_prizes_left = len(state.players[your_index].prize)
     opp_prizes_left = len(state.players[1 - your_index].prize)
@@ -69,82 +97,414 @@ def prize_pressure_shape(obs: Observation, your_index: int, nn_value: float, wei
     return nn_value * (1.0 - weight) + prize_adv * weight
 
 
-# normalization cap for total attached energy across your board
-ATTACHED_ENERGY_CAP = 8
-
-# normalization cap for opponent energy sent to discard (KO'd loaded Pokemon)
-OPP_DISCARDED_ENERGY_CAP = 8
-
-# normalization cap for total damage dealt across the opponent's board (HP)
-DAMAGE_CAP = 300
-
-# total energy cards in YOUR decklist; override per-deck if needed
-DECK_ENERGY_TOTAL = 12
+# ============================================================
+#  Energy shapes
+# ============================================================
 
 
-def attached_energy_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+def attached_energy_shape(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1, cap: int = 8
+) -> float:
+    """Blend nn_value with total energy attached across your board, capped at `cap`."""
     you = obs.current.players[your_index]
     attached = sum(len(p.energyCards) for p in board(you) if p is not None)
-    loaded = min(1.0, attached / ATTACHED_ENERGY_CAP)
+    loaded = min(1.0, attached / cap)
     return nn_value * (1.0 - weight) + loaded * weight
 
 
-def opp_discarded_energy_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
-    opp = obs.current.players[1 - your_index]
-    trashed = count_energy(opp.discard)
-    signal = min(1.0, trashed / OPP_DISCARDED_ENERGY_CAP)
-    return nn_value * (1.0 - weight) + signal * weight
+def attached_energy_uncapped_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Add a flat bonus per energy attached across your board (no cap)."""
+    you = obs.current.players[your_index]
+    attached = sum(len(p.energyCards) for p in board(you) if p is not None)
+    return nn_value + attached * weight
 
 
-def damage_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+def attach_energy_type_shape(
+    obs: Observation, your_index: int, nn_value: float, poke_id: int, energy_type_code: int, weight: float = 0.1
+) -> float:
+    """Reward each matching-type energy attached to the given pokemon on your board."""
+    you = obs.current.players[your_index]
+    matched = 0
+    for poke in board(you):
+        if poke is None or poke.id != poke_id:
+            continue
+        matched += sum(1 for e in poke.energyCards if energy_type(e) == energy_type_code)
+    return nn_value + matched * weight
+
+
+def attach_energy_capped_shape(
+    obs: Observation,
+    your_index: int,
+    nn_value: float,
+    poke_id: int,
+    energy_type_code: int,
+    cap: int,
+    weight: float = 0.1,
+) -> float:
+    """Reward matching-type energy attached to the given pokemon, counted up to cap."""
+    you = obs.current.players[your_index]
+    matched = 0
+    for poke in board(you):
+        if poke is None or poke.id != poke_id:
+            continue
+        matched += sum(1 for e in poke.energyCards if energy_type(e) == energy_type_code)
+    return nn_value + min(matched, cap) * weight
+
+
+# ============================================================
+#  Attack-energy shapes
+# ============================================================
+
+
+COLORLESS = 0
+
+
+def attack_energy_match_shape(
+    obs: Observation, your_index: int, nn_value: float, poke_id: int, attack_index: int, weight: float = 0.1
+) -> float:
+    """Reward each attached energy that fills a slot of the pokemon's chosen attack cost.
+
+    Specific types matched first; colorless slots filled by any leftover energy.
+    Caps at the attack's cost (over-attaching past the need pays nothing).
+    """
+    cd = CARD_BY_ID.get(poke_id)
+    if cd is None or not (0 <= attack_index < len(cd.attacks)):
+        return nn_value
+    atk = ATTACK_BY_ID.get(cd.attacks[attack_index])
+    if atk is None:
+        return nn_value
+    poke = find(board(obs.current.players[your_index]), poke_id)
+    if poke is None:
+        return nn_value
+
+    remaining = Counter(energy_type(e) for e in poke.energyCards)
+    matched = 0
+    colorless = 0
+    for need in atk.energies:
+        if need == COLORLESS:
+            colorless += 1
+        elif remaining.get(need, 0) > 0:
+            remaining[need] -= 1
+            matched += 1
+    leftover = sum(c for c in remaining.values() if c > 0)
+    matched += min(colorless, leftover)
+    return nn_value + matched * weight
+
+
+def attack_energy_overload_shape(
+    obs: Observation, your_index: int, nn_value: float, poke_id: int, attack_index: int, weight: float = 0.1
+) -> float:
+    """Like attack_energy_match_shape but the specific types are uncapped.
+
+    Energy matching a needed specific (non-colorless) type always counts, including
+    extras past the attack cost. Colorless slots are filled by leftover energy of any
+    other type, but only up to the number of colorless slots (colorless is not overloaded).
+    """
+    cd = CARD_BY_ID.get(poke_id)
+    if cd is None or not (0 <= attack_index < len(cd.attacks)):
+        return nn_value
+    atk = ATTACK_BY_ID.get(cd.attacks[attack_index])
+    if atk is None:
+        return nn_value
+    poke = find(board(obs.current.players[your_index]), poke_id)
+    if poke is None:
+        return nn_value
+
+    specific = {need for need in atk.energies if need != COLORLESS}
+    colorless_slots = sum(1 for need in atk.energies if need == COLORLESS)
+    matched = 0
+    leftover = 0
+    for e in poke.energyCards:
+        et = energy_type(e)
+        if et is None:
+            continue
+        if et in specific:
+            matched += 1
+        else:
+            leftover += 1
+    matched += min(colorless_slots, leftover)
+    return nn_value + matched * weight
+
+
+# ============================================================
+#  Damage shapes
+# ============================================================
+
+
+def damage_capped_shape(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1, cap: int = 300
+) -> float:
+    """Blend nn_value with total damage dealt across opponent's board, capped at `cap`."""
     opp = obs.current.players[1 - your_index]
     dealt = sum(max(0, p.maxHp - p.hp) for p in board(opp) if p is not None)
-    signal = min(1.0, dealt / DAMAGE_CAP)
+    signal = min(1.0, dealt / cap)
     return nn_value * (1.0 - weight) + signal * weight
 
 
-def high_deck_energy_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+def damage_uncapped_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Add a flat bonus per HP of damage dealt across opponent's board (no cap)."""
+    opp = obs.current.players[1 - your_index]
+    dealt = sum(max(0, p.maxHp - p.hp) for p in board(opp) if p is not None)
+    return nn_value + dealt * weight
+
+
+def damage_taken_shape(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1, cap: int = 300
+) -> float:
+    """Blend nn_value with how little damage your own board has taken (more HP intact -> higher)."""
+    you = obs.current.players[your_index]
+    taken = sum(max(0, p.maxHp - p.hp) for p in board(you) if p is not None)
+    signal = 1.0 - min(1.0, taken / cap)
+    return nn_value * (1.0 - weight) + signal * weight
+
+
+def damage_taken_uncapped_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Subtract a flat penalty per HP of damage taken across your own board (no cap)."""
+    you = obs.current.players[your_index]
+    taken = sum(max(0, p.maxHp - p.hp) for p in board(you) if p is not None)
+    return nn_value - taken * weight
+
+
+# ============================================================
+#  Opponent shapes
+# ============================================================
+
+
+def opp_discarded_energy_shape(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1, cap: int = 8
+) -> float:
+    """Blend nn_value with opponent energy sent to discard (KO'd loaded mons), capped at `cap`."""
+    opp = obs.current.players[1 - your_index]
+    trashed = count_energy(opp.discard)
+    signal = min(1.0, trashed / cap)
+    return nn_value * (1.0 - weight) + signal * weight
+
+
+# ============================================================
+#  Niche shapes (probably only used for one pokemon/deck)
+# ============================================================
+
+
+def high_deck_energy_shape(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1, deck_energy_total: int = 12
+) -> float:
+    """Blend nn_value with energy still left in deck (rewards keeping reserves un-drawn)."""
     you = obs.current.players[your_index]
     seen = count_energy(you.hand) + count_energy(you.discard)
     for poke in board(you):
         if poke is not None:
             seen += count_energy(poke.energyCards)
-    energy_left = max(0, DECK_ENERGY_TOTAL - seen)
-    reserve = energy_left / DECK_ENERGY_TOTAL
+    energy_left = max(0, deck_energy_total - seen)
+    reserve = energy_left / deck_energy_total
     return nn_value * (1.0 - weight) + reserve * weight
 
 
-# --- helpers ---
+# ============================================================
+#  Board shapes
+# ============================================================
+
+
+def race_card_shape(obs: Observation, your_index: int, nn_value: float, poke_id: int, weight: float = 0.1) -> float:
+    """Reward getting a specific card into play on your field (race it down, keep it out).
+
+    Flat bonus while that card is present among your active/bench pokemon.
+    """
+    present = find(board(obs.current.players[your_index]), poke_id) is not None
+    return nn_value + (weight if present else 0.0)
+
+
+# ============================================================
+#  Hand shapes
+# ============================================================
+
+
+def hand_size_range_shape(
+    obs: Observation, your_index: int, nn_value: float, lo: int = 4, hi: int = 6, weight: float = 0.1
+) -> float:
+    """Reward keeping your hand size within [lo, hi] inclusive (avoid flooding or emptying out)."""
+    hand = obs.current.players[your_index].handCount
+    return nn_value + (weight if lo <= hand <= hi else 0.0)
+
+
+def small_opp_hand_shape(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1, cap: int = 10
+) -> float:
+    """Reward the opponent having a small hand (starved of resources).
+
+    Blends nn_value with 1 - oppHandCount/cap: empty opp hand -> full signal, cap+ cards -> 0.
+    """
+    opp_hand = obs.current.players[1 - your_index].handCount
+    signal = 1.0 - min(1.0, opp_hand / cap)
+    return nn_value * (1.0 - weight) + signal * weight
+
+
+def big_hand_penalty_shape(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1, threshold: int = 6
+) -> float:
+    """Penalize holding a big hand on your own turn (cards you failed to play out).
+
+    Subtracts weight per card above threshold. Only applies while it is your turn.
+    """
+    if turn_owner(obs.current) != your_index:
+        return nn_value
+    hand = obs.current.players[your_index].handCount
+    excess = max(0, hand - threshold)
+    return nn_value - excess * weight
+
+
+def play_card_penalty_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Penalize each card you play this step (discourages over-committing resources).
+
+    Counts this step's PLAY log events by you; subtracts weight per card played.
+    """
+    played = sum(1 for log in obs.logs if log.type == LogType.PLAY and log.playerIndex == your_index)
+    return nn_value - played * weight
+
+
+def search_card_shape(
+    obs: Observation, your_index: int, nn_value: float, target: int | None = None, weight: float = 0.1
+) -> float:
+    """Reward searching a card out of your deck into hand (tutor effects, not normal draws).
+
+    Counts this step's MOVE_CARD log events from your DECK to HAND. If target is given,
+    only that card id counts; otherwise any searched card counts.
+    """
+    got = sum(
+        1
+        for log in obs.logs
+        if log.type == LogType.MOVE_CARD
+        and log.playerIndex == your_index
+        and log.fromArea == AreaType.DECK
+        and log.toArea == AreaType.HAND
+        and (target is None or log.cardId == target)
+    )
+    return nn_value + got * weight
+
+
+def opp_hand_discard_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Reward forcing the opponent to discard hand cards on your own turn (disruption).
+
+    Counts this step's log events moving an opponent card from their HAND to DISCARD.
+    Only applies while it is your turn.
+    """
+    if turn_owner(obs.current) != your_index:
+        return nn_value
+    opp = 1 - your_index
+    discarded = sum(
+        1
+        for log in obs.logs
+        if log.playerIndex == opp and log.fromArea == AreaType.HAND and log.toArea == AreaType.DISCARD
+    )
+    return nn_value + discarded * weight
+
+
+def opp_target_leaves_field_shape(
+    obs: Observation, your_index: int, nn_value: float, poke_id: int, weight: float = 0.1
+) -> float:
+    """Reward when the target opponent pokemon leaves the field (KO'd, scooped, returned).
+
+    Counts this step's log events moving that card off ACTIVE/BENCH to a non-field area.
+    Active<->bench switches stay on the field and do not count.
+    """
+    opp = 1 - your_index
+    field = (AreaType.ACTIVE, AreaType.BENCH)
+    left = sum(
+        1
+        for log in obs.logs
+        if log.playerIndex == opp and log.cardId == poke_id and log.fromArea in field and log.toArea not in field
+    )
+    return nn_value + left * weight
+
+
+def opp_target_devolves_shape(
+    obs: Observation, your_index: int, nn_value: float, poke_id: int, weight: float = 0.1
+) -> float:
+    """Reward devolving the target opponent pokemon (knock it back a stage).
+
+    Counts this step's DEVOLVE log events on the opponent matching the target card.
+    """
+    opp = 1 - your_index
+    devolved = sum(
+        1
+        for log in obs.logs
+        if log.type == LogType.DEVOLVE and log.playerIndex == opp and poke_id in (log.cardId, log.cardIdBefore)
+    )
+    return nn_value + devolved * weight
+
+
+# ============================================================
+#  Helpers
+# ============================================================
+
+
+def turn_owner(state) -> int | None:
+    """Index of the player whose turn it is, or None if undetermined.
+
+    Odd turns belong to the starting player, even turns to the other.
+    """
+    if state.firstPlayer < 0 or state.turn < 1:
+        return None
+    return state.firstPlayer if state.turn % 2 == 1 else 1 - state.firstPlayer
 
 
 def card_id(card) -> int:
+    """Card id from a card object or a raw int id."""
     return card if isinstance(card, int) else card.id
 
 
 def count_energy(cards: list | None) -> int:
+    """Count energy cards in a list (objects or raw ids); None -> 0."""
     return sum(1 for c in (cards or []) if card_id(c) in ENERGY_IDS)
 
 
+def energy_type(card) -> int | None:
+    """Energy type code of an energy card (accepts object or raw card id). None if not an energy."""
+    if card is None:
+        return None
+    cid = card if isinstance(card, int) else card_id(card)
+    if cid not in ENERGY_IDS:
+        return None
+    cd = CARD_BY_ID.get(cid)
+    return cd.energyType if cd is not None else None
+
+
+def attacks_of(poke) -> list:
+    """Attack objects for a pokemon. Accepts a board/hand object or a raw card id."""
+    if poke is None:
+        return []
+    cid = poke if isinstance(poke, int) else card_id(poke)
+    cd = CARD_BY_ID.get(cid)
+    if cd is None:
+        return []
+    return [ATTACK_BY_ID[aid] for aid in cd.attacks if aid in ATTACK_BY_ID]
+
+
 def board(player) -> list:
+    """Player's in-play pokemon: [active, *bench]. Active may be None."""
     active = player.active[0] if player.active else None
     return [active, *player.bench]
 
 
 def find(b, cid):
+    """First pokemon on board `b` with matching card id, or None."""
     for p in b:
         if p is not None and p.id == cid:
             return p
     return None
 
 
-# --- composition ---
+# ============================================================
+#  Composition
+# ============================================================
 
 
 def compose_shapes(*shapes: RewardShapeFn) -> RewardShapeFn:
     """Chain shapes: each one's output feeds the next as nn_value."""
+
     def shape(obs: Observation, your_index: int, nn_value: float) -> float:
         v = nn_value
         for s in shapes:
             v = s(obs, your_index, v)
         return v
+
     return shape

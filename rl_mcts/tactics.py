@@ -25,12 +25,8 @@ from typing import TYPE_CHECKING
 
 from agent import Agent, MCTSConfig
 from rewards import (
-    HandDisruptionConfig,
     RewardFn,
     compose_shapes,
-    make_hand_disruption_shape,
-    prize_pressure,
-    win_loss,
 )
 
 if TYPE_CHECKING:
@@ -43,18 +39,10 @@ if TYPE_CHECKING:
 # blocks; per-matchup tactics are assembled here and registered in
 # build_registry(). apply_tactic composes each tactic's shape ON TOP of the
 # agent's selected base shape, so a tactic only needs to add its delta.
-
-# vs Alakazam ex: it leans on a big hand -> reward stripping MORE of it
-# (target 4 vs the default 2). Set vs_alakazam_hand.baseline each turn before
-# searching: vs_alakazam_hand.baseline = obs.current.players[1 - your_index].handCount
-vs_alakazam_hand = HandDisruptionConfig(target=4, weight=0.15)
-vs_alakazam = RewardFn(
-    terminal=win_loss.terminal,
-    shape=compose_shapes(
-        make_hand_disruption_shape(vs_alakazam_hand),
-        prize_pressure.shape,
-    ),
-)
+#
+# The old vs-Alakazam counter-tactic was removed during the reward restructure
+# (it depended on deleted shapes). Re-add matchup deltas here built from
+# rewards.core primitives + compose_shapes.
 
 
 @dataclass
@@ -171,6 +159,5 @@ def build_registry() -> TacticRegistry:
     apply_tactic. Add matchups here as deck predictions cover more archetypes.
     """
     registry = TacticRegistry()
-    # vs Alakazam ex: it leans on a big hand -> reward shrinking it.
-    registry.register("Alakazam ex", ArchetypeTactic(reward_fn=vs_alakazam))
+    # No matchup tactics registered yet — rebuild deltas from core primitives.
     return registry

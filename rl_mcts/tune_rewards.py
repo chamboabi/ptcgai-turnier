@@ -3,9 +3,12 @@
 Usage:
     python tune_rewards.py [--games N] [--model PATH]
 
-Loads a pre-trained model checkpoint and searches for the BaseShapeConfig
-weight vector that maximises win rate against a random opponent.
-Results are saved to tune_result.json.
+Loads a pre-trained model checkpoint and searches for the reward weight vector
+that maximises win rate against a random opponent. Results are saved to
+tune_result.json.
+
+NOTE: the base-shape reward this tuner optimised was removed in the reward
+restructure; to_vec/from_vec are stubs until a new reward is wired up.
 """
 
 import argparse
@@ -24,12 +27,6 @@ from cg.game import battle_finish, battle_select, battle_start
 from mcts import mcts_agent
 from model import MyModel
 from rewards import RewardFn, win_loss_terminal
-from rewards.shapes import (
-    BaseShapeConfig,
-    HandBuildConfig,
-    HandDisruptionConfig,
-    make_base_shape,
-)
 
 HERE = Path(__file__).parent
 ABOMASNOW_DECK_CSV = HERE / "data" / "decks" / "customdecks" / "abamasnow.csv"
@@ -49,35 +46,15 @@ def load_deck(path: Path) -> list[int]:
     return [int(tok) for tok in text.split() if tok.strip()]
 
 
-def to_vec(cfg: BaseShapeConfig) -> list[float]:
-    return [
-        cfg.attached_energy_weight,
-        cfg.opp_discarded_energy_weight,
-        cfg.damage_weight,
-        cfg.disruption.weight,
-        cfg.build.weight,
-        cfg.prize_pressure_weight,
-    ]
+# The base-shape machinery this tuner optimised was removed in the reward
+# restructure. Rewire `to_vec` / `from_vec` to a new compound reward built from
+# rewards.core primitives (PARAM_NAMES are the weight knobs to expose).
+def to_vec(_cfg) -> list[float]:
+    raise NotImplementedError("Reward restructure pending — wire to_vec to the new reward weights.")
 
 
-def from_vec(v: list[float]) -> RewardFn:
-    base_cfg = BaseShapeConfig(
-        disruption=HandDisruptionConfig(weight=v[3]),
-        build=HandBuildConfig(weight=v[4]),
-        attached_energy_weight=v[0],
-        opp_discarded_energy_weight=v[1],
-        damage_weight=v[2],
-        prize_pressure_weight=v[5],
-    )
-    return RewardFn(terminal=win_loss_terminal, shape=make_base_shape(base_cfg))
-
-
-def _set_baselines(obs_dict: dict, base_cfg: BaseShapeConfig) -> None:
-    cur = obs_dict["current"]
-    yi = cur["yourIndex"]
-    players = cur["players"]
-    base_cfg.disruption.baseline = players[1 - yi]["handCount"]
-    base_cfg.build.baseline = players[yi]["handCount"]
+def from_vec(_v: list[float]) -> RewardFn:
+    raise NotImplementedError("Reward restructure pending — build a reward from rewards.core primitives.")
 
 
 def _random_agent(obs_dict: dict) -> list[int]:
@@ -87,16 +64,6 @@ def _random_agent(obs_dict: dict) -> list[int]:
 
 def eval_winrate(reward_fn: RewardFn, agent: Agent, n_games: int) -> float:
     agent.reward_fn = reward_fn
-
-    # extract the BaseShapeConfig so we can set hand baselines each step
-    # the shape pipeline is opaque, so we keep a local ref for baseline updates
-    base_cfg = BaseShapeConfig(
-        disruption=HandDisruptionConfig(),
-        build=HandBuildConfig(),
-    )
-    # rebuild reward_fn with this baseline-aware config so baselines propagate
-    local_shape = make_base_shape(base_cfg)
-    agent.reward_fn = RewardFn(terminal=win_loss_terminal, shape=local_shape)
 
     wins = draws = 0
     for i in range(n_games):
@@ -108,7 +75,6 @@ def eval_winrate(reward_fn: RewardFn, agent: Agent, n_games: int) -> float:
             if obs["current"]["result"] >= 0:
                 break
             if obs["current"]["yourIndex"] == your_index:
-                _set_baselines(obs, base_cfg)
                 selected, _ = mcts_agent(obs, agent)
             else:
                 selected = _random_agent(obs)
@@ -161,7 +127,7 @@ def main() -> None:
     )
     agent = Agent(deck=deck, model=model, mcts_cfg=mcts_cfg, reward_fn=from_vec([0.1] * 6))
 
-    x0 = to_vec(BaseShapeConfig())
+    x0 = [0.1] * len(PARAM_NAMES)
     es = cma.CMAEvolutionStrategy(x0, sigma0=0.05, inopts={"bounds": [0.0, 0.5], "verbose": -9})
 
     generation = 0

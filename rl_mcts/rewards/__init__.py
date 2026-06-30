@@ -2,14 +2,17 @@
 
 Public API — all names importable as `from rewards import X` or `rewards.X`.
 
-Compound reward files live alongside this package:
-    rewards/abomasnow.py   — Mega Abomasnow ex + Kyogre deck
-    rewards/<new_deck>.py  — add a new file here for each new compound reward
+Primitives live in rewards/core.py (types, terminals, primitive shapes, helpers).
+The old generic shapes (rewards/shapes.py) and compound rewards
+(rewards/abomasnow.py) were cleared out during the reward restructure; rebuild
+new compound rewards from the core primitives + compose_shapes.
 
-Primitives and generic shapes:
-    rewards/core.py        — types, terminals, primitive shapes, helpers
-    rewards/shapes.py      — generic configs, shape makers, base preset
+`base`, `abomasnow`, and `base_shape_config` remain as TODO stubs so existing
+entrypoints (run_match.py, train.py, submission_builder) import; wiring a real
+reward is still pending.
 """
+
+from types import SimpleNamespace
 
 # --- core primitives ---
 from rewards.core import (
@@ -20,55 +23,57 @@ from rewards.core import (
     board,
     card_id,
     count_energy,
+    energy_type,
+    attacks_of,
     find,
     win_loss_terminal,
     fast_win_terminal,
     identity_shape,
     prize_pressure_shape,
     attached_energy_shape,
+    attached_energy_uncapped_shape,
+    attach_energy_type_shape,
+    attach_energy_capped_shape,
+    attack_energy_match_shape,
+    attack_energy_overload_shape,
     opp_discarded_energy_shape,
-    damage_shape,
+    damage_capped_shape,
+    damage_uncapped_shape,
+    damage_taken_shape,
+    damage_taken_uncapped_shape,
     high_deck_energy_shape,
-    ATTACHED_ENERGY_CAP,
-    OPP_DISCARDED_ENERGY_CAP,
-    DAMAGE_CAP,
-    DECK_ENERGY_TOTAL,
+    small_opp_hand_shape,
+    big_hand_penalty_shape,
+    play_card_penalty_shape,
+    search_card_shape,
+    opp_hand_discard_shape,
+    opp_target_leaves_field_shape,
+    opp_target_devolves_shape,
+    race_card_shape,
+    hand_size_range_shape,
     ENERGY_IDS,
     ENERGY_NEEDED,
 )
 
-# --- generic shapes ---
-from rewards.shapes import (
-    AttackerConfig,
-    make_attacker_energy_shape,
-    GetAttackerConfig,
-    make_get_attacker_shape,
-    BenchKeepConfig,
-    make_bench_keep_shape,
-    TargetCardConfig,
-    make_target_card_shape,
-    HandDisruptionConfig,
-    make_hand_disruption_shape,
-    HandBuildConfig,
-    make_hand_build_shape,
-    BaseShapeConfig,
-    make_base_shape,
-    hand_build_reward,
-    hand_disruption_reward,
-    get_attacker_reward,
-    target_reward,
-    base_shape_config,
-    base,
-    win_loss,
-    prize_pressure,
-)
 
-# --- abomasnow compound reward ---
-from rewards.abomasnow import (
-    AbomasnowConfig,
-    make_abomasnow_shape,
-    AbomasnowGetConfig,
-    make_abomasnow_get_shape,
-    abomasnow_get_config as abomasnow_get,  # backward-compat name
-    abomasnow,
+# --- TODO stubs (reward restructure pending) ---
+def _todo_reward(*_args, **_kwargs):
+    raise NotImplementedError(
+        "Reward not wired yet — build a new compound reward from rewards.core "
+        "primitives and assign it to rewards.base / rewards.abomasnow."
+    )
+
+
+# Bare win/loss fallback so a stripped run still has a defined terminal signal.
+win_loss = RewardFn(terminal=win_loss_terminal, shape=identity_shape)
+
+# Stubs kept so run_match.py / train.py / submission_builder import cleanly.
+base = RewardFn(terminal=_todo_reward, shape=_todo_reward)
+abomasnow = RewardFn(terminal=_todo_reward, shape=_todo_reward)
+
+# Old base-shape config object — entrypoints still set .disruption.baseline /
+# .build.baseline each turn; keep settable placeholders so that plumbing no-ops.
+base_shape_config = SimpleNamespace(
+    disruption=SimpleNamespace(baseline=None),
+    build=SimpleNamespace(baseline=None),
 )
