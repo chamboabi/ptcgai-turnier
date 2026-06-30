@@ -11,6 +11,7 @@ that already existed before the turn keeps paying on every MCTS leaf. Use
 
 from rewards.core import Observation, make_compound_shape
 from rewards.core import (
+    attached_energy_shape,
     damage_taken_uncapped_shape,
     damage_uncapped_shape,
     opp_discarded_energy_shape,
@@ -25,6 +26,7 @@ from rewards.core import (
 
 WEIGHTS = {
     win_game_shape: 1.0,
+    attached_energy_shape: 0.001,
     damage_uncapped_shape: 0.1,
     damage_taken_uncapped_shape: 0.1,
     opp_discarded_energy_shape: 0.1,
@@ -38,6 +40,7 @@ WEIGHTS = {
 # Everything else is left as-is: win/loss outcome and per-step log events are
 # already deltas, so they need no baseline.
 _NEEDS_BASELINE = frozenset({
+    attached_energy_shape,
     damage_uncapped_shape,
     damage_taken_uncapped_shape,
     opp_discarded_energy_shape,

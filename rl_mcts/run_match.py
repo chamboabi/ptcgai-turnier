@@ -112,8 +112,9 @@ def format_log(log: dict, names: dict[int, str]) -> str | None:
 class TurnPathTracer:
     """Accumulate a player's realized actions over a turn; flush at TURN_END."""
 
-    def __init__(self, names: dict[int, str]):
+    def __init__(self, names: dict[int, str], p0_label: str = "Abomasnow", p1_label: str = "base"):
         self.names = names
+        self.labels = (p0_label, p1_label)
         self.lines: list[str] = []
         self.owner: int | None = None
         self.turn = 0
@@ -137,7 +138,7 @@ class TurnPathTracer:
     def _flush(self) -> None:
         if not DEBUG_TURN_PATH or self.owner is None:
             return
-        tag = "Abomasnow" if self.owner == 0 else "base"
+        tag = self.labels[self.owner]
         print(f"\n=== P{self.owner} ({tag}) turn {self.turn} path ===")
         for ln in self.lines:
             print(f"    {ln}")

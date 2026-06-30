@@ -1,0 +1,710 @@
+P0 Evee (60 cards) [evee shape]
+P1 ozdogant-16425613-54020172-deck.csv (60 cards) [base shape]
+No checkpoint — using randomly initialised model (play is weak).
+
+=== P0 (evee) turn 2 path ===
+    attach Basic {D} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 2 path ===
+    draw Budew
+    play Budew
+=== end turn ===
+
+=== P1 (base) turn 3 path ===
+    play Budew
+=== end turn ===
+
+=== P0 (evee) turn 3 path ===
+    draw Espeon ex
+    attach Basic {D} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 4 path ===
+    attach Basic {D} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 4 path ===
+    draw Basic {P} Energy
+=== end turn ===
+
+=== P1 (base) turn 5 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 5 path ===
+    draw Energy Search
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 6 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+  ...20 actions, turn 6
+
+=== P1 (base) turn 6 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Latias ex
+    play Boss’s Orders
+    switch active Pecharunt <-> bench Pecharunt
+    switch active Dreepy <-> bench Fezandipiti ex
+=== end turn ===
+
+=== P1 (base) turn 7 path ===
+    attach Basic {P} Energy -> Latias ex
+    play Boss’s Orders
+    switch active Pecharunt <-> bench Pecharunt
+    switch active Dreepy <-> bench Fezandipiti ex
+=== end turn ===
+
+=== P0 (evee) turn 7 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 8 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 8 path ===
+    draw Boss’s Orders
+=== end turn ===
+
+=== P1 (base) turn 9 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 9 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 10 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 10 path ===
+    draw Brock’s Scouting
+=== end turn ===
+
+=== P1 (base) turn 11 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 11 path ===
+    draw Night Stretcher
+=== end turn ===
+
+=== P0 (evee) turn 12 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 12 path ===
+    draw Dreepy
+    play Brock’s Scouting
+    evolve Dreepy -> Drakloak
+    attach Basic {P} Energy -> Drakloak
+=== end turn ===
+
+=== P1 (base) turn 13 path ===
+    play Brock’s Scouting
+    evolve Dreepy -> Drakloak
+    attach Basic {P} Energy -> Drakloak
+=== end turn ===
+
+=== P0 (evee) turn 13 path ===
+    draw Carmine
+=== end turn ===
+
+=== P0 (evee) turn 14 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 14 path ===
+    draw Buddy-Buddy Poffin
+=== end turn ===
+
+=== P1 (base) turn 15 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 15 path ===
+    draw Basic {G} Energy
+=== end turn ===
+
+=== P0 (evee) turn 16 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 16 path ===
+    draw Dragapult ex
+    evolve Drakloak -> Dragapult ex
+=== end turn ===
+
+=== P1 (base) turn 17 path ===
+    evolve Drakloak -> Dragapult ex
+=== end turn ===
+
+=== P0 (evee) turn 17 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 18 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+  ...40 actions, turn 18
+
+=== P1 (base) turn 18 path ===
+    draw Crispin
+    play Crispin
+    attach Basic {R} Energy -> Dragapult ex
+    attach Basic {P} Energy -> Budew
+=== end turn ===
+
+=== P1 (base) turn 19 path ===
+    play Crispin
+    attach Basic {R} Energy -> Dragapult ex
+    attach Basic {P} Energy -> Budew
+=== end turn ===
+
+=== P0 (evee) turn 19 path ===
+    draw Energy Search
+=== end turn ===
+
+=== P0 (evee) turn 20 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 20 path ===
+    draw Brock’s Scouting
+=== end turn ===
+
+=== P1 (base) turn 21 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 21 path ===
+    draw Energy Search Pro
+=== end turn ===
+
+=== P0 (evee) turn 22 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 22 path ===
+    draw Poké Pad
+    play Poké Pad
+    play Brock’s Scouting
+=== end turn ===
+
+=== P1 (base) turn 23 path ===
+    play Poké Pad
+    play Brock’s Scouting
+=== end turn ===
+
+=== P0 (evee) turn 23 path ===
+    draw Espeon ex
+=== end turn ===
+
+=== P0 (evee) turn 24 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 24 path ===
+    draw Drakloak
+=== end turn ===
+
+=== P1 (base) turn 25 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 25 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 26 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 26 path ===
+    draw Meowth ex
+=== end turn ===
+
+=== P1 (base) turn 27 path ===
+    (no actions)
+=== end turn ===
+  ...60 actions, turn 27
+
+=== P0 (evee) turn 27 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 28 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 28 path ===
+    draw Crushing Hammer
+    play Crushing Hammer
+=== end turn ===
+
+=== P1 (base) turn 29 path ===
+    play Crushing Hammer
+=== end turn ===
+
+=== P0 (evee) turn 29 path ===
+    draw Carmine
+=== end turn ===
+
+=== P0 (evee) turn 30 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 30 path ===
+    draw Ultra Ball
+=== end turn ===
+
+=== P1 (base) turn 31 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 31 path ===
+    draw Energy Search
+=== end turn ===
+
+=== P0 (evee) turn 32 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 32 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Fezandipiti ex
+=== end turn ===
+
+=== P1 (base) turn 33 path ===
+    attach Basic {P} Energy -> Fezandipiti ex
+=== end turn ===
+
+=== P0 (evee) turn 33 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 34 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 34 path ===
+    draw Team Rocket's Watchtower
+=== end turn ===
+
+=== P1 (base) turn 35 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 35 path ===
+    draw Basic {G} Energy
+=== end turn ===
+
+=== P0 (evee) turn 36 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 36 path ===
+    draw Lillie's Determination
+=== end turn ===
+
+=== P1 (base) turn 37 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 37 path ===
+    draw Eevee
+    play Eevee
+=== end turn ===
+
+=== P0 (evee) turn 38 path ===
+    play Eevee
+=== end turn ===
+
+=== P1 (base) turn 38 path ===
+    draw Crushing Hammer
+    play Crushing Hammer
+=== end turn ===
+
+=== P1 (base) turn 39 path ===
+    play Crushing Hammer
+=== end turn ===
+
+=== P0 (evee) turn 39 path ===
+    draw Lillie's Determination
+=== end turn ===
+
+=== P0 (evee) turn 40 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 40 path ===
+    draw Buddy-Buddy Poffin
+=== end turn ===
+
+=== P1 (base) turn 41 path ===
+    (no actions)
+=== end turn ===
+  ...80 actions, turn 41
+
+=== P0 (evee) turn 41 path ===
+    draw Eevee
+    play Eevee
+=== end turn ===
+
+=== P0 (evee) turn 42 path ===
+    play Eevee
+=== end turn ===
+
+=== P1 (base) turn 42 path ===
+    draw Poké Pad
+    play Poké Pad
+=== end turn ===
+
+=== P1 (base) turn 43 path ===
+    play Poké Pad
+=== end turn ===
+
+=== P0 (evee) turn 43 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 44 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 44 path ===
+    draw Night Stretcher
+=== end turn ===
+
+=== P1 (base) turn 45 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 45 path ===
+    draw Basic {P} Energy
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 46 path ===
+    attach Basic {P} Energy -> Pecharunt
+=== end turn ===
+
+=== P1 (base) turn 46 path ===
+    draw Crushing Hammer
+    play Crushing Hammer
+=== end turn ===
+
+=== P1 (base) turn 47 path ===
+    play Crushing Hammer
+=== end turn ===
+
+=== P0 (evee) turn 47 path ===
+    draw Lillie's Determination
+=== end turn ===
+
+=== P0 (evee) turn 48 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 48 path ===
+    draw Lillie's Determination
+=== end turn ===
+
+=== P1 (base) turn 49 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 49 path ===
+    draw Basic {D} Energy
+    attach Basic {D} Energy -> Eevee
+=== end turn ===
+
+=== P0 (evee) turn 50 path ===
+    attach Basic {D} Energy -> Eevee
+=== end turn ===
+
+=== P1 (base) turn 50 path ===
+    draw Ultra Ball
+=== end turn ===
+
+=== P1 (base) turn 51 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 51 path ===
+    draw Lillie's Determination
+=== end turn ===
+
+=== P0 (evee) turn 52 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 52 path ===
+    draw Basic {R} Energy
+    attach Basic {R} Energy -> Dragapult ex
+=== end turn ===
+
+=== P1 (base) turn 53 path ===
+    attach Basic {R} Energy -> Dragapult ex
+=== end turn ===
+  ...100 actions, turn 53
+
+=== P0 (evee) turn 53 path ===
+    draw Judge
+=== end turn ===
+
+=== P0 (evee) turn 54 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 54 path ===
+    draw Dragapult ex
+=== end turn ===
+
+=== P1 (base) turn 55 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 55 path ===
+    draw Hand Trimmer
+=== end turn ===
+
+=== P0 (evee) turn 56 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 56 path ===
+    draw Crushing Hammer
+    play Crushing Hammer
+=== end turn ===
+
+=== P1 (base) turn 57 path ===
+    play Crushing Hammer
+=== end turn ===
+
+=== P0 (evee) turn 57 path ===
+    draw Night Stretcher
+=== end turn ===
+
+=== P0 (evee) turn 58 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 58 path ===
+    draw Dreepy
+=== end turn ===
+
+=== P1 (base) turn 59 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 59 path ===
+    draw Carmine
+=== end turn ===
+
+=== P0 (evee) turn 60 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 60 path ===
+    draw Crispin
+    play Crispin
+    attach Basic {R} Energy -> Dragapult ex
+=== end turn ===
+
+=== P1 (base) turn 61 path ===
+    play Crispin
+    attach Basic {R} Energy -> Dragapult ex
+=== end turn ===
+
+=== P0 (evee) turn 61 path ===
+    draw Hand Trimmer
+=== end turn ===
+
+=== P0 (evee) turn 62 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 62 path ===
+    draw Poké Pad
+    play Poké Pad
+    play Budew
+=== end turn ===
+
+=== P1 (base) turn 63 path ===
+    play Poké Pad
+    play Budew
+=== end turn ===
+
+=== P0 (evee) turn 63 path ===
+    draw Eevee
+    play Eevee
+=== end turn ===
+
+=== P0 (evee) turn 64 path ===
+    play Eevee
+=== end turn ===
+
+=== P1 (base) turn 64 path ===
+    draw Ultra Ball
+=== end turn ===
+
+=== P1 (base) turn 65 path ===
+    (no actions)
+=== end turn ===
+  ...120 actions, turn 65
+
+=== P0 (evee) turn 65 path ===
+    draw Basic {P} Energy
+=== end turn ===
+
+=== P0 (evee) turn 66 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 66 path ===
+    draw Rare Candy
+=== end turn ===
+
+=== P1 (base) turn 67 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 67 path ===
+    draw Basic {P} Energy
+=== end turn ===
+
+=== P0 (evee) turn 68 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 68 path ===
+    draw Basic {R} Energy
+    attach Basic {R} Energy -> Dragapult ex
+=== end turn ===
+
+=== P1 (base) turn 69 path ===
+    attach Basic {R} Energy -> Dragapult ex
+=== end turn ===
+
+=== P0 (evee) turn 69 path ===
+    draw Basic {P} Energy
+=== end turn ===
+
+=== P0 (evee) turn 70 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 70 path ===
+    draw Buddy-Buddy Poffin
+=== end turn ===
+
+=== P1 (base) turn 71 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 71 path ===
+    draw Munkidori
+    play Munkidori
+=== end turn ===
+
+=== P0 (evee) turn 72 path ===
+    play Munkidori
+=== end turn ===
+
+=== P1 (base) turn 72 path ===
+    draw Buddy-Buddy Poffin
+=== end turn ===
+
+=== P1 (base) turn 73 path ===
+    (no actions)
+=== end turn ===
+
+=== P0 (evee) turn 73 path ===
+    draw Basic {D} Energy
+    attach Basic {D} Energy -> Eevee
+=== end turn ===
+
+=== P0 (evee) turn 74 path ===
+    attach Basic {D} Energy -> Eevee
+=== end turn ===
+
+=== P1 (base) turn 74 path ===
+    draw Lucky Helmet
+    attach Lucky Helmet -> Dragapult ex
+=== end turn ===
+
+=== P1 (base) turn 75 path ===
+    attach Lucky Helmet -> Dragapult ex
+=== end turn ===
+
+=== P0 (evee) turn 75 path ===
+    draw Pecharunt
+=== end turn ===
+
+=== P0 (evee) turn 76 path ===
+    (no actions)
+=== end turn ===
+  ...140 actions, turn 76
+
+=== P1 (base) turn 76 path ===
+    draw Boss’s Orders
+    play Dreepy
+    play Boss’s Orders
+    switch active Pecharunt <-> bench Eevee
+    play Ultra Ball
+    play Night Stretcher
+    play Team Rocket's Watchtower
+=== end turn ===
+
+=== P1 (base) turn 77 path ===
+    play Dreepy
+    play Boss’s Orders
+    switch active Pecharunt <-> bench Eevee
+    play Ultra Ball
+    play Night Stretcher
+    play Team Rocket's Watchtower
+=== end turn ===
+
+=== P0 (evee) turn 77 path ===
+    draw Judge
+=== end turn ===
+
+=== P0 (evee) turn 78 path ===
+    (no actions)
+=== end turn ===
+
+=== P1 (base) turn 78 path ===
+    draw Ultra Ball
+    evolve Dreepy -> Drakloak
+    switch active Fezandipiti ex <-> bench Dragapult ex
+    ATTACK with Dragapult ex (attackId 153)
+    hp Eevee -70
+=== end turn ===
+
+=== P1 (base) turn 78 path ===
+    evolve Dreepy -> Drakloak
+    switch active Fezandipiti ex <-> bench Dragapult ex
+    ATTACK with Dragapult ex (attackId 153)
+    hp Eevee -70
+=== end turn ===
+
+=== P0 (evee) turn 79 path ===
+    draw Judge
+    play Pecharunt
+=== end turn ===
+Result: P0 (Evee) wins after 153 actions, turn 80.
+Saved replay:     /home/willi/workspace/ptcgai-turnier/rl_mcts/replays/evee_vs_ozdogant-16425613-54020172-deck_20260630-234928.json
+Saved visualizer: /home/willi/workspace/ptcgai-turnier/rl_mcts/replays/evee_vs_ozdogant-16425613-54020172-deck_20260630-234928_vis.json
+Open debug/visualizer.html in a browser and load the *_vis.json file.

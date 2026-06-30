@@ -1,6 +1,7 @@
 import math
 import random
 from collections import Counter
+from dataclasses import replace
 
 from cg.api import PlayerState, SearchState, search_begin, search_end, search_step, to_observation_class
 
@@ -166,6 +167,12 @@ def mcts_agent(obs_dict: dict, agent: Agent) -> tuple[list[int], LearnSample]:
     obs = to_observation_class(obs_dict)
     your_index = obs.current.yourIndex
     state = obs.current
+    # Freeze per-turn baselines from the search root: rebuild the shape once here
+    # so absolute reward shapes score deltas caused by this move, not standing
+    # board state. Plain (factory-less) rewards pass through unchanged.
+    if agent.reward_fn.shape_factory is not None:
+        shape = agent.reward_fn.shape_factory(obs, your_index)
+        agent = replace(agent, reward_fn=replace(agent.reward_fn, shape=shape))
     opp = state.players[1 - your_index]
     opp_deck, opp_prize, opp_hand = _sample_opponent_deck(agent, opp)
     search_state = search_begin(
