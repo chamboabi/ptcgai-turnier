@@ -1,0 +1,58 @@
+Turn 54  (action #4, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.2176
+CHOSEN: Basic {D} Energy @ discard[20] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     295   -0.2012   -0.2198   0.163  Basic {D} Energy @ discard[20] (p0)
+     222   -0.2006   -0.2073   0.115  Basic {G} Energy @ discard[22] (p0)
+     195   -0.1967   -0.2073   0.115  Basic {G} Energy @ discard[10] (p0)
+      67   -0.2340   -0.2147   0.159  Eevee @ discard[14] (p0)
+      66   -0.2379   -0.2308   0.230  Pecharunt @ discard[25] (p0)
+      53   -0.3117   -0.2202   0.064  Basic {P} Energy @ discard[16] (p0)
+      53   -0.3117   -0.2202   0.064  Basic {P} Energy @ discard[24] (p0)
+      49   -0.2226   -0.2257   0.090  Leafeon @ discard[13] (p0)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    4x Kadabra
+    4x Poké Pad
+    4x Telepath Psychic Energy
+    3x Buddy-Buddy Poffin
+    3x Dawn
+    2x Alakazam
+    2x Basic {P} Energy
+    2x Handheld Fan
+    2x Boss’s Orders
+    2x Sacred Ash
+    2x Hilda
+    1x Shaymin
+    1x Genesect
+    1x Enriching Energy
+    1x Enhanced Hammer
+  sampled opponent hand (this search):
+    4x Snorlax
+    3x Nighttime Mine
+    1x Rare Candy
+    1x Xerosic’s Machinations
+
+Predicted line (principal variation):
+  1. [Evee] Basic {D} Energy @ discard[20] (p0)  (v=-0.2012)
+  2. [Evee] play Energy Search (hand[3])  (v=-0.1704)
+  3. [Evee] attach Basic {D} Energy (hand[4]) -> Pecharunt (bench[1])  (v=-0.1740)
+  4. [Evee] END turn  (v=-0.1736)
+  5. [opponent] END turn  (v=-0.3017)
+  6. [Evee] play Lillie's Determination (hand[0])  (v=-0.3377)
+  7. [Evee] END turn  (v=-0.4104)
+  8. [opponent] END turn  (v=-1.0000)

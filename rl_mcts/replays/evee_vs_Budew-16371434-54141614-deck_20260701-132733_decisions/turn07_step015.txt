@@ -1,0 +1,52 @@
+Turn 7  (action #8, P0 Evee)
+Selecting: ENERGY / DISCARD_ENERGY
+Root value: +1.9763
+CHOSEN: energy x1 @ active[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +1.9787   -0.4782   1.000  energy x1 @ active[0]
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Duraludon
+    1.00  4.00x  Archaludon ex
+    1.00  3.09x  Night Stretcher
+    1.00  4.00x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.84x  Full Metal Lab
+    0.95  3.72x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+  known (visible) opponent cards:
+    1x Relicanth
+    1x Boss’s Orders
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    3x Snorlax
+    2x Full Metal Lab
+    1x Archaludon ex
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] energy x1 @ active[0]  (v=+1.9787)
+  2. [Evee] Pecharunt @ bench[0] (p0)  (v=+1.9853)
+  3. [Evee] ATTACK (attackId 1296)  (v=+1.9969)
+  4. [opponent] play Full Metal Lab (hand[0])  (v=+1.9707)
+  5. [opponent] play Snorlax (hand[0])  (v=+1.9558)
+  6. [opponent] play Snorlax (hand[3])  (v=+1.9518)
+  7. [opponent] END turn  (v=+1.9627)
+  8. [Evee] END turn  (v=+2.0789)
+  9. [opponent] play Lillie's Determination (hand[4])  (v=+2.0829)
+  10. [opponent] END turn  (v=+2.0193)
+  11. [Evee] END turn  (v=+1.7588)
+  12. [opponent] END turn  (v=+1.5614)
+  13. [Evee] play Pecharunt (hand[4])  (v=+1.5787)
+  14. [Evee] retreat  (v=+1.5787)

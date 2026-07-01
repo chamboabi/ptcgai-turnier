@@ -1,0 +1,54 @@
+Turn 0  (action #1, P0 Evee)
+Selecting: YES_NO / IS_FIRST
+Root value: +0.1401
+CHOSEN: NO
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     948   +0.1444   +0.2737   0.652  NO
+      52   +0.0670   -0.2800   0.348  YES
+
+Opponent belief:
+  archetype: Archaludon Metal 30%, Mega Lucario ex 19%, Alakazam Psychic 11%, Dragapult 7%, Postwick 5%
+  likely cards (P, E[copies]):
+    0.93  3.31x  Poké Pad
+    0.92  2.72x  Boss’s Orders
+    0.81  3.21x  Lillie's Determination
+    0.75  1.92x  Night Stretcher
+    0.57  0.57x  Hero’s Cape
+    0.50  1.91x  Pokégear 3.0
+    0.48  1.70x  Ultra Ball
+    0.45  1.75x  Buddy-Buddy Poffin
+    0.34  1.37x  Cinderace
+    0.31  3.58x  Basic {M} Energy
+    0.31  1.26x  Duraludon
+    0.31  1.26x  Archaludon ex
+    0.31  1.21x  Full Metal Lab
+    0.31  1.17x  Jumbo Ice Cream
+    0.30  1.19x  Explorer’s Guidance
+  known (visible) opponent cards:
+  sampled opponent hand (this search):
+
+Predicted line (principal variation):
+  1. [Evee] NO  (v=+0.1444)
+  2. [opponent] Riolu @ hand[2] (p1)  (v=+0.1442)
+  3. [Evee] Munkidori @ hand[5] (p0)  (v=+0.1446)
+  4. [opponent] END turn  (v=+0.1376)
+  5. [Evee] attach Basic {D} Energy (hand[3]) -> Munkidori (active[0])  (v=+0.1546)
+  6. [Evee] END turn  (v=+0.1761)
+  7. [opponent] END turn  (v=+0.1559)
+  8. [Evee] END turn  (v=+0.1552)
+  9. [opponent] END turn  (v=+0.1300)
+  10. [Evee] END turn  (v=+0.1540)
+  11. [opponent] END turn  (v=+0.1253)
+  12. [Evee] END turn  (v=+0.1507)
+  13. [opponent] END turn  (v=+0.1204)
+  14. [Evee] END turn  (v=+0.1526)
+  15. [opponent] END turn  (v=+0.1231)
+  16. [Evee] END turn  (v=+0.1659)
+  17. [opponent] END turn  (v=+0.1182)
+  18. [Evee] END turn  (v=+0.1947)
+  19. [opponent] END turn  (v=+0.1083)
+  20. [Evee] END turn  (v=+0.2285)
+  21. [opponent] play Snorlax (hand[12])  (v=+0.2787)
+  22. [opponent] play Ultra Ball (hand[4])  (v=+0.2796)

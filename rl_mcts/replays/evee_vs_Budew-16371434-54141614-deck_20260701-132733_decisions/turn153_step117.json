@@ -1,0 +1,225 @@
+{
+  "turn": 153,
+  "turn_action_count": 8,
+  "acting_player_index": 0,
+  "selecting": "CARD / ATTACH_TO",
+  "root_value": 5.9416,
+  "chosen_action": "Basic {G} Energy @ hand[0] (p0)",
+  "candidates": [
+    {
+      "action": "Basic {G} Energy @ hand[0] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 1.0,
+      "nn_value": -0.1317,
+      "visits": 1000,
+      "search_mean_value": 5.9477,
+      "expanded": true,
+      "policy_target": 0.0061
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.096,
+        "expected_copies": 0.1167
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0386,
+        "expected_copies": 0.0597
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 8
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 4
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 4
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 3
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 3
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 2
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 6
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 5
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Basic {G} Energy @ hand[0] (p0)",
+      "value": 5.9477
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Pecharunt @ bench[1] (p0)",
+      "value": 5.9626
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[7])",
+      "value": 6.018
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 6.0201
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Night Stretcher (hand[2])",
+      "value": 5.9016
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Basic {G} Energy @ discard[4] (p0)",
+      "value": 5.9029
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {G} Energy (hand[6]) -> Leafeon (active[0])",
+      "value": 5.9385
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Crispin (hand[1])",
+      "value": 5.9383
+    }
+  ]
+}

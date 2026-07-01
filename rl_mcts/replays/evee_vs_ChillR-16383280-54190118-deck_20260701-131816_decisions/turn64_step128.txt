@@ -1,0 +1,62 @@
+Turn 64  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +9.7093
+CHOSEN: attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     972   +9.9908   +0.1834   0.065  attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])
+       4   +0.1551   +0.1626   0.071  attach Basic {D} Energy (hand[2]) -> Munkidori (bench[4])
+       3   +0.1665   +0.1825   0.036  attach Basic {G} Energy (hand[1]) -> Munkidori (bench[4])
+       3   +0.1390   +0.1423   0.102  attach Basic {D} Energy (hand[2]) -> Sylveon (bench[1])
+       3   +0.1396   +0.1429   0.083  attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[2])
+       2   +0.1359   +0.1359   0.065  attach Basic {G} Energy (hand[1]) -> Sylveon (bench[0])
+       2   +0.0979   +0.0979   0.102  attach Basic {D} Energy (hand[2]) -> Sylveon (bench[0])
+       2   +0.1171   +0.1171   0.075  ability Munkidori
+       2   +0.1261   +0.1474   0.067  END turn
+       1   +0.1439   +0.1439   0.046  attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])
+       1   +0.1408   +0.1408   0.046  attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[2])
+       1   +0.1276   +0.1276   0.036  attach Basic {G} Energy (hand[1]) -> Munkidori (bench[3])
+       1   +0.0974   +0.0974   0.083  attach Basic {D} Energy (hand[2]) -> Pecharunt (active[0])
+       1   +0.1015   +0.1015   0.071  attach Basic {D} Energy (hand[2]) -> Munkidori (bench[3])
+       1   +4.1491   +4.1491   0.022  ATTACK (attackId 1296)
+       1   +0.1171   +0.1171   0.029  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    0.85  1.72x  Boss’s Orders
+    0.41  0.41x  Relicanth
+  known (visible) opponent cards:
+    11x Basic {M} Energy
+    4x Duraludon
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Cinderace
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])  (v=+9.9908)
+  2. [Evee] ability Munkidori  (v=+10.0273)
+  3. [Evee] Sylveon @ bench[0] (p0)  (v=+10.0375)
+  4. [Evee] number 3  (v=+10.0651)
+  5. [Evee] Archaludon ex @ bench[0] (p1)  (v=+10.0844)
+  6. [Evee] ATTACK (attackId 1296)  (v=+10.1008)
+  7. [opponent] play Boss’s Orders (hand[2])  (v=+10.0899)
+  8. [opponent] Munkidori @ bench[3] (p0)  (v=+10.0850)
+  9. [opponent] play Snorlax (hand[0])  (v=+10.0815)
+  10. [opponent] play Snorlax (hand[0])  (v=+10.0784)
+  11. [opponent] END turn  (v=+10.0784)
+  12. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[2])  (v=+10.1022)
+  13. [Evee] play Night Stretcher (hand[1])  (v=+10.1093)

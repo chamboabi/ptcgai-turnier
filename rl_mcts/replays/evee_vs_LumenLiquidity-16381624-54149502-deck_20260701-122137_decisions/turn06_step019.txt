@@ -1,0 +1,50 @@
+Turn 6  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0751
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     690   -0.0712   -0.0329   0.486  END turn
+     181   -0.0873   +0.0429   0.360  retreat
+     129   -0.0803   +0.2528   0.155  ATTACK (attackId 11)
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Shaymin
+    1x Telepath Psychic Energy
+  sampled opponent hand (this search):
+    2x Enhanced Hammer
+    1x Dunsparce
+    1x Enriching Energy
+    1x Sacred Ash
+    1x Dawn
+    1x Hilda
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0712)
+  2. [opponent] attach Enriching Energy (hand[2]) -> Shaymin (bench[0])  (v=-0.0853)
+  3. [opponent] play Fezandipiti ex (hand[10])  (v=-0.0994)
+  4. [opponent] play Dawn (hand[3])  (v=-0.1154)
+  5. [opponent] card @ deck[33] (p1)  (v=-0.1067)
+  6. [opponent] card @ deck[11] (p1)  (v=-0.0952)
+  7. [opponent] card @ deck[11] (p1)  (v=-0.0699)
+  8. [opponent] END turn  (v=-0.0163)

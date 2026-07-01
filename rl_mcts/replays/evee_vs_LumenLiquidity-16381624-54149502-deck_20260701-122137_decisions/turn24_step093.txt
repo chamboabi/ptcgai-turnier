@@ -1,0 +1,63 @@
+Turn 24  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.2375
+CHOSEN: play Judge (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     981   +1.2681   +0.1663   0.227  play Judge (hand[0])
+      12   +0.0312   +0.1119   0.176  retreat
+       7   -0.8242   -0.0271   0.597  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    6x Snorlax
+    3x Nighttime Mine
+    2x Rare Candy
+    2x Enhanced Hammer
+    1x Dunsparce
+    1x Dudunsparce
+    1x Lana’s Aid
+
+Predicted line (principal variation):
+  1. [Evee] play Judge (hand[0])  (v=+1.2681)
+  2. [Evee] attach Basic {P} Energy (hand[1]) -> Munkidori (active[0])  (v=+1.7540)
+  3. [Evee] ATTACK (attackId 141)  (v=+1.7681)
+  4. [opponent] energy x1 @ active[0]  (v=+1.6723)
+  5. [opponent] Espeon ex @ bench[2] (p0)  (v=+1.5655)
+  6. [opponent] ATTACK (attackId 1071)  (v=+1.5378)
+  7. [Evee] Lillie's Determination @ prize[0] (p0)  (v=+1.7399)
+  8. [opponent] Shaymin @ bench[0] (p1)  (v=+1.7397)
+  9. [Evee] ability Munkidori  (v=+2.0922)
+  10. [Evee] Munkidori @ active[0] (p0)  (v=+2.1073)
+  11. [Evee] number 1  (v=+2.1685)
+  12. [Evee] Shaymin @ active[0] (p1)  (v=+2.1793)
+  13. [Evee] attach Basic {D} Energy (hand[0]) -> Pecharunt (bench[3])  (v=+2.1918)
+  14. [Evee] play Energy Search Pro (hand[0])  (v=+2.2264)
+  15. [Evee] card @ deck[13] (p0)  (v=+2.2265)

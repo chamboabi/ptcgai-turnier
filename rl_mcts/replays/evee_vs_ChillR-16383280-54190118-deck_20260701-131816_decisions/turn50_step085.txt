@@ -1,0 +1,50 @@
+Turn 50  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +5.7176
+CHOSEN: attach Mist Energy (hand[1]) -> Sylveon (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     855   +6.6751   +0.1238   0.207  attach Mist Energy (hand[1]) -> Sylveon (active[0])
+      31   +0.1061   +0.0801   0.207  attach Mist Energy (hand[1]) -> Sylveon (bench[1])
+      30   +0.1106   +0.2067   0.162  END turn
+      29   +0.1116   +0.0829   0.152  attach Mist Energy (hand[1]) -> Pecharunt (bench[0])
+      29   +0.1106   +0.0815   0.152  attach Mist Energy (hand[1]) -> Pecharunt (bench[2])
+      26   +0.1154   +0.1269   0.119  attach Mist Energy (hand[1]) -> Munkidori (bench[3])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  1.00x  Hero’s Cape
+    0.85  1.90x  Boss’s Orders
+    0.49  0.49x  Relicanth
+  known (visible) opponent cards:
+    7x Basic {M} Energy
+    3x Duraludon
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Poké Pad
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    2x Xerosic’s Machinations
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Hero’s Cape
+
+Predicted line (principal variation):
+  1. [Evee] attach Mist Energy (hand[1]) -> Sylveon (active[0])  (v=+6.6751)
+  2. [Evee] retreat  (v=+6.8645)
+  3. [Evee] energy x1 @ active[0]  (v=+6.8726)
+  4. [Evee] Sylveon @ bench[1] (p0)  (v=+7.0054)
+  5. [Evee] ATTACK (attackId 459)  (v=+7.0308)
+  6. [opponent] play Snorlax (hand[3])  (v=+7.0127)
+  7. [opponent] play Snorlax (hand[3])  (v=+7.0073)
+  8. [opponent] play Snorlax (hand[0])  (v=+7.0020)
+  9. [opponent] END turn  (v=+6.9962)
+  10. [Evee] attach Basic {D} Energy (hand[1]) -> Sylveon (bench[1])  (v=+7.0259)
+  11. [Evee] retreat  (v=+7.0079)

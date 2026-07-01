@@ -1,0 +1,43 @@
+Turn 70  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.0243
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     993   +1.0318   +0.1793   0.192  END turn
+       2   +0.0578   +0.0578   0.222  play Lillie's Determination (hand[3])
+       2   +0.0894   +0.0894   0.219  ability Munkidori
+       2   +0.0894   +0.0894   0.219  ability Munkidori
+       1   +0.0894   +0.0894   0.147  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.30  0.30x  Relicanth
+  known (visible) opponent cards:
+    12x Basic {M} Energy
+    4x Duraludon
+    4x Night Stretcher
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    2x Cinderace
+    2x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+1.0318)
+  2. [opponent] END turn  (v=+1.0061)
+  3. [Evee] END turn  (v=+1.0158)
+  4. [opponent] END turn  (v=+0.9890)
+  5. [Evee] END turn  (v=+1.0000)

@@ -1,0 +1,435 @@
+{
+  "turn": 0,
+  "turn_action_count": 4,
+  "acting_player_index": 0,
+  "selecting": "COUNT / DRAW_COUNT",
+  "root_value": 3.0644,
+  "chosen_action": "number 0",
+  "candidates": [
+    {
+      "action": "number 0",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.5498,
+      "nn_value": 0.1792,
+      "visits": 920,
+      "search_mean_value": 3.3471,
+      "expanded": true,
+      "policy_target": 0.2827
+    },
+    {
+      "action": "number 1",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.4502,
+      "nn_value": 0.1846,
+      "visits": 80,
+      "search_mean_value": -0.147,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 0.2962,
+      "Mega Lucario ex": 0.1864,
+      "Alakazam Psychic": 0.1127,
+      "Dragapult": 0.0654,
+      "Postwick": 0.0542,
+      "Mega Starmie": 0.0501,
+      "Alakazam Psychic (B)": 0.0334,
+      "Dawn": 0.032,
+      "Hop’s Choice Band": 0.0306,
+      "Canari": 0.025,
+      "Snorunt": 0.0195,
+      "Carmine": 0.0181,
+      "Munkidori": 0.0125,
+      "Cynthia's Garchomp": 0.0125,
+      "Team Rocket's Ariana": 0.0097,
+      "Team Rocket's Petrel": 0.0097,
+      "Rare Candy": 0.0083,
+      "Fighting Gong": 0.0083,
+      "Festival Grounds": 0.0056,
+      "Switch": 0.0056,
+      "Area Zero Underdepths": 0.0042
+    },
+    "card_predictions": [
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 0.9346,
+        "expected_copies": 3.3115
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.9221,
+        "expected_copies": 2.7163
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 0.8095,
+        "expected_copies": 3.2142
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 0.7455,
+        "expected_copies": 1.9179
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 0.5744,
+        "expected_copies": 0.5744
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 0.5049,
+        "expected_copies": 1.911
+      },
+      {
+        "card_id": 1121,
+        "name": "Ultra Ball",
+        "probability": 0.4757,
+        "expected_copies": 1.6996
+      },
+      {
+        "card_id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "probability": 0.4492,
+        "expected_copies": 1.7455
+      },
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 0.3421,
+        "expected_copies": 1.3658
+      },
+      {
+        "card_id": 8,
+        "name": "Basic {M} Energy",
+        "probability": 0.3143,
+        "expected_copies": 3.5786
+      },
+      {
+        "card_id": 169,
+        "name": "Duraludon",
+        "probability": 0.3143,
+        "expected_copies": 1.2573
+      },
+      {
+        "card_id": 190,
+        "name": "Archaludon ex",
+        "probability": 0.3143,
+        "expected_copies": 1.2573
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.3102,
+        "expected_copies": 1.2086
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 0.3088,
+        "expected_copies": 1.1683
+      },
+      {
+        "card_id": 1185,
+        "name": "Explorer’s Guidance",
+        "probability": 0.3004,
+        "expected_copies": 1.1933
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.2949,
+        "expected_copies": 0.3088
+      },
+      {
+        "card_id": 1225,
+        "name": "Hilda",
+        "probability": 0.2809,
+        "expected_copies": 0.9583
+      },
+      {
+        "card_id": 1079,
+        "name": "Rare Candy",
+        "probability": 0.267,
+        "expected_copies": 0.8484
+      },
+      {
+        "card_id": 19,
+        "name": "Telepath Psychic Energy",
+        "probability": 0.267,
+        "expected_copies": 1.0668
+      },
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 0.2587,
+        "expected_copies": 0.8289
+      },
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 0.2531,
+        "expected_copies": 0.7622
+      },
+      {
+        "card_id": 1123,
+        "name": "Switch",
+        "probability": 0.2448,
+        "expected_copies": 0.5049
+      },
+      {
+        "card_id": 1142,
+        "name": "Fighting Gong",
+        "probability": 0.2128,
+        "expected_copies": 0.8387
+      },
+      {
+        "card_id": 6,
+        "name": "Basic {F} Energy",
+        "probability": 0.2114,
+        "expected_copies": 2.6871
+      },
+      {
+        "card_id": 1192,
+        "name": "Carmine",
+        "probability": 0.2045,
+        "expected_copies": 0.79
+      }
+    ],
+    "known_opponent_cards": [],
+    "sampled_opponent_deck": [
+      {
+        "id": 3,
+        "name": "Basic {W} Energy",
+        "count": 6
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 4
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 4
+      },
+      {
+        "id": 1192,
+        "name": "Carmine",
+        "count": 4
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 3
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 3
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 270,
+        "name": "Iono’s Wattrel",
+        "count": 2
+      },
+      {
+        "id": 1219,
+        "name": "Team Rocket's Petrel",
+        "count": 2
+      },
+      {
+        "id": 1123,
+        "name": "Switch",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 1
+      },
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 1
+      },
+      {
+        "id": 1223,
+        "name": "Harlequin",
+        "count": 1
+      },
+      {
+        "id": 120,
+        "name": "Drakloak",
+        "count": 1
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1229,
+        "name": "Wally's Compassion",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 3,
+        "name": "Basic {W} Energy",
+        "count": 1
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 1
+      },
+      {
+        "id": 120,
+        "name": "Drakloak",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 1
+      },
+      {
+        "id": 1223,
+        "name": "Harlequin",
+        "count": 1
+      },
+      {
+        "id": 120,
+        "name": "Drakloak",
+        "count": 1
+      },
+      {
+        "id": 1219,
+        "name": "Team Rocket's Petrel",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "number 0",
+      "value": 3.3471
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 3.3494
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {D} Energy (hand[2]) -> Pecharunt (active[0])",
+      "value": 3.8105
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 3.926
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "attach Basic {W} Energy (hand[2]) -> Snorlax (active[0])",
+      "value": 3.9134
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "ATTACK (attackId 1547)",
+      "value": 3.9004
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "card @ deck[2] (p1) + card @ deck[39] (p1)",
+      "value": 3.9035
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 8.8648
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 8.8196
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Poké Pad (hand[0])",
+      "value": 8.82
+    }
+  ]
+}

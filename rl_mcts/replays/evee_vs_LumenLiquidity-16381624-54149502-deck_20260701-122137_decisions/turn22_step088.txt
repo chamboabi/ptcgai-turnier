@@ -1,0 +1,52 @@
+Turn 22  (action #8, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0388
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.0389   -0.0485   1.000  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    4x Poké Pad
+    3x Kadabra
+    3x Buddy-Buddy Poffin
+    3x Telepath Psychic Energy
+    2x Alakazam
+    2x Dawn
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Handheld Fan
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+  sampled opponent hand (this search):
+    4x Snorlax
+    3x Hilda
+    3x Nighttime Mine
+    2x Rare Candy
+    2x Dunsparce
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0389)
+  2. [opponent] ATTACK (attackId 1072)  (v=-0.0566)
+  3. [opponent] Enhanced Hammer @ prize[2] (p1)  (v=-0.0874)
+  4. [Evee] Pecharunt @ bench[1] (p0)  (v=-0.0399)
+  5. [Evee] attach Basic {G} Energy (hand[0]) -> Sylveon (bench[0])  (v=-0.0270)
+  6. [Evee] END turn  (v=-0.0263)
+  7. [opponent] play Hilda (hand[0])  (v=-0.0162)

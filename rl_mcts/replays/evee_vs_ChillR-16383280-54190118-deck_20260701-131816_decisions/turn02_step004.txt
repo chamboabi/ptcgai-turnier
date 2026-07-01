@@ -1,0 +1,52 @@
+Turn 2  (action #2, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.5197
+CHOSEN: card @ deck[12] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     126   -0.5113   -0.1814   0.048  card @ deck[12] (p0)
+     126   -0.5106   -0.1814   0.048  card @ deck[17] (p0)
+     120   -0.5264   -0.1863   0.154  card @ deck[13] (p0)
+     120   -0.5268   -0.1863   0.154  card @ deck[16] (p0)
+     120   -0.5266   -0.1863   0.154  card @ deck[20] (p0)
+     118   -0.5100   -0.1863   0.154  card @ deck[45] (p0)
+      90   -0.5244   -0.1993   0.097  card @ deck[23] (p0)
+      90   -0.5238   -0.1993   0.097  card @ deck[42] (p0)
+      90   -0.5243   -0.1993   0.097  card @ deck[43] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.14x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.58x  Boss’s Orders
+    0.99  3.85x  Full Metal Lab
+    0.95  3.65x  Jumbo Ice Cream
+    0.95  3.79x  Cinderace
+    0.94  0.98x  Relicanth
+    0.94  3.73x  Explorer’s Guidance
+    0.16  0.35x  Judge
+    0.10  0.22x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    1x Duraludon
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    2x Jumbo Ice Cream
+    1x Cinderace
+    1x Full Metal Lab
+    1x Pokégear 3.0
+    1x Night Stretcher
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[12] (p0)  (v=-0.5113)
+  2. [Evee] card @ deck[12] (p0)  (v=-0.5308)
+  3. [Evee] Pecharunt @ active[0] (p0)  (v=-0.5491)
+  4. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])  (v=-0.6339)
+  5. [Evee] END turn  (v=-0.9512)
+  6. [opponent] play Snorlax (hand[6])  (v=+0.1266)

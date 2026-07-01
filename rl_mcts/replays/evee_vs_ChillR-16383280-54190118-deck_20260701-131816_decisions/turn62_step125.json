@@ -1,0 +1,239 @@
+{
+  "turn": 62,
+  "turn_action_count": 11,
+  "acting_player_index": 0,
+  "selecting": "CARD / ATTACH_FROM",
+  "root_value": -1.456,
+  "chosen_action": "Sylveon @ bench[0] (p0)",
+  "candidates": [
+    {
+      "action": "Sylveon @ bench[0] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.3379,
+      "nn_value": 0.1547,
+      "visits": 252,
+      "search_mean_value": -1.4623,
+      "expanded": true,
+      "policy_target": -0.0063
+    },
+    {
+      "action": "Sylveon @ bench[1] (p0)",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.3379,
+      "nn_value": 0.1375,
+      "visits": 251,
+      "search_mean_value": -1.4632,
+      "expanded": true,
+      "policy_target": -0.0072
+    },
+    {
+      "action": "Munkidori @ bench[3] (p0)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1621,
+      "nn_value": 0.1371,
+      "visits": 249,
+      "search_mean_value": -1.454,
+      "expanded": true,
+      "policy_target": 0.0019
+    },
+    {
+      "action": "Munkidori @ bench[4] (p0)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.1621,
+      "nn_value": 0.1345,
+      "visits": 248,
+      "search_mean_value": -1.4505,
+      "expanded": true,
+      "policy_target": 0.0055
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.8557,
+        "expected_copies": 1.7629
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.4227,
+        "expected_copies": 0.4227
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 10
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 4
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 3
+      },
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 3
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 2
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 2
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 9
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 3
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 4
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Sylveon @ bench[0] (p0)",
+      "value": -1.4623
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])",
+      "value": -1.4989
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -1.6482
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "ATTACK (attackId 223)",
+      "value": -2.8464
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])",
+      "value": -2.819
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ability Munkidori",
+      "value": -2.819
+    }
+  ]
+}

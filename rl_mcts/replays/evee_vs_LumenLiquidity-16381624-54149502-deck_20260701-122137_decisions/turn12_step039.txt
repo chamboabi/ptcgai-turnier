@@ -1,0 +1,56 @@
+Turn 12  (action #7, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.4145
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     563   -0.4087   -0.0950   0.302  retreat
+     302   -0.4070   +0.1269   0.126  ATTACK (attackId 11)
+     102   -0.4253   -0.0950   0.161  ATTACK (attackId 10)
+      33   -0.5594   +0.0789   0.411  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Enriching Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Dawn
+    1x Lana’s Aid
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=-0.4087)
+  2. [Evee] energy x1 @ active[0]  (v=-0.4021)
+  3. [Evee] Eevee @ bench[0] (p0)  (v=-0.3877)
+  4. [Evee] play Wondrous Patch (hand[0])  (v=-0.3652)
+  5. [Evee] Basic {P} Energy @ discard[9] (p0)  (v=-0.3668)
+  6. [Evee] Espeon ex @ bench[2] (p0)  (v=-0.3761)
+  7. [Evee] ATTACK (attackId 39)  (v=-0.3460)
+  8. [Evee] card @ deck[1] (p0)  (v=-0.3211)
+  9. [opponent] ATTACK (attackId 1070)  (v=-1.0270)
+  10. [opponent] Abra @ bench[1] (p1)  (v=-1.0206)
+  11. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])  (v=-1.0704)

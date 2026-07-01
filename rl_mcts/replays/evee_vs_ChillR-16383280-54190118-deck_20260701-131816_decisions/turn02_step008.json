@@ -1,0 +1,469 @@
+{
+  "turn": 2,
+  "turn_action_count": 6,
+  "acting_player_index": 0,
+  "selecting": "CARD / TO_HAND",
+  "root_value": -0.5345,
+  "chosen_action": "card @ deck[5] (p0)",
+  "candidates": [
+    {
+      "action": "card @ deck[5] (p0)",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1105,
+      "nn_value": -0.2151,
+      "visits": 319,
+      "search_mean_value": -0.529,
+      "expanded": true,
+      "policy_target": 0.0055
+    },
+    {
+      "action": "card @ deck[9] (p0)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1105,
+      "nn_value": -0.2151,
+      "visits": 318,
+      "search_mean_value": -0.527,
+      "expanded": true,
+      "policy_target": 0.0075
+    },
+    {
+      "action": "card @ deck[24] (p0)",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0552,
+      "nn_value": -0.1983,
+      "visits": 69,
+      "search_mean_value": -0.5366,
+      "expanded": true,
+      "policy_target": -0.0021
+    },
+    {
+      "action": "card @ deck[34] (p0)",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0552,
+      "nn_value": -0.1983,
+      "visits": 69,
+      "search_mean_value": -0.5356,
+      "expanded": true,
+      "policy_target": -0.0012
+    },
+    {
+      "action": "card @ deck[35] (p0)",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0552,
+      "nn_value": -0.1983,
+      "visits": 57,
+      "search_mean_value": -0.4897,
+      "expanded": true,
+      "policy_target": 0.0448
+    },
+    {
+      "action": "card @ deck[4] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0552,
+      "nn_value": -0.1983,
+      "visits": 35,
+      "search_mean_value": -0.542,
+      "expanded": true,
+      "policy_target": -0.0075
+    },
+    {
+      "action": "card @ deck[23] (p0)",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0527,
+      "nn_value": -0.2024,
+      "visits": 29,
+      "search_mean_value": -0.5519,
+      "expanded": true,
+      "policy_target": -0.0175
+    },
+    {
+      "action": "card @ deck[27] (p0)",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0527,
+      "nn_value": -0.2024,
+      "visits": 29,
+      "search_mean_value": -0.5505,
+      "expanded": true,
+      "policy_target": -0.016
+    },
+    {
+      "action": "card @ deck[10] (p0)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.1503,
+      "nn_value": -0.2009,
+      "visits": 25,
+      "search_mean_value": -0.6081,
+      "expanded": true,
+      "policy_target": -0.0736
+    },
+    {
+      "action": "card @ deck[13] (p0)",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1522,
+      "nn_value": -0.2009,
+      "visits": 25,
+      "search_mean_value": -0.6093,
+      "expanded": true,
+      "policy_target": -0.0748
+    },
+    {
+      "action": "card @ deck[37] (p0)",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.1503,
+      "nn_value": -0.2009,
+      "visits": 25,
+      "search_mean_value": -0.6086,
+      "expanded": true,
+      "policy_target": -0.0741
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 0.9425,
+      "Carmine": 0.0575,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 190,
+        "name": "Archaludon ex",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 1.0,
+        "expected_copies": 3.1416
+      },
+      {
+        "card_id": 1121,
+        "name": "Ultra Ball",
+        "probability": 1.0,
+        "expected_copies": 3.9912
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.9425
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 3.9956
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 1.0,
+        "expected_copies": 3.9956
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.9867,
+        "expected_copies": 3.5841
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.9867,
+        "expected_copies": 3.8451
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 0.9513,
+        "expected_copies": 3.6549
+      },
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 0.9469,
+        "expected_copies": 3.7876
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.9381,
+        "expected_copies": 0.9823
+      },
+      {
+        "card_id": 1185,
+        "name": "Explorer’s Guidance",
+        "probability": 0.9381,
+        "expected_copies": 3.7257
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1593,
+        "expected_copies": 0.3451
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.1018,
+        "expected_copies": 0.2212
+      },
+      {
+        "card_id": 1192,
+        "name": "Carmine",
+        "probability": 0.0708,
+        "expected_copies": 0.2566
+      },
+      {
+        "card_id": 1123,
+        "name": "Switch",
+        "probability": 0.0442,
+        "expected_copies": 0.0885
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0265,
+        "expected_copies": 0.0487
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 1
+      },
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 10
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 4
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 4
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 4
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 3
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 3
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1213,
+        "name": "Judge",
+        "count": 1
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      },
+      {
+        "id": 1213,
+        "name": "Judge",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[5] (p0)",
+      "value": -0.529
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Munkidori (hand[6])",
+      "value": -0.4923
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {D} Energy (hand[0]) -> Pecharunt (active[0])",
+      "value": -0.537
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": -0.6085
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "ATTACK (attackId 223)",
+      "value": -1.2467
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -1.6498
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[2])",
+      "value": -0.8753
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+Turn 4  (action #4, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.6465
+CHOSEN: card @ prize[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     173   -0.6578   -0.0108   0.306  card @ prize[0] (p0)
+     173   -0.6578   -0.0108   0.306  card @ prize[2] (p0)
+     165   -0.6402   -0.0108   0.087  card @ prize[1] (p0)
+     165   -0.6454   -0.0108   0.136  card @ prize[4] (p0)
+     162   -0.6408   -0.0108   0.092  card @ prize[3] (p0)
+     162   -0.6393   -0.0108   0.073  card @ prize[5] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Shaymin
+    1x Telepath Psychic Energy
+  sampled opponent hand (this search):
+    1x Dawn
+    1x Nighttime Mine
+    1x Basic {P} Energy
+    1x Sacred Ash
+    1x Alakazam
+    1x Hilda
+
+Predicted line (principal variation):
+  1. [Evee] Pecharunt @ prize[0] (p0)  (v=-0.6578)
+  2. [opponent] Abra @ bench[2] (p1)  (v=-0.7880)
+  3. [opponent] ATTACK (attackId 1070)  (v=-0.8881)
+  4. [opponent] Abra @ bench[1] (p1)  (v=-0.9397)
+  5. [Evee] ATTACK (attackId 11)  (v=-0.9135)
+  6. [Evee] Pecharunt @ prize[1] (p0)  (v=-0.9245)
+  7. [opponent] Shaymin @ bench[0] (p1)  (v=-0.9048)
+  8. [opponent] play Dawn (hand[0])  (v=-0.8883)

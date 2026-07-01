@@ -1,0 +1,50 @@
+Turn 2  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0169
+CHOSEN: attach Basic {P} Energy (hand[4]) -> Eevee (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     557   -0.0091   +0.0128   0.134  attach Basic {P} Energy (hand[4]) -> Eevee (active[0])
+     197   -0.0033   +0.0128   0.134  attach Basic {P} Energy (hand[6]) -> Eevee (active[0])
+     131   -0.0280   -0.0339   0.243  play Energy Search Pro (hand[3])
+      83   -0.0249   +0.0118   0.099  attach Basic {D} Energy (hand[0]) -> Eevee (active[0])
+      20   -0.0607   -0.0328   0.095  play Energy Search (hand[1])
+      12   -0.3516   -0.1217   0.294  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Telepath Psychic Energy
+    1x Shaymin
+  sampled opponent hand (this search):
+    1x Dawn
+    1x Battle Cage
+    1x Rare Candy
+    1x Snorlax
+    1x Dudunsparce
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {P} Energy (hand[4]) -> Eevee (active[0])  (v=-0.0091)
+  2. [Evee] play Energy Search Pro (hand[3])  (v=+0.0030)
+  3. [Evee] card @ deck[1] (p0)  (v=-0.0010)
+  4. [Evee] card @ deck[8] (p0)  (v=-0.0036)
+  5. [Evee] card @ deck[12] (p0)  (v=-0.0391)
+  6. [Evee] END turn  (v=-0.1068)

@@ -1,0 +1,70 @@
+Turn 7  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.2220
+CHOSEN: play Crushing Hammer (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     546   +0.0342   -0.4320   0.172  play Crushing Hammer (hand[1])
+     258   -0.0141   +0.3665   0.403  END turn
+     112   +1.8728   -0.4359   0.212  retreat
+      84   -0.0249   -0.4359   0.213  ATTACK (attackId 39)
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Duraludon
+    1.00  4.00x  Archaludon ex
+    1.00  3.09x  Night Stretcher
+    1.00  4.00x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.84x  Full Metal Lab
+    0.95  3.72x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+  known (visible) opponent cards:
+    1x Relicanth
+    1x Basic {M} Energy
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    3x Full Metal Lab
+    1x Pokégear 3.0
+    1x Snorlax
+    1x Duraludon
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] play Crushing Hammer (hand[1])  (v=+0.0342)
+  2. [Evee] energy x1 @ active[0]  (v=+0.0351)
+  3. [Evee] END turn  (v=+0.0469)
+  4. [opponent] END turn  (v=+0.0319)
+  5. [Evee] END turn  (v=+0.0131)
+  6. [opponent] END turn  (v=-0.0066)
+  7. [Evee] END turn  (v=+0.0183)
+  8. [opponent] END turn  (v=-0.0067)
+  9. [Evee] END turn  (v=+0.0293)
+  10. [opponent] END turn  (v=+0.0024)
+  11. [Evee] END turn  (v=+0.0475)
+  12. [opponent] END turn  (v=+0.0137)
+  13. [Evee] END turn  (v=+0.0825)
+  14. [opponent] END turn  (v=+0.0379)
+  15. [Evee] END turn  (v=+0.1397)
+  16. [opponent] END turn  (v=+0.0778)
+  17. [Evee] END turn  (v=+0.1798)
+  18. [opponent] END turn  (v=+0.0918)
+  19. [Evee] END turn  (v=+0.2127)
+  20. [opponent] END turn  (v=+0.1079)
+  21. [Evee] END turn  (v=+0.2136)
+  22. [opponent] END turn  (v=+0.1059)
+  23. [Evee] END turn  (v=+0.1965)
+  24. [opponent] END turn  (v=+0.1072)
+  25. [Evee] END turn  (v=+0.1842)
+  26. [opponent] END turn  (v=-0.0004)
+  27. [Evee] END turn  (v=+0.4290)
+  28. [opponent] play Duraludon (hand[4])  (v=+0.4217)

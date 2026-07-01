@@ -1,0 +1,52 @@
+Turn 62  (action #4, P0 Evee)
+Selecting: CARD / DAMAGE_COUNTER
+Root value: +3.4581
+CHOSEN: Archaludon ex @ bench[0] (p1)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     978   +3.4927   +3.1259   0.312  Archaludon ex @ bench[0] (p1)
+       8   +1.9107   +3.1241   0.188  Duraludon @ active[0] (p1)
+       7   +2.1576   +3.1255   0.312  Archaludon ex @ bench[1] (p1)
+       7   +2.1620   +3.1244   0.188  Duraludon @ bench[2] (p1)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] Archaludon ex @ bench[0] (p1)  (v=+3.4927)
+  2. [Evee] play Judge (hand[2])  (v=+3.8603)
+  3. [Evee] END turn  (v=+3.9561)
+  4. [opponent] END turn  (v=+3.9074)
+  5. [Evee] END turn  (v=+3.9801)
+  6. [opponent] END turn  (v=+3.9235)
+  7. [Evee] END turn  (v=+3.2143)
+  8. [opponent] END turn  (v=+3.0501)
+  9. [Evee] END turn  (v=+3.1477)
+  10. [opponent] END turn  (v=+3.5549)
+  11. [Evee] END turn  (v=+3.6890)
+  12. [opponent] END turn  (v=+3.3974)
+  13. [Evee] END turn  (v=+3.7214)
+  14. [opponent] play Snorlax (hand[0])  (v=+4.0833)
+  15. [opponent] play Snorlax (hand[0])  (v=+3.1134)

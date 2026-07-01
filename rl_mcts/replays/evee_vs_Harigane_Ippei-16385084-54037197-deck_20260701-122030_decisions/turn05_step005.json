@@ -1,0 +1,410 @@
+{
+  "turn": 5,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 2.3602,
+  "chosen_action": "ATTACK (attackId 1296)",
+  "candidates": [
+    {
+      "action": "ATTACK (attackId 1296)",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.1759,
+      "nn_value": 7.1261,
+      "visits": 992,
+      "search_mean_value": 2.3854,
+      "expanded": true,
+      "policy_target": 0.0251
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0804,
+      "nn_value": -0.4768,
+      "visits": 1,
+      "search_mean_value": -0.4768,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0804,
+      "nn_value": -0.4768,
+      "visits": 1,
+      "search_mean_value": -0.4768,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0804,
+      "nn_value": -0.4768,
+      "visits": 1,
+      "search_mean_value": -0.4768,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0804,
+      "nn_value": -0.4768,
+      "visits": 1,
+      "search_mean_value": -0.4768,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Energy Search (hand[4])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1477,
+      "nn_value": -0.4596,
+      "visits": 1,
+      "search_mean_value": -0.4596,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Poké Pad (hand[5])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.1596,
+      "nn_value": -0.4694,
+      "visits": 1,
+      "search_mean_value": -0.4694,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Lillie's Determination (hand[6])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0939,
+      "nn_value": -0.4978,
+      "visits": 1,
+      "search_mean_value": -0.4978,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "END turn",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.1014,
+      "nn_value": 0.1285,
+      "visits": 1,
+      "search_mean_value": 0.1285,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Hop’s Choice Band": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 19,
+        "name": "Telepath Psychic Energy",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 140,
+        "name": "Fezandipiti ex",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 184,
+        "name": "Latias ex",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 272,
+        "name": "Lillie’s Clefairy ex",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1080,
+        "name": "Unfair Stamp",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1255,
+        "name": "Postwick",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 1171,
+        "name": "Hop’s Choice Band",
+        "count": 3
+      },
+      {
+        "id": 304,
+        "name": "Hop’s Snorlax",
+        "count": 2
+      },
+      {
+        "id": 878,
+        "name": "Hop's Phantump",
+        "count": 2
+      },
+      {
+        "id": 1208,
+        "name": "Iris’s Fighting Spirit",
+        "count": 2
+      },
+      {
+        "id": 11,
+        "name": "Mist Energy",
+        "count": 1
+      },
+      {
+        "id": 879,
+        "name": "Hop's Trevenant",
+        "count": 1
+      },
+      {
+        "id": 311,
+        "name": "Hop’s Cramorant",
+        "count": 1
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 1
+      },
+      {
+        "id": 1115,
+        "name": "Hop’s Bag",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 11
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1255,
+        "name": "Postwick",
+        "count": 4
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 3
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 3
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 2
+      },
+      {
+        "id": 140,
+        "name": "Fezandipiti ex",
+        "count": 1
+      },
+      {
+        "id": 184,
+        "name": "Latias ex",
+        "count": 1
+      },
+      {
+        "id": 1080,
+        "name": "Unfair Stamp",
+        "count": 1
+      },
+      {
+        "id": 272,
+        "name": "Lillie’s Clefairy ex",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 4
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 2.3854
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 2.371
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {G} Energy (hand[8]) -> Pecharunt (active[0])",
+      "value": 2.5755
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Energy Search (hand[4])",
+      "value": 2.3319
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[3] (p0)",
+      "value": 2.3229
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 2.3237
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "attach Telepath Psychic Energy (hand[3]) -> Hop’s Snorlax (active[0])",
+      "value": -1.2098
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "ATTACK (attackId 422)",
+      "value": -1.8036
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[0] (p0)",
+      "value": -2.047
+    }
+  ]
+}

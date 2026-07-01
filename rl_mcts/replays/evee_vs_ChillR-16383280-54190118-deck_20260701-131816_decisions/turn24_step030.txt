@@ -1,0 +1,52 @@
+Turn 24  (action #2, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.2170
+CHOSEN: card @ deck[6] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     269   -0.2082   -0.1592   0.064  card @ deck[6] (p0)
+     178   -0.2112   -0.1592   0.200  card @ deck[31] (p0)
+     166   -0.2195   -0.1592   0.200  card @ deck[26] (p0)
+     105   -0.2288   -0.1592   0.134  card @ deck[4] (p0)
+      96   -0.2216   -0.1592   0.134  card @ deck[24] (p0)
+      95   -0.2225   -0.1592   0.134  card @ deck[5] (p0)
+      91   -0.2265   -0.1592   0.134  card @ deck[14] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  3.85x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.60x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.24x  Xerosic’s Machinations
+    0.11  0.13x  Judge
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    3x Cinderace
+    1x Jumbo Ice Cream
+    1x Full Metal Lab
+    1x Pokégear 3.0
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[6] (p0)  (v=-0.2082)
+  2. [Evee] card @ deck[26] (p0)  (v=-0.1982)
+  3. [Evee] card @ deck[4] (p0)  (v=-0.2330)
+  4. [Evee] END turn  (v=-0.6178)
+  5. [opponent] play Snorlax (hand[8])  (v=+0.1368)

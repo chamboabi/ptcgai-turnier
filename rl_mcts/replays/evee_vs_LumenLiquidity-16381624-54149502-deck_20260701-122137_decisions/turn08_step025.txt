@@ -1,0 +1,52 @@
+Turn 8  (action #6, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0273
+CHOSEN: play Energy Search (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     723   +0.0365   +0.0251   0.194  play Energy Search (hand[1])
+     157   +0.0247   +0.2369   0.192  ATTACK (attackId 11)
+     120   -0.0246   +0.0247   0.614  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Telepath Psychic Energy
+    1x Dunsparce
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+  sampled opponent hand (this search):
+    1x Snorlax
+    1x Dudunsparce
+    1x Nighttime Mine
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] play Energy Search (hand[1])  (v=+0.0365)
+  2. [Evee] card @ deck[22] (p0)  (v=+0.0363)
+  3. [Evee] ATTACK (attackId 11)  (v=+0.0701)
+  4. [Evee] Pecharunt @ prize[1] (p0)  (v=+0.0501)
+  5. [opponent] Shaymin @ bench[0] (p1)  (v=+0.0223)
+  6. [opponent] END turn  (v=-0.0181)
+  7. [Evee] attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])  (v=-0.0219)

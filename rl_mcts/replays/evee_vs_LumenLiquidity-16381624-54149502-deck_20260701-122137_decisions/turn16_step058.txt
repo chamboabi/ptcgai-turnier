@@ -1,0 +1,64 @@
+Turn 16  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +3.5940
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     901   +3.9953   -0.1289   0.107  ability Munkidori
+      49   +0.0035   +0.1234   0.139  END turn
+      14   -0.0227   -0.0718   0.131  attach Basic {P} Energy (hand[0]) -> Sylveon (bench[0])
+       8   -0.0667   -0.1214   0.157  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])
+       8   -0.0246   -0.0664   0.076  attach Basic {P} Energy (hand[0]) -> Espeon ex (bench[2])
+       8   -0.0231   -0.0644   0.070  attach Basic {P} Energy (hand[0]) -> Munkidori (bench[3])
+       7   -0.0424   -0.1152   0.099  play Crushing Hammer (hand[2])
+       2   -0.1397   -0.1341   0.081  play Poké Pad (hand[1])
+       2   -0.1547   -0.1289   0.099  retreat
+       1   -0.0712   -0.0712   0.042  attach Basic {P} Energy (hand[0]) -> Leafeon (active[0])
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Kadabra
+    1x Hilda
+    1x Nighttime Mine
+    1x Sacred Ash
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+3.9953)
+  2. [Evee] Leafeon @ active[0] (p0)  (v=+3.9999)
+  3. [Evee] number 2  (v=+3.9771)
+  4. [Evee] Abra @ bench[2] (p1)  (v=+3.9899)
+  5. [Evee] attach Basic {P} Energy (hand[0]) -> Sylveon (bench[0])  (v=+4.0049)
+  6. [Evee] END turn  (v=+4.0294)
+  7. [opponent] END turn  (v=+3.9934)
+  8. [Evee] END turn  (v=+4.0357)
+  9. [opponent] END turn  (v=+4.0387)
+  10. [Evee] END turn  (v=+4.1220)
+  11. [opponent] play Hilda (hand[2])  (v=+4.1298)

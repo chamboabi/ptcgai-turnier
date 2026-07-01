@@ -1,0 +1,120 @@
+Turn 83  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0070
+CHOSEN: play Judge (hand[4])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     419   +0.0765   -0.1140   0.013  play Judge (hand[4])
+     258   -0.0541   +0.1831   0.019  play Hand Trimmer (hand[23])
+     129   -0.0531   +0.1831   0.019  play Hand Trimmer (hand[11])
+      14   -0.0624   -0.1138   0.013  play Judge (hand[1])
+      13   -0.0738   -0.0944   0.032  play Munkidori (hand[25])
+      13   -0.0738   -0.0944   0.032  play Munkidori (hand[28])
+       7   -0.0753   -0.0876   0.017  attach Basic {G} Energy (hand[0]) -> Eevee (active[0])
+       7   -0.0721   -0.0841   0.017  attach Basic {G} Energy (hand[0]) -> Eevee (bench[1])
+       7   -0.0994   -0.1244   0.033  play Pecharunt (hand[7])
+       7   -0.0753   -0.0876   0.017  attach Basic {G} Energy (hand[24]) -> Eevee (active[0])
+       7   -0.0721   -0.0841   0.017  attach Basic {G} Energy (hand[24]) -> Eevee (bench[1])
+       7   -0.0753   -0.0876   0.017  attach Basic {G} Energy (hand[26]) -> Eevee (active[0])
+       7   -0.0721   -0.0841   0.017  attach Basic {G} Energy (hand[26]) -> Eevee (bench[1])
+       5   -0.1062   -0.1244   0.033  play Pecharunt (hand[32])
+       4   -0.0954   -0.0268   0.020  evolve Eevee (bench[1]) -> Sylveon
+       4   -0.1079   -0.0396   0.023  evolve Eevee (bench[1]) -> Espeon ex
+       4   -0.0954   -0.0268   0.020  evolve Eevee (bench[1]) -> Sylveon
+       4   -0.1079   -0.0396   0.023  evolve Eevee (bench[1]) -> Espeon ex
+       3   -0.1280   -0.0611   0.020  evolve Eevee (active[0]) -> Sylveon
+       3   -0.1154   -0.0479   0.023  evolve Eevee (active[0]) -> Leafeon
+       3   -0.1080   -0.0409   0.023  evolve Eevee (bench[1]) -> Leafeon
+       3   -0.1246   -0.1283   0.030  play Crispin (hand[17])
+       3   -0.1373   -0.0705   0.023  evolve Eevee (active[0]) -> Espeon ex
+       3   -0.1280   -0.0611   0.020  evolve Eevee (active[0]) -> Sylveon
+       3   -0.1373   -0.0705   0.023  evolve Eevee (active[0]) -> Espeon ex
+       2   -0.1371   -0.1370   0.020  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[0])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[3]) -> Eevee (active[0])
+       2   -0.0823   -0.0820   0.007  attach Basic {P} Energy (hand[3]) -> Eevee (bench[1])
+       2   -0.1293   -0.1307   0.022  play Poké Pad (hand[9])
+       2   -0.0955   -0.1129   0.013  play Judge (hand[10])
+       2   -0.1266   -0.1287   0.021  play Energy Search (hand[13])
+       2   -0.1379   -0.1379   0.018  play Eevee (hand[15])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[20]) -> Eevee (active[0])
+       2   -0.0823   -0.0820   0.007  attach Basic {P} Energy (hand[20]) -> Eevee (bench[1])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[21]) -> Eevee (active[0])
+       2   -0.0823   -0.0820   0.007  attach Basic {P} Energy (hand[21]) -> Eevee (bench[1])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[22]) -> Eevee (active[0])
+       2   -0.0823   -0.0820   0.007  attach Basic {P} Energy (hand[22]) -> Eevee (bench[1])
+       2   -0.1371   -0.1370   0.020  attach Basic {G} Energy (hand[24]) -> Pecharunt (bench[0])
+       2   -0.1371   -0.1370   0.020  attach Basic {G} Energy (hand[26]) -> Pecharunt (bench[0])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[29]) -> Eevee (active[0])
+       2   -0.0823   -0.0820   0.007  attach Basic {P} Energy (hand[29]) -> Eevee (bench[1])
+       2   -0.1293   -0.1307   0.022  play Poké Pad (hand[33])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[34]) -> Eevee (active[0])
+       2   -0.0823   -0.0820   0.007  attach Basic {P} Energy (hand[34]) -> Eevee (bench[1])
+       2   -0.1293   -0.1307   0.022  play Poké Pad (hand[37])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[39]) -> Eevee (active[0])
+       2   -0.0823   -0.0820   0.007  attach Basic {P} Energy (hand[39]) -> Eevee (bench[1])
+       2   -0.0799   -0.0799   0.007  attach Basic {P} Energy (hand[40]) -> Eevee (active[0])
+       1   -0.1300   -0.1300   0.012  play Night Stretcher (hand[2])
+       1   -0.1270   -0.1270   0.008  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[0])
+       1   -0.1300   -0.1300   0.012  play Night Stretcher (hand[6])
+       1   -0.1300   -0.1300   0.012  play Night Stretcher (hand[12])
+       1   -0.1297   -0.1297   0.012  play Energy Search Pro (hand[14])
+       1   -0.1695   -0.1695   0.019  play Lillie's Determination (hand[16])
+       1   -0.1270   -0.1270   0.008  attach Basic {P} Energy (hand[20]) -> Pecharunt (bench[0])
+       1   -0.1270   -0.1270   0.008  attach Basic {P} Energy (hand[21]) -> Pecharunt (bench[0])
+       1   -0.1270   -0.1270   0.008  attach Basic {P} Energy (hand[22]) -> Pecharunt (bench[0])
+       1   -0.1270   -0.1270   0.008  attach Basic {P} Energy (hand[29]) -> Pecharunt (bench[0])
+       1   -0.1227   -0.1227   0.013  play Judge (hand[30])
+       1   -0.2141   -0.2141   0.019  play Lillie's Determination (hand[31])
+       1   -0.1270   -0.1270   0.008  attach Basic {P} Energy (hand[34]) -> Pecharunt (bench[0])
+       1   -0.1300   -0.1300   0.012  play Night Stretcher (hand[36])
+       1   -0.1270   -0.1270   0.008  attach Basic {P} Energy (hand[39]) -> Pecharunt (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.84x  Full Metal Lab
+    0.95  3.73x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+    0.05  0.07x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Boss’s Orders
+    1x Duraludon
+    1x Relicanth
+    1x Hero’s Cape
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Night Stretcher
+    1x Archaludon ex
+    1x Ultra Ball
+    1x Pokégear 3.0
+  sampled opponent hand (this search):
+    23x Snorlax
+    4x Cinderace
+    4x Explorer’s Guidance
+    3x Jumbo Ice Cream
+    2x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] play Judge (hand[4])  (v=+0.0765)
+  2. [Evee] END turn  (v=+0.0918)
+  3. [opponent] END turn  (v=+0.0502)
+  4. [Evee] END turn  (v=+0.0666)
+  5. [opponent] END turn  (v=-0.0003)
+  6. [Evee] END turn  (v=+0.0186)
+  7. [opponent] END turn  (v=-0.0257)
+  8. [Evee] END turn  (v=+0.0019)
+  9. [opponent] END turn  (v=-0.0423)
+  10. [Evee] END turn  (v=+0.0278)
+  11. [opponent] END turn  (v=-0.0908)
+  12. [Evee] END turn  (v=-0.0120)
+  13. [opponent] END turn  (v=-0.1299)
+  14. [Evee] END turn  (v=-0.0746)
+  15. [opponent] END turn  (v=-0.1642)
+  16. [Evee] evolve Eevee (active[0]) -> Espeon ex  (v=-0.1238)

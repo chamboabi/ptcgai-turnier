@@ -1,0 +1,58 @@
+Turn 12  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0016
+CHOSEN: play Night Stretcher (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     383   +0.0096   -0.0443   0.151  play Night Stretcher (hand[1])
+     253   +0.0063   +0.0312   0.087  evolve Eevee (bench[2]) -> Espeon ex
+     124   -0.0022   +0.1656   0.076  ATTACK (attackId 11)
+      97   +0.0025   -0.0990   0.079  play Munkidori (hand[5])
+      85   -0.0000   +0.0262   0.087  evolve Eevee (bench[0]) -> Espeon ex
+      24   -0.0620   -0.0542   0.098  ATTACK (attackId 10)
+      22   -0.0869   -0.0542   0.177  retreat
+      12   -0.2782   -0.0074   0.245  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Enriching Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Hilda
+    1x Nighttime Mine
+
+Predicted line (principal variation):
+  1. [Evee] play Night Stretcher (hand[1])  (v=+0.0096)
+  2. [Evee] Basic {D} Energy @ discard[4] (p0)  (v=+0.0097)
+  3. [Evee] ATTACK (attackId 11)  (v=+0.0214)
+  4. [Evee] Basic {P} Energy @ prize[1] (p0)  (v=+0.0290)
+  5. [opponent] Shaymin @ bench[0] (p1)  (v=+0.0594)
+  6. [opponent] END turn  (v=+0.0102)
+  7. [Evee] attach Basic {D} Energy (hand[5]) -> Pecharunt (bench[1])  (v=+0.0582)
+  8. [Evee] END turn  (v=+0.0699)
+  9. [opponent] END turn  (v=+0.0133)

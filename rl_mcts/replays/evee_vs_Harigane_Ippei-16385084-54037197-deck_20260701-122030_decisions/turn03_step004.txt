@@ -1,0 +1,61 @@
+Turn 3  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.8255
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     996   +6.8610   +2.2978   0.260  ATTACK (attackId 1296)
+       1   -0.3656   -0.3656   0.220  play Energy Search (hand[4])
+       1   -0.3779   -0.3779   0.238  play Poké Pad (hand[5])
+       1   -0.3767   -0.3767   0.135  play Lillie's Determination (hand[6])
+       1   +0.2983   +0.2983   0.148  END turn
+
+Opponent belief:
+  archetype: Hop’s Choice Band 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  4.00x  Telepath Psychic Energy
+    1.00  1.00x  Fezandipiti ex
+    1.00  1.00x  Latias ex
+    1.00  1.00x  Lillie’s Clefairy ex
+    1.00  1.00x  Hop’s Cramorant
+    1.00  4.00x  Hop's Trevenant
+    1.00  1.00x  Unfair Stamp
+    1.00  2.00x  Night Stretcher
+    1.00  4.00x  Hop’s Bag
+    1.00  3.00x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  4.00x  Boss’s Orders
+    1.00  4.00x  Lillie's Determination
+    1.00  4.00x  Postwick
+  known (visible) opponent cards:
+    2x Hop’s Choice Band
+    1x Hop’s Snorlax
+    1x Mist Energy
+    1x Hop's Phantump
+    1x Ultra Ball
+    1x Iris’s Fighting Spirit
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Unfair Stamp
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+6.8610)
+  2. [opponent] evolve Hop's Phantump (bench[0]) -> Hop's Trevenant  (v=+6.9089)
+  3. [opponent] play Snorlax (hand[1])  (v=+6.9315)
+  4. [opponent] play Snorlax (hand[1])  (v=+6.9533)
+  5. [opponent] END turn  (v=+6.9918)
+  6. [Evee] ATTACK (attackId 1296)  (v=+7.3036)
+  7. [opponent] END turn  (v=+7.2732)
+  8. [Evee] END turn  (v=+8.7475)
+  9. [opponent] play Snorlax (hand[1])  (v=+8.5882)
+  10. [opponent] play Hop’s Bag (hand[1])  (v=+8.5391)
+  11. [opponent] card @ deck[15] (p1)  (v=+8.5304)
+  12. [opponent] END turn  (v=+8.5221)
+  13. [Evee] play Judge (hand[8])  (v=+8.9346)
+  14. [Evee] END turn  (v=+9.2378)
+  15. [opponent] play Pokégear 3.0 (hand[2])  (v=+9.2027)
+  16. [opponent] card @ looking[3] (p1)  (v=+9.2410)
+  17. [opponent] attach Telepath Psychic Energy (hand[0]) -> Hop’s Cramorant (bench[4])  (v=+8.9399)
+  18. [opponent] play Poké Pad (hand[0])  (v=+8.9474)

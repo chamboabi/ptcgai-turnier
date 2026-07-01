@@ -1,0 +1,57 @@
+Turn 14  (action #10, P0 Evee)
+Selecting: CARD / ATTACH_TO
+Root value: +0.6283
+CHOSEN: Basic {G} Energy @ hand[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +0.6290   -0.0558   1.000  Basic {G} Energy @ hand[0] (p0)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    1x Xerosic’s Machinations
+    1x Enhanced Hammer
+    1x Lana’s Aid
+    1x Snorlax
+    1x Dawn
+
+Predicted line (principal variation):
+  1. [Evee] Basic {G} Energy @ hand[0] (p0)  (v=+0.6290)
+  2. [Evee] Sylveon @ bench[0] (p0)  (v=+0.6585)
+  3. [opponent] play Lana’s Aid (hand[2])  (v=+0.4407)
+  4. [opponent] Abra @ discard[0] (p1) + Dunsparce @ discard[6] (p1)  (v=+0.4396)
+  5. [opponent] ATTACK (attackId 1070)  (v=+0.6621)
+  6. [opponent] Shaymin @ bench[0] (p1)  (v=+0.6535)
+  7. [Evee] ability Munkidori  (v=+3.0953)
+  8. [Evee] Leafeon @ active[0] (p0)  (v=+3.2095)
+  9. [Evee] number 2  (v=+3.8475)
+  10. [Evee] Shaymin @ active[0] (p1)  (v=+3.9728)
+  11. [Evee] END turn  (v=+4.0358)
+  12. [opponent] END turn  (v=+3.8729)
+  13. [Evee] attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])  (v=+3.8699)

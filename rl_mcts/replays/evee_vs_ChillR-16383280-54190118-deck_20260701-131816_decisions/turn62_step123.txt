@@ -1,0 +1,53 @@
+Turn 62  (action #9, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0604
+CHOSEN: play Wondrous Patch (hand[2])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     772   +0.0998   +0.0940   0.050  play Wondrous Patch (hand[2])
+      22   -0.0060   +0.1454   0.091  attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])
+      22   -0.0064   +0.1448   0.051  attach Basic {G} Energy (hand[1]) -> Munkidori (bench[4])
+      22   -0.0060   +0.1454   0.091  attach Basic {G} Energy (hand[3]) -> Sylveon (bench[1])
+      22   -0.0064   +0.1448   0.051  attach Basic {G} Energy (hand[3]) -> Munkidori (bench[4])
+      21   -0.0167   +0.1531   0.091  attach Basic {G} Energy (hand[1]) -> Sylveon (bench[0])
+      21   -0.0167   +0.1531   0.091  attach Basic {G} Energy (hand[3]) -> Sylveon (bench[0])
+      14   -0.1156   +0.1073   0.065  attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])
+      14   -0.1255   +0.1050   0.065  attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[2])
+      14   -0.1375   +0.0909   0.051  attach Basic {G} Energy (hand[1]) -> Munkidori (bench[3])
+      14   -0.1156   +0.1073   0.065  attach Basic {G} Energy (hand[3]) -> Pecharunt (active[0])
+      14   -0.1255   +0.1050   0.065  attach Basic {G} Energy (hand[3]) -> Pecharunt (bench[2])
+      14   -0.1375   +0.0909   0.051  attach Basic {G} Energy (hand[3]) -> Munkidori (bench[3])
+       7   -0.3456   +0.1175   0.031  ATTACK (attackId 1296)
+       7   -0.3456   +0.1175   0.092  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    4x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] play Wondrous Patch (hand[2])  (v=+0.0998)
+  2. [Evee] Basic {P} Energy @ discard[22] (p0)  (v=+0.0999)
+  3. [Evee] Sylveon @ bench[0] (p0)  (v=+0.0811)
+  4. [Evee] attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])  (v=+0.1235)
+  5. [Evee] END turn  (v=+0.1140)
+  6. [opponent] play Snorlax (hand[0])  (v=+0.1056)

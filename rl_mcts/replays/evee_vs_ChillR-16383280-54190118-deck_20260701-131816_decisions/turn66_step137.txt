@@ -1,0 +1,43 @@
+Turn 66  (action #4, P0 Evee)
+Selecting: CARD / DAMAGE_COUNTER
+Root value: +3.1082
+CHOSEN: Archaludon ex @ bench[1] (p1)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     282   +3.1097   +3.1232   0.314  Archaludon ex @ bench[1] (p1)
+     278   +3.1096   +3.1237   0.314  Archaludon ex @ bench[0] (p1)
+     223   +3.1132   +3.1227   0.186  Duraludon @ active[0] (p1)
+     217   +3.1130   +3.1224   0.186  Duraludon @ bench[2] (p1)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.31  0.31x  Relicanth
+  known (visible) opponent cards:
+    11x Basic {M} Energy
+    4x Duraludon
+    4x Night Stretcher
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    3x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] Archaludon ex @ bench[1] (p1)  (v=+3.1097)
+  2. [Evee] attach Basic {D} Energy (hand[1]) -> Munkidori (bench[4])  (v=+3.1223)
+  3. [Evee] retreat  (v=+3.1346)
+  4. [Evee] energy x1 @ active[0]  (v=+3.1328)
+  5. [Evee] Pecharunt @ bench[1] (p0)  (v=+3.1298)
+  6. [Evee] END turn  (v=+3.1159)
+  7. [opponent] play Snorlax (hand[0])  (v=+3.1030)

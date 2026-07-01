@@ -1,0 +1,49 @@
+Turn 157  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.7191
+CHOSEN: ATTACK (attackId 459)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     993   +6.7741   +7.1254   0.160  ATTACK (attackId 459)
+       1   -0.1385   -0.1385   0.176  play Crispin (hand[1])
+       1   -0.1248   -0.1248   0.076  play Night Stretcher (hand[2])
+       1   -0.1390   -0.1390   0.073  play Energy Search Pro (hand[4])
+       1   -0.1567   -0.1567   0.116  play Eevee (hand[5])
+       1   -0.1269   -0.1269   0.190  play Pecharunt (hand[6])
+       1   -0.1248   -0.1248   0.076  play Night Stretcher (hand[7])
+       1   +0.1257   +0.1257   0.134  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    4x Archaludon ex
+    4x Boss’s Orders
+    4x Lillie's Determination
+    3x Duraludon
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Pokégear 3.0
+    3x Jumbo Ice Cream
+    2x Poké Pad
+    2x Full Metal Lab
+    1x Relicanth
+    1x Hero’s Cape
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    6x Snorlax
+    3x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 459)  (v=+6.7741)
+  2. [opponent] END turn  (v=+6.7663)
+  3. [Evee] play Crispin (hand[1])  (v=+6.8531)
+  4. [Evee] card @ deck[3] (p0)  (v=+6.8473)
+  5. [Evee] card @ deck[5] (p0)  (v=+6.8452)
+  6. [Evee] Pecharunt @ bench[1] (p0)  (v=+6.8509)
+  7. [Evee] play Pecharunt (hand[5])  (v=+6.8535)

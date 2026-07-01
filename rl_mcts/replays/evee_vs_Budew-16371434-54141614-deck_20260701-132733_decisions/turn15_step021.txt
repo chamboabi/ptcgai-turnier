@@ -1,0 +1,66 @@
+Turn 15  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.1011
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     980   +6.2375   +4.3747   0.064  ATTACK (attackId 1296)
+       5   -0.1733   +0.3750   0.084  END turn
+       2   -0.2865   -0.2865   0.123  play Pecharunt (hand[7])
+       1   -0.3199   -0.3199   0.074  attach Basic {G} Energy (hand[0]) -> Pecharunt (active[0])
+       1   -0.2708   -0.2708   0.063  attach Basic {G} Energy (hand[0]) -> Eevee (bench[0])
+       1   -0.2708   -0.2708   0.063  attach Basic {G} Energy (hand[0]) -> Eevee (bench[1])
+       1   -0.3591   -0.3591   0.050  play Judge (hand[1])
+       1   -0.3141   -0.3141   0.042  play Night Stretcher (hand[2])
+       1   -0.3088   -0.3088   0.031  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       1   -0.2724   -0.2724   0.027  attach Basic {P} Energy (hand[3]) -> Eevee (bench[0])
+       1   -0.2724   -0.2724   0.027  attach Basic {P} Energy (hand[3]) -> Eevee (bench[1])
+       1   -0.3607   -0.3607   0.050  play Judge (hand[4])
+       1   -0.2148   -0.2148   0.077  evolve Eevee (bench[0]) -> Sylveon
+       1   -0.2148   -0.2148   0.077  evolve Eevee (bench[1]) -> Sylveon
+       1   -0.3141   -0.3141   0.042  play Night Stretcher (hand[6])
+       1   -0.3151   -0.3151   0.108  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.84x  Full Metal Lab
+    0.95  3.72x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    1x Duraludon
+    1x Relicanth
+    1x Hero’s Cape
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Night Stretcher
+    1x Archaludon ex
+    1x Ultra Ball
+    1x Pokégear 3.0
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Jumbo Ice Cream
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+6.2375)
+  2. [opponent] play Snorlax (hand[0])  (v=+6.2292)
+  3. [opponent] play Snorlax (hand[0])  (v=+6.2142)
+  4. [opponent] play Snorlax (hand[1])  (v=+6.1887)
+  5. [opponent] END turn  (v=+6.1775)
+  6. [Evee] ATTACK (attackId 1296)  (v=+7.4887)
+  7. [opponent] END turn  (v=+7.3652)
+  8. [Evee] play Pecharunt (hand[7])  (v=+7.2266)
+  9. [Evee] END turn  (v=+7.9661)
+  10. [opponent] END turn  (v=+7.8345)
+  11. [Evee] END turn  (v=+7.8719)
+  12. [opponent] END turn  (v=+7.7500)
+  13. [Evee] play Energy Search (hand[10])  (v=+7.7487)

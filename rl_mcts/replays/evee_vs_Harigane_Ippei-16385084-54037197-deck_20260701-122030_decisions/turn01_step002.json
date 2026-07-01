@@ -1,0 +1,502 @@
+{
+  "turn": 1,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 0.2617,
+  "chosen_action": "END turn",
+  "candidates": [
+    {
+      "action": "END turn",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.1123,
+      "nn_value": 0.3051,
+      "visits": 930,
+      "search_mean_value": 0.2628,
+      "expanded": true,
+      "policy_target": 0.0011
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1905,
+      "nn_value": -0.2803,
+      "visits": 60,
+      "search_mean_value": 0.3566,
+      "expanded": true,
+      "policy_target": 0.095
+    },
+    {
+      "action": "play Energy Search (hand[5])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.1683,
+      "nn_value": -0.3357,
+      "visits": 3,
+      "search_mean_value": -0.3434,
+      "expanded": true,
+      "policy_target": -0.6051
+    },
+    {
+      "action": "play Poké Pad (hand[6])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.1783,
+      "nn_value": -0.3488,
+      "visits": 3,
+      "search_mean_value": -0.3462,
+      "expanded": true,
+      "policy_target": -0.6079
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3574,
+      "visits": 1,
+      "search_mean_value": -0.3574,
+      "expanded": true,
+      "policy_target": -0.6191
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3574,
+      "visits": 1,
+      "search_mean_value": -0.3574,
+      "expanded": true,
+      "policy_target": -0.6191
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3574,
+      "visits": 1,
+      "search_mean_value": -0.3574,
+      "expanded": true,
+      "policy_target": -0.6191
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[4]) -> Pecharunt (active[0])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3574,
+      "visits": 1,
+      "search_mean_value": -0.3574,
+      "expanded": true,
+      "policy_target": -0.6191
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Postwick": 0.6393,
+      "Hop’s Choice Band": 0.3607,
+      "Alakazam Psychic (B)": 0.0,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 19,
+        "name": "Telepath Psychic Energy",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 878,
+        "name": "Hop's Phantump",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 879,
+        "name": "Hop's Trevenant",
+        "probability": 1.0,
+        "expected_copies": 2.8852
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.7377
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 3.4918
+      },
+      {
+        "card_id": 1171,
+        "name": "Hop’s Choice Band",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 1.0,
+        "expected_copies": 3.9672
+      },
+      {
+        "card_id": 1255,
+        "name": "Postwick",
+        "probability": 1.0,
+        "expected_copies": 3.9672
+      },
+      {
+        "card_id": 11,
+        "name": "Mist Energy",
+        "probability": 0.9836,
+        "expected_copies": 3.918
+      },
+      {
+        "card_id": 1115,
+        "name": "Hop’s Bag",
+        "probability": 0.9672,
+        "expected_copies": 3.2131
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 0.9672,
+        "expected_copies": 2.5082
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.9508,
+        "expected_copies": 2.0492
+      },
+      {
+        "card_id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "probability": 0.7049,
+        "expected_copies": 2.7049
+      },
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 0.6721,
+        "expected_copies": 2.0492
+      },
+      {
+        "card_id": 1194,
+        "name": "Colress’s Tenacity",
+        "probability": 0.6557,
+        "expected_copies": 1.2623
+      },
+      {
+        "card_id": 12,
+        "name": "Legacy Energy",
+        "probability": 0.6393,
+        "expected_copies": 0.6393
+      },
+      {
+        "card_id": 65,
+        "name": "Dunsparce",
+        "probability": 0.623,
+        "expected_copies": 2.4918
+      },
+      {
+        "card_id": 1210,
+        "name": "Brock’s Scouting",
+        "probability": 0.623,
+        "expected_copies": 1.2295
+      },
+      {
+        "card_id": 311,
+        "name": "Hop’s Cramorant",
+        "probability": 0.3934,
+        "expected_copies": 0.8852
+      },
+      {
+        "card_id": 1219,
+        "name": "Team Rocket's Petrel",
+        "probability": 0.2787,
+        "expected_copies": 1.082
+      },
+      {
+        "card_id": 1225,
+        "name": "Hilda",
+        "probability": 0.2787,
+        "expected_copies": 0.8361
+      },
+      {
+        "card_id": 1134,
+        "name": "Team Rocket's Transceiver",
+        "probability": 0.2459,
+        "expected_copies": 0.9344
+      },
+      {
+        "card_id": 1092,
+        "name": "Secret Box",
+        "probability": 0.2459,
+        "expected_copies": 0.2459
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.2295,
+        "expected_copies": 0.4098
+      },
+      {
+        "card_id": 272,
+        "name": "Lillie’s Clefairy ex",
+        "probability": 0.0984,
+        "expected_copies": 0.0984
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 304,
+        "name": "Hop’s Snorlax",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1219,
+        "name": "Team Rocket's Petrel",
+        "count": 4
+      },
+      {
+        "id": 878,
+        "name": "Hop's Phantump",
+        "count": 4
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 4
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 4
+      },
+      {
+        "id": 11,
+        "name": "Mist Energy",
+        "count": 3
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 3
+      },
+      {
+        "id": 1171,
+        "name": "Hop’s Choice Band",
+        "count": 3
+      },
+      {
+        "id": 879,
+        "name": "Hop's Trevenant",
+        "count": 3
+      },
+      {
+        "id": 65,
+        "name": "Dunsparce",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 3
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 1115,
+        "name": "Hop’s Bag",
+        "count": 2
+      },
+      {
+        "id": 1210,
+        "name": "Brock’s Scouting",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 1255,
+        "name": "Postwick",
+        "count": 1
+      },
+      {
+        "id": 1194,
+        "name": "Colress’s Tenacity",
+        "count": 1
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 1
+      },
+      {
+        "id": 272,
+        "name": "Lillie’s Clefairy ex",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      },
+      {
+        "id": 65,
+        "name": "Dunsparce",
+        "count": 1
+      },
+      {
+        "id": 1194,
+        "name": "Colress’s Tenacity",
+        "count": 1
+      },
+      {
+        "id": 11,
+        "name": "Mist Energy",
+        "count": 1
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1255,
+        "name": "Postwick",
+        "count": 2
+      },
+      {
+        "id": 1115,
+        "name": "Hop’s Bag",
+        "count": 1
+      },
+      {
+        "id": 12,
+        "name": "Legacy Energy",
+        "count": 1
+      },
+      {
+        "id": 1171,
+        "name": "Hop’s Choice Band",
+        "count": 1
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.2628
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Dunsparce (hand[2])",
+      "value": 0.2431
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "attach Mist Energy (hand[3]) -> Dunsparce (bench[0])",
+      "value": 0.2187
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Poké Pad (hand[0])",
+      "value": 0.2122
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "card @ deck[45] (p1)",
+      "value": 0.1992
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Hop's Phantump (hand[3])",
+      "value": 0.1305
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0924
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])",
+      "value": 0.9641
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 2.2254
+    }
+  ]
+}

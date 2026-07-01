@@ -1,0 +1,49 @@
+Turn 2  (action #9, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.9721
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     980   +1.0216   +2.2509   0.172  ATTACK (attackId 1296)
+      15   -1.2676   -0.1227   0.252  retreat
+       5   -1.7980   +0.2490   0.576  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.14x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.58x  Boss’s Orders
+    0.99  3.85x  Full Metal Lab
+    0.95  3.65x  Jumbo Ice Cream
+    0.95  3.79x  Cinderace
+    0.94  0.98x  Relicanth
+    0.94  3.73x  Explorer’s Guidance
+    0.16  0.35x  Judge
+    0.10  0.22x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    1x Duraludon
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    2x Full Metal Lab
+    1x Poké Pad
+    1x Snorlax
+    1x Night Stretcher
+    1x Lillie's Determination
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+1.0216)
+  2. [opponent] play Snorlax (hand[1])  (v=+0.6512)
+  3. [opponent] ATTACK (attackId 223)  (v=+1.5131)
+  4. [Evee] ATTACK (attackId 1296)  (v=+2.8513)
+  5. [opponent] ATTACK (attackId 223)  (v=+2.7444)
+  6. [Evee] play Crushing Hammer (hand[6])  (v=+2.7177)
+  7. [Evee] attach Basic {P} Energy (hand[1]) -> Munkidori (bench[0])  (v=+2.8282)
+  8. [Evee] END turn  (v=+2.8075)
+  9. [opponent] play Full Metal Lab (hand[1])  (v=+3.2044)

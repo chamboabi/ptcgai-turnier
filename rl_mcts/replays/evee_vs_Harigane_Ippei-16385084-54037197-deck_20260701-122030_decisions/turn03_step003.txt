@@ -1,0 +1,56 @@
+Turn 3  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.4616
+CHOSEN: attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     987   +0.4718   -0.3256   0.172  attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+       4   +0.0874   +0.2455   0.102  END turn
+       2   -0.3875   -0.3816   0.151  play Energy Search (hand[5])
+       2   -0.3923   -0.3941   0.163  play Poké Pad (hand[6])
+       1   -0.4028   -0.4028   0.080  attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])
+       1   -0.4028   -0.4028   0.080  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+       1   -0.4028   -0.4028   0.080  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       1   -0.4028   -0.4028   0.080  attach Basic {P} Energy (hand[4]) -> Pecharunt (active[0])
+       1   -0.3959   -0.3959   0.093  play Lillie's Determination (hand[7])
+
+Opponent belief:
+  archetype: Hop’s Choice Band 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  4.00x  Telepath Psychic Energy
+    1.00  1.00x  Fezandipiti ex
+    1.00  1.00x  Latias ex
+    1.00  1.00x  Lillie’s Clefairy ex
+    1.00  1.00x  Hop’s Cramorant
+    1.00  4.00x  Hop's Trevenant
+    1.00  1.00x  Unfair Stamp
+    1.00  2.00x  Night Stretcher
+    1.00  4.00x  Hop’s Bag
+    1.00  3.00x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  4.00x  Boss’s Orders
+    1.00  4.00x  Lillie's Determination
+    1.00  4.00x  Postwick
+  known (visible) opponent cards:
+    2x Hop’s Choice Band
+    1x Hop’s Snorlax
+    1x Mist Energy
+    1x Hop's Phantump
+    1x Ultra Ball
+    1x Iris’s Fighting Spirit
+  sampled opponent hand (this search):
+    2x Poké Pad
+    1x Latias ex
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])  (v=+0.4718)
+  2. [Evee] END turn  (v=+0.5524)
+  3. [opponent] play Latias ex (hand[1])  (v=+0.5583)
+  4. [opponent] play Poké Pad (hand[0])  (v=+0.5461)
+  5. [opponent] card @ deck[23] (p1)  (v=+0.5266)
+  6. [opponent] play Poké Pad (hand[0])  (v=+0.5047)
+  7. [opponent] card @ deck[6] (p1)  (v=+0.4191)
+  8. [opponent] evolve Hop's Phantump (bench[0]) -> Hop's Trevenant  (v=+0.0846)
+  9. [opponent] play Hop’s Cramorant (hand[1])  (v=+0.1273)

@@ -1,0 +1,63 @@
+Turn 16  (action #4, P0 Evee)
+Selecting: CARD / DISCARD
+Root value: -0.2263
+CHOSEN: Energy Search @ hand[0] (p0) + Pecharunt @ hand[6] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     844   -0.1685   -0.1203   0.046  Energy Search @ hand[0] (p0) + Pecharunt @ hand[6] (p0)
+      14   -0.5008   -0.1488   0.094  Wondrous Patch @ hand[1] (p0) + Eevee @ hand[4] (p0)
+      14   -0.4877   -0.1358   0.067  Wondrous Patch @ hand[1] (p0) + Pecharunt @ hand[6] (p0)
+      14   -0.4981   -0.1449   0.104  Eevee @ hand[4] (p0) + Pecharunt @ hand[6] (p0)
+      13   -0.5158   -0.1335   0.072  Energy Search @ hand[0] (p0) + Eevee @ hand[4] (p0)
+       9   -0.4852   -0.1242   0.041  Energy Search @ hand[0] (p0) + Wondrous Patch @ hand[1] (p0)
+       9   -0.5042   -0.1461   0.030  Energy Search @ hand[0] (p0) + Crispin @ hand[2] (p0)
+       9   -0.5197   -0.1658   0.051  Wondrous Patch @ hand[1] (p0) + Crispin @ hand[2] (p0)
+       9   -0.5258   -0.1710   0.085  Crispin @ hand[2] (p0) + Eevee @ hand[4] (p0)
+       9   -0.5141   -0.1585   0.064  Crispin @ hand[2] (p0) + Pecharunt @ hand[6] (p0)
+       7   -0.6126   -0.1414   0.019  Energy Search @ hand[0] (p0) + Energy Search Pro @ hand[5] (p0)
+       7   -0.6224   -0.1568   0.025  Wondrous Patch @ hand[1] (p0) + Energy Search Pro @ hand[5] (p0)
+       7   -0.6326   -0.1660   0.038  Eevee @ hand[4] (p0) + Energy Search Pro @ hand[5] (p0)
+       7   -0.6197   -0.1526   0.028  Energy Search Pro @ hand[5] (p0) + Pecharunt @ hand[6] (p0)
+       5   -0.5029   -0.1813   0.022  Crispin @ hand[2] (p0) + Energy Search Pro @ hand[5] (p0)
+       4   -0.5619   -0.1312   0.024  Energy Search @ hand[0] (p0) + Basic {P} Energy @ hand[3] (p0)
+       4   -0.5740   -0.1510   0.036  Wondrous Patch @ hand[1] (p0) + Basic {P} Energy @ hand[3] (p0)
+       4   -0.5924   -0.1718   0.027  Crispin @ hand[2] (p0) + Basic {P} Energy @ hand[3] (p0)
+       4   -0.5831   -0.1584   0.065  Basic {P} Energy @ hand[3] (p0) + Eevee @ hand[4] (p0)
+       4   -0.5701   -0.1442   0.043  Basic {P} Energy @ hand[3] (p0) + Pecharunt @ hand[6] (p0)
+       3   -0.7301   -0.1677   0.019  Basic {P} Energy @ hand[3] (p0) + Energy Search Pro @ hand[5] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  3.85x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.60x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.24x  Xerosic’s Machinations
+    0.11  0.13x  Judge
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    2x Pokégear 3.0
+    2x Boss’s Orders
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] Energy Search @ hand[0] (p0) + Pecharunt @ hand[6] (p0)  (v=-0.1685)
+  2. [Evee] play Energy Search Pro (hand[4])  (v=-0.1536)
+  3. [Evee] card @ deck[1] (p0)  (v=-0.1487)
+  4. [Evee] card @ deck[8] (p0)  (v=-0.1497)
+  5. [Evee] card @ deck[3] (p0)  (v=-0.1523)
+  6. [Evee] attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])  (v=-0.1503)

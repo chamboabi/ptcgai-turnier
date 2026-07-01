@@ -1,0 +1,42 @@
+Turn 48  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1197
+CHOSEN: play Hand Trimmer (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     574   +0.1063   +0.1678   0.353  play Hand Trimmer (hand[0])
+     426   +0.1380   +0.1676   0.647  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  1.00x  Hero’s Cape
+    0.87  2.07x  Boss’s Orders
+    0.51  0.51x  Relicanth
+  known (visible) opponent cards:
+    6x Basic {M} Energy
+    3x Ultra Ball
+    2x Duraludon
+    2x Night Stretcher
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    2x Lillie's Determination
+    2x Poké Pad
+    1x Archaludon ex
+    1x Pokégear 3.0
+    1x Full Metal Lab
+    1x Xerosic’s Machinations
+  sampled opponent hand (this search):
+    5x Snorlax
+    1x Relicanth
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] play Hand Trimmer (hand[0])  (v=+0.1063)
+  2. [opponent] Snorlax @ hand[1] (p1) + Snorlax @ hand[4] (p1)  (v=+0.0511)
+  3. [Evee] END turn  (v=+0.0511)
+  4. [opponent] play Snorlax (hand[4])  (v=+0.0421)
+  5. [opponent] play Snorlax (hand[4])  (v=+0.0214)
+  6. [opponent] play Snorlax (hand[0])  (v=+0.0033)

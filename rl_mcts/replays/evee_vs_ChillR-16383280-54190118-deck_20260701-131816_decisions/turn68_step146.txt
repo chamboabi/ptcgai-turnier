@@ -1,0 +1,43 @@
+Turn 68  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1049
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +0.1049   +0.1896   1.000  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.31  0.31x  Relicanth
+  known (visible) opponent cards:
+    11x Basic {M} Energy
+    4x Duraludon
+    4x Night Stretcher
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    4x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.1049)
+  2. [opponent] play Snorlax (hand[0])  (v=+0.1017)
+  3. [opponent] END turn  (v=+0.0803)
+  4. [Evee] END turn  (v=+0.0884)
+  5. [opponent] play Snorlax (hand[0])  (v=+0.0957)
+  6. [opponent] END turn  (v=+0.0948)
+  7. [Evee] attach Basic {D} Energy (hand[4]) -> Sylveon (bench[0])  (v=+0.2298)
+  8. [Evee] END turn  (v=+0.3948)
+  9. [opponent] END turn  (v=+0.5329)
+  10. [Evee] END turn  (v=+1.0000)

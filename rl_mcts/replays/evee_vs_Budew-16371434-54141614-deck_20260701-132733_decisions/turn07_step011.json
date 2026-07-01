@@ -1,0 +1,477 @@
+{
+  "turn": 7,
+  "turn_action_count": 4,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": -0.014,
+  "chosen_action": "play Crushing Hammer (hand[5])",
+  "candidates": [
+    {
+      "action": "play Crushing Hammer (hand[5])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1468,
+      "nn_value": -0.4338,
+      "visits": 664,
+      "search_mean_value": 0.0428,
+      "expanded": true,
+      "policy_target": 0.0569
+    },
+    {
+      "action": "END turn",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.3444,
+      "nn_value": 0.3687,
+      "visits": 152,
+      "search_mean_value": -0.1207,
+      "expanded": true,
+      "policy_target": -0.1067
+    },
+    {
+      "action": "play Crushing Hammer (hand[1])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.1468,
+      "nn_value": -0.436,
+      "visits": 98,
+      "search_mean_value": -0.1178,
+      "expanded": true,
+      "policy_target": -0.1037
+    },
+    {
+      "action": "ATTACK (attackId 39)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1814,
+      "nn_value": -0.4344,
+      "visits": 79,
+      "search_mean_value": -0.1219,
+      "expanded": true,
+      "policy_target": -0.1078
+    },
+    {
+      "action": "retreat",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.1806,
+      "nn_value": -0.4344,
+      "visits": 7,
+      "search_mean_value": -0.3627,
+      "expanded": true,
+      "policy_target": -0.3487
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 0.9429,
+      "Carmine": 0.0571,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 169,
+        "name": "Duraludon",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 190,
+        "name": "Archaludon ex",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 1.0,
+        "expected_copies": 3.0905
+      },
+      {
+        "card_id": 1121,
+        "name": "Ultra Ball",
+        "probability": 1.0,
+        "expected_copies": 3.9952
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.9381
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 3.9952
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 1.0,
+        "expected_copies": 3.9952
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.9857,
+        "expected_copies": 3.8429
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 0.9476,
+        "expected_copies": 3.719
+      },
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 0.9429,
+        "expected_copies": 3.7714
+      },
+      {
+        "card_id": 1185,
+        "name": "Explorer’s Guidance",
+        "probability": 0.9381,
+        "expected_copies": 3.7238
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1667,
+        "expected_copies": 0.3619
+      },
+      {
+        "card_id": 1192,
+        "name": "Carmine",
+        "probability": 0.0667,
+        "expected_copies": 0.2524
+      },
+      {
+        "card_id": 1123,
+        "name": "Switch",
+        "probability": 0.0476,
+        "expected_copies": 0.0952
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0476,
+        "expected_copies": 0.081
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0286,
+        "expected_copies": 0.0524
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 11
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 4
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 4
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 3
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 3
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 2
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 2
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Crushing Hammer (hand[5])",
+      "value": 0.0428
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "energy x1 @ active[0]",
+      "value": 0.0435
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0403
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.052
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {G} Energy (hand[0]) -> Eevee (active[0])",
+      "value": -0.0369
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0228
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0473
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0238
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0559
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0278
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.066
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0304
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0947
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0155
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1291
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0337
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1887
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0967
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.2353
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.1339
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.3669
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Munkidori (hand[10])",
+      "value": -0.3328
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Pecharunt (hand[7])",
+      "value": -0.3196
+    }
+  ]
+}

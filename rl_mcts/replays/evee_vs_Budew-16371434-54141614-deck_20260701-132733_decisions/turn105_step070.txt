@@ -1,0 +1,76 @@
+Turn 105  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1194
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     756   -0.1086   +0.1461   0.060  END turn
+      35   -0.1381   -0.1750   0.084  play Munkidori (hand[3])
+      35   -0.1381   -0.1750   0.084  play Munkidori (hand[4])
+      32   -0.1171   -0.1578   0.023  attach Basic {P} Energy (hand[7]) -> Sylveon (active[0])
+      22   -0.1412   -0.0990   0.061  evolve Eevee (bench[1]) -> Espeon ex
+      19   -0.1408   +0.1471   0.052  play Hand Trimmer (hand[10])
+      15   -0.1218   -0.1578   0.023  attach Basic {P} Energy (hand[8]) -> Sylveon (active[0])
+       9   -0.2051   -0.2040   0.077  play Crispin (hand[1])
+       9   -0.2051   -0.2040   0.077  play Crispin (hand[12])
+       9   -0.2173   -0.2041   0.078  retreat
+       8   -0.1957   -0.2047   0.056  play Energy Search (hand[0])
+       7   -0.2006   -0.2075   0.058  play Poké Pad (hand[5])
+       6   -0.1480   -0.1578   0.023  attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])
+       6   -0.2134   -0.2238   0.053  play Eevee (hand[6])
+       5   -0.1479   -0.1589   0.019  attach Basic {P} Energy (hand[2]) -> Eevee (bench[1])
+       5   -0.1479   -0.1589   0.019  attach Basic {P} Energy (hand[7]) -> Eevee (bench[1])
+       5   -0.1479   -0.1589   0.019  attach Basic {P} Energy (hand[8]) -> Eevee (bench[1])
+       4   -0.2037   -0.2037   0.032  play Energy Search Pro (hand[11])
+       4   -0.1961   -0.2060   0.034  play Night Stretcher (hand[13])
+       3   -0.1795   -0.1980   0.023  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+       3   -0.1795   -0.1980   0.023  attach Basic {P} Energy (hand[7]) -> Pecharunt (bench[0])
+       3   -0.1795   -0.1980   0.023  attach Basic {P} Energy (hand[8]) -> Pecharunt (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    14x Snorlax
+    1x Cinderace
+    1x Full Metal Lab
+    1x Explorer’s Guidance
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.1086)
+  2. [opponent] END turn  (v=-0.1172)
+  3. [Evee] END turn  (v=-0.1045)
+  4. [opponent] END turn  (v=-0.1147)
+  5. [Evee] END turn  (v=-0.1002)
+  6. [opponent] END turn  (v=-0.1153)
+  7. [Evee] END turn  (v=-0.0984)
+  8. [opponent] END turn  (v=-0.1173)
+  9. [Evee] END turn  (v=-0.0987)
+  10. [opponent] END turn  (v=-0.1261)
+  11. [Evee] END turn  (v=-0.1024)
+  12. [opponent] END turn  (v=-0.1534)
+  13. [Evee] play Hand Trimmer (hand[10])  (v=-0.1239)
+  14. [opponent] Snorlax @ hand[0] (p1) + Snorlax @ hand[1] (p1) + Cinderace @ hand[2] (p1) + Full Metal Lab @ hand[3] (p1) + Snorlax @ hand[4] (p1) + Snorlax @ hand[5] (p1) + Snorlax @ hand[6] (p1) + Snorlax @ hand[7] (p1) + Snorlax @ hand[8] (p1) + Snorlax @ hand[9] (p1) + Snorlax @ hand[10] (p1) + Explorer’s Guidance @ hand[11] (p1) + Snorlax @ hand[12] (p1) + Snorlax @ hand[13] (p1) + Snorlax @ hand[14] (p1) + Snorlax @ hand[15] (p1) + Cinderace @ hand[21] (p1) + Cinderace @ hand[22] (p1)  (v=-0.1450)
+  15. [Evee] Energy Search @ hand[0] (p0) + Crispin @ hand[1] (p0) + Basic {P} Energy @ hand[2] (p0) + Munkidori @ hand[3] (p0) + Munkidori @ hand[4] (p0) + Poké Pad @ hand[5] (p0) + Eevee @ hand[6] (p0) + Basic {P} Energy @ hand[7] (p0) + Basic {P} Energy @ hand[8] (p0) + Espeon ex @ hand[9] (p0) + Energy Search Pro @ hand[10] (p0) + Night Stretcher @ hand[12] (p0) + Wondrous Patch @ hand[14] (p0) + Energy Search @ hand[15] (p0)  (v=-0.1460)

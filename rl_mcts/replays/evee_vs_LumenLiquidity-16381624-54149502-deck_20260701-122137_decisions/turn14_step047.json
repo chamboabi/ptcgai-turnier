@@ -1,0 +1,567 @@
+{
+  "turn": 14,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 2.7385,
+  "chosen_action": "attach Basic {D} Energy (hand[2]) -> Munkidori (bench[3])",
+  "candidates": [
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Munkidori (bench[3])",
+      "select": [
+        14
+      ],
+      "nn_policy_prior": 0.0328,
+      "nn_value": 0.022,
+      "visits": 928,
+      "search_mean_value": 2.957,
+      "expanded": true,
+      "policy_target": 0.2185
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[1])",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.0858,
+      "nn_value": 0.0088,
+      "visits": 10,
+      "search_mean_value": -0.0256,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Sylveon (active[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0747,
+      "nn_value": -0.0027,
+      "visits": 6,
+      "search_mean_value": -0.0386,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[1]) -> Sylveon (active[0])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0824,
+      "nn_value": -0.0025,
+      "visits": 6,
+      "search_mean_value": -0.0373,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[1]) -> Espeon ex (bench[2])",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0484,
+      "nn_value": 0.0048,
+      "visits": 6,
+      "search_mean_value": -0.0329,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Sylveon (active[0])",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.0691,
+      "nn_value": -0.0034,
+      "visits": 6,
+      "search_mean_value": -0.0315,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Espeon ex (bench[2])",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.0362,
+      "nn_value": 0.0156,
+      "visits": 6,
+      "search_mean_value": -0.0205,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0992,
+      "nn_value": -0.0494,
+      "visits": 5,
+      "search_mean_value": -0.0649,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[1]) -> Munkidori (bench[3])",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0449,
+      "nn_value": 0.0071,
+      "visits": 5,
+      "search_mean_value": -0.0217,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[1])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0906,
+      "nn_value": -0.0654,
+      "visits": 4,
+      "search_mean_value": -0.0704,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Espeon ex (bench[2])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0408,
+      "nn_value": -0.004,
+      "visits": 3,
+      "search_mean_value": -0.0308,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "END turn",
+      "select": [
+        17
+      ],
+      "nn_policy_prior": 0.0882,
+      "nn_value": -0.0662,
+      "visits": 3,
+      "search_mean_value": -0.075,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Leafeon (bench[0])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0228,
+      "nn_value": -0.0124,
+      "visits": 2,
+      "search_mean_value": -0.0388,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Munkidori (bench[3])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0316,
+      "nn_value": 0.0011,
+      "visits": 2,
+      "search_mean_value": -0.0406,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[1]) -> Leafeon (bench[0])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0266,
+      "nn_value": -0.0033,
+      "visits": 2,
+      "search_mean_value": -0.0428,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Leafeon (bench[0])",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.0228,
+      "nn_value": 0.0105,
+      "visits": 2,
+      "search_mean_value": -0.0251,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Poké Pad (hand[3])",
+      "select": [
+        15
+      ],
+      "nn_policy_prior": 0.0523,
+      "nn_value": -0.056,
+      "visits": 2,
+      "search_mean_value": -0.0618,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "retreat",
+      "select": [
+        16
+      ],
+      "nn_policy_prior": 0.0508,
+      "nn_value": -0.0535,
+      "visits": 2,
+      "search_mean_value": -0.0763,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Dawn": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 142,
+        "name": "Genesect",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 742,
+        "name": "Kadabra",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 743,
+        "name": "Alakazam",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1079,
+        "name": "Rare Candy",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1081,
+        "name": "Enhanced Hammer",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1129,
+        "name": "Sacred Ash",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1184,
+        "name": "Lana’s Aid",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1225,
+        "name": "Hilda",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1231,
+        "name": "Dawn",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1266,
+        "name": "Nighttime Mine",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1156,
+        "name": "Lucky Helmet",
+        "probability": 0.3333,
+        "expected_copies": 0.3333
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 741,
+        "name": "Abra",
+        "count": 4
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 2
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 2
+      },
+      {
+        "id": 343,
+        "name": "Shaymin",
+        "count": 1
+      },
+      {
+        "id": 13,
+        "name": "Enriching Energy",
+        "count": 1
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 1
+      },
+      {
+        "id": 1161,
+        "name": "Handheld Fan",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 9
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 3
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 3
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 3
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 3
+      },
+      {
+        "id": 1266,
+        "name": "Nighttime Mine",
+        "count": 3
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 2
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 2
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 2
+      },
+      {
+        "id": 1156,
+        "name": "Lucky Helmet",
+        "count": 1
+      },
+      {
+        "id": 1184,
+        "name": "Lana’s Aid",
+        "count": 1
+      },
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 1
+      },
+      {
+        "id": 142,
+        "name": "Genesect",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 2
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 1
+      },
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 1
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1266,
+        "name": "Nighttime Mine",
+        "count": 1
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 1
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 1
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {D} Energy (hand[2]) -> Munkidori (bench[3])",
+      "value": 2.957
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ability Munkidori",
+      "value": 2.9796
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Leafeon @ bench[0] (p0)",
+      "value": 3.9096
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "number 2",
+      "value": 3.9457
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Shaymin @ bench[0] (p1)",
+      "value": 3.9482
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Poké Pad (hand[2])",
+      "value": 3.9727
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[3] (p0)",
+      "value": 3.9694
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Pecharunt (hand[2])",
+      "value": 3.989
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 3.9639
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "retreat",
+      "value": 3.9902
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "energy x1 @ active[0]",
+      "value": 4.0232
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+Turn 5  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +2.3602
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     992   +2.3854   +7.1261   0.176  ATTACK (attackId 1296)
+       1   -0.4768   -0.4768   0.080  attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])
+       1   -0.4768   -0.4768   0.080  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+       1   -0.4768   -0.4768   0.080  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+       1   -0.4768   -0.4768   0.080  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       1   -0.4596   -0.4596   0.148  play Energy Search (hand[4])
+       1   -0.4694   -0.4694   0.160  play Poké Pad (hand[5])
+       1   -0.4978   -0.4978   0.094  play Lillie's Determination (hand[6])
+       1   +0.1285   +0.1285   0.101  END turn
+
+Opponent belief:
+  archetype: Hop’s Choice Band 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  4.00x  Telepath Psychic Energy
+    1.00  1.00x  Fezandipiti ex
+    1.00  1.00x  Latias ex
+    1.00  1.00x  Lillie’s Clefairy ex
+    1.00  1.00x  Unfair Stamp
+    1.00  3.00x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  4.00x  Boss’s Orders
+    1.00  4.00x  Lillie's Determination
+    1.00  4.00x  Postwick
+  known (visible) opponent cards:
+    3x Hop’s Choice Band
+    2x Hop’s Snorlax
+    2x Hop's Phantump
+    2x Iris’s Fighting Spirit
+    1x Mist Energy
+    1x Hop's Trevenant
+    1x Hop’s Cramorant
+    1x Ultra Ball
+    1x Hop’s Bag
+    1x Night Stretcher
+  sampled opponent hand (this search):
+    1x Snorlax
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+2.3854)
+  2. [opponent] END turn  (v=+2.3710)
+  3. [Evee] attach Basic {G} Energy (hand[8]) -> Pecharunt (active[0])  (v=+2.5755)
+  4. [Evee] play Energy Search (hand[4])  (v=+2.3319)
+  5. [Evee] card @ deck[3] (p0)  (v=+2.3229)
+  6. [Evee] END turn  (v=+2.3237)
+  7. [opponent] attach Telepath Psychic Energy (hand[3]) -> Hop’s Snorlax (active[0])  (v=-1.2098)
+  8. [opponent] ATTACK (attackId 422)  (v=-1.8036)
+  9. [Evee] card @ deck[0] (p0)  (v=-2.0470)

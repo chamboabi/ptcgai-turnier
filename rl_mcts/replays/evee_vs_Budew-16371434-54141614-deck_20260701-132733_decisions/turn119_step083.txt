@@ -1,0 +1,54 @@
+Turn 119  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.9520
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     991   +1.9736   +2.0925   0.138  ATTACK (attackId 1296)
+       3   -0.1266   +0.0924   0.192  END turn
+       1   -0.2375   -0.2375   0.186  play Poké Pad (hand[0])
+       1   -0.2253   -0.2253   0.110  play Night Stretcher (hand[1])
+       1   -0.2170   -0.2170   0.166  play Lillie's Determination (hand[2])
+       1   -0.2485   -0.2485   0.072  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       1   -0.1864   -0.1864   0.073  attach Basic {P} Energy (hand[3]) -> Sylveon (bench[0])
+       1   -0.1967   -0.1967   0.062  attach Basic {P} Energy (hand[3]) -> Eevee (bench[1])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.12  0.14x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.02  0.03x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    3x Archaludon ex
+    3x Night Stretcher
+    2x Duraludon
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Ultra Ball
+    2x Pokégear 3.0
+    1x Relicanth
+    1x Hero’s Cape
+    1x Poké Pad
+    1x Jumbo Ice Cream
+    1x Full Metal Lab
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    5x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+1.9736)
+  2. [opponent] END turn  (v=+1.9932)
+  3. [Evee] END turn  (v=+2.1186)
+  4. [opponent] retreat  (v=+2.1177)
+  5. [opponent] energy x1 @ active[0]  (v=+2.2015)
+  6. [opponent] Archaludon ex @ bench[0] (p1)  (v=+2.2071)
+  7. [opponent] END turn  (v=+1.8680)
+  8. [Evee] END turn  (v=+1.9390)
+  9. [opponent] END turn  (v=+1.8810)
+  10. [Evee] END turn  (v=+1.9779)
+  11. [opponent] END turn  (v=+1.7756)

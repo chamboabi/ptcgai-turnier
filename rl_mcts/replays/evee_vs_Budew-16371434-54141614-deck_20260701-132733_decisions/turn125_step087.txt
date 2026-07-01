@@ -1,0 +1,58 @@
+Turn 125  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1401
+CHOSEN: play Munkidori (hand[3])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     482   -0.1295   -0.2047   0.214  play Munkidori (hand[3])
+     198   -0.1441   -0.2331   0.212  play Pecharunt (hand[7])
+     191   -0.1412   +0.1309   0.154  END turn
+      81   -0.1446   -0.2338   0.084  ATTACK (attackId 39)
+      14   -0.2071   -0.2371   0.088  play Night Stretcher (hand[1])
+      14   -0.2071   -0.2371   0.088  play Night Stretcher (hand[2])
+      14   -0.2071   -0.2371   0.088  play Night Stretcher (hand[4])
+       6   -0.2773   -0.2338   0.073  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.12  0.14x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.02  0.03x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    7x Basic {M} Energy
+    3x Archaludon ex
+    3x Boss’s Orders
+    3x Night Stretcher
+    2x Duraludon
+    2x Lillie's Determination
+    2x Ultra Ball
+    2x Pokégear 3.0
+    2x Jumbo Ice Cream
+    1x Relicanth
+    1x Hero’s Cape
+    1x Poké Pad
+    1x Full Metal Lab
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    2x Snorlax
+    2x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] play Munkidori (hand[3])  (v=-0.1295)
+  2. [Evee] END turn  (v=-0.1155)
+  3. [opponent] END turn  (v=-0.1307)
+  4. [Evee] END turn  (v=-0.1200)
+  5. [opponent] END turn  (v=-0.1436)
+  6. [Evee] END turn  (v=-0.1164)
+  7. [opponent] END turn  (v=-0.1440)
+  8. [Evee] END turn  (v=-0.1066)
+  9. [opponent] END turn  (v=-0.1634)
+  10. [Evee] END turn  (v=-0.0931)
+  11. [opponent] END turn  (v=-0.1812)
+  12. [Evee] END turn  (v=-0.1198)
+  13. [opponent] END turn  (v=-0.2355)
+  14. [Evee] play Pecharunt (hand[6])  (v=-0.2352)

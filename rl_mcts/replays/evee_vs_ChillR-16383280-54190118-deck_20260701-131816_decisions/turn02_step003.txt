@@ -1,0 +1,49 @@
+Turn 2  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.2413
+CHOSEN: play Crispin (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     511   -0.2404   -0.1835   0.119  play Crispin (hand[1])
+     309   -0.2129   -0.1364   0.136  attach Basic {D} Energy (hand[2]) -> Pecharunt (active[0])
+      93   -0.2620   -0.1787   0.138  play Poké Pad (hand[0])
+      25   -0.3084   -0.1771   0.131  play Lillie's Determination (hand[5])
+      24   -0.3225   -0.1861   0.142  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+      22   -0.3224   -0.1861   0.142  attach Basic {P} Energy (hand[4]) -> Pecharunt (active[0])
+      10   -0.3228   -0.1600   0.078  attach Basic {G} Energy (hand[6]) -> Pecharunt (active[0])
+       6   -0.4289   +0.1724   0.115  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.14x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.58x  Boss’s Orders
+    0.99  3.85x  Full Metal Lab
+    0.95  3.65x  Jumbo Ice Cream
+    0.95  3.79x  Cinderace
+    0.94  0.98x  Relicanth
+    0.94  3.73x  Explorer’s Guidance
+    0.16  0.35x  Judge
+    0.10  0.22x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    1x Duraludon
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Jumbo Ice Cream
+    1x Pokégear 3.0
+
+Predicted line (principal variation):
+  1. [Evee] play Crispin (hand[1])  (v=-0.2404)
+  2. [Evee] card @ deck[20] (p0)  (v=-0.2318)
+  3. [Evee] card @ deck[3] (p0)  (v=-0.3024)
+  4. [Evee] Pecharunt @ active[0] (p0)  (v=-0.3125)
+  5. [Evee] END turn  (v=-0.4389)
+  6. [opponent] play Snorlax (hand[0])  (v=+0.1045)

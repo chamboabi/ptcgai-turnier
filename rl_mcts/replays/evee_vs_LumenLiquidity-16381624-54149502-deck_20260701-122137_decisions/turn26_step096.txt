@@ -1,0 +1,61 @@
+Turn 26  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +2.0180
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     984   +2.0521   +0.0708   0.110  ability Munkidori
+       3   +0.0876   +0.0830   0.082  play Night Stretcher (hand[3])
+       2   +0.0292   +0.1318   0.105  attach Basic {D} Energy (hand[2]) -> Sylveon (bench[0])
+       2   +0.0223   +0.1249   0.131  attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[1])
+       2   +0.0223   +0.1249   0.131  attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[3])
+       2   +0.0223   +0.1249   0.131  attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[4])
+       1   +0.0929   +0.0929   0.038  play Wondrous Patch (hand[0])
+       1   +0.0787   +0.0787   0.048  attach Basic {D} Energy (hand[2]) -> Munkidori (active[0])
+       1   +0.0826   +0.0826   0.054  attach Basic {D} Energy (hand[2]) -> Espeon ex (bench[2])
+       1   +0.0708   +0.0708   0.038  retreat
+       1   -0.0759   -0.0759   0.130  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Rare Candy
+    1x Dunsparce
+    1x Lana’s Aid
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+2.0521)
+  2. [Evee] Munkidori @ active[0] (p0)  (v=+2.0541)
+  3. [Evee] number 1  (v=+2.0659)
+  4. [Evee] Shaymin @ bench[0] (p1)  (v=+2.0631)
+  5. [Evee] play Night Stretcher (hand[3])  (v=+2.0766)
+  6. [Evee] Eevee @ discard[14] (p0)  (v=+2.0604)
+  7. [Evee] attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[4])  (v=+2.0323)
+  8. [Evee] END turn  (v=+1.9224)

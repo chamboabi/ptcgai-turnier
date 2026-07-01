@@ -1,0 +1,464 @@
+{
+  "turn": 28,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": -0.1736,
+  "chosen_action": "END turn",
+  "candidates": [
+    {
+      "action": "END turn",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.0869,
+      "nn_value": 0.1718,
+      "visits": 510,
+      "search_mean_value": -0.1198,
+      "expanded": true,
+      "policy_target": 0.0539
+    },
+    {
+      "action": "play Eevee (hand[7])",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0345,
+      "nn_value": -0.1051,
+      "visits": 238,
+      "search_mean_value": -0.1957,
+      "expanded": true,
+      "policy_target": -0.022
+    },
+    {
+      "action": "play Night Stretcher (hand[1])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1281,
+      "nn_value": -0.1374,
+      "visits": 45,
+      "search_mean_value": -0.2303,
+      "expanded": true,
+      "policy_target": -0.0567
+    },
+    {
+      "action": "play Eevee (hand[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0345,
+      "nn_value": -0.1051,
+      "visits": 42,
+      "search_mean_value": -0.2208,
+      "expanded": true,
+      "policy_target": -0.0472
+    },
+    {
+      "action": "play Judge (hand[8])",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.0836,
+      "nn_value": -0.0867,
+      "visits": 28,
+      "search_mean_value": -0.2332,
+      "expanded": true,
+      "policy_target": -0.0596
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[5]) -> Pecharunt (active[0])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.1032,
+      "nn_value": -0.1447,
+      "visits": 26,
+      "search_mean_value": -0.2487,
+      "expanded": true,
+      "policy_target": -0.0751
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[4]) -> Munkidori (bench[0])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0911,
+      "nn_value": -0.0923,
+      "visits": 23,
+      "search_mean_value": -0.368,
+      "expanded": true,
+      "policy_target": -0.1944
+    },
+    {
+      "action": "retreat",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.038,
+      "nn_value": -0.1428,
+      "visits": 19,
+      "search_mean_value": -0.2766,
+      "expanded": true,
+      "policy_target": -0.103
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[3]) -> Pecharunt (active[0])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0569,
+      "nn_value": -0.1281,
+      "visits": 18,
+      "search_mean_value": -0.2225,
+      "expanded": true,
+      "policy_target": -0.0489
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[4]) -> Pecharunt (active[0])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1001,
+      "nn_value": -0.146,
+      "visits": 14,
+      "search_mean_value": -0.2758,
+      "expanded": true,
+      "policy_target": -0.1022
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[3]) -> Munkidori (bench[0])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0454,
+      "nn_value": -0.0914,
+      "visits": 13,
+      "search_mean_value": -0.3084,
+      "expanded": true,
+      "policy_target": -0.1348
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[5]) -> Munkidori (bench[0])",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.088,
+      "nn_value": -0.0963,
+      "visits": 13,
+      "search_mean_value": -0.3006,
+      "expanded": true,
+      "policy_target": -0.127
+    },
+    {
+      "action": "play Judge (hand[6])",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0836,
+      "nn_value": -0.1146,
+      "visits": 6,
+      "search_mean_value": -0.3749,
+      "expanded": true,
+      "policy_target": -0.2013
+    },
+    {
+      "action": "ATTACK (attackId 1296)",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.026,
+      "nn_value": 0.1718,
+      "visits": 5,
+      "search_mean_value": -0.3232,
+      "expanded": true,
+      "policy_target": -0.1496
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 190,
+        "name": "Archaludon ex",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.9764
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 1.0,
+        "expected_copies": 3.8538
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.9858,
+        "expected_copies": 3.6038
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.9858,
+        "expected_copies": 3.8774
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.9387,
+        "expected_copies": 0.9387
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.1085,
+        "expected_copies": 0.2358
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1085,
+        "expected_copies": 0.1321
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0283,
+        "expected_copies": 0.0519
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 3
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 2
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 12
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 3
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 3
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 1
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.1198
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1923
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Eevee (hand[7])",
+      "value": -0.1484
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {D} Energy (hand[4]) -> Munkidori (bench[0])",
+      "value": -0.1384
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.2233
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[4])",
+      "value": 0.1299
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+Turn 159  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.9898
+CHOSEN: ATTACK (attackId 459)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     539   +1.0000   +1.0000   0.118  ATTACK (attackId 459)
+     453   +1.0000   +1.0000   0.099  END turn
+       1   -0.1424   -0.1424   0.130  play Crispin (hand[1])
+       1   -0.1252   -0.1252   0.056  play Night Stretcher (hand[2])
+       1   -0.1428   -0.1428   0.054  play Energy Search Pro (hand[4])
+       1   -0.1604   -0.1604   0.085  play Eevee (hand[5])
+       1   -0.1259   -0.1259   0.140  play Pecharunt (hand[6])
+       1   -0.1252   -0.1252   0.056  play Night Stretcher (hand[7])
+       1   -0.1424   -0.1424   0.130  play Crispin (hand[8])
+       1   -0.1403   -0.1403   0.131  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Archaludon ex
+    4x Boss’s Orders
+    4x Lillie's Determination
+    3x Duraludon
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Pokégear 3.0
+    3x Jumbo Ice Cream
+    2x Poké Pad
+    2x Full Metal Lab
+    1x Relicanth
+    1x Hero’s Cape
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    7x Snorlax
+    2x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 459)  (v=+1.0000)

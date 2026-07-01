@@ -1,0 +1,50 @@
+Turn 2  (action #9, P0 Evee)
+Selecting: CARD / EVOLVES_TO
+Root value: -1.0067
+CHOSEN: card @ deck[17] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     392   -1.0168   -0.0751   0.677  card @ deck[17] (p0)
+     316   -1.0016   -0.1410   0.162  card @ deck[18] (p0)
+     292   -1.0021   -0.1410   0.162  card @ deck[16] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Telepath Psychic Energy
+    1x Shaymin
+  sampled opponent hand (this search):
+    1x Dawn
+    1x Poké Pad
+    1x Sacred Ash
+    1x Kadabra
+    1x Fezandipiti ex
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[17] (p0)  (v=-1.0168)
+  2. [opponent] ATTACK (attackId 1070)  (v=-1.0584)
+  3. [opponent] Abra @ bench[1] (p1)  (v=-1.0595)
+  4. [Evee] attach Basic {G} Energy (hand[5]) -> Leafeon (active[0])  (v=-1.0382)
+  5. [Evee] ATTACK (attackId 11)  (v=-1.0097)
+  6. [Evee] Lillie's Determination @ prize[3] (p0)  (v=-1.0120)
+  7. [opponent] Shaymin @ bench[0] (p1)  (v=-1.0133)
+  8. [opponent] evolve Abra (bench[0]) -> Kadabra  (v=-1.0576)
+  9. [opponent] YES  (v=-0.9988)

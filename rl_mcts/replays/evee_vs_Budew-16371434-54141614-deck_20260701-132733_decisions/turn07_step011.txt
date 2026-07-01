@@ -1,0 +1,67 @@
+Turn 7  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0140
+CHOSEN: play Crushing Hammer (hand[5])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     664   +0.0428   -0.4338   0.147  play Crushing Hammer (hand[5])
+     152   -0.1207   +0.3687   0.344  END turn
+      98   -0.1178   -0.4360   0.147  play Crushing Hammer (hand[1])
+      79   -0.1219   -0.4344   0.181  ATTACK (attackId 39)
+       7   -0.3627   -0.4344   0.181  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Duraludon
+    1.00  4.00x  Archaludon ex
+    1.00  3.09x  Night Stretcher
+    1.00  4.00x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.84x  Full Metal Lab
+    0.95  3.72x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+  known (visible) opponent cards:
+    1x Relicanth
+    1x Basic {M} Energy
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    2x Explorer’s Guidance
+    1x Archaludon ex
+    1x Poké Pad
+    1x Cinderace
+    1x Night Stretcher
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] play Crushing Hammer (hand[5])  (v=+0.0428)
+  2. [Evee] energy x1 @ active[0]  (v=+0.0435)
+  3. [Evee] END turn  (v=-0.0403)
+  4. [opponent] END turn  (v=-0.0520)
+  5. [Evee] attach Basic {G} Energy (hand[0]) -> Eevee (active[0])  (v=-0.0369)
+  6. [Evee] END turn  (v=-0.0228)
+  7. [opponent] END turn  (v=-0.0473)
+  8. [Evee] END turn  (v=-0.0238)
+  9. [opponent] END turn  (v=-0.0559)
+  10. [Evee] END turn  (v=-0.0278)
+  11. [opponent] END turn  (v=-0.0660)
+  12. [Evee] END turn  (v=-0.0304)
+  13. [opponent] END turn  (v=-0.0947)
+  14. [Evee] END turn  (v=-0.0155)
+  15. [opponent] END turn  (v=-0.1291)
+  16. [Evee] END turn  (v=-0.0337)
+  17. [opponent] END turn  (v=-0.1887)
+  18. [Evee] END turn  (v=-0.0967)
+  19. [opponent] END turn  (v=-0.2353)
+  20. [Evee] END turn  (v=-0.1339)
+  21. [opponent] END turn  (v=-0.3669)
+  22. [Evee] play Munkidori (hand[10])  (v=-0.3328)
+  23. [Evee] play Pecharunt (hand[7])  (v=-0.3196)

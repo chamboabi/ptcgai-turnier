@@ -1,0 +1,59 @@
+Turn 32  (action #10, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +2.7718
+CHOSEN: ATTACK (attackId 141)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     987   +2.8104   +3.1996   0.103  ATTACK (attackId 141)
+       7   +0.1655   +0.2030   0.138  END turn
+       2   -0.0493   -0.0019   0.147  evolve Eevee (bench[1]) -> Leafeon
+       1   -0.0855   -0.0855   0.207  play Night Stretcher (hand[0])
+       1   -0.0510   -0.0510   0.135  play Judge (hand[4])
+       1   -0.0615   -0.0615   0.135  play Judge (hand[5])
+       1   -0.0712   -0.0712   0.135  play Judge (hand[6])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    1x Archaludon ex
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    2x Snorlax
+    2x Full Metal Lab
+    2x Lillie's Determination
+    1x Relicanth
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 141)  (v=+2.8104)
+  2. [opponent] ATTACK (attackId 253)  (v=+2.7991)
+  3. [opponent] Snorlax @ prize[1] (p1)  (v=+2.7974)
+  4. [Evee] Eevee @ bench[1] (p0)  (v=+2.8210)
+  5. [Evee] END turn  (v=+2.8456)
+  6. [opponent] ATTACK (attackId 253)  (v=+2.8121)
+  7. [opponent] Cinderace @ prize[2] (p1)  (v=+2.8062)
+  8. [Evee] Pecharunt @ bench[0] (p0)  (v=+2.8179)
+  9. [Evee] END turn  (v=+2.8932)
+  10. [opponent] END turn  (v=+2.8034)
+  11. [Evee] END turn  (v=+3.0131)
+  12. [opponent] play Snorlax (hand[1])  (v=+3.0015)

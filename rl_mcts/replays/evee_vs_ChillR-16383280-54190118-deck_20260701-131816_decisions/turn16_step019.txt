@@ -1,0 +1,55 @@
+Turn 16  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0708
+CHOSEN: play Hand Trimmer (hand[4])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     520   -0.0810   +0.2383   0.073  play Hand Trimmer (hand[4])
+     350   -0.0208   +0.2418   0.137  END turn
+      36   -0.1258   -0.1230   0.165  play Energy Search Pro (hand[6])
+      29   -0.1672   -0.1238   0.165  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+      21   -0.1093   -0.0957   0.064  play Energy Search (hand[0])
+      16   -0.2120   -0.0660   0.140  attach Basic {P} Energy (hand[3]) -> Munkidori (bench[0])
+       9   -0.2241   -0.1329   0.100  play Pecharunt (hand[7])
+       8   -0.2081   -0.0883   0.055  play Eevee (hand[5])
+       7   -0.1634   -0.1218   0.061  retreat
+       4   -0.3595   +0.2418   0.041  ATTACK (attackId 1296)
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.14x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.58x  Boss’s Orders
+    0.99  3.85x  Full Metal Lab
+    0.95  3.65x  Jumbo Ice Cream
+    0.95  3.79x  Cinderace
+    0.94  0.98x  Relicanth
+    0.94  3.73x  Explorer’s Guidance
+    0.16  0.35x  Judge
+    0.10  0.22x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    1x Duraludon
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Cinderace
+    1x Pokégear 3.0
+    1x Snorlax
+    1x Full Metal Lab
+    1x Poké Pad
+    1x Explorer’s Guidance
+    1x Ultra Ball
+
+Predicted line (principal variation):
+  1. [Evee] play Hand Trimmer (hand[4])  (v=-0.0810)
+  2. [opponent] Pokégear 3.0 @ hand[0] (p1) + Lillie's Determination @ hand[1] (p1) + Night Stretcher @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Full Metal Lab @ hand[5] (p1) + Explorer’s Guidance @ hand[7] (p1) + Night Stretcher @ hand[8] (p1)  (v=-0.0871)
+  3. [Evee] Eevee @ hand[4] (p0) + Pecharunt @ hand[6] (p0)  (v=-0.0874)
+  4. [Evee] attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])  (v=-0.0879)

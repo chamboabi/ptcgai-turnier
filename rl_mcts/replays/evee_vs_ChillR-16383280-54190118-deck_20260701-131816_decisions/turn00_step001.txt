@@ -1,0 +1,54 @@
+Turn 0  (action #2, P0 Evee)
+Selecting: CARD / SETUP_ACTIVE_POKEMON
+Root value: -0.0894
+CHOSEN: Pecharunt @ hand[2] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.0894   -0.0823   1.000  Pecharunt @ hand[2] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 30%, Mega Lucario ex 19%, Alakazam Psychic 11%, Dragapult 7%, Postwick 5%
+  likely cards (P, E[copies]):
+    0.93  3.31x  Poké Pad
+    0.92  2.72x  Boss’s Orders
+    0.81  3.21x  Lillie's Determination
+    0.75  1.92x  Night Stretcher
+    0.57  0.57x  Hero’s Cape
+    0.50  1.91x  Pokégear 3.0
+    0.48  1.70x  Ultra Ball
+    0.45  1.75x  Buddy-Buddy Poffin
+    0.34  1.37x  Cinderace
+    0.31  3.58x  Basic {M} Energy
+    0.31  1.26x  Duraludon
+    0.31  1.26x  Archaludon ex
+    0.31  1.21x  Full Metal Lab
+    0.31  1.17x  Jumbo Ice Cream
+    0.30  1.19x  Explorer’s Guidance
+  known (visible) opponent cards:
+  sampled opponent hand (this search):
+    2x Pokégear 3.0
+    1x Explorer’s Guidance
+    1x Buddy-Buddy Poffin
+    1x Premium Power Pro
+    1x Dudunsparce
+    1x Night Stretcher
+
+Predicted line (principal variation):
+  1. [Evee] Pecharunt @ hand[2] (p0)  (v=-0.0894)
+  2. [opponent] Riolu @ hand[5] (p1)  (v=-0.0900)
+  3. [Evee] number 0  (v=-0.0948)
+  4. [opponent] Riolu @ hand[1] (p1)  (v=-0.0954)
+  5. [opponent] END turn  (v=-0.1156)
+  6. [Evee] END turn  (v=-0.0945)
+  7. [opponent] END turn  (v=-0.1037)
+  8. [Evee] END turn  (v=-0.0745)
+  9. [opponent] END turn  (v=-0.1003)
+  10. [Evee] END turn  (v=-0.0630)
+  11. [opponent] END turn  (v=-0.1009)
+  12. [Evee] END turn  (v=-0.0563)
+  13. [opponent] END turn  (v=-0.1250)
+  14. [Evee] END turn  (v=-0.0374)
+  15. [opponent] END turn  (v=-0.1547)
+  16. [Evee] END turn  (v=+0.1111)
+  17. [opponent] play Premium Power Pro (hand[1])  (v=+0.1100)

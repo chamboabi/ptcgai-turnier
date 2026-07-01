@@ -1,0 +1,63 @@
+Turn 52  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.6129
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     981   +0.6302   +0.2040   0.163  END turn
+       4   +0.1208   +0.0662   0.158  attach Basic {G} Energy (hand[1]) -> Sylveon (active[0])
+       4   +0.1351   +0.1047   0.158  attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])
+       3   +0.1099   +0.0657   0.113  attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[0])
+       3   +0.1089   +0.0657   0.113  attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[2])
+       2   +0.1462   +0.1032   0.087  attach Basic {G} Energy (hand[1]) -> Munkidori (bench[3])
+       2   -0.0047   +0.0224   0.128  retreat
+       1   -6.7598   -6.7598   0.080  ATTACK (attackId 459)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  1.00x  Hero’s Cape
+    0.85  1.90x  Boss’s Orders
+    0.49  0.49x  Relicanth
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    3x Duraludon
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Poké Pad
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    2x Xerosic’s Machinations
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.6302)
+  2. [opponent] END turn  (v=+0.5799)
+  3. [Evee] END turn  (v=+0.5979)
+  4. [opponent] END turn  (v=+0.5752)
+  5. [Evee] END turn  (v=+0.5956)
+  6. [opponent] END turn  (v=+0.5706)
+  7. [Evee] END turn  (v=+0.5925)
+  8. [opponent] END turn  (v=+0.5654)
+  9. [Evee] END turn  (v=+0.5896)
+  10. [opponent] END turn  (v=+0.5603)
+  11. [Evee] END turn  (v=+0.5864)
+  12. [opponent] END turn  (v=+0.5548)
+  13. [Evee] END turn  (v=+0.5877)
+  14. [opponent] END turn  (v=+0.5451)
+  15. [Evee] END turn  (v=+0.5878)
+  16. [opponent] END turn  (v=+0.5258)
+  17. [Evee] END turn  (v=+0.5855)
+  18. [opponent] END turn  (v=+0.4904)
+  19. [Evee] END turn  (v=+0.5997)
+  20. [opponent] END turn  (v=+0.3122)
+  21. [Evee] END turn  (v=+0.6263)
+  22. [opponent] play Snorlax (hand[0])  (v=+0.1789)

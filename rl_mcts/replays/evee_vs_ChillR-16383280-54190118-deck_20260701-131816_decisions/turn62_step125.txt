@@ -1,0 +1,43 @@
+Turn 62  (action #11, P0 Evee)
+Selecting: CARD / ATTACH_FROM
+Root value: -1.4560
+CHOSEN: Sylveon @ bench[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     252   -1.4623   +0.1547   0.338  Sylveon @ bench[0] (p0)
+     251   -1.4632   +0.1375   0.338  Sylveon @ bench[1] (p0)
+     249   -1.4540   +0.1371   0.162  Munkidori @ bench[3] (p0)
+     248   -1.4505   +0.1345   0.162  Munkidori @ bench[4] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] Sylveon @ bench[0] (p0)  (v=-1.4623)
+  2. [Evee] attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])  (v=-1.4989)
+  3. [Evee] END turn  (v=-1.6482)
+  4. [opponent] ATTACK (attackId 223)  (v=-2.8464)
+  5. [Evee] attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])  (v=-2.8190)
+  6. [Evee] ability Munkidori  (v=-2.8190)

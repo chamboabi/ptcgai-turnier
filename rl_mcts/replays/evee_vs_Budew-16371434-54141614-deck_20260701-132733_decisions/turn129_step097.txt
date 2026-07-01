@@ -1,0 +1,53 @@
+Turn 129  (action #8, P0 Evee)
+Selecting: CARD / SWITCH
+Root value: -0.0708
+CHOSEN: Eevee @ bench[2] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     896   -0.0610   -0.1808   0.261  Eevee @ bench[2] (p0)
+      63   -0.1362   -0.1882   0.413  Sylveon @ bench[0] (p0)
+      41   -0.1770   -0.1933   0.326  Pecharunt @ bench[1] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+    0.01  0.02x  Hand Trimmer
+  known (visible) opponent cards:
+    7x Basic {M} Energy
+    4x Boss’s Orders
+    3x Archaludon ex
+    3x Night Stretcher
+    2x Duraludon
+    2x Lillie's Determination
+    2x Ultra Ball
+    2x Pokégear 3.0
+    2x Jumbo Ice Cream
+    1x Relicanth
+    1x Hero’s Cape
+    1x Poké Pad
+    1x Full Metal Lab
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] Eevee @ bench[2] (p0)  (v=-0.0610)
+  2. [Evee] play Lillie's Determination (hand[0])  (v=-0.0507)
+  3. [Evee] END turn  (v=-0.0364)
+  4. [opponent] END turn  (v=-0.0569)
+  5. [Evee] END turn  (v=-0.0384)
+  6. [opponent] END turn  (v=-0.0749)
+  7. [Evee] END turn  (v=-0.0470)
+  8. [opponent] END turn  (v=-0.0794)
+  9. [Evee] END turn  (v=-0.0522)
+  10. [opponent] END turn  (v=-0.1236)
+  11. [Evee] attach Mist Energy (hand[10]) -> Munkidori (bench[2])  (v=-0.0884)
+  12. [Evee] END turn  (v=-0.0177)
+  13. [opponent] END turn  (v=-0.0648)
+  14. [Evee] END turn  (v=+0.0122)
+  15. [opponent] END turn  (v=-0.1464)

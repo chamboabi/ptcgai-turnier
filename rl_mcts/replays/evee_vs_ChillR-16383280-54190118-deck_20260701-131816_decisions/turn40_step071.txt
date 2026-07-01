@@ -1,0 +1,51 @@
+Turn 40  (action #6, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.1155
+CHOSEN: card @ deck[14] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     472   +0.1379   -0.2024   0.416  card @ deck[14] (p0)
+     303   +0.1198   -0.2163   0.288  card @ deck[7] (p0)
+     195   +0.0632   -0.2083   0.149  card @ deck[22] (p0)
+      30   +0.0700   -0.2048   0.147  card @ deck[11] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  1.00x  Hero’s Cape
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    2x Lillie's Determination
+    2x Poké Pad
+    1x Archaludon ex
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Full Metal Lab
+    1x Pokégear 3.0
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[14] (p0)  (v=+0.1379)
+  2. [Evee] evolve Eevee (active[0]) -> Sylveon  (v=+0.1549)
+  3. [Evee] play Munkidori (hand[1])  (v=+0.1737)
+  4. [Evee] END turn  (v=+0.1748)
+  5. [opponent] ATTACK (attackId 253)  (v=+0.1381)
+  6. [Evee] END turn  (v=+0.1663)
+  7. [opponent] END turn  (v=+0.0715)
+  8. [Evee] END turn  (v=+0.1415)
+  9. [opponent] END turn  (v=+0.0756)
+  10. [Evee] END turn  (v=+0.1982)
+  11. [opponent] play Snorlax (hand[2])  (v=+0.1822)

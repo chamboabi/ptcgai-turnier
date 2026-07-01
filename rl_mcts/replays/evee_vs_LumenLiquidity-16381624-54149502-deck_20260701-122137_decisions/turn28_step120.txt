@@ -1,0 +1,56 @@
+Turn 28  (action #12, P0 Evee)
+Selecting: CARD / DAMAGE_COUNTER
+Root value: -1.1705
+CHOSEN: Genesect @ bench[3] (p1)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     470   -1.1454   +2.1695   0.183  Genesect @ bench[3] (p1)
+     258   -1.1713   +2.1703   0.105  Kadabra @ bench[1] (p1)
+     258   -1.1718   +2.1699   0.179  Alakazam @ bench[2] (p1)
+      12   -1.3902   +2.1704   0.179  Alakazam @ bench[4] (p1)
+       1   -5.6493   -5.6493   0.105  Kadabra @ active[0] (p1)
+       1   -6.6452   -6.6452   0.247  Shaymin @ bench[0] (p1)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    2x Sacred Ash
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    3x Nighttime Mine
+    1x Enhanced Hammer
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] Genesect @ bench[3] (p1)  (v=-1.1454)
+  2. [Evee] END turn  (v=-1.1525)
+  3. [opponent] ATTACK (attackId 1071)  (v=-1.1800)
+  4. [Evee] retreat  (v=-1.1082)
+  5. [Evee] energy x1 @ active[0]  (v=-1.1586)
+  6. [Evee] Pecharunt @ bench[3] (p0)  (v=-1.2510)
+  7. [Evee] ability Munkidori  (v=-2.5732)
+  8. [Evee] Sylveon @ bench[2] (p0)  (v=-3.3756)
+  9. [Evee] Shaymin @ bench[0] (p1)  (v=-6.7828)

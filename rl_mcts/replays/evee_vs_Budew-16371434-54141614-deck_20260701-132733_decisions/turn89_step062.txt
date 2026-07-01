@@ -1,0 +1,66 @@
+Turn 89  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0782
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     819   -0.0674   +0.1647   0.107  END turn
+      67   -0.0964   -0.1903   0.149  play Munkidori (hand[3])
+      67   -0.0964   -0.1903   0.149  play Munkidori (hand[4])
+      10   -0.2242   -0.2274   0.137  play Crispin (hand[1])
+      10   -0.2360   -0.2235   0.139  retreat
+       8   -0.2152   -0.2168   0.102  play Energy Search (hand[0])
+       7   -0.2320   -0.2386   0.102  play Poké Pad (hand[5])
+       5   -0.1624   -0.1738   0.040  attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])
+       4   -0.1612   -0.1754   0.034  attach Basic {P} Energy (hand[2]) -> Eevee (bench[1])
+       3   -0.1950   -0.2142   0.040  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    8x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0674)
+  2. [opponent] END turn  (v=-0.0814)
+  3. [Evee] END turn  (v=-0.0685)
+  4. [opponent] END turn  (v=-0.0864)
+  5. [Evee] END turn  (v=-0.0696)
+  6. [opponent] END turn  (v=-0.0817)
+  7. [Evee] END turn  (v=-0.0645)
+  8. [opponent] END turn  (v=-0.0806)
+  9. [Evee] END turn  (v=-0.0598)
+  10. [opponent] END turn  (v=-0.0806)
+  11. [Evee] END turn  (v=-0.0559)
+  12. [opponent] END turn  (v=-0.0837)
+  13. [Evee] END turn  (v=-0.0550)
+  14. [opponent] END turn  (v=-0.0969)
+  15. [Evee] END turn  (v=-0.0610)
+  16. [opponent] END turn  (v=-0.1494)
+  17. [Evee] play Hand Trimmer (hand[13])  (v=-0.1122)
+  18. [opponent] Snorlax @ hand[0] (p1) + Snorlax @ hand[1] (p1) + Snorlax @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Cinderace @ hand[4] (p1) + Snorlax @ hand[5] (p1) + Snorlax @ hand[6] (p1) + Snorlax @ hand[7] (p1) + Snorlax @ hand[8] (p1) + Snorlax @ hand[9] (p1) + Cinderace @ hand[13] (p1) + Snorlax @ hand[14] (p1)  (v=-0.1550)
+  19. [Evee] Energy Search @ hand[0] (p0) + Crispin @ hand[1] (p0) + Basic {P} Energy @ hand[2] (p0) + Munkidori @ hand[3] (p0) + Munkidori @ hand[4] (p0) + Poké Pad @ hand[5] (p0) + Basic {P} Energy @ hand[6] (p0) + Basic {G} Energy @ hand[8] (p0)  (v=-0.1546)

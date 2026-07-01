@@ -1,0 +1,50 @@
+Turn 2  (action #5, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.0991
+CHOSEN: card @ deck[34] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     181   -0.0972   -0.0214   0.167  card @ deck[34] (p0)
+     180   -0.0974   -0.0214   0.167  card @ deck[3] (p0)
+     164   -0.1005   -0.0214   0.167  card @ deck[6] (p0)
+     161   -0.0988   -0.0214   0.167  card @ deck[2] (p0)
+     161   -0.1013   -0.0214   0.167  card @ deck[36] (p0)
+     153   -0.1001   -0.0214   0.167  card @ deck[20] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Telepath Psychic Energy
+    1x Shaymin
+  sampled opponent hand (this search):
+    1x Snorlax
+    1x Nighttime Mine
+    1x Enhanced Hammer
+    1x Kadabra
+    1x Lillie's Determination
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[34] (p0)  (v=-0.0972)
+  2. [Evee] play Energy Search (hand[1])  (v=-0.0689)
+  3. [Evee] card @ deck[17] (p0)  (v=-0.0784)
+  4. [Evee] END turn  (v=-0.1122)
+  5. [opponent] evolve Abra (bench[2]) -> Kadabra  (v=-0.1498)
+  6. [opponent] YES  (v=-0.1148)

@@ -1,0 +1,56 @@
+Turn 22  (action #2, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.0130
+CHOSEN: card @ deck[11] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     281   +0.0145   +0.0341   0.246  card @ deck[11] (p0)
+     280   +0.0143   +0.0341   0.246  card @ deck[21] (p0)
+     200   +0.0155   +0.0410   0.167  card @ deck[12] (p0)
+     171   +0.0085   +0.0775   0.229  card @ deck[18] (p0)
+      68   +0.0047   +0.0488   0.113  card @ deck[4] (p0)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    4x Poké Pad
+    3x Kadabra
+    3x Buddy-Buddy Poffin
+    3x Telepath Psychic Energy
+    2x Alakazam
+    2x Dawn
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Handheld Fan
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+  sampled opponent hand (this search):
+    6x Snorlax
+    3x Hilda
+    2x Dudunsparce
+    1x Dunsparce
+    1x Enhanced Hammer
+    1x Nighttime Mine
+    1x Rare Candy
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[11] (p0)  (v=+0.0145)
+  2. [Evee] play Pecharunt (hand[1])  (v=+0.0307)
+  3. [Evee] attach Basic {P} Energy (hand[0]) -> Espeon ex (active[0])  (v=+0.0494)
+  4. [Evee] retreat  (v=+0.0746)
+  5. [Evee] energy x1 @ active[0]  (v=+0.0673)
+  6. [Evee] Pecharunt @ bench[1] (p0)  (v=+0.0550)

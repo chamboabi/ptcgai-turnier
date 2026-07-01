@@ -1,0 +1,53 @@
+Turn 62  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +8.0901
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     989   +8.1936   +0.1243   0.231  ability Munkidori
+       4   +0.1433   +0.1720   0.202  END turn
+       2   +0.1351   +0.1350   0.110  play Wondrous Patch (hand[1])
+       2   +0.0953   +0.0830   0.202  play Judge (hand[2])
+       2   +0.0981   +0.1243   0.156  retreat
+       1   -6.6464   -6.6464   0.099  ATTACK (attackId 459)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+8.1936)
+  2. [Evee] Pecharunt @ bench[0] (p0)  (v=+8.2100)
+  3. [Evee] number 3  (v=+8.2316)
+  4. [Evee] Archaludon ex @ bench[0] (p1)  (v=+8.3070)
+  5. [Evee] END turn  (v=+8.3418)
+  6. [opponent] play Snorlax (hand[3])  (v=+8.2434)
+  7. [opponent] play Snorlax (hand[3])  (v=+8.4226)
+  8. [opponent] END turn  (v=+8.4183)
+  9. [Evee] ability Munkidori  (v=+11.4070)
+  10. [Evee] Sylveon @ active[0] (p0)  (v=+11.4550)
+  11. [Evee] number 3  (v=+11.5768)
+  12. [Evee] Archaludon ex @ bench[0] (p1)  (v=+11.5695)
+  13. [Evee] attach Basic {P} Energy (hand[3]) -> Sylveon (bench[1])  (v=+10.9573)
+  14. [Evee] play Wondrous Patch (hand[1])  (v=+12.1005)

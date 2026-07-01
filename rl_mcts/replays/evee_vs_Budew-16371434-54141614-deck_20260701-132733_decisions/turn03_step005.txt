@@ -1,0 +1,60 @@
+Turn 3  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.1317
+CHOSEN: attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     545   +2.2243   -0.4133   0.105  attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+     421   -0.1620   +0.4061   0.166  END turn
+      14   -0.2727   -0.3780   0.168  evolve Eevee (bench[0]) -> Espeon ex
+       7   -0.2794   -0.4310   0.094  attach Basic {D} Energy (hand[1]) -> Eevee (bench[0])
+       7   -0.3150   -0.4751   0.127  play Eevee (hand[3])
+       1   -0.4705   -0.4705   0.061  attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])
+       1   -0.4338   -0.4338   0.053  attach Basic {P} Energy (hand[0]) -> Eevee (bench[0])
+       1   -0.4705   -0.4705   0.061  attach Basic {P} Energy (hand[4]) -> Pecharunt (active[0])
+       1   -0.4338   -0.4338   0.053  attach Basic {P} Energy (hand[4]) -> Eevee (bench[0])
+       1   -0.4705   -0.4705   0.061  attach Basic {P} Energy (hand[5]) -> Pecharunt (active[0])
+       1   -0.4338   -0.4338   0.053  attach Basic {P} Energy (hand[5]) -> Eevee (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  11.31x  Basic {M} Energy
+    1.00  4.00x  Duraludon
+    1.00  4.00x  Archaludon ex
+    1.00  3.10x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.71x  Boss’s Orders
+    0.99  3.84x  Full Metal Lab
+    0.95  3.71x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.73x  Explorer’s Guidance
+    0.17  0.36x  Judge
+  known (visible) opponent cards:
+    1x Relicanth
+  sampled opponent hand (this search):
+    2x Ultra Ball
+    1x Archaludon ex
+    1x Hero’s Cape
+    1x Basic {M} Energy
+    1x Lillie's Determination
+    1x Night Stretcher
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])  (v=+2.2243)
+  2. [Evee] ATTACK (attackId 1296)  (v=+2.2617)
+  3. [opponent] play Lillie's Determination (hand[5])  (v=+2.2196)
+  4. [opponent] play Hand Trimmer (hand[4])  (v=+2.1893)
+  5. [Evee] Crushing Hammer @ hand[5] (p0) + Espeon ex @ hand[6] (p0)  (v=+2.4390)
+  6. [opponent] Lillie's Determination @ hand[1] (p1) + Poké Pad @ hand[2] (p1)  (v=+2.4521)
+  7. [opponent] END turn  (v=+2.5056)
+  8. [Evee] END turn  (v=+1.9135)
+  9. [opponent] END turn  (v=+1.7481)
+  10. [Evee] END turn  (v=+1.8464)
+  11. [opponent] END turn  (v=+1.5914)
+  12. [Evee] retreat  (v=+1.5914)

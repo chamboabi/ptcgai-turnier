@@ -1,0 +1,68 @@
+Turn 28  (action #8, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.4680
+CHOSEN: attach Basic {D} Energy (hand[1]) -> Munkidori (bench[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     885   +0.7024   +0.2275   0.036  attach Basic {D} Energy (hand[1]) -> Munkidori (bench[0])
+      17   -1.3138   +0.1460   0.045  attach Basic {G} Energy (hand[0]) -> Espeon ex (active[0])
+      15   -1.2745   +0.1553   0.040  attach Basic {D} Energy (hand[1]) -> Espeon ex (active[0])
+       9   -1.2079   +0.2000   0.035  attach Basic {G} Energy (hand[0]) -> Munkidori (bench[0])
+       9   -1.2532   +0.1327   0.083  attach Basic {G} Energy (hand[0]) -> Sylveon (bench[2])
+       9   -1.2528   +0.1314   0.100  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[3])
+       9   -1.2531   +0.1314   0.100  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[4])
+       9   -1.2164   +0.2096   0.096  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[1])
+       9   -1.2164   +0.2096   0.096  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[3])
+       9   -1.2167   +0.2096   0.096  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[4])
+       7   -1.6369   +0.1314   0.100  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[1])
+       7   -1.6162   +0.1653   0.077  attach Basic {D} Energy (hand[1]) -> Sylveon (bench[2])
+       6   -1.9172   -0.0257   0.095  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    2x Sacred Ash
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Nighttime Mine
+    1x Dudunsparce
+    1x Dunsparce
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[1]) -> Munkidori (bench[0])  (v=+0.7024)
+  2. [Evee] ability Munkidori  (v=+0.7220)
+  3. [Evee] Sylveon @ bench[2] (p0)  (v=+0.7298)
+  4. [Evee] number 2  (v=+0.7392)
+  5. [Evee] Alakazam @ bench[4] (p1)  (v=+0.7605)
+  6. [Evee] END turn  (v=+0.7563)
+  7. [opponent] ATTACK (attackId 1071)  (v=+0.7403)
+  8. [Evee] play Energy Search Pro (hand[1])  (v=+0.7358)
+  9. [Evee] card @ deck[10] (p0)  (v=+0.7437)
+  10. [Evee] card @ deck[5] (p0)  (v=+0.7408)
+  11. [Evee] retreat  (v=+1.1495)
+  12. [Evee] energy x1 @ active[0]  (v=+1.1391)
+  13. [Evee] Munkidori @ bench[0] (p0)  (v=+1.1378)

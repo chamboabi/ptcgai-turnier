@@ -1,0 +1,43 @@
+Turn 64  (action #6, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +5.8340
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     997   +5.8569   +4.1439   0.186  ATTACK (attackId 1296)
+       2   +0.1219   +0.1422   0.564  END turn
+       1   +0.1339   +0.1339   0.250  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    0.85  1.72x  Boss’s Orders
+    0.41  0.41x  Relicanth
+  known (visible) opponent cards:
+    11x Basic {M} Energy
+    4x Duraludon
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Cinderace
+  sampled opponent hand (this search):
+    3x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+5.8569)
+  2. [opponent] play Snorlax (hand[0])  (v=+5.8559)
+  3. [opponent] play Snorlax (hand[2])  (v=+5.8870)
+  4. [opponent] END turn  (v=+5.9185)
+  5. [Evee] ATTACK (attackId 1296)  (v=+8.0533)
+  6. [opponent] END turn  (v=+8.0528)
+  7. [Evee] attach Basic {D} Energy (hand[1]) -> Munkidori (bench[4])  (v=+8.0889)
+  8. [Evee] play Night Stretcher (hand[1])  (v=+8.1086)

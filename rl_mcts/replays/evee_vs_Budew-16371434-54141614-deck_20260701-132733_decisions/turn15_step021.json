@@ -1,0 +1,471 @@
+{
+  "turn": 15,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 6.1011,
+  "chosen_action": "ATTACK (attackId 1296)",
+  "candidates": [
+    {
+      "action": "ATTACK (attackId 1296)",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.0636,
+      "nn_value": 4.3747,
+      "visits": 980,
+      "search_mean_value": 6.2375,
+      "expanded": true,
+      "policy_target": 0.1364
+    },
+    {
+      "action": "END turn",
+      "select": [
+        15
+      ],
+      "nn_policy_prior": 0.0837,
+      "nn_value": 0.375,
+      "visits": 5,
+      "search_mean_value": -0.1733,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Pecharunt (hand[7])",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.123,
+      "nn_value": -0.2865,
+      "visits": 2,
+      "search_mean_value": -0.2865,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Pecharunt (active[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0738,
+      "nn_value": -0.3199,
+      "visits": 1,
+      "search_mean_value": -0.3199,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Eevee (bench[0])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0629,
+      "nn_value": -0.2708,
+      "visits": 1,
+      "search_mean_value": -0.2708,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[0]) -> Eevee (bench[1])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0629,
+      "nn_value": -0.2708,
+      "visits": 1,
+      "search_mean_value": -0.2708,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Judge (hand[1])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0501,
+      "nn_value": -0.3591,
+      "visits": 1,
+      "search_mean_value": -0.3591,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Night Stretcher (hand[2])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0422,
+      "nn_value": -0.3141,
+      "visits": 1,
+      "search_mean_value": -0.3141,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0306,
+      "nn_value": -0.3088,
+      "visits": 1,
+      "search_mean_value": -0.3088,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[3]) -> Eevee (bench[0])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0267,
+      "nn_value": -0.2724,
+      "visits": 1,
+      "search_mean_value": -0.2724,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[3]) -> Eevee (bench[1])",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0267,
+      "nn_value": -0.2724,
+      "visits": 1,
+      "search_mean_value": -0.2724,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Judge (hand[4])",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0501,
+      "nn_value": -0.3607,
+      "visits": 1,
+      "search_mean_value": -0.3607,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "evolve Eevee (bench[0]) -> Sylveon",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0766,
+      "nn_value": -0.2148,
+      "visits": 1,
+      "search_mean_value": -0.2148,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "evolve Eevee (bench[1]) -> Sylveon",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.0766,
+      "nn_value": -0.2148,
+      "visits": 1,
+      "search_mean_value": -0.2148,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Night Stretcher (hand[6])",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.0422,
+      "nn_value": -0.3141,
+      "visits": 1,
+      "search_mean_value": -0.3141,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "retreat",
+      "select": [
+        14
+      ],
+      "nn_policy_prior": 0.1085,
+      "nn_value": -0.3151,
+      "visits": 1,
+      "search_mean_value": -0.3151,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 0.9429,
+      "Carmine": 0.0571,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.9857,
+        "expected_copies": 3.8429
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 0.9476,
+        "expected_copies": 3.719
+      },
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 0.9429,
+        "expected_copies": 3.7714
+      },
+      {
+        "card_id": 1185,
+        "name": "Explorer’s Guidance",
+        "probability": 0.9381,
+        "expected_copies": 3.7238
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1667,
+        "expected_copies": 0.3619
+      },
+      {
+        "card_id": 1192,
+        "name": "Carmine",
+        "probability": 0.0667,
+        "expected_copies": 0.2524
+      },
+      {
+        "card_id": 1123,
+        "name": "Switch",
+        "probability": 0.0476,
+        "expected_copies": 0.0952
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0476,
+        "expected_copies": 0.081
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0286,
+        "expected_copies": 0.0524
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 4
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 1
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 1
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 22
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 4
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 4
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 3
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 5
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 6.2375
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[0])",
+      "value": 6.2292
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[0])",
+      "value": 6.2142
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[1])",
+      "value": 6.1887
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 6.1775
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 7.4887
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 7.3652
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Pecharunt (hand[7])",
+      "value": 7.2266
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 7.9661
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 7.8345
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 7.8719
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 7.75
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Energy Search (hand[10])",
+      "value": 7.7487
+    }
+  ]
+}

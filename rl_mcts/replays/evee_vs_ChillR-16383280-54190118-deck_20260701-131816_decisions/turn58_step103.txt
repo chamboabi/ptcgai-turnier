@@ -1,0 +1,45 @@
+Turn 58  (action #10, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1009
+CHOSEN: play Night Stretcher (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     622   +0.0944   +0.1541   0.548  play Night Stretcher (hand[1])
+     233   +0.1325   +0.1719   0.114  ATTACK (attackId 1296)
+     145   +0.0779   +0.1719   0.338  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] play Night Stretcher (hand[1])  (v=+0.0944)
+  2. [Evee] Basic {P} Energy @ discard[23] (p0)  (v=+0.0956)
+  3. [Evee] END turn  (v=+0.0927)
+  4. [opponent] play Snorlax (hand[1])  (v=+0.0815)
+  5. [opponent] play Snorlax (hand[1])  (v=+0.0669)
+  6. [opponent] END turn  (v=+0.0596)
+  7. [Evee] attach Basic {P} Energy (hand[1]) -> Sylveon (bench[1])  (v=+0.0744)
+  8. [Evee] play Lillie's Determination (hand[1])  (v=+0.0642)
+  9. [Evee] play Crushing Hammer (hand[4])  (v=+0.0643)

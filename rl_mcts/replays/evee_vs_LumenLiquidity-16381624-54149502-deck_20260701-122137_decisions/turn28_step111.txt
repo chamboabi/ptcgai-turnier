@@ -1,0 +1,59 @@
+Turn 28  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0032
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     829   +0.0235   +0.1457   0.071  retreat
+      76   -0.0003   +0.1441   0.041  play Energy Search (hand[1])
+      33   -0.1004   +0.1431   0.114  attach Basic {G} Energy (hand[0]) -> Sylveon (active[0])
+      10   -0.1536   +0.1945   0.048  attach Basic {G} Energy (hand[0]) -> Munkidori (bench[0])
+      10   -0.1732   +0.1252   0.136  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[1])
+      10   -0.1676   +0.1359   0.062  attach Basic {G} Energy (hand[0]) -> Espeon ex (bench[2])
+      10   -0.1732   +0.1252   0.136  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[3])
+      10   -0.1732   +0.1252   0.136  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[4])
+       7   -0.2607   +1.9562   0.127  ATTACK (attackId 459)
+       5   -0.5632   -0.0361   0.130  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    2x Sacred Ash
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Enhanced Hammer
+    1x Rare Candy
+    1x Nighttime Mine
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=+0.0235)
+  2. [Evee] energy x1 @ active[0]  (v=+0.0134)
+  3. [Evee] Munkidori @ bench[0] (p0)  (v=+0.0065)
+  4. [Evee] play Energy Search (hand[1])  (v=+0.1163)
+  5. [Evee] card @ deck[5] (p0)  (v=+0.0981)
+  6. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[1])  (v=+0.0736)
+  7. [Evee] END turn  (v=-0.0488)

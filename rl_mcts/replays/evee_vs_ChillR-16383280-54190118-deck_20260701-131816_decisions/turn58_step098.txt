@@ -1,0 +1,46 @@
+Turn 58  (action #5, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.8046
+CHOSEN: Basic {P} Energy @ discard[10] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     282   +0.0814   +0.0178   0.206  Basic {P} Energy @ discard[10] (p0)
+     282   +0.0814   +0.0178   0.206  Basic {P} Energy @ discard[24] (p0)
+     230   +3.2477   +0.0499   0.073  Basic {D} Energy @ discard[11] (p0)
+     115   +0.0611   +0.0205   0.281  Leafeon @ discard[15] (p0)
+      48   +0.0588   +0.0045   0.130  Basic {G} Energy @ discard[23] (p0)
+      43   +0.0612   +0.0269   0.105  Eevee @ discard[16] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] Basic {P} Energy @ discard[10] (p0)  (v=+0.0814)
+  2. [Evee] attach Basic {P} Energy (hand[3]) -> Sylveon (bench[0])  (v=+0.0969)
+  3. [Evee] play Night Stretcher (hand[2])  (v=+0.1037)
+  4. [Evee] Leafeon @ discard[14] (p0)  (v=+0.0932)
+  5. [Evee] play Poké Pad (hand[1])  (v=+0.1012)
+  6. [Evee] card @ deck[1] (p0)  (v=+0.1012)
+  7. [Evee] END turn  (v=+0.0922)
+  8. [opponent] play Snorlax (hand[0])  (v=+0.0765)

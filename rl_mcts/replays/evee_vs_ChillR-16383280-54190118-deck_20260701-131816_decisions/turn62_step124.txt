@@ -1,0 +1,41 @@
+Turn 62  (action #10, P0 Evee)
+Selecting: CARD / ATTACH_TO
+Root value: +0.0717
+CHOSEN: Basic {P} Energy @ discard[22] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     335   +0.0689   +0.0941   0.333  Basic {P} Energy @ discard[22] (p0)
+     335   +0.0689   +0.0941   0.333  Basic {P} Energy @ discard[26] (p0)
+     330   +0.0774   +0.0941   0.333  Basic {P} Energy @ discard[28] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] Basic {P} Energy @ discard[22] (p0)  (v=+0.0689)
+  2. [Evee] Sylveon @ bench[0] (p0)  (v=+0.0671)
+  3. [Evee] attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])  (v=-0.1901)
+  4. [Evee] END turn  (v=-0.3616)
+  5. [opponent] play Snorlax (hand[0])  (v=+0.1268)

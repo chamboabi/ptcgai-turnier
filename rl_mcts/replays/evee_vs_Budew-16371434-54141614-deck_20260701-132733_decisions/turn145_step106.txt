@@ -1,0 +1,71 @@
+Turn 145  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0447
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     839   -0.0312   +0.1418   0.055  END turn
+      20   -0.0809   +0.1427   0.048  play Hand Trimmer (hand[10])
+      13   -0.0972   -0.1586   0.048  play Lillie's Determination (hand[0])
+      12   -0.1254   -0.1535   0.077  play Pecharunt (hand[6])
+      11   -0.0900   -0.1536   0.030  ATTACK (attackId 39)
+      10   -0.0765   -0.1005   0.021  attach Basic {P} Energy (hand[9]) -> Sylveon (bench[0])
+      10   -0.0765   -0.1005   0.021  attach Basic {P} Energy (hand[13]) -> Sylveon (bench[0])
+      10   -0.0765   -0.1005   0.021  attach Basic {P} Energy (hand[15]) -> Sylveon (bench[0])
+       8   -0.1535   -0.1532   0.071  play Crispin (hand[4])
+       8   -0.1535   -0.1532   0.071  play Crispin (hand[5])
+       5   -0.1557   -0.1537   0.052  play Energy Search (hand[7])
+       5   -0.1591   -0.1579   0.053  play Poké Pad (hand[8])
+       5   -0.1511   -0.0714   0.050  evolve Eevee (active[0]) -> Sylveon
+       5   -0.1591   -0.1579   0.053  play Poké Pad (hand[12])
+       4   -0.1715   -0.1725   0.047  play Eevee (hand[14])
+       3   -0.1595   -0.1561   0.032  play Night Stretcher (hand[1])
+       3   -0.1595   -0.1561   0.032  play Night Stretcher (hand[2])
+       3   -0.1595   -0.1561   0.032  play Night Stretcher (hand[3])
+       3   -0.1045   -0.1051   0.018  attach Basic {P} Energy (hand[9]) -> Eevee (active[0])
+       3   -0.0993   -0.0997   0.015  attach Basic {P} Energy (hand[9]) -> Munkidori (bench[2])
+       3   -0.1045   -0.1051   0.018  attach Basic {P} Energy (hand[13]) -> Eevee (active[0])
+       3   -0.0993   -0.0997   0.015  attach Basic {P} Energy (hand[13]) -> Munkidori (bench[2])
+       3   -0.1045   -0.1051   0.018  attach Basic {P} Energy (hand[15]) -> Eevee (active[0])
+       3   -0.0993   -0.0997   0.015  attach Basic {P} Energy (hand[15]) -> Munkidori (bench[2])
+       2   -0.1499   -0.1504   0.021  attach Basic {P} Energy (hand[9]) -> Pecharunt (bench[1])
+       2   -0.1499   -0.1504   0.021  attach Basic {P} Energy (hand[13]) -> Pecharunt (bench[1])
+       2   -0.1499   -0.1504   0.021  attach Basic {P} Energy (hand[15]) -> Pecharunt (bench[1])
+       2   -0.1731   -0.1536   0.026  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    7x Basic {M} Energy
+    4x Boss’s Orders
+    3x Archaludon ex
+    3x Lillie's Determination
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Jumbo Ice Cream
+    2x Duraludon
+    2x Pokégear 3.0
+    2x Full Metal Lab
+    1x Relicanth
+    1x Hero’s Cape
+    1x Poké Pad
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    11x Snorlax
+    2x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0312)
+  2. [opponent] END turn  (v=-0.0462)
+  3. [Evee] END turn  (v=-0.0260)
+  4. [opponent] END turn  (v=-0.0469)
+  5. [Evee] END turn  (v=-0.0076)
+  6. [opponent] END turn  (v=-0.0368)
+  7. [Evee] play Hand Trimmer (hand[10])  (v=-0.0738)
+  8. [opponent] Cinderace @ hand[0] (p1) + Cinderace @ hand[1] (p1) + Snorlax @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Snorlax @ hand[4] (p1) + Snorlax @ hand[5] (p1) + Snorlax @ hand[6] (p1) + Snorlax @ hand[7] (p1) + Snorlax @ hand[8] (p1) + Snorlax @ hand[9] (p1) + Snorlax @ hand[10] (p1)  (v=-0.0937)
+  9. [Evee] Lillie's Determination @ hand[0] (p0) + Night Stretcher @ hand[1] (p0) + Night Stretcher @ hand[2] (p0) + Night Stretcher @ hand[3] (p0) + Crispin @ hand[4] (p0) + Crispin @ hand[5] (p0) + Pecharunt @ hand[6] (p0) + Energy Search @ hand[7] (p0) + Poké Pad @ hand[8] (p0) + Basic {P} Energy @ hand[9] (p0) + Sylveon @ hand[10] (p0) + Poké Pad @ hand[11] (p0) + Crushing Hammer @ hand[17] (p0)  (v=-0.1012)

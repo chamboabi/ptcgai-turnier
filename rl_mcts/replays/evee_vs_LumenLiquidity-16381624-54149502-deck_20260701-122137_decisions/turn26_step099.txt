@@ -1,0 +1,53 @@
+Turn 26  (action #4, P0 Evee)
+Selecting: CARD / DAMAGE_COUNTER
+Root value: +1.0651
+CHOSEN: Shaymin @ bench[0] (p1)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     187   +1.0626   +1.0719   0.245  Shaymin @ bench[0] (p1)
+     168   +1.0643   +1.0714   0.184  Genesect @ bench[3] (p1)
+     167   +1.0654   +1.0717   0.178  Alakazam @ bench[2] (p1)
+     167   +1.0656   +1.0719   0.178  Alakazam @ bench[4] (p1)
+     161   +1.0698   +1.0719   0.108  Kadabra @ bench[1] (p1)
+     150   +1.0698   +1.0700   0.108  Kadabra @ active[0] (p1)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    2x Nighttime Mine
+    1x Enhanced Hammer
+    1x Lana’s Aid
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] Shaymin @ bench[0] (p1)  (v=+1.0626)
+  2. [Evee] play Night Stretcher (hand[3])  (v=+1.0748)
+  3. [Evee] Basic {G} Energy @ discard[10] (p0)  (v=+1.0691)
+  4. [Evee] attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[1])  (v=+1.0440)
+  5. [Evee] END turn  (v=+0.9345)

@@ -1,0 +1,63 @@
+Turn 3  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.9217
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     992   +1.9414   +2.3711   0.159  ATTACK (attackId 1296)
+       5   -0.1147   +0.3711   0.206  END turn
+       1   -0.4610   -0.4610   0.158  play Eevee (hand[2])
+       1   -0.3650   -0.3650   0.208  evolve Eevee (bench[0]) -> Espeon ex
+       1   -0.4633   -0.4633   0.269  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  11.31x  Basic {M} Energy
+    1.00  4.00x  Duraludon
+    1.00  4.00x  Archaludon ex
+    1.00  3.10x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.71x  Boss’s Orders
+    0.99  3.84x  Full Metal Lab
+    0.95  3.71x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.73x  Explorer’s Guidance
+    0.17  0.36x  Judge
+  known (visible) opponent cards:
+    1x Relicanth
+  sampled opponent hand (this search):
+    2x Pokégear 3.0
+    1x Duraludon
+    1x Boss’s Orders
+    1x Hero’s Cape
+    1x Jumbo Ice Cream
+    1x Night Stretcher
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+1.9414)
+  2. [opponent] play Boss’s Orders (hand[7])  (v=+1.9170)
+  3. [opponent] Eevee @ bench[0] (p0)  (v=+1.9165)
+  4. [opponent] END turn  (v=+1.9079)
+  5. [Evee] play Lillie's Determination (hand[1])  (v=+1.9298)
+  6. [Evee] END turn  (v=+1.9458)
+  7. [opponent] END turn  (v=+1.9289)
+  8. [Evee] END turn  (v=+1.9411)
+  9. [opponent] END turn  (v=+1.9154)
+  10. [Evee] END turn  (v=+1.9498)
+  11. [opponent] END turn  (v=+1.8914)
+  12. [Evee] play Munkidori (hand[0])  (v=+1.9806)
+  13. [Evee] END turn  (v=+2.0889)
+  14. [opponent] END turn  (v=+1.9843)
+  15. [Evee] END turn  (v=+2.1146)
+  16. [opponent] END turn  (v=+1.9845)
+  17. [Evee] END turn  (v=+2.0638)
+  18. [opponent] END turn  (v=+1.9274)
+  19. [Evee] END turn  (v=+2.0624)
+  20. [opponent] END turn  (v=+1.5903)
+  21. [Evee] play Crispin (hand[10])  (v=+1.5900)

@@ -1,0 +1,60 @@
+Turn 28  (action #7, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.0439
+CHOSEN: card @ deck[4] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     765   +0.4673   +0.1491   0.549  card @ deck[4] (p0)
+     120   -1.3222   +0.1417   0.226  card @ deck[14] (p0)
+     115   -1.3488   +0.1417   0.226  card @ deck[9] (p0)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    2x Sacred Ash
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    2x Dunsparce
+    1x Rare Candy
+    1x Snorlax
+    1x Dudunsparce
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[4] (p0)  (v=+0.4673)
+  2. [Evee] attach Basic {D} Energy (hand[1]) -> Munkidori (bench[0])  (v=+0.7858)
+  3. [Evee] ability Munkidori  (v=+0.8138)
+  4. [Evee] Sylveon @ bench[2] (p0)  (v=+0.8250)
+  5. [Evee] number 2  (v=+0.8386)
+  6. [Evee] Kadabra @ bench[1] (p1)  (v=+0.8798)
+  7. [Evee] END turn  (v=+0.8741)
+  8. [opponent] ATTACK (attackId 1071)  (v=+0.8525)
+  9. [Evee] play Judge (hand[1])  (v=+0.9126)
+  10. [Evee] retreat  (v=+0.9798)
+  11. [Evee] energy x1 @ active[0]  (v=+0.9267)
+  12. [Evee] Munkidori @ bench[0] (p0)  (v=+0.6996)
+  13. [Evee] ability Munkidori  (v=-0.4728)
+  14. [Evee] Sylveon @ bench[2] (p0)  (v=-1.2751)
+  15. [Evee] Shaymin @ bench[0] (p1)  (v=-4.6820)

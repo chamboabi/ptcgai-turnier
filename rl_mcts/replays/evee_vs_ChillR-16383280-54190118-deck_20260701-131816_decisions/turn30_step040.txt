@@ -1,0 +1,58 @@
+Turn 30  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1065
+CHOSEN: play Eevee (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     358   -0.0899   -0.0946   0.032  play Eevee (hand[0])
+     266   -0.0953   +0.1184   0.080  END turn
+     133   -0.0799   -0.0946   0.032  play Eevee (hand[7])
+      46   -0.1242   -0.1287   0.118  play Night Stretcher (hand[1])
+      34   -0.1043   -0.0839   0.042  attach Basic {G} Energy (hand[3]) -> Munkidori (bench[0])
+      33   -0.1395   -0.0816   0.084  attach Basic {D} Energy (hand[4]) -> Munkidori (bench[0])
+      26   -0.1759   -0.1363   0.095  attach Basic {P} Energy (hand[5]) -> Pecharunt (active[0])
+      25   -0.1819   -0.1353   0.092  attach Basic {D} Energy (hand[4]) -> Pecharunt (active[0])
+      23   -0.1812   -0.0880   0.081  attach Basic {P} Energy (hand[5]) -> Munkidori (bench[0])
+      18   -0.1223   -0.1209   0.052  attach Basic {G} Energy (hand[3]) -> Pecharunt (active[0])
+      11   -0.1363   +0.1184   0.024  ATTACK (attackId 1296)
+       8   -0.2710   -0.1018   0.077  play Judge (hand[8])
+       8   -0.3019   -0.1296   0.077  play Judge (hand[9])
+       6   -0.3384   -0.0920   0.077  play Judge (hand[6])
+       5   -0.1728   -0.1337   0.035  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  3.85x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.60x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.24x  Xerosic’s Machinations
+    0.11  0.13x  Judge
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    8x Snorlax
+    2x Pokégear 3.0
+    1x Jumbo Ice Cream
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] play Eevee (hand[0])  (v=-0.0899)
+  2. [Evee] attach Basic {P} Energy (hand[4]) -> Munkidori (bench[0])  (v=-0.0560)
+  3. [Evee] play Judge (hand[7])  (v=-0.0589)
+  4. [Evee] play Munkidori (hand[3])  (v=+0.1057)
+  5. [Evee] END turn  (v=+0.1022)
+  6. [opponent] play Snorlax (hand[1])  (v=+0.0871)

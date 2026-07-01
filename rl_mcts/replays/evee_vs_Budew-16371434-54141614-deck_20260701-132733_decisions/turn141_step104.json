@@ -1,0 +1,531 @@
+{
+  "turn": 141,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 0.0147,
+  "chosen_action": "END turn",
+  "candidates": [
+    {
+      "action": "END turn",
+      "select": [
+        22
+      ],
+      "nn_policy_prior": 0.0626,
+      "nn_value": 0.146,
+      "visits": 920,
+      "search_mean_value": 0.0267,
+      "expanded": true,
+      "policy_target": 0.0119
+    },
+    {
+      "action": "play Hand Trimmer (hand[10])",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.0546,
+      "nn_value": 0.148,
+      "visits": 13,
+      "search_mean_value": -0.0772,
+      "expanded": true,
+      "policy_target": -0.092
+    },
+    {
+      "action": "play Pecharunt (hand[6])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0878,
+      "nn_value": -0.1514,
+      "visits": 8,
+      "search_mean_value": -0.1191,
+      "expanded": true,
+      "policy_target": -0.1339
+    },
+    {
+      "action": "ATTACK (attackId 39)",
+      "select": [
+        20
+      ],
+      "nn_policy_prior": 0.0344,
+      "nn_value": -0.1526,
+      "visits": 8,
+      "search_mean_value": -0.0571,
+      "expanded": true,
+      "policy_target": -0.0719
+    },
+    {
+      "action": "play Lillie's Determination (hand[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0541,
+      "nn_value": -0.163,
+      "visits": 5,
+      "search_mean_value": -0.1039,
+      "expanded": true,
+      "policy_target": -0.1187
+    },
+    {
+      "action": "play Crispin (hand[4])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0808,
+      "nn_value": -0.1516,
+      "visits": 5,
+      "search_mean_value": -0.1543,
+      "expanded": true,
+      "policy_target": -0.1691
+    },
+    {
+      "action": "play Crispin (hand[5])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0808,
+      "nn_value": -0.1516,
+      "visits": 5,
+      "search_mean_value": -0.1543,
+      "expanded": true,
+      "policy_target": -0.1691
+    },
+    {
+      "action": "play Energy Search (hand[7])",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0592,
+      "nn_value": -0.1543,
+      "visits": 4,
+      "search_mean_value": -0.1575,
+      "expanded": true,
+      "policy_target": -0.1723
+    },
+    {
+      "action": "play Poké Pad (hand[8])",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0605,
+      "nn_value": -0.161,
+      "visits": 4,
+      "search_mean_value": -0.1624,
+      "expanded": true,
+      "policy_target": -0.1771
+    },
+    {
+      "action": "evolve Eevee (active[0]) -> Sylveon",
+      "select": [
+        14
+      ],
+      "nn_policy_prior": 0.0563,
+      "nn_value": -0.0729,
+      "visits": 4,
+      "search_mean_value": -0.1476,
+      "expanded": true,
+      "policy_target": -0.1624
+    },
+    {
+      "action": "play Poké Pad (hand[12])",
+      "select": [
+        15
+      ],
+      "nn_policy_prior": 0.0605,
+      "nn_value": -0.161,
+      "visits": 4,
+      "search_mean_value": -0.1624,
+      "expanded": true,
+      "policy_target": -0.1771
+    },
+    {
+      "action": "play Night Stretcher (hand[1])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.036,
+      "nn_value": -0.1563,
+      "visits": 2,
+      "search_mean_value": -0.16,
+      "expanded": true,
+      "policy_target": -0.1747
+    },
+    {
+      "action": "play Night Stretcher (hand[2])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.036,
+      "nn_value": -0.1563,
+      "visits": 2,
+      "search_mean_value": -0.16,
+      "expanded": true,
+      "policy_target": -0.1747
+    },
+    {
+      "action": "play Night Stretcher (hand[3])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.036,
+      "nn_value": -0.1563,
+      "visits": 2,
+      "search_mean_value": -0.16,
+      "expanded": true,
+      "policy_target": -0.1747
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[9]) -> Eevee (active[0])",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0202,
+      "nn_value": -0.1039,
+      "visits": 2,
+      "search_mean_value": -0.1032,
+      "expanded": true,
+      "policy_target": -0.118
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[9]) -> Sylveon (bench[0])",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.0241,
+      "nn_value": -0.0999,
+      "visits": 2,
+      "search_mean_value": -0.0991,
+      "expanded": true,
+      "policy_target": -0.1139
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[13]) -> Eevee (active[0])",
+      "select": [
+        16
+      ],
+      "nn_policy_prior": 0.0202,
+      "nn_value": -0.1039,
+      "visits": 2,
+      "search_mean_value": -0.1032,
+      "expanded": true,
+      "policy_target": -0.118
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[13]) -> Sylveon (bench[0])",
+      "select": [
+        17
+      ],
+      "nn_policy_prior": 0.0241,
+      "nn_value": -0.0999,
+      "visits": 2,
+      "search_mean_value": -0.0991,
+      "expanded": true,
+      "policy_target": -0.1139
+    },
+    {
+      "action": "retreat",
+      "select": [
+        21
+      ],
+      "nn_policy_prior": 0.0303,
+      "nn_value": -0.1526,
+      "visits": 2,
+      "search_mean_value": -0.1723,
+      "expanded": true,
+      "policy_target": -0.187
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[9]) -> Pecharunt (bench[1])",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.0239,
+      "nn_value": -0.1497,
+      "visits": 1,
+      "search_mean_value": -0.1497,
+      "expanded": true,
+      "policy_target": -0.1645
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[9]) -> Munkidori (bench[2])",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.0169,
+      "nn_value": -0.0991,
+      "visits": 1,
+      "search_mean_value": -0.0991,
+      "expanded": true,
+      "policy_target": -0.1138
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[13]) -> Pecharunt (bench[1])",
+      "select": [
+        18
+      ],
+      "nn_policy_prior": 0.0239,
+      "nn_value": -0.1497,
+      "visits": 1,
+      "search_mean_value": -0.1497,
+      "expanded": true,
+      "policy_target": -0.1645
+    },
+    {
+      "action": "attach Basic {P} Energy (hand[13]) -> Munkidori (bench[2])",
+      "select": [
+        19
+      ],
+      "nn_policy_prior": 0.0169,
+      "nn_value": -0.0991,
+      "visits": 1,
+      "search_mean_value": -0.0991,
+      "expanded": true,
+      "policy_target": -0.1138
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.0958,
+        "expected_copies": 0.1165
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0403,
+        "expected_copies": 0.0633
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 7
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 4
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 3
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 3
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 2
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 2
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 2
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 5
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 9
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 5
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0267
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0174
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0045
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0226
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0056
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0343
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0038
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0466
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0086
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1029
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Hand Trimmer (hand[10])",
+      "value": -0.0639
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "Snorlax @ hand[0] (p1) + Snorlax @ hand[1] (p1) + Cinderace @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Snorlax @ hand[4] (p1) + Snorlax @ hand[5] (p1) + Snorlax @ hand[6] (p1) + Snorlax @ hand[7] (p1) + Cinderace @ hand[10] (p1) + Cinderace @ hand[14] (p1) + Snorlax @ hand[15] (p1)",
+      "value": -0.074
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Lillie's Determination @ hand[0] (p0) + Night Stretcher @ hand[1] (p0) + Night Stretcher @ hand[2] (p0) + Night Stretcher @ hand[3] (p0) + Crispin @ hand[4] (p0) + Crispin @ hand[5] (p0) + Pecharunt @ hand[6] (p0) + Energy Search @ hand[7] (p0) + Poké Pad @ hand[8] (p0) + Basic {P} Energy @ hand[9] (p0) + Sylveon @ hand[10] (p0) + Basic {P} Energy @ hand[12] (p0) + Basic {G} Energy @ hand[14] (p0)",
+      "value": -0.0334
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0126
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0912
+    }
+  ]
+}

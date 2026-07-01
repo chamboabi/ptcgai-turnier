@@ -1,0 +1,64 @@
+Turn 113  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0709
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     768   -0.0518   +0.1432   0.064  END turn
+      45   -0.1128   -0.1596   0.090  play Munkidori (hand[3])
+      44   -0.1135   -0.1596   0.090  play Munkidori (hand[4])
+      32   -0.1100   +0.1428   0.056  play Hand Trimmer (hand[10])
+      32   -0.1100   +0.1428   0.056  play Hand Trimmer (hand[15])
+      13   -0.1455   -0.0840   0.066  evolve Eevee (bench[1]) -> Espeon ex
+      12   -0.1296   -0.1588   0.041  play Judge (hand[16])
+       9   -0.1889   -0.1878   0.083  play Crispin (hand[1])
+       9   -0.1889   -0.1878   0.083  play Crispin (hand[12])
+       7   -0.1826   -0.1888   0.061  play Energy Search (hand[0])
+       7   -0.2185   -0.1884   0.084  retreat
+       6   -0.1942   -0.1973   0.063  play Poké Pad (hand[5])
+       5   -0.1964   -0.2094   0.057  play Eevee (hand[6])
+       4   -0.1854   -0.1955   0.036  play Night Stretcher (hand[13])
+       4   -0.1854   -0.1955   0.036  play Night Stretcher (hand[14])
+       3   -0.1880   -0.1881   0.034  play Energy Search Pro (hand[11])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    15x Snorlax
+    4x Cinderace
+    1x Explorer’s Guidance
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0518)
+  2. [opponent] END turn  (v=-0.0622)
+  3. [Evee] END turn  (v=-0.0881)
+  4. [opponent] END turn  (v=-0.1058)
+  5. [Evee] END turn  (v=-0.0852)
+  6. [opponent] END turn  (v=-0.1198)
+  7. [Evee] play Hand Trimmer (hand[10])  (v=-0.0935)
+  8. [opponent] Snorlax @ hand[0] (p1) + Snorlax @ hand[1] (p1) + Snorlax @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Snorlax @ hand[4] (p1) + Snorlax @ hand[5] (p1) + Explorer’s Guidance @ hand[6] (p1) + Snorlax @ hand[7] (p1) + Snorlax @ hand[8] (p1) + Cinderace @ hand[9] (p1) + Snorlax @ hand[10] (p1) + Cinderace @ hand[11] (p1) + Snorlax @ hand[12] (p1) + Cinderace @ hand[13] (p1) + Snorlax @ hand[14] (p1) + Snorlax @ hand[15] (p1) + Cinderace @ hand[16] (p1) + Snorlax @ hand[17] (p1) + Snorlax @ hand[18] (p1)  (v=-0.1160)
+  9. [Evee] Energy Search @ hand[0] (p0) + Crispin @ hand[1] (p0) + Basic {P} Energy @ hand[2] (p0) + Munkidori @ hand[3] (p0) + Munkidori @ hand[4] (p0) + Poké Pad @ hand[5] (p0) + Eevee @ hand[6] (p0) + Basic {P} Energy @ hand[7] (p0) + Basic {P} Energy @ hand[8] (p0) + Espeon ex @ hand[9] (p0) + Energy Search Pro @ hand[10] (p0) + Night Stretcher @ hand[12] (p0) + Night Stretcher @ hand[13] (p0) + Hand Trimmer @ hand[14] (p0)  (v=-0.1217)

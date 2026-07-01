@@ -1,0 +1,47 @@
+Turn 60  (action #5, P0 Evee)
+Selecting: CARD / DAMAGE_COUNTER
+Root value: +2.7907
+CHOSEN: Archaludon ex @ bench[0] (p1)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     314   +2.7825   +3.1403   0.311  Archaludon ex @ bench[0] (p1)
+     278   +2.8156   +3.1401   0.311  Archaludon ex @ bench[1] (p1)
+     250   +2.7909   +3.1391   0.189  Duraludon @ bench[2] (p1)
+     158   +2.7796   +3.1387   0.189  Duraludon @ active[0] (p1)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] Archaludon ex @ bench[0] (p1)  (v=+2.7825)
+  2. [Evee] play Wondrous Patch (hand[1])  (v=+2.8003)
+  3. [Evee] Basic {P} Energy @ discard[22] (p0)  (v=+2.7989)
+  4. [Evee] Munkidori @ bench[3] (p0)  (v=+2.8081)
+  5. [Evee] retreat  (v=+2.8445)
+  6. [Evee] energy x1 @ active[0]  (v=+2.8564)
+  7. [Evee] Munkidori @ bench[3] (p0)  (v=+3.0931)
+  8. [Evee] ATTACK (attackId 141)  (v=+3.2865)
+  9. [opponent] ATTACK (attackId 223)  (v=+2.1408)
+  10. [Evee] END turn  (v=+3.1460)
+  11. [opponent] play Snorlax (hand[0])  (v=+3.1358)

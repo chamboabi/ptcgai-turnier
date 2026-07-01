@@ -1,0 +1,47 @@
+Turn 0  (action #4, P0 Evee)
+Selecting: COUNT / DRAW_COUNT
+Root value: +3.0644
+CHOSEN: number 0
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     920   +3.3471   +0.1792   0.550  number 0
+      80   -0.1470   +0.1846   0.450  number 1
+
+Opponent belief:
+  archetype: Archaludon Metal 30%, Mega Lucario ex 19%, Alakazam Psychic 11%, Dragapult 7%, Postwick 5%
+  likely cards (P, E[copies]):
+    0.93  3.31x  Poké Pad
+    0.92  2.72x  Boss’s Orders
+    0.81  3.21x  Lillie's Determination
+    0.75  1.92x  Night Stretcher
+    0.57  0.57x  Hero’s Cape
+    0.50  1.91x  Pokégear 3.0
+    0.48  1.70x  Ultra Ball
+    0.45  1.75x  Buddy-Buddy Poffin
+    0.34  1.37x  Cinderace
+    0.31  3.58x  Basic {M} Energy
+    0.31  1.26x  Duraludon
+    0.31  1.26x  Archaludon ex
+    0.31  1.21x  Full Metal Lab
+    0.31  1.17x  Jumbo Ice Cream
+    0.30  1.19x  Explorer’s Guidance
+  known (visible) opponent cards:
+  sampled opponent hand (this search):
+    2x Wally's Compassion
+    1x Night Stretcher
+    1x Basic {W} Energy
+    1x Archaludon ex
+    1x Drakloak
+
+Predicted line (principal variation):
+  1. [Evee] number 0  (v=+3.3471)
+  2. [opponent] END turn  (v=+3.3494)
+  3. [Evee] attach Basic {D} Energy (hand[2]) -> Pecharunt (active[0])  (v=+3.8105)
+  4. [Evee] ATTACK (attackId 1296)  (v=+3.9260)
+  5. [opponent] attach Basic {W} Energy (hand[2]) -> Snorlax (active[0])  (v=+3.9134)
+  6. [opponent] ATTACK (attackId 1547)  (v=+3.9004)
+  7. [opponent] card @ deck[2] (p1) + card @ deck[39] (p1)  (v=+3.9035)
+  8. [Evee] ATTACK (attackId 1296)  (v=+8.8648)
+  9. [opponent] END turn  (v=+8.8196)
+  10. [Evee] play Poké Pad (hand[0])  (v=+8.8200)

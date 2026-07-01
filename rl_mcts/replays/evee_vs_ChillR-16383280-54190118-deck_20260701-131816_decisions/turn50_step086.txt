@@ -1,0 +1,47 @@
+Turn 50  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.5378
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     959   +6.8194   +0.0738   0.443  retreat
+      41   +0.1078   +0.2121   0.557  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  1.00x  Hero’s Cape
+    0.85  1.90x  Boss’s Orders
+    0.49  0.49x  Relicanth
+  known (visible) opponent cards:
+    7x Basic {M} Energy
+    3x Duraludon
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Poké Pad
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    2x Xerosic’s Machinations
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Hero’s Cape
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=+6.8194)
+  2. [Evee] energy x1 @ active[0]  (v=+6.8265)
+  3. [Evee] Sylveon @ bench[1] (p0)  (v=+6.9992)
+  4. [Evee] ATTACK (attackId 459)  (v=+7.0214)
+  5. [opponent] END turn  (v=+7.0187)
+  6. [Evee] retreat  (v=+7.0519)
+  7. [Evee] energy x1 @ active[0]  (v=+7.0539)
+  8. [Evee] Pecharunt @ bench[0] (p0)  (v=+7.0602)
+  9. [Evee] END turn  (v=+7.0788)
+  10. [opponent] END turn  (v=+7.0366)
+  11. [Evee] END turn  (v=+7.1439)
+  12. [opponent] play Snorlax (hand[0])  (v=+7.1326)

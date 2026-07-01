@@ -1,0 +1,435 @@
+{
+  "turn": 3,
+  "turn_action_count": 2,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 6.8255,
+  "chosen_action": "ATTACK (attackId 1296)",
+  "candidates": [
+    {
+      "action": "ATTACK (attackId 1296)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.2595,
+      "nn_value": 2.2978,
+      "visits": 996,
+      "search_mean_value": 6.861,
+      "expanded": true,
+      "policy_target": 0.0355
+    },
+    {
+      "action": "play Energy Search (hand[4])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.2199,
+      "nn_value": -0.3656,
+      "visits": 1,
+      "search_mean_value": -0.3656,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Poké Pad (hand[5])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.2377,
+      "nn_value": -0.3779,
+      "visits": 1,
+      "search_mean_value": -0.3779,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Lillie's Determination (hand[6])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1346,
+      "nn_value": -0.3767,
+      "visits": 1,
+      "search_mean_value": -0.3767,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "END turn",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1483,
+      "nn_value": 0.2983,
+      "visits": 1,
+      "search_mean_value": 0.2983,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Hop’s Choice Band": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 19,
+        "name": "Telepath Psychic Energy",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 140,
+        "name": "Fezandipiti ex",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 184,
+        "name": "Latias ex",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 272,
+        "name": "Lillie’s Clefairy ex",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 311,
+        "name": "Hop’s Cramorant",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 879,
+        "name": "Hop's Trevenant",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1080,
+        "name": "Unfair Stamp",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1115,
+        "name": "Hop’s Bag",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1255,
+        "name": "Postwick",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 1171,
+        "name": "Hop’s Choice Band",
+        "count": 2
+      },
+      {
+        "id": 304,
+        "name": "Hop’s Snorlax",
+        "count": 1
+      },
+      {
+        "id": 11,
+        "name": "Mist Energy",
+        "count": 1
+      },
+      {
+        "id": 878,
+        "name": "Hop's Phantump",
+        "count": 1
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 1
+      },
+      {
+        "id": 1208,
+        "name": "Iris’s Fighting Spirit",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 9
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 4
+      },
+      {
+        "id": 1115,
+        "name": "Hop’s Bag",
+        "count": 4
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 1255,
+        "name": "Postwick",
+        "count": 4
+      },
+      {
+        "id": 879,
+        "name": "Hop's Trevenant",
+        "count": 4
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 2
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 311,
+        "name": "Hop’s Cramorant",
+        "count": 1
+      },
+      {
+        "id": 140,
+        "name": "Fezandipiti ex",
+        "count": 1
+      },
+      {
+        "id": 272,
+        "name": "Lillie’s Clefairy ex",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1080,
+        "name": "Unfair Stamp",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 184,
+        "name": "Latias ex",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 6.861
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "evolve Hop's Phantump (bench[0]) -> Hop's Trevenant",
+      "value": 6.9089
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[1])",
+      "value": 6.9315
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[1])",
+      "value": 6.9533
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 6.9918
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 7.3036
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 7.2732
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 8.7475
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[1])",
+      "value": 8.5882
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Hop’s Bag (hand[1])",
+      "value": 8.5391
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "card @ deck[15] (p1)",
+      "value": 8.5304
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 8.5221
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Judge (hand[8])",
+      "value": 8.9346
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 9.2378
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Pokégear 3.0 (hand[2])",
+      "value": 9.2027
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "card @ looking[3] (p1)",
+      "value": 9.241
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "attach Telepath Psychic Energy (hand[0]) -> Hop’s Cramorant (bench[4])",
+      "value": 8.9399
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Poké Pad (hand[0])",
+      "value": 8.9474
+    }
+  ]
+}

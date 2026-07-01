@@ -1,0 +1,62 @@
+Turn 129  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +2.7114
+CHOSEN: attach Basic {D} Energy (hand[8]) -> Munkidori (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     579   +4.8857   -0.2139   0.037  attach Basic {D} Energy (hand[8]) -> Munkidori (active[0])
+     267   -0.2499   -0.2923   0.081  play Lillie's Determination (hand[0])
+      29   -0.3294   -0.3086   0.128  play Pecharunt (hand[6])
+      26   -0.2929   -0.2632   0.051  attach Basic {D} Energy (hand[8]) -> Eevee (bench[2])
+      15   -0.2789   -0.3081   0.066  attach Basic {D} Energy (hand[8]) -> Sylveon (bench[0])
+      15   -0.3405   +0.1305   0.093  END turn
+      14   -0.3116   -0.3122   0.118  play Crispin (hand[4])
+      14   -0.3116   -0.3122   0.118  play Crispin (hand[5])
+      13   -0.2805   -0.3125   0.059  attach Basic {D} Energy (hand[8]) -> Pecharunt (bench[1])
+      10   -0.3113   -0.3110   0.088  play Energy Search (hand[7])
+       6   -0.3166   -0.3093   0.053  play Night Stretcher (hand[1])
+       6   -0.3166   -0.3093   0.053  play Night Stretcher (hand[2])
+       6   -0.3166   -0.3093   0.053  play Night Stretcher (hand[3])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+    0.01  0.02x  Hand Trimmer
+  known (visible) opponent cards:
+    7x Basic {M} Energy
+    4x Boss’s Orders
+    3x Archaludon ex
+    3x Night Stretcher
+    2x Duraludon
+    2x Lillie's Determination
+    2x Ultra Ball
+    2x Pokégear 3.0
+    2x Jumbo Ice Cream
+    1x Relicanth
+    1x Hero’s Cape
+    1x Poké Pad
+    1x Full Metal Lab
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Hand Trimmer
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[8]) -> Munkidori (active[0])  (v=+4.8857)
+  2. [Evee] ability Munkidori  (v=+5.7760)
+  3. [Evee] Sylveon @ bench[0] (p0)  (v=+5.8250)
+  4. [Evee] number 3  (v=+5.8561)
+  5. [Evee] Archaludon ex @ active[0] (p1)  (v=+5.8695)
+  6. [Evee] retreat  (v=+5.9033)
+  7. [Evee] energy x1 @ active[0]  (v=+5.9037)
+  8. [Evee] Eevee @ bench[2] (p0)  (v=+5.9338)
+  9. [Evee] END turn  (v=+5.9550)
+  10. [opponent] play Hand Trimmer (hand[2])  (v=+5.9116)
+  11. [Evee] Night Stretcher @ hand[1] (p0) + Pecharunt @ hand[6] (p0) + Energy Search @ hand[7] (p0)  (v=+5.8816)
+  12. [opponent] END turn  (v=+5.8117)
+  13. [Evee] play Crispin (hand[3])  (v=+5.8100)

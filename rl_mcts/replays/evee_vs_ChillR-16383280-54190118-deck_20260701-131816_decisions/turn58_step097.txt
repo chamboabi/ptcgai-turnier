@@ -1,0 +1,46 @@
+Turn 58  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0704
+CHOSEN: play Night Stretcher (hand[2])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     457   +0.0762   +0.0312   0.279  play Night Stretcher (hand[2])
+     375   +0.0729   +0.0312   0.279  play Night Stretcher (hand[3])
+     127   +0.0614   +0.0327   0.212  play Poké Pad (hand[1])
+      26   +0.0000   +0.1218   0.173  END turn
+      15   +0.0348   +0.1218   0.058  ATTACK (attackId 1296)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] play Night Stretcher (hand[2])  (v=+0.0762)
+  2. [Evee] Basic {P} Energy @ discard[24] (p0)  (v=+0.0840)
+  3. [Evee] attach Basic {P} Energy (hand[3]) -> Sylveon (bench[0])  (v=+0.1036)
+  4. [Evee] play Poké Pad (hand[1])  (v=+0.1139)
+  5. [Evee] card @ deck[0] (p0)  (v=+0.1143)
+  6. [Evee] play Night Stretcher (hand[1])  (v=+0.1127)
+  7. [Evee] Leafeon @ discard[15] (p0)  (v=+0.1164)
+  8. [Evee] END turn  (v=+0.1290)

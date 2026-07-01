@@ -1,0 +1,47 @@
+Turn 155  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0178
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     914   -0.0073   +0.0580   0.151  END turn
+      32   -0.0900   -0.1383   0.211  play Pecharunt (hand[6])
+      19   -0.1315   -0.1539   0.194  play Crispin (hand[1])
+      11   -0.1525   -0.1702   0.128  play Eevee (hand[5])
+       9   -0.2022   -0.1482   0.151  retreat
+       8   -0.1280   -0.1602   0.081  play Energy Search Pro (hand[4])
+       7   -0.1453   -0.1436   0.084  play Night Stretcher (hand[2])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    4x Archaludon ex
+    4x Boss’s Orders
+    4x Lillie's Determination
+    3x Duraludon
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Pokégear 3.0
+    3x Jumbo Ice Cream
+    2x Poké Pad
+    2x Full Metal Lab
+    1x Relicanth
+    1x Hero’s Cape
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    7x Snorlax
+    2x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0073)
+  2. [opponent] play Snorlax (hand[0])  (v=-0.0110)
+  3. [opponent] END turn  (v=-0.0296)
+  4. [Evee] END turn  (v=+0.0712)
+  5. [opponent] END turn  (v=+0.0613)
+  6. [Evee] play Crispin (hand[1])  (v=-0.1270)

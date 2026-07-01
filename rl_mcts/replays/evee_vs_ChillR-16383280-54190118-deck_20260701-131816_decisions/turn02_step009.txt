@@ -1,0 +1,51 @@
+Turn 2  (action #7, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.6448
+CHOSEN: play Munkidori (hand[6])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     446   -1.0948   -0.1175   0.120  play Munkidori (hand[6])
+     297   +0.4478   -0.1713   0.160  attach Basic {D} Energy (hand[5]) -> Pecharunt (active[0])
+     139   -1.1049   -0.1713   0.160  attach Basic {D} Energy (hand[0]) -> Pecharunt (active[0])
+      37   -1.1479   -0.2129   0.166  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+      37   -1.1479   -0.2129   0.166  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+      37   -1.1407   -0.2013   0.092  attach Basic {G} Energy (hand[4]) -> Pecharunt (active[0])
+       7   -1.3122   +0.1667   0.136  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.14x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.58x  Boss’s Orders
+    0.99  3.85x  Full Metal Lab
+    0.95  3.65x  Jumbo Ice Cream
+    0.95  3.79x  Cinderace
+    0.94  0.98x  Relicanth
+    0.94  3.73x  Explorer’s Guidance
+    0.16  0.35x  Judge
+    0.10  0.22x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    1x Duraludon
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    2x Snorlax
+    2x Pokégear 3.0
+    1x Boss’s Orders
+    1x Lillie's Determination
+
+Predicted line (principal variation):
+  1. [Evee] play Munkidori (hand[6])  (v=-1.0948)
+  2. [Evee] retreat  (v=-1.0546)
+  3. [Evee] energy x1 @ active[0]  (v=-1.0653)
+  4. [Evee] Munkidori @ bench[0] (p0)  (v=-1.0763)
+  5. [Evee] attach Basic {D} Energy (hand[0]) -> Munkidori (active[0])  (v=-1.0916)
+  6. [Evee] END turn  (v=-1.2328)
+  7. [opponent] ATTACK (attackId 223)  (v=-3.1064)
+  8. [Evee] attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[0])  (v=-3.1033)

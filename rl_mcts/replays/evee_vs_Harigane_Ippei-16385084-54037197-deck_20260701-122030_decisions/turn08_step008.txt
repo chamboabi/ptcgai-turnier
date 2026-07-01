@@ -1,0 +1,46 @@
+Turn 8  (action #7, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.9995
+CHOSEN: card @ prize[2] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     233   -1.0000   -1.0000   0.233  card @ prize[2] (p0)
+     232   -1.0000   -1.0000   0.232  card @ prize[5] (p0)
+     219   -1.0000   -1.0000   0.220  card @ prize[0] (p0)
+     121   -1.0000   -1.0000   0.121  card @ prize[1] (p0)
+     117   -1.0000   -1.0000   0.117  card @ prize[4] (p0)
+      78   -1.0000   -1.0000   0.078  card @ prize[3] (p0)
+
+Opponent belief:
+  archetype: Hop’s Choice Band 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Telepath Psychic Energy
+    1.00  1.00x  Fezandipiti ex
+    1.00  1.00x  Latias ex
+    1.00  1.00x  Lillie’s Clefairy ex
+    1.00  1.00x  Unfair Stamp
+    1.00  3.00x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  4.00x  Lillie's Determination
+    1.00  4.00x  Postwick
+  known (visible) opponent cards:
+    3x Hop’s Choice Band
+    3x Iris’s Fighting Spirit
+    2x Hop's Trevenant
+    2x Hop's Phantump
+    2x Hop’s Snorlax
+    1x Hop’s Cramorant
+    1x Ultra Ball
+    1x Hop’s Bag
+    1x Night Stretcher
+    1x Boss’s Orders
+    1x Basic {P} Energy
+    1x Mist Energy
+  sampled opponent hand (this search):
+    3x Snorlax
+    2x Lillie's Determination
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] Sylveon @ prize[2] (p0)  (v=-1.0000)

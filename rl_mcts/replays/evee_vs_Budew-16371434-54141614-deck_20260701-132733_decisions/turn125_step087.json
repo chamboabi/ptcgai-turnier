@@ -1,0 +1,352 @@
+{
+  "turn": 125,
+  "turn_action_count": 2,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": -0.1401,
+  "chosen_action": "play Munkidori (hand[3])",
+  "candidates": [
+    {
+      "action": "play Munkidori (hand[3])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.2138,
+      "nn_value": -0.2047,
+      "visits": 482,
+      "search_mean_value": -0.1295,
+      "expanded": true,
+      "policy_target": 0.0106
+    },
+    {
+      "action": "play Pecharunt (hand[7])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.2124,
+      "nn_value": -0.2331,
+      "visits": 198,
+      "search_mean_value": -0.1441,
+      "expanded": true,
+      "policy_target": -0.004
+    },
+    {
+      "action": "END turn",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.1536,
+      "nn_value": 0.1309,
+      "visits": 191,
+      "search_mean_value": -0.1412,
+      "expanded": true,
+      "policy_target": -0.0011
+    },
+    {
+      "action": "ATTACK (attackId 39)",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.084,
+      "nn_value": -0.2338,
+      "visits": 81,
+      "search_mean_value": -0.1446,
+      "expanded": true,
+      "policy_target": -0.0045
+    },
+    {
+      "action": "play Night Stretcher (hand[1])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0876,
+      "nn_value": -0.2371,
+      "visits": 14,
+      "search_mean_value": -0.2071,
+      "expanded": true,
+      "policy_target": -0.0671
+    },
+    {
+      "action": "play Night Stretcher (hand[2])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0876,
+      "nn_value": -0.2371,
+      "visits": 14,
+      "search_mean_value": -0.2071,
+      "expanded": true,
+      "policy_target": -0.0671
+    },
+    {
+      "action": "play Night Stretcher (hand[4])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0876,
+      "nn_value": -0.2371,
+      "visits": 14,
+      "search_mean_value": -0.2071,
+      "expanded": true,
+      "policy_target": -0.0671
+    },
+    {
+      "action": "retreat",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0735,
+      "nn_value": -0.2338,
+      "visits": 6,
+      "search_mean_value": -0.2773,
+      "expanded": true,
+      "policy_target": -0.1372
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1191,
+        "expected_copies": 0.145
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0475,
+        "expected_copies": 0.0751
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0155,
+        "expected_copies": 0.0259
+      },
+      {
+        "card_id": 1102,
+        "name": "Dusk Ball",
+        "probability": 0.0104,
+        "expected_copies": 0.0104
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 7
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 3
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 3
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 2
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 2
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 2
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 2
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 16
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 6
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Munkidori (hand[3])",
+      "value": -0.1295
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.1155
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1307
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.12
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1436
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.1164
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.144
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.1066
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1634
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0931
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1812
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.1198
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.2355
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Pecharunt (hand[6])",
+      "value": -0.2352
+    }
+  ]
+}

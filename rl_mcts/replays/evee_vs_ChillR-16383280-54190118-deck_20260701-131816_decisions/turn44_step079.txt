@@ -1,0 +1,55 @@
+Turn 44  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1640
+CHOSEN: attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[2])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     461   +0.1694   -0.0171   0.167  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[2])
+     282   +0.1768   -0.0188   0.167  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[0])
+     128   +0.1591   +0.0287   0.140  attach Basic {P} Energy (hand[1]) -> Munkidori (bench[3])
+      60   +0.1329   -0.0232   0.197  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[1])
+      40   +0.1320   +0.2207   0.132  END turn
+      29   +0.0905   +0.0110   0.197  attach Basic {P} Energy (hand[1]) -> Sylveon (active[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  1.00x  Hero’s Cape
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Night Stretcher
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    2x Lillie's Determination
+    2x Poké Pad
+    1x Archaludon ex
+    1x Duraludon
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Cinderace
+    1x Relicanth
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[2])  (v=+0.1694)
+  2. [Evee] END turn  (v=+0.1698)
+  3. [opponent] END turn  (v=+0.1364)
+  4. [Evee] play Night Stretcher (hand[1])  (v=+0.1450)
+  5. [Evee] Eevee @ discard[16] (p0)  (v=+0.1623)
+  6. [Evee] END turn  (v=+0.1711)
+  7. [opponent] play Snorlax (hand[6])  (v=+0.0612)
+  8. [opponent] play Snorlax (hand[4])  (v=+0.0212)
+  9. [opponent] play Snorlax (hand[4])  (v=-0.0086)
+  10. [opponent] play Snorlax (hand[0])  (v=-0.0314)
+  11. [opponent] END turn  (v=-0.0633)
+  12. [Evee] END turn  (v=+0.0431)

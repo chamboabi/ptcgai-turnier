@@ -1,0 +1,58 @@
+Turn 22  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1294
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     652   -0.0992   +0.1941   0.084  END turn
+      76   -0.1577   -0.1327   0.038  play Energy Search (hand[6])
+      64   -0.1556   -0.1232   0.033  play Eevee (hand[2])
+      53   -0.1621   -0.1552   0.103  play Energy Search Pro (hand[3])
+      27   -0.1879   -0.1511   0.124  play Night Stretcher (hand[4])
+      20   -0.2125   -0.1558   0.100  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+      20   -0.1881   -0.1068   0.085  attach Basic {P} Energy (hand[1]) -> Munkidori (bench[0])
+      20   -0.2125   -0.1558   0.100  attach Basic {P} Energy (hand[5]) -> Pecharunt (active[0])
+      20   -0.1881   -0.1068   0.085  attach Basic {P} Energy (hand[5]) -> Munkidori (bench[0])
+      20   -0.2104   -0.1587   0.098  attach Basic {D} Energy (hand[7]) -> Pecharunt (active[0])
+      17   -0.3771   -0.1046   0.088  attach Basic {D} Energy (hand[7]) -> Munkidori (bench[0])
+       6   -0.2379   +0.1941   0.025  ATTACK (attackId 1296)
+       5   -0.1955   -0.1561   0.036  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  3.85x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.60x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.24x  Xerosic’s Machinations
+    0.11  0.13x  Judge
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    4x Snorlax
+    2x Pokégear 3.0
+    1x Cinderace
+    1x Jumbo Ice Cream
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0992)
+  2. [opponent] END turn  (v=-0.1384)
+  3. [Evee] END turn  (v=-0.0871)
+  4. [opponent] END turn  (v=-0.1846)
+  5. [Evee] play Eevee (hand[8])  (v=-0.1486)
+  6. [Evee] attach Basic {D} Energy (hand[7]) -> Munkidori (bench[0])  (v=-0.1558)
+  7. [Evee] END turn  (v=-0.2145)
+  8. [opponent] play Snorlax (hand[1])  (v=+0.1468)

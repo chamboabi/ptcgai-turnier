@@ -1,0 +1,365 @@
+{
+  "turn": 14,
+  "turn_action_count": 10,
+  "acting_player_index": 0,
+  "selecting": "CARD / ATTACH_TO",
+  "root_value": 0.6283,
+  "chosen_action": "Basic {G} Energy @ hand[0] (p0)",
+  "candidates": [
+    {
+      "action": "Basic {G} Energy @ hand[0] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 1.0,
+      "nn_value": -0.0558,
+      "visits": 1000,
+      "search_mean_value": 0.629,
+      "expanded": true,
+      "policy_target": 0.0007
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Dawn": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 142,
+        "name": "Genesect",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 742,
+        "name": "Kadabra",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 743,
+        "name": "Alakazam",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1079,
+        "name": "Rare Candy",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1081,
+        "name": "Enhanced Hammer",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1129,
+        "name": "Sacred Ash",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1184,
+        "name": "Lana’s Aid",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1225,
+        "name": "Hilda",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1231,
+        "name": "Dawn",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1266,
+        "name": "Nighttime Mine",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1156,
+        "name": "Lucky Helmet",
+        "probability": 0.3333,
+        "expected_copies": 0.3333
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 741,
+        "name": "Abra",
+        "count": 4
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 2
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 2
+      },
+      {
+        "id": 343,
+        "name": "Shaymin",
+        "count": 1
+      },
+      {
+        "id": 13,
+        "name": "Enriching Energy",
+        "count": 1
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 1
+      },
+      {
+        "id": 1161,
+        "name": "Handheld Fan",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 10
+      },
+      {
+        "id": 1266,
+        "name": "Nighttime Mine",
+        "count": 4
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 4
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 3
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 3
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 2
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 2
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 2
+      },
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 2
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 1
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 1
+      },
+      {
+        "id": 1184,
+        "name": "Lana’s Aid",
+        "count": 1
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 1
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 1
+      },
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 1
+      },
+      {
+        "id": 142,
+        "name": "Genesect",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Basic {G} Energy @ hand[0] (p0)",
+      "value": 0.629
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Sylveon @ bench[0] (p0)",
+      "value": 0.6585
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Lana’s Aid (hand[2])",
+      "value": 0.4407
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "Abra @ discard[0] (p1) + Dunsparce @ discard[6] (p1)",
+      "value": 0.4396
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "ATTACK (attackId 1070)",
+      "value": 0.6621
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "Shaymin @ bench[0] (p1)",
+      "value": 0.6535
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ability Munkidori",
+      "value": 3.0953
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Leafeon @ active[0] (p0)",
+      "value": 3.2095
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "number 2",
+      "value": 3.8475
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Shaymin @ active[0] (p1)",
+      "value": 3.9728
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 4.0358
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 3.8729
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])",
+      "value": 3.8699
+    }
+  ]
+}

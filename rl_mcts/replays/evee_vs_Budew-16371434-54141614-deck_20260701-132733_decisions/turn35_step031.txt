@@ -1,0 +1,89 @@
+Turn 35  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0259
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     947   -0.0145   +0.3470   0.052  END turn
+       8   -0.1705   +0.3491   0.043  play Hand Trimmer (hand[11])
+       5   -0.1571   -0.2768   0.041  play Lillie's Determination (hand[16])
+       4   -0.2286   -0.2396   0.075  play Pecharunt (hand[7])
+       3   -0.2177   -0.1587   0.047  evolve Eevee (bench[1]) -> Sylveon
+       3   -0.2500   -0.1914   0.055  evolve Eevee (active[0]) -> Leafeon
+       3   -0.2312   -0.1724   0.055  evolve Eevee (bench[1]) -> Leafeon
+       3   -0.2681   -0.2654   0.066  play Crispin (hand[17])
+       2   -0.2087   -0.2207   0.039  attach Basic {G} Energy (hand[0]) -> Eevee (active[0])
+       2   -0.2593   -0.2711   0.045  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[0])
+       2   -0.2077   -0.2196   0.039  attach Basic {G} Energy (hand[0]) -> Eevee (bench[1])
+       2   -0.2408   -0.2028   0.047  evolve Eevee (active[0]) -> Sylveon
+       2   -0.2717   -0.2706   0.048  play Poké Pad (hand[9])
+       2   -0.2701   -0.2665   0.053  play Energy Search (hand[13])
+       2   -0.2494   -0.2617   0.040  play Eevee (hand[15])
+       1   -0.2460   -0.2460   0.032  play Judge (hand[1])
+       1   -0.2645   -0.2645   0.026  play Night Stretcher (hand[2])
+       1   -0.2144   -0.2144   0.017  attach Basic {P} Energy (hand[3]) -> Eevee (active[0])
+       1   -0.2672   -0.2672   0.019  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[0])
+       1   -0.2202   -0.2202   0.017  attach Basic {P} Energy (hand[3]) -> Eevee (bench[1])
+       1   -0.2317   -0.2317   0.032  play Judge (hand[4])
+       1   -0.2645   -0.2645   0.026  play Night Stretcher (hand[6])
+       1   -0.2542   -0.2542   0.032  play Judge (hand[10])
+       1   -0.2645   -0.2645   0.026  play Night Stretcher (hand[12])
+       1   -0.2660   -0.2660   0.027  play Energy Search Pro (hand[14])
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.84x  Full Metal Lab
+    0.95  3.73x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+    0.05  0.07x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Boss’s Orders
+    1x Duraludon
+    1x Relicanth
+    1x Hero’s Cape
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Night Stretcher
+    1x Archaludon ex
+    1x Ultra Ball
+    1x Pokégear 3.0
+  sampled opponent hand (this search):
+    7x Snorlax
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0145)
+  2. [opponent] END turn  (v=-0.0484)
+  3. [Evee] END turn  (v=-0.0359)
+  4. [opponent] END turn  (v=-0.0497)
+  5. [Evee] END turn  (v=-0.0357)
+  6. [opponent] END turn  (v=-0.0515)
+  7. [Evee] END turn  (v=-0.0359)
+  8. [opponent] END turn  (v=-0.0526)
+  9. [Evee] END turn  (v=-0.0358)
+  10. [opponent] END turn  (v=-0.0545)
+  11. [Evee] END turn  (v=-0.0357)
+  12. [opponent] END turn  (v=-0.0568)
+  13. [Evee] END turn  (v=-0.0350)
+  14. [opponent] END turn  (v=-0.0611)
+  15. [Evee] END turn  (v=-0.0357)
+  16. [opponent] END turn  (v=-0.0698)
+  17. [Evee] END turn  (v=-0.0364)
+  18. [opponent] END turn  (v=-0.0830)
+  19. [Evee] END turn  (v=-0.0276)
+  20. [opponent] END turn  (v=-0.1076)
+  21. [Evee] END turn  (v=-0.0260)
+  22. [opponent] END turn  (v=-0.1592)
+  23. [Evee] END turn  (v=-0.1319)
+  24. [opponent] END turn  (v=-0.1984)
+  25. [Evee] play Pecharunt (hand[7])  (v=-0.1911)

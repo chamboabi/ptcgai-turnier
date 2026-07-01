@@ -14,22 +14,19 @@ restructure; to_vec/from_vec are stubs until a new reward is wired up.
 import argparse
 import json
 import random
-import sys
 from pathlib import Path
 
 import cma
 import torch
 
-import config as cfg
-from agent import Agent, MCTSConfig
+from agent import Agent
 from cg.api import to_observation_class
 from cg.game import battle_finish, battle_select, battle_start
+from core import CUSTOMDECKS, build_model, load_deck, make_mcts_cfg
 from mcts import mcts_agent
-from model import MyModel
 from rewards import RewardFn, win_loss_terminal
 
-HERE = Path(__file__).parent
-ABOMASNOW_DECK_CSV = HERE / "data" / "decks" / "customdecks" / "abamasnow.csv"
+ABOMASNOW_DECK_CSV = CUSTOMDECKS / "abamasnow.csv"
 
 PARAM_NAMES = [
     "attached_energy_weight",
@@ -39,11 +36,6 @@ PARAM_NAMES = [
     "hand_build_weight",
     "prize_pressure_weight",
 ]
-
-
-def load_deck(path: Path) -> list[int]:
-    text = path.read_text().replace(",", "\n")
-    return [int(tok) for tok in text.split() if tok.strip()]
 
 
 # The base-shape machinery this tuner optimised was removed in the reward
@@ -96,36 +88,14 @@ def main() -> None:
     parser.add_argument("--model", type=str, default="out/model_best.pth")
     args = parser.parse_args()
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = MyModel(
-        cfg.model["d_model"],
-        cfg.model["num_heads"],
-        cfg.model["d_feedforward"],
-        cfg.model["num_layers_encoder"],
-        cfg.model["num_layers_decoder"],
-    )
-    model_path = Path(args.model)
-    if model_path.exists():
-        model.load_state_dict(torch.load(model_path, map_location=device))
-        print(f"Loaded model from {model_path}", flush=True)
-    else:
-        print(f"No checkpoint at {model_path}, using random weights.", flush=True)
-    model = model.to(device)
-    model.eval()
+    model = build_model(checkpoint=Path(args.model))
 
     deck_path = ABOMASNOW_DECK_CSV
     deck = load_deck(deck_path) if deck_path.exists() else []
     if not deck:
         raise FileNotFoundError(f"Deck not found at {deck_path}")
 
-    mcts_cfg = MCTSConfig(
-        search_count=cfg.mcts["search_count"],
-        max_action_combinations=cfg.mcts["max_action_combinations"],
-        ucb_exploration=cfg.mcts["ucb_exploration"],
-        policy_temperature=cfg.mcts["policy_temperature"],
-        unvisited_penalty=cfg.mcts["unvisited_penalty"],
-    )
-    agent = Agent(deck=deck, model=model, mcts_cfg=mcts_cfg, reward_fn=from_vec([0.1] * 6))
+    agent = Agent(deck=deck, model=model, mcts_cfg=make_mcts_cfg(), reward_fn=from_vec([0.1] * 6))
 
     x0 = [0.1] * len(PARAM_NAMES)
     es = cma.CMAEvolutionStrategy(x0, sigma0=0.05, inopts={"bounds": [0.0, 0.5], "verbose": -9})

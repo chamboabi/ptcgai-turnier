@@ -1,0 +1,44 @@
+Turn 0  (action #2, P0 Evee)
+Selecting: CARD / SETUP_ACTIVE_POKEMON
+Root value: -0.0246
+CHOSEN: Eevee @ hand[2] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.0246   -0.2893   1.000  Eevee @ hand[2] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 30%, Mega Lucario ex 19%, Alakazam Psychic 11%, Dragapult 7%, Postwick 5%
+  likely cards (P, E[copies]):
+    0.93  3.31x  Poké Pad
+    0.92  2.72x  Boss’s Orders
+    0.81  3.21x  Lillie's Determination
+    0.75  1.92x  Night Stretcher
+    0.57  0.57x  Hero’s Cape
+    0.50  1.91x  Pokégear 3.0
+    0.48  1.70x  Ultra Ball
+    0.45  1.75x  Buddy-Buddy Poffin
+    0.34  1.37x  Cinderace
+    0.31  3.58x  Basic {M} Energy
+    0.31  1.26x  Duraludon
+    0.31  1.26x  Archaludon ex
+    0.31  1.21x  Full Metal Lab
+    0.31  1.17x  Jumbo Ice Cream
+    0.30  1.19x  Explorer’s Guidance
+  known (visible) opponent cards:
+  sampled opponent hand (this search):
+    2x Full Metal Lab
+    2x Dudunsparce
+    1x Boss’s Orders
+    1x Hilda
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] Eevee @ hand[2] (p0)  (v=-0.0246)
+  2. [opponent] Dreepy @ hand[1] (p1)  (v=-0.0269)
+  3. [Evee] number 1  (v=-0.0251)
+  4. [opponent] Riolu @ hand[3] (p1) + Duraludon @ hand[5] (p1)  (v=-0.0256)
+  5. [Evee] play Poké Pad (hand[6])  (v=-0.0222)
+  6. [Evee] card @ deck[13] (p0)  (v=-0.0089)
+  7. [Evee] play Pecharunt (hand[7])  (v=+0.0320)
+  8. [Evee] play Hand Trimmer (hand[4])  (v=+0.0280)

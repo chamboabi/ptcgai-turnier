@@ -1,0 +1,56 @@
+Turn 48  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1430
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     670   -0.1180   +0.1381   0.451  END turn
+     197   -0.1555   -0.1751   0.141  play Energy Search (hand[0])
+     110   -0.1738   -0.1773   0.270  play Lillie's Determination (hand[3])
+      23   -0.6147   -0.1745   0.138  retreat
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    4x Kadabra
+    4x Poké Pad
+    4x Telepath Psychic Energy
+    3x Buddy-Buddy Poffin
+    3x Dawn
+    2x Alakazam
+    2x Basic {P} Energy
+    2x Handheld Fan
+    2x Boss’s Orders
+    2x Sacred Ash
+    2x Hilda
+    1x Shaymin
+    1x Genesect
+    1x Enriching Energy
+    1x Enhanced Hammer
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Dunsparce
+    1x Nighttime Mine
+    1x Lana’s Aid
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.1180)
+  2. [opponent] END turn  (v=-0.1328)
+  3. [Evee] attach Basic {P} Energy (hand[5]) -> Espeon ex (bench[2])  (v=-0.0602)
+  4. [Evee] END turn  (v=-0.0298)
+  5. [opponent] ATTACK (attackId 1072)  (v=-0.0401)
+  6. [Evee] END turn  (v=+0.0207)
+  7. [opponent] END turn  (v=+0.0214)
+  8. [Evee] attach Basic {P} Energy (hand[6]) -> Munkidori (active[0])  (v=+0.5401)
+  9. [Evee] ATTACK (attackId 141)  (v=+1.1689)
+  10. [opponent] energy x1 @ active[0]  (v=+1.1689)

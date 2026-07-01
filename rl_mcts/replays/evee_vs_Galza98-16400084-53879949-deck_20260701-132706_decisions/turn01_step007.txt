@@ -1,0 +1,42 @@
+Turn 1  (action #6, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.8373
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.8380   +0.1038   1.000  END turn
+
+Opponent belief:
+  archetype: Mega Lucario ex 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  13.65x  Basic {F} Energy
+    1.00  3.02x  Solrock
+    1.00  3.98x  Mega Lucario ex
+    1.00  3.96x  Dusk Ball
+    1.00  2.13x  Switch
+    1.00  3.96x  Premium Power Pro
+    1.00  3.97x  Fighting Gong
+    1.00  2.62x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  3.98x  Lillie's Determination
+    0.99  2.72x  Boss’s Orders
+    0.96  3.76x  Carmine
+    0.93  1.88x  Makuhita
+    0.93  1.89x  Hariyama
+    0.93  1.11x  Gravity Mountain
+  known (visible) opponent cards:
+    1x Riolu
+    1x Lunatone
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Carmine
+    1x Lillie's Determination
+    1x Dusk Ball
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.8380)
+  2. [opponent] play Carmine (hand[1])  (v=-0.9782)
+  3. [opponent] attach Basic {F} Energy (hand[2]) -> Riolu (active[0])  (v=-0.9933)
+  4. [opponent] ATTACK (attackId 981)  (v=-0.9990)
+  5. [opponent] Basic {F} Energy @ prize[1] (p1)  (v=-1.0000)

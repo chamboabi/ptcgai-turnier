@@ -1,0 +1,65 @@
+Turn 24  (action #3, P0 Evee)
+Selecting: COUNT / REMOVE_DAMAGE_COUNTER_COUNT
+Root value: +5.8942
+CHOSEN: number 1
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     996   +5.9249   +1.1107   0.488  number 1
+       2   -0.7957   +2.1104   0.320  number 2
+       2   +0.2040   +3.1100   0.193  number 3
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    6x Snorlax
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Rare Candy
+    1x Xerosic’s Machinations
+    1x Nighttime Mine
+
+Predicted line (principal variation):
+  1. [Evee] number 1  (v=+5.9249)
+  2. [Evee] Alakazam @ bench[4] (p1)  (v=+6.2060)
+  3. [Evee] play Judge (hand[0])  (v=+6.2821)
+  4. [Evee] attach Basic {P} Energy (hand[1]) -> Munkidori (active[0])  (v=+7.0854)
+  5. [Evee] ATTACK (attackId 141)  (v=+7.1240)
+  6. [opponent] energy x1 @ active[0]  (v=+7.1056)
+  7. [opponent] Espeon ex @ bench[2] (p0)  (v=+7.0855)
+  8. [opponent] ATTACK (attackId 1071)  (v=+7.0746)
+  9. [Evee] ability Munkidori  (v=+7.1184)
+  10. [Evee] Munkidori @ active[0] (p0)  (v=+7.1211)
+  11. [Evee] number 1  (v=+7.1371)
+  12. [Evee] Alakazam @ bench[4] (p1)  (v=+7.1449)
+  13. [Evee] attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])  (v=+7.1598)
+  14. [Evee] play Crushing Hammer (hand[0])  (v=+7.1931)
+  15. [Evee] energy x1 @ active[0]  (v=+7.1892)
+  16. [Evee] END turn  (v=+7.1688)
+  17. [opponent] END turn  (v=+7.2051)
+  18. [Evee] attach Basic {G} Energy (hand[2]) -> Pecharunt (bench[1])  (v=+7.2506)

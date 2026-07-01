@@ -1,0 +1,71 @@
+Turn 93  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0873
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     629   -0.0790   +0.1391   0.088  END turn
+     164   -0.0753   -0.1897   0.124  play Munkidori (hand[4])
+     144   -0.0879   -0.1897   0.124  play Munkidori (hand[3])
+       9   -0.2212   -0.2229   0.114  play Crispin (hand[1])
+       9   -0.2329   -0.2209   0.116  retreat
+       8   -0.1865   -0.2418   0.077  play Eevee (hand[6])
+       7   -0.2144   -0.2143   0.083  play Energy Search (hand[0])
+       6   -0.2312   -0.2313   0.084  play Poké Pad (hand[5])
+       5   -0.1590   -0.1702   0.033  attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])
+       5   -0.1590   -0.1702   0.033  attach Basic {P} Energy (hand[7]) -> Sylveon (active[0])
+       4   -0.1578   -0.1717   0.028  attach Basic {P} Energy (hand[2]) -> Eevee (bench[1])
+       4   -0.1578   -0.1717   0.028  attach Basic {P} Energy (hand[7]) -> Eevee (bench[1])
+       3   -0.1918   -0.2104   0.033  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+       3   -0.1918   -0.2104   0.033  attach Basic {P} Energy (hand[7]) -> Pecharunt (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    5x Snorlax
+    3x Cinderace
+    2x Explorer’s Guidance
+    1x Judge
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0790)
+  2. [opponent] END turn  (v=-0.0926)
+  3. [Evee] END turn  (v=-0.0777)
+  4. [opponent] END turn  (v=-0.0939)
+  5. [Evee] END turn  (v=-0.0771)
+  6. [opponent] END turn  (v=-0.0907)
+  7. [Evee] END turn  (v=-0.0729)
+  8. [opponent] END turn  (v=-0.0917)
+  9. [Evee] END turn  (v=-0.0714)
+  10. [opponent] END turn  (v=-0.0939)
+  11. [Evee] END turn  (v=-0.0681)
+  12. [opponent] END turn  (v=-0.1030)
+  13. [Evee] END turn  (v=-0.0663)
+  14. [opponent] END turn  (v=-0.1429)
+  15. [Evee] attach Mist Energy (hand[14]) -> Eevee (bench[1])  (v=-0.0928)
+  16. [Evee] END turn  (v=-0.0318)
+  17. [opponent] END turn  (v=-0.1248)
+  18. [Evee] play Munkidori (hand[3])  (v=-0.1120)

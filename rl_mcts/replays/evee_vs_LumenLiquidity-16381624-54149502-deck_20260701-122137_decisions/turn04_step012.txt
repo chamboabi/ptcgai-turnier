@@ -1,0 +1,49 @@
+Turn 4  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0840
+CHOSEN: play Eevee (hand[7])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     488   -0.0827   -0.0392   0.435  play Eevee (hand[7])
+     260   -0.0918   -0.0474   0.430  END turn
+     252   -0.0787   +0.1624   0.135  ATTACK (attackId 11)
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Shaymin
+    1x Telepath Psychic Energy
+  sampled opponent hand (this search):
+    1x Boss’s Orders
+    1x Sacred Ash
+    1x Snorlax
+    1x Dawn
+    1x Lana’s Aid
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] play Eevee (hand[7])  (v=-0.0827)
+  2. [Evee] ATTACK (attackId 11)  (v=-0.0694)
+  3. [Evee] Munkidori @ prize[1] (p0)  (v=-0.0898)
+  4. [opponent] Abra @ bench[2] (p1)  (v=-0.2184)
+  5. [opponent] evolve Abra (bench[1]) -> Kadabra  (v=-0.0838)
+  6. [opponent] YES  (v=-0.0576)
+  7. [opponent] retreat  (v=-0.0576)

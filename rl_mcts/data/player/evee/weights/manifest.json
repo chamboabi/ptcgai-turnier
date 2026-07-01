@@ -1,0 +1,10 @@
+{
+  "active": "v0",
+  "versions": {
+    "v0": {
+      "file": "v0.pth",
+      "date": "2026-07-01",
+      "notes": "carried over from out/model0.pth; untrained/dev checkpoint, not a real evee-tuned model yet"
+    }
+  }
+}

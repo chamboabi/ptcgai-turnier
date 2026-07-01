@@ -1,0 +1,429 @@
+{
+  "turn": 64,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 9.7093,
+  "chosen_action": "attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])",
+  "candidates": [
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0651,
+      "nn_value": 0.1834,
+      "visits": 972,
+      "search_mean_value": 9.9908,
+      "expanded": true,
+      "policy_target": 0.2815
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Munkidori (bench[4])",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.0708,
+      "nn_value": 0.1626,
+      "visits": 4,
+      "search_mean_value": 0.1551,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Munkidori (bench[4])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0363,
+      "nn_value": 0.1825,
+      "visits": 3,
+      "search_mean_value": 0.1665,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Sylveon (bench[1])",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.1022,
+      "nn_value": 0.1423,
+      "visits": 3,
+      "search_mean_value": 0.139,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[2])",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0826,
+      "nn_value": 0.1429,
+      "visits": 3,
+      "search_mean_value": 0.1396,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Sylveon (bench[0])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0651,
+      "nn_value": 0.1359,
+      "visits": 2,
+      "search_mean_value": 0.1359,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Sylveon (bench[0])",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.1022,
+      "nn_value": 0.0979,
+      "visits": 2,
+      "search_mean_value": 0.0979,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "ability Munkidori",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.0753,
+      "nn_value": 0.1171,
+      "visits": 2,
+      "search_mean_value": 0.1171,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "END turn",
+      "select": [
+        15
+      ],
+      "nn_policy_prior": 0.0665,
+      "nn_value": 0.1474,
+      "visits": 2,
+      "search_mean_value": 0.1261,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0464,
+      "nn_value": 0.1439,
+      "visits": 1,
+      "search_mean_value": 0.1439,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[2])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0464,
+      "nn_value": 0.1408,
+      "visits": 1,
+      "search_mean_value": 0.1408,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Munkidori (bench[3])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0363,
+      "nn_value": 0.1276,
+      "visits": 1,
+      "search_mean_value": 0.1276,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Pecharunt (active[0])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0826,
+      "nn_value": 0.0974,
+      "visits": 1,
+      "search_mean_value": 0.0974,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Munkidori (bench[3])",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.0708,
+      "nn_value": 0.1015,
+      "visits": 1,
+      "search_mean_value": 0.1015,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "ATTACK (attackId 1296)",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.022,
+      "nn_value": 4.1491,
+      "visits": 1,
+      "search_mean_value": 4.1491,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "retreat",
+      "select": [
+        14
+      ],
+      "nn_policy_prior": 0.0294,
+      "nn_value": 0.1171,
+      "visits": 1,
+      "search_mean_value": 0.1171,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.8526,
+        "expected_copies": 1.7158
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.4105,
+        "expected_copies": 0.4105
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 11
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 4
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 4
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 4
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 3
+      },
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 3
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 2
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 5
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])",
+      "value": 9.9908
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ability Munkidori",
+      "value": 10.0273
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Sylveon @ bench[0] (p0)",
+      "value": 10.0375
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "number 3",
+      "value": 10.0651
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Archaludon ex @ bench[0] (p1)",
+      "value": 10.0844
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 10.1008
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Boss’s Orders (hand[2])",
+      "value": 10.0899
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "Munkidori @ bench[3] (p0)",
+      "value": 10.085
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[0])",
+      "value": 10.0815
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[0])",
+      "value": 10.0784
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 10.0784
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[2])",
+      "value": 10.1022
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Night Stretcher (hand[1])",
+      "value": 10.1093
+    }
+  ]
+}

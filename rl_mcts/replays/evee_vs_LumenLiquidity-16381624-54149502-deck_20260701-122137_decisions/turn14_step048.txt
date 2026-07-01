@@ -1,0 +1,56 @@
+Turn 14  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +2.9587
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     993   +2.9830   -0.0380   0.264  ability Munkidori
+       3   -0.0599   -0.0647   0.339  END turn
+       2   -0.0482   -0.0405   0.201  play Poké Pad (hand[2])
+       2   -0.0610   -0.0380   0.197  retreat
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Hilda
+    1x Nighttime Mine
+    1x Rare Candy
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+2.9830)
+  2. [Evee] Leafeon @ bench[0] (p0)  (v=+3.8821)
+  3. [Evee] number 2  (v=+3.9148)
+  4. [Evee] Shaymin @ bench[0] (p1)  (v=+3.9135)
+  5. [Evee] play Poké Pad (hand[2])  (v=+3.9348)
+  6. [Evee] card @ deck[0] (p0)  (v=+3.9133)
+  7. [Evee] play Pecharunt (hand[2])  (v=+3.9656)
+  8. [Evee] END turn  (v=+3.9731)
+  9. [opponent] play Hilda (hand[1])  (v=+3.9700)
+  10. [opponent] card @ deck[5] (p1)  (v=+3.9649)

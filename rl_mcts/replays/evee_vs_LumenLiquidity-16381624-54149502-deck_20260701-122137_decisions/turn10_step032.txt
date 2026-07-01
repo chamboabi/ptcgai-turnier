@@ -1,0 +1,56 @@
+Turn 10  (action #5, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.6431
+CHOSEN: card @ prize[3] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     232   -0.6491   +0.0850   0.301  card @ prize[3] (p0)
+     232   -0.6494   +0.0850   0.301  card @ prize[4] (p0)
+     229   -0.6353   +0.0850   0.093  card @ prize[0] (p0)
+     229   -0.6415   +0.0850   0.214  card @ prize[1] (p0)
+      78   -0.6430   +0.0850   0.091  card @ prize[2] (p0)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Telepath Psychic Energy
+    1x Dunsparce
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Dudunsparce
+
+Predicted line (principal variation):
+  1. [Evee] Munkidori @ prize[3] (p0)  (v=-0.6491)
+  2. [opponent] Abra @ bench[2] (p1)  (v=-0.8496)
+  3. [opponent] ATTACK (attackId 1070)  (v=-0.8977)
+  4. [opponent] Abra @ bench[1] (p1)  (v=-0.9632)
+  5. [Evee] ATTACK (attackId 11)  (v=-0.9394)
+  6. [Evee] Munkidori @ prize[3] (p0)  (v=-0.9397)
+  7. [opponent] Shaymin @ bench[0] (p1)  (v=-0.9055)
+  8. [opponent] END turn  (v=-0.9591)
+  9. [Evee] END turn  (v=-0.9358)
+  10. [opponent] END turn  (v=-0.9945)
+  11. [Evee] attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])  (v=-0.9954)

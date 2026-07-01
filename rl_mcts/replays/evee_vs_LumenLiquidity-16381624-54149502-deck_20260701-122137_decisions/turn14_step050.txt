@@ -1,0 +1,53 @@
+Turn 14  (action #4, P0 Evee)
+Selecting: COUNT / REMOVE_DAMAGE_COUNTER_COUNT
+Root value: +4.6438
+CHOSEN: number 2
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     613   +3.8908   +1.9620   0.322  number 2
+     381   +5.9124   +2.9620   0.188  number 3
+       6   +1.7923   +0.9620   0.490  number 1
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Dawn
+    1x Nighttime Mine
+    1x Xerosic’s Machinations
+
+Predicted line (principal variation):
+  1. [Evee] number 2  (v=+3.8908)
+  2. [Evee] Shaymin @ bench[0] (p1)  (v=+3.8872)
+  3. [Evee] play Poké Pad (hand[2])  (v=+3.9040)
+  4. [Evee] card @ deck[28] (p0)  (v=+3.9164)
+  5. [Evee] play Pecharunt (hand[2])  (v=+3.8973)
+  6. [Evee] END turn  (v=+3.8693)
+  7. [opponent] play Dawn (hand[0])  (v=+3.9727)
+  8. [opponent] card @ deck[1] (p1)  (v=+3.9728)

@@ -1,0 +1,48 @@
+Turn 72  (action #3, P0 Evee)
+Selecting: COUNT / REMOVE_DAMAGE_COUNTER_COUNT
+Root value: +11.7800
+CHOSEN: number 3
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     998  +11.8122   +3.0809   0.559  number 3
+       1   +1.0794   +1.0794   0.199  number 1
+       1   +2.0801   +2.0801   0.242  number 2
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.30  0.30x  Relicanth
+  known (visible) opponent cards:
+    12x Basic {M} Energy
+    4x Duraludon
+    4x Night Stretcher
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Archaludon ex
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    4x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] number 3  (v=+11.8122)
+  2. [Evee] Archaludon ex @ bench[1] (p1)  (v=+12.0051)
+  3. [Evee] ability Munkidori  (v=+12.0608)
+  4. [Evee] Sylveon @ active[0] (p0)  (v=+12.0671)
+  5. [Evee] number 3  (v=+12.0828)
+  6. [Evee] Archaludon ex @ bench[1] (p1)  (v=+12.0864)
+  7. [Evee] play Judge (hand[4])  (v=+12.0916)
+  8. [Evee] play Wondrous Patch (hand[1])  (v=+12.1369)
+  9. [Evee] Basic {P} Energy @ discard[25] (p0)  (v=+12.1373)
+  10. [Evee] Sylveon @ bench[0] (p0)  (v=+12.1415)
+  11. [Evee] attach Basic {G} Energy (hand[1]) -> Sylveon (active[0])  (v=+12.1659)
+  12. [Evee] retreat  (v=+12.1779)
+  13. [Evee] energy x1 @ active[0]  (v=+12.1646)

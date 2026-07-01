@@ -1,0 +1,42 @@
+Turn 0  (action #1, P0 Evee)
+Selecting: YES_NO / IS_FIRST
+Root value: +0.0324
+CHOSEN: YES
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     546   +0.0390   -0.0953   0.292  YES
+     454   +0.0246   +0.1272   0.708  NO
+
+Opponent belief:
+  archetype: Archaludon Metal 30%, Mega Lucario ex 19%, Alakazam Psychic 11%, Dragapult 7%, Postwick 5%
+  likely cards (P, E[copies]):
+    0.93  3.31x  Poké Pad
+    0.92  2.72x  Boss’s Orders
+    0.81  3.21x  Lillie's Determination
+    0.75  1.92x  Night Stretcher
+    0.57  0.57x  Hero’s Cape
+    0.50  1.91x  Pokégear 3.0
+    0.48  1.70x  Ultra Ball
+    0.45  1.75x  Buddy-Buddy Poffin
+    0.34  1.37x  Cinderace
+    0.31  3.58x  Basic {M} Energy
+    0.31  1.26x  Duraludon
+    0.31  1.26x  Archaludon ex
+    0.31  1.21x  Full Metal Lab
+    0.31  1.17x  Jumbo Ice Cream
+    0.30  1.19x  Explorer’s Guidance
+  known (visible) opponent cards:
+  sampled opponent hand (this search):
+
+Predicted line (principal variation):
+  1. [Evee] YES  (v=+0.0390)
+  2. [Evee] Eevee @ hand[0] (p0)  (v=+0.0393)
+  3. [opponent] Fezandipiti ex @ hand[1] (p1)  (v=+0.0227)
+  4. [opponent] Snorlax @ hand[2] (p1) + Abra @ hand[3] (p1) + Dunsparce @ hand[4] (p1)  (v=+0.0224)
+  5. [Evee] attach Basic {G} Energy (hand[4]) -> Eevee (active[0])  (v=+0.0219)
+  6. [Evee] END turn  (v=+0.0228)
+  7. [opponent] attach Basic {W} Energy (hand[0]) -> Fezandipiti ex (active[0])  (v=+0.0041)
+  8. [opponent] END turn  (v=-0.0427)
+  9. [Evee] attach Basic {D} Energy (hand[3]) -> Eevee (active[0])  (v=-0.0316)
+  10. [Evee] play Poké Pad (hand[5])  (v=-0.0356)

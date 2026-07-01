@@ -1,0 +1,57 @@
+Turn 117  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +8.6511
+CHOSEN: attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     879   +9.8657   -0.1821   0.078  attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])
+     103   -0.0764   +0.1632   0.205  END turn
+       6   -0.2564   -0.2234   0.263  retreat
+       5   -0.2264   -0.2281   0.195  play Poké Pad (hand[0])
+       3   -0.2209   -0.2155   0.115  play Night Stretcher (hand[1])
+       2   -0.2248   -0.2248   0.078  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+       2   -0.1865   -0.1865   0.066  attach Basic {P} Energy (hand[2]) -> Eevee (bench[1])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    4x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])  (v=+9.8657)
+  2. [Evee] ATTACK (attackId 459)  (v=+9.9228)
+  3. [opponent] play Snorlax (hand[0])  (v=+9.9118)
+  4. [opponent] END turn  (v=+9.8901)
+  5. [Evee] retreat  (v=+10.2717)
+  6. [Evee] energy x1 @ active[0]  (v=+10.4535)
+  7. [Evee] Pecharunt @ bench[0] (p0)  (v=+10.9829)
+  8. [Evee] ATTACK (attackId 1296)  (v=+11.3554)
+  9. [opponent] END turn  (v=+11.1584)
+  10. [Evee] END turn  (v=+11.9392)
+  11. [opponent] END turn  (v=+11.8167)
+  12. [Evee] END turn  (v=+11.8806)
+  13. [opponent] END turn  (v=+11.7780)
+  14. [Evee] retreat  (v=+11.7780)

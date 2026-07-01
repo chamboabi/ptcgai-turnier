@@ -1,0 +1,57 @@
+Turn 85  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0047
+CHOSEN: attach Basic {G} Energy (hand[3]) -> Eevee (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     702   +0.0535   -0.1648   0.091  attach Basic {G} Energy (hand[3]) -> Eevee (active[0])
+     162   -0.0919   -0.1654   0.091  attach Basic {G} Energy (hand[3]) -> Eevee (bench[1])
+      42   -0.1187   -0.1754   0.176  play Munkidori (hand[4])
+      36   -0.1142   +0.1504   0.124  END turn
+      14   -0.1102   -0.1526   0.040  attach Basic {P} Energy (hand[2]) -> Eevee (active[0])
+      12   -0.1114   -0.1594   0.040  attach Basic {P} Energy (hand[2]) -> Eevee (bench[1])
+      12   -0.1532   -0.2151   0.111  attach Basic {G} Energy (hand[3]) -> Pecharunt (bench[0])
+       9   -0.2095   -0.2151   0.163  play Crispin (hand[1])
+       8   -0.1893   -0.1994   0.118  play Energy Search (hand[0])
+       3   -0.1923   -0.1969   0.047  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {G} Energy (hand[3]) -> Eevee (active[0])  (v=+0.0535)
+  2. [Evee] ATTACK (attackId 39)  (v=+0.0675)
+  3. [Evee] card @ deck[14] (p0)  (v=+0.0794)
+  4. [opponent] END turn  (v=+0.0708)
+  5. [Evee] attach Basic {D} Energy (hand[4]) -> Sylveon (active[0])  (v=+0.0885)
+  6. [Evee] END turn  (v=+0.1087)
+  7. [opponent] END turn  (v=+0.0844)
+  8. [Evee] END turn  (v=+0.1109)
+  9. [opponent] END turn  (v=+0.0659)
+  10. [Evee] END turn  (v=+0.1152)
+  11. [opponent] END turn  (v=+0.0525)

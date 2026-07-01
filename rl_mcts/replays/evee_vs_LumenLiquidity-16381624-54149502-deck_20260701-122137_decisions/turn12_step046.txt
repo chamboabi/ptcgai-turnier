@@ -1,0 +1,55 @@
+Turn 12  (action #14, P0 Evee)
+Selecting: CARD / EVOLVES_TO
+Root value: -0.5465
+CHOSEN: card @ deck[22] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     749   -0.3899   -0.0626   0.500  card @ deck[22] (p0)
+     251   -1.0157   -0.0626   0.500  card @ deck[23] (p0)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Enriching Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    1x Nighttime Mine
+    1x Alakazam
+    1x Snorlax
+    1x Genesect
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[22] (p0)  (v=-0.3899)
+  2. [opponent] ATTACK (attackId 1070)  (v=-0.2412)
+  3. [opponent] Shaymin @ bench[0] (p1)  (v=-0.2504)
+  4. [Evee] attach Basic {D} Energy (hand[2]) -> Munkidori (bench[3])  (v=+0.7358)
+  5. [Evee] ability Munkidori  (v=+0.9093)
+  6. [Evee] Sylveon @ active[0] (p0)  (v=+0.9525)
+  7. [Evee] Shaymin @ active[0] (p1)  (v=+0.9595)
+  8. [Evee] END turn  (v=+0.9719)
+  9. [opponent] END turn  (v=+0.9662)
+  10. [Evee] END turn  (v=+1.0119)
+  11. [opponent] play Dawn (hand[6])  (v=+1.0101)

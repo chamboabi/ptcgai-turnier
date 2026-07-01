@@ -1,0 +1,69 @@
+Turn 12  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1264
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     383   +0.0021   +0.2278   0.059  END turn
+     349   -0.1884   -0.1461   0.027  play Energy Search (hand[6])
+      75   -0.1985   -0.1087   0.059  attach Basic {P} Energy (hand[2]) -> Munkidori (bench[0])
+      15   -0.2366   -0.1589   0.068  attach Basic {D} Energy (hand[0]) -> Pecharunt (active[0])
+      15   -0.2267   -0.1050   0.061  attach Basic {D} Energy (hand[0]) -> Munkidori (bench[0])
+      15   -0.2259   -0.1087   0.059  attach Basic {P} Energy (hand[8]) -> Munkidori (bench[0])
+      14   -0.2489   -0.1663   0.070  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+      14   -0.2618   -0.1761   0.064  play Lillie's Determination (hand[3])
+      14   -0.2339   -0.1171   0.043  attach Mist Energy (hand[5]) -> Munkidori (bench[0])
+      14   -0.2265   -0.1087   0.059  attach Basic {P} Energy (hand[7]) -> Munkidori (bench[0])
+      14   -0.2043   -0.1615   0.026  retreat
+      13   -0.2443   -0.1087   0.059  attach Basic {P} Energy (hand[1]) -> Munkidori (bench[0])
+      13   -0.2600   -0.1663   0.070  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+      13   -0.2571   -0.1663   0.070  attach Basic {P} Energy (hand[7]) -> Pecharunt (active[0])
+      13   -0.2566   -0.1663   0.070  attach Basic {P} Energy (hand[8]) -> Pecharunt (active[0])
+       7   -0.2443   -0.1509   0.038  attach Basic {G} Energy (hand[4]) -> Pecharunt (active[0])
+       7   -0.2384   -0.1126   0.030  attach Basic {G} Energy (hand[4]) -> Munkidori (bench[0])
+       7   -0.2514   -0.1543   0.052  attach Mist Energy (hand[5]) -> Pecharunt (active[0])
+       5   -0.2828   +0.2278   0.017  ATTACK (attackId 1296)
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.14x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.58x  Boss’s Orders
+    0.99  3.85x  Full Metal Lab
+    0.95  3.65x  Jumbo Ice Cream
+    0.95  3.79x  Cinderace
+    0.94  0.98x  Relicanth
+    0.94  3.73x  Explorer’s Guidance
+    0.16  0.35x  Judge
+    0.10  0.22x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    1x Duraludon
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    3x Snorlax
+    2x Pokégear 3.0
+    1x Judge
+    1x Night Stretcher
+    1x Poké Pad
+    1x Full Metal Lab
+    1x Archaludon ex
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.0021)
+  2. [opponent] END turn  (v=-0.0861)
+  3. [Evee] play Crushing Hammer (hand[10])  (v=+0.0373)
+  4. [Evee] energy x1 @ active[0]  (v=+0.0386)
+  5. [Evee] END turn  (v=+0.0697)
+  6. [opponent] END turn  (v=+0.0370)
+  7. [Evee] END turn  (v=+0.0690)
+  8. [opponent] END turn  (v=-0.0002)
+  9. [Evee] END turn  (v=+0.0976)
+  10. [opponent] END turn  (v=-0.1224)
+  11. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])  (v=-0.1230)

@@ -1,0 +1,54 @@
+Turn 18  (action #3, P0 Evee)
+Selecting: COUNT / REMOVE_DAMAGE_COUNTER_COUNT
+Root value: +4.8879
+CHOSEN: number 2
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     578   +4.0794   +2.1485   0.316  number 2
+     416   +6.0648   +3.1474   0.194  number 3
+       6   +1.9692   +1.1495   0.490  number 1
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    3x Kadabra
+    3x Abra
+    3x Buddy-Buddy Poffin
+    3x Poké Pad
+    2x Telepath Psychic Energy
+    1x Shaymin
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Dunsparce
+    1x Boss’s Orders
+    1x Dawn
+    1x Enriching Energy
+    1x Sacred Ash
+  sampled opponent hand (this search):
+    3x Snorlax
+    2x Rare Candy
+    2x Enhanced Hammer
+    1x Dudunsparce
+    1x Alakazam
+
+Predicted line (principal variation):
+  1. [Evee] number 2  (v=+4.0794)
+  2. [Evee] Kadabra @ bench[2] (p1)  (v=+4.1101)
+  3. [Evee] play Crushing Hammer (hand[1])  (v=+4.1262)
+  4. [Evee] energy x1 @ active[0]  (v=+4.1304)
+  5. [Evee] play Poké Pad (hand[0])  (v=+4.1473)
+  6. [Evee] card @ deck[4] (p0)  (v=+4.1540)
+  7. [Evee] play Poké Pad (hand[0])  (v=+4.1974)
+  8. [Evee] card @ deck[1] (p0)  (v=+4.1882)

@@ -1,0 +1,44 @@
+Turn 153  (action #3, P0 Evee)
+Selecting: CARD / ATTACH_FROM
+Root value: +0.0094
+CHOSEN: Sylveon @ bench[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     913   +0.0133   -0.0651   0.777  Sylveon @ bench[0] (p0)
+      87   -0.0300   -0.0683   0.223  Munkidori @ bench[2] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    4x Archaludon ex
+    4x Boss’s Orders
+    4x Lillie's Determination
+    3x Duraludon
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Pokégear 3.0
+    3x Jumbo Ice Cream
+    2x Poké Pad
+    2x Full Metal Lab
+    1x Relicanth
+    1x Hero’s Cape
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    6x Snorlax
+    2x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] Sylveon @ bench[0] (p0)  (v=+0.0133)
+  2. [Evee] attach Basic {P} Energy (hand[13]) -> Eevee (active[0])  (v=+0.0454)
+  3. [Evee] END turn  (v=+0.0833)
+  4. [opponent] play Snorlax (hand[4])  (v=+0.0853)
+  5. [opponent] END turn  (v=+0.0761)
+  6. [Evee] play Hand Trimmer (hand[10])  (v=+0.0511)
+  7. [opponent] Cinderace @ hand[3] (p1) + Cinderace @ hand[5] (p1) + Snorlax @ hand[6] (p1)  (v=+0.0365)
+  8. [Evee] Lillie's Determination @ hand[0] (p0) + Night Stretcher @ hand[1] (p0) + Night Stretcher @ hand[2] (p0) + Night Stretcher @ hand[3] (p0) + Crispin @ hand[4] (p0) + Crispin @ hand[5] (p0) + Pecharunt @ hand[6] (p0) + Energy Search @ hand[7] (p0) + Poké Pad @ hand[8] (p0) + Basic {P} Energy @ hand[9] (p0) + Sylveon @ hand[10] (p0) + Basic {P} Energy @ hand[13] (p0) + Basic {P} Energy @ hand[15] (p0)  (v=+0.0388)

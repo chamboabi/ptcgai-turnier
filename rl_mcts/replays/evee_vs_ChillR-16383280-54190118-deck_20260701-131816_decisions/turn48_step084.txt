@@ -1,0 +1,43 @@
+Turn 48  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1351
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +0.1352   +0.1941   1.000  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  1.00x  Hero’s Cape
+    0.85  1.90x  Boss’s Orders
+    0.49  0.49x  Relicanth
+  known (visible) opponent cards:
+    6x Basic {M} Energy
+    3x Ultra Ball
+    2x Archaludon ex
+    2x Duraludon
+    2x Night Stretcher
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    2x Lillie's Determination
+    2x Poké Pad
+    2x Xerosic’s Machinations
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.1352)
+  2. [opponent] play Snorlax (hand[2])  (v=+0.1208)
+  3. [opponent] ATTACK (attackId 253)  (v=+0.1029)
+  4. [Evee] attach Basic {G} Energy (hand[1]) -> Sylveon (bench[1])  (v=+0.0760)
+  5. [Evee] END turn  (v=+0.0768)
+  6. [opponent] play Snorlax (hand[0])  (v=+0.0137)
+  7. [opponent] play Snorlax (hand[0])  (v=+0.0046)
+  8. [opponent] END turn  (v=-0.0238)
+  9. [Evee] END turn  (v=+0.0463)

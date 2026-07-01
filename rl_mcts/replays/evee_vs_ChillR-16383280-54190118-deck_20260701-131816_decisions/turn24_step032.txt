@@ -1,0 +1,50 @@
+Turn 24  (action #4, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.2507
+CHOSEN: card @ deck[5] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     346   -0.2521   -0.1811   0.250  card @ deck[5] (p0)
+     328   -0.2528   -0.1811   0.250  card @ deck[24] (p0)
+     208   -0.2368   -0.1811   0.250  card @ deck[4] (p0)
+     118   -0.2656   -0.1811   0.250  card @ deck[14] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  3.85x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.60x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.24x  Xerosic’s Machinations
+    0.11  0.13x  Judge
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Lillie's Determination
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+    1x Archaludon ex
+    1x Hero’s Cape
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[5] (p0)  (v=-0.2521)
+  2. [Evee] play Energy Search (hand[5])  (v=-0.2080)
+  3. [Evee] card @ deck[28] (p0)  (v=-0.2098)
+  4. [Evee] attach Basic {D} Energy (hand[7]) -> Munkidori (bench[0])  (v=-0.2432)
+  5. [Evee] END turn  (v=-0.3475)
+  6. [opponent] play Snorlax (hand[2])  (v=+0.0801)

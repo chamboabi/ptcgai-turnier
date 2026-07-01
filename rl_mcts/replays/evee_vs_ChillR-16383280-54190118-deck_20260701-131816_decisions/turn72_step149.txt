@@ -1,0 +1,55 @@
+Turn 72  (action #2, P0 Evee)
+Selecting: CARD / REMOVE_DAMAGE_COUNTER
+Root value: +13.5629
+CHOSEN: Sylveon @ active[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000  +13.5764   +0.0787   1.000  Sylveon @ active[0] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.30  0.30x  Relicanth
+  known (visible) opponent cards:
+    12x Basic {M} Energy
+    4x Duraludon
+    4x Night Stretcher
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Archaludon ex
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] Sylveon @ active[0] (p0)  (v=+13.5764)
+  2. [Evee] number 3  (v=+13.6140)
+  3. [Evee] Archaludon ex @ bench[0] (p1)  (v=+13.8751)
+  4. [Evee] ability Munkidori  (v=+13.9569)
+  5. [Evee] Sylveon @ active[0] (p0)  (v=+13.9651)
+  6. [Evee] number 3  (v=+13.9869)
+  7. [Evee] Archaludon ex @ bench[1] (p1)  (v=+14.7775)
+  8. [Evee] play Judge (hand[4])  (v=+16.0072)
+  9. [Evee] attach Basic {G} Energy (hand[1]) -> Sylveon (bench[0])  (v=+17.7133)
+  10. [Evee] retreat  (v=+18.0364)
+  11. [Evee] energy x1 @ active[0]  (v=+18.0553)
+  12. [Evee] Sylveon @ bench[0] (p0)  (v=+18.3762)
+  13. [Evee] ATTACK (attackId 459)  (v=+18.4399)
+  14. [opponent] END turn  (v=+18.4004)
+  15. [Evee] play Judge (hand[3])  (v=+18.7479)
+  16. [Evee] retreat  (v=+18.9533)
+  17. [Evee] energy x1 @ active[0]  (v=+18.8064)
+  18. [Evee] Pecharunt @ bench[1] (p0)  (v=+19.0441)
+  19. [Evee] END turn  (v=+19.0373)
+  20. [opponent] play Snorlax (hand[0])  (v=+19.0331)
+  21. [opponent] play Snorlax (hand[0])  (v=+19.0227)

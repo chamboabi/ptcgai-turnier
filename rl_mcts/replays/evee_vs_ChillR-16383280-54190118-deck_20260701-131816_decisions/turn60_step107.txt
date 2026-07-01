@@ -1,0 +1,52 @@
+Turn 60  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +5.7188
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     993   +5.7637   +0.1389   0.329  ability Munkidori
+       3   +0.1263   +0.1529   0.288  END turn
+       2   +0.1493   +0.1492   0.156  play Wondrous Patch (hand[1])
+       1   +0.1529   +0.1529   0.097  ATTACK (attackId 1296)
+       1   +0.1389   +0.1389   0.129  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+5.7637)
+  2. [Evee] Pecharunt @ active[0] (p0)  (v=+5.7751)
+  3. [Evee] number 3  (v=+5.7892)
+  4. [Evee] Archaludon ex @ bench[0] (p1)  (v=+5.7895)
+  5. [Evee] play Wondrous Patch (hand[1])  (v=+5.8079)
+  6. [Evee] Basic {P} Energy @ discard[22] (p0)  (v=+5.8066)
+  7. [Evee] Munkidori @ bench[3] (p0)  (v=+5.8284)
+  8. [Evee] retreat  (v=+5.8586)
+  9. [Evee] energy x1 @ active[0]  (v=+5.8357)
+  10. [Evee] Munkidori @ bench[3] (p0)  (v=+6.1108)
+  11. [Evee] ATTACK (attackId 141)  (v=+6.2853)
+  12. [opponent] ATTACK (attackId 223)  (v=+5.3324)
+  13. [Evee] attach Basic {P} Energy (hand[1]) -> Sylveon (bench[1])  (v=+6.1694)
+  14. [Evee] ability Munkidori  (v=+6.1694)

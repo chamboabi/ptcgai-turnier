@@ -1,0 +1,424 @@
+{
+  "turn": 153,
+  "turn_action_count": 5,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 0.0011,
+  "chosen_action": "play Lillie's Determination (hand[0])",
+  "candidates": [
+    {
+      "action": "play Lillie's Determination (hand[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0563,
+      "nn_value": -0.0693,
+      "visits": 878,
+      "search_mean_value": 0.013,
+      "expanded": true,
+      "policy_target": 0.0119
+    },
+    {
+      "action": "END turn",
+      "select": [
+        17
+      ],
+      "nn_policy_prior": 0.0654,
+      "nn_value": 0.0742,
+      "visits": 33,
+      "search_mean_value": -0.0376,
+      "expanded": true,
+      "policy_target": -0.0386
+    },
+    {
+      "action": "ATTACK (attackId 39)",
+      "select": [
+        15
+      ],
+      "nn_policy_prior": 0.0363,
+      "nn_value": -0.1146,
+      "visits": 13,
+      "search_mean_value": -0.047,
+      "expanded": true,
+      "policy_target": -0.048
+    },
+    {
+      "action": "play Pecharunt (hand[6])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.093,
+      "nn_value": -0.1164,
+      "visits": 10,
+      "search_mean_value": -0.0931,
+      "expanded": true,
+      "policy_target": -0.0941
+    },
+    {
+      "action": "play Crispin (hand[4])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0856,
+      "nn_value": -0.1138,
+      "visits": 8,
+      "search_mean_value": -0.1146,
+      "expanded": true,
+      "policy_target": -0.1157
+    },
+    {
+      "action": "play Crispin (hand[5])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0856,
+      "nn_value": -0.1138,
+      "visits": 8,
+      "search_mean_value": -0.1146,
+      "expanded": true,
+      "policy_target": -0.1157
+    },
+    {
+      "action": "play Hand Trimmer (hand[10])",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0567,
+      "nn_value": 0.078,
+      "visits": 8,
+      "search_mean_value": -0.0678,
+      "expanded": true,
+      "policy_target": -0.0688
+    },
+    {
+      "action": "play Energy Search (hand[7])",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0622,
+      "nn_value": -0.1147,
+      "visits": 6,
+      "search_mean_value": -0.1167,
+      "expanded": true,
+      "policy_target": -0.1178
+    },
+    {
+      "action": "play Poké Pad (hand[8])",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0638,
+      "nn_value": -0.1203,
+      "visits": 5,
+      "search_mean_value": -0.123,
+      "expanded": true,
+      "policy_target": -0.1241
+    },
+    {
+      "action": "evolve Eevee (active[0]) -> Sylveon",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.0596,
+      "nn_value": -0.0329,
+      "visits": 5,
+      "search_mean_value": -0.1131,
+      "expanded": true,
+      "policy_target": -0.1142
+    },
+    {
+      "action": "play Poké Pad (hand[12])",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.0638,
+      "nn_value": -0.1203,
+      "visits": 5,
+      "search_mean_value": -0.123,
+      "expanded": true,
+      "policy_target": -0.1241
+    },
+    {
+      "action": "play Eevee (hand[14])",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.056,
+      "nn_value": -0.1312,
+      "visits": 4,
+      "search_mean_value": -0.1308,
+      "expanded": true,
+      "policy_target": -0.1319
+    },
+    {
+      "action": "play Night Stretcher (hand[1])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.037,
+      "nn_value": -0.1187,
+      "visits": 3,
+      "search_mean_value": -0.1219,
+      "expanded": true,
+      "policy_target": -0.123
+    },
+    {
+      "action": "play Night Stretcher (hand[2])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.037,
+      "nn_value": -0.1187,
+      "visits": 3,
+      "search_mean_value": -0.1219,
+      "expanded": true,
+      "policy_target": -0.123
+    },
+    {
+      "action": "play Night Stretcher (hand[3])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.037,
+      "nn_value": -0.1187,
+      "visits": 3,
+      "search_mean_value": -0.1219,
+      "expanded": true,
+      "policy_target": -0.123
+    },
+    {
+      "action": "play Night Stretcher (hand[16])",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.037,
+      "nn_value": -0.1187,
+      "visits": 3,
+      "search_mean_value": -0.1219,
+      "expanded": true,
+      "policy_target": -0.123
+    },
+    {
+      "action": "play Energy Search Pro (hand[17])",
+      "select": [
+        14
+      ],
+      "nn_policy_prior": 0.0355,
+      "nn_value": -0.1118,
+      "visits": 3,
+      "search_mean_value": -0.1118,
+      "expanded": true,
+      "policy_target": -0.1128
+    },
+    {
+      "action": "retreat",
+      "select": [
+        16
+      ],
+      "nn_policy_prior": 0.032,
+      "nn_value": -0.1146,
+      "visits": 2,
+      "search_mean_value": -0.1339,
+      "expanded": true,
+      "policy_target": -0.1349
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.096,
+        "expected_copies": 0.1167
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0386,
+        "expected_copies": 0.0597
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 8
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 4
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 4
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 3
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 3
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 2
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 6
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 6
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Lillie's Determination (hand[0])",
+      "value": 0.013
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0257
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0251
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0485
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[0])",
+      "value": 0.0392
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0185
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0043
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.0681
+    }
+  ]
+}

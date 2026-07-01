@@ -1,0 +1,86 @@
+Turn 8  (action #5, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -1.5646
+CHOSEN: card @ deck[2] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     916   -1.0482   -7.0750   0.043  card @ deck[2] (p0)
+       2   -7.2104   -7.0750   0.008  card @ deck[0] (p0)
+       2   -7.2044   -7.0750   0.039  card @ deck[1] (p0)
+       2   -7.2080   -7.0750   0.029  card @ deck[3] (p0)
+       2   -7.2104   -7.0750   0.008  card @ deck[4] (p0)
+       2   -7.2120   -7.0750   0.009  card @ deck[5] (p0)
+       2   -7.2120   -7.0750   0.009  card @ deck[6] (p0)
+       2   -7.2066   -7.0750   0.028  card @ deck[7] (p0)
+       2   -7.2044   -7.0750   0.039  card @ deck[8] (p0)
+       2   -7.2070   -7.0750   0.029  card @ deck[9] (p0)
+       2   -7.2069   -7.0750   0.019  card @ deck[10] (p0)
+       2   -7.2120   -7.0750   0.009  card @ deck[11] (p0)
+       2   -7.2066   -7.0750   0.028  card @ deck[12] (p0)
+       2   -7.2104   -7.0750   0.029  card @ deck[13] (p0)
+       2   -7.2085   -7.0750   0.043  card @ deck[14] (p0)
+       2   -7.2070   -7.0750   0.029  card @ deck[15] (p0)
+       2   -7.2102   -7.0750   0.027  card @ deck[16] (p0)
+       2   -7.2045   -7.0750   0.013  card @ deck[17] (p0)
+       2   -7.2104   -7.0750   0.029  card @ deck[18] (p0)
+       2   -7.2103   -7.0750   0.015  card @ deck[19] (p0)
+       2   -7.2045   -7.0750   0.013  card @ deck[20] (p0)
+       2   -7.2143   -7.0750   0.028  card @ deck[21] (p0)
+       2   -7.2063   -7.0750   0.032  card @ deck[22] (p0)
+       2   -7.2151   -7.0750   0.022  card @ deck[23] (p0)
+       2   -7.2120   -7.0750   0.009  card @ deck[24] (p0)
+       2   -7.2056   -7.0750   0.027  card @ deck[25] (p0)
+       2   -7.2108   -7.0750   0.027  card @ deck[26] (p0)
+       2   -7.2056   -7.0750   0.027  card @ deck[27] (p0)
+       2   -7.2063   -7.0750   0.013  card @ deck[28] (p0)
+       2   -7.2103   -7.0750   0.015  card @ deck[29] (p0)
+       2   -7.2143   -7.0750   0.028  card @ deck[30] (p0)
+       2   -7.2070   -7.0750   0.029  card @ deck[31] (p0)
+       2   -7.2063   -7.0750   0.032  card @ deck[32] (p0)
+       2   -7.2104   -7.0750   0.008  card @ deck[33] (p0)
+       2   -7.2069   -7.0750   0.019  card @ deck[34] (p0)
+       2   -7.2108   -7.0750   0.027  card @ deck[35] (p0)
+       2   -7.2069   -7.0750   0.019  card @ deck[36] (p0)
+       2   -7.2044   -7.0750   0.039  card @ deck[37] (p0)
+       2   -7.2103   -7.0750   0.015  card @ deck[38] (p0)
+       2   -7.2088   -7.0750   0.015  card @ deck[39] (p0)
+       2   -7.2033   -7.0750   0.014  card @ deck[40] (p0)
+       2   -7.2066   -7.0750   0.028  card @ deck[41] (p0)
+       2   -7.2108   -7.0750   0.027  card @ deck[42] (p0)
+
+Opponent belief:
+  archetype: Hop’s Choice Band 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Telepath Psychic Energy
+    1.00  1.00x  Fezandipiti ex
+    1.00  1.00x  Latias ex
+    1.00  1.00x  Lillie’s Clefairy ex
+    1.00  1.00x  Unfair Stamp
+    1.00  3.00x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  4.00x  Lillie's Determination
+    1.00  4.00x  Postwick
+  known (visible) opponent cards:
+    3x Hop’s Choice Band
+    3x Iris’s Fighting Spirit
+    2x Hop’s Snorlax
+    2x Hop's Trevenant
+    2x Hop's Phantump
+    1x Mist Energy
+    1x Basic {P} Energy
+    1x Hop’s Cramorant
+    1x Ultra Ball
+    1x Hop’s Bag
+    1x Night Stretcher
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    2x Poké Pad
+    1x Lillie's Determination
+    1x Telepath Psychic Energy
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[2] (p0)  (v=-1.0482)
+  2. [opponent] Postwick @ prize[3] (p1)  (v=-1.0336)
+  3. [Evee] Basic {P} Energy @ prize[3] (p0)  (v=-1.0000)

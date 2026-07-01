@@ -1,0 +1,321 @@
+{
+  "turn": 62,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 8.0901,
+  "chosen_action": "ability Munkidori",
+  "candidates": [
+    {
+      "action": "ability Munkidori",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.2314,
+      "nn_value": 0.1243,
+      "visits": 989,
+      "search_mean_value": 8.1936,
+      "expanded": true,
+      "policy_target": 0.1035
+    },
+    {
+      "action": "END turn",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.2021,
+      "nn_value": 0.172,
+      "visits": 4,
+      "search_mean_value": 0.1433,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Wondrous Patch (hand[1])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.1095,
+      "nn_value": 0.135,
+      "visits": 2,
+      "search_mean_value": 0.1351,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Judge (hand[2])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.2016,
+      "nn_value": 0.083,
+      "visits": 2,
+      "search_mean_value": 0.0953,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "retreat",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1561,
+      "nn_value": 0.1243,
+      "visits": 2,
+      "search_mean_value": 0.0981,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "ATTACK (attackId 459)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0993,
+      "nn_value": -6.6464,
+      "visits": 1,
+      "search_mean_value": -6.6464,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.8557,
+        "expected_copies": 1.7629
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.4227,
+        "expected_copies": 0.4227
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 10
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 4
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 3
+      },
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 3
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 2
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 2
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 8
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ability Munkidori",
+      "value": 8.1936
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Pecharunt @ bench[0] (p0)",
+      "value": 8.21
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "number 3",
+      "value": 8.2316
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Archaludon ex @ bench[0] (p1)",
+      "value": 8.307
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 8.3418
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[3])",
+      "value": 8.2434
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[3])",
+      "value": 8.4226
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 8.4183
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ability Munkidori",
+      "value": 11.407
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Sylveon @ active[0] (p0)",
+      "value": 11.455
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "number 3",
+      "value": 11.5768
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Archaludon ex @ bench[0] (p1)",
+      "value": 11.5695
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {P} Energy (hand[3]) -> Sylveon (bench[1])",
+      "value": 10.9573
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Wondrous Patch (hand[1])",
+      "value": 12.1005
+    }
+  ]
+}

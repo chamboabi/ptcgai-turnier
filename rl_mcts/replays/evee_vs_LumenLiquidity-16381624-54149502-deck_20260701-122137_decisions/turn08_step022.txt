@@ -1,0 +1,51 @@
+Turn 8  (action #3, P0 Evee)
+Selecting: ENERGY / DISCARD_ENERGY
+Root value: -0.0010
+CHOSEN: energy x1 @ active[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.0010   +0.0012   1.000  energy x1 @ active[0]
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Telepath Psychic Energy
+    1x Dunsparce
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+  sampled opponent hand (this search):
+    1x Rare Candy
+    1x Hilda
+    1x Dawn
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] energy x1 @ active[0]  (v=-0.0010)
+  2. [Evee] Leafeon @ bench[0] (p0)  (v=+0.0051)
+  3. [Evee] ATTACK (attackId 11)  (v=+0.0150)
+  4. [Evee] Munkidori @ prize[4] (p0)  (v=+0.0141)
+  5. [opponent] Dunsparce @ bench[2] (p1)  (v=-0.0126)
+  6. [opponent] evolve Abra (bench[1]) -> Kadabra  (v=-0.0460)
+  7. [opponent] YES  (v=-0.0235)
+  8. [opponent] play Hilda (hand[1])  (v=-0.0088)

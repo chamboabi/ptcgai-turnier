@@ -1,0 +1,50 @@
+Turn 40  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0487
+CHOSEN: play Night Stretcher (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     851   +0.0629   -0.1854   0.410  play Night Stretcher (hand[0])
+     117   -0.0213   +0.1890   0.267  END turn
+      32   -0.0655   -0.1880   0.323  play Poké Pad (hand[2])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  1.00x  Hero’s Cape
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    2x Lillie's Determination
+    2x Poké Pad
+    1x Archaludon ex
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] play Night Stretcher (hand[0])  (v=+0.0629)
+  2. [Evee] Leafeon @ discard[17] (p0)  (v=+0.0729)
+  3. [Evee] play Poké Pad (hand[1])  (v=+0.0806)
+  4. [Evee] card @ deck[3] (p0)  (v=+0.0790)
+  5. [Evee] evolve Eevee (active[0]) -> Leafeon  (v=+0.0855)
+  6. [Evee] END turn  (v=+0.0862)
+  7. [opponent] play Snorlax (hand[4])  (v=-0.0858)
+  8. [opponent] ATTACK (attackId 253)  (v=-0.1312)
+  9. [opponent] Boss’s Orders @ prize[0] (p1)  (v=-0.1259)
+  10. [Evee] Pecharunt @ bench[0] (p0)  (v=-0.1137)
+  11. [Evee] END turn  (v=-0.0125)
+  12. [opponent] play Snorlax (hand[0])  (v=-0.0266)

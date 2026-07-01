@@ -1,0 +1,85 @@
+Turn 31  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0188
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     955   -0.0095   +0.3586   0.058  END turn
+       6   -0.1287   +0.3601   0.048  play Hand Trimmer (hand[11])
+       5   -0.1868   -0.2310   0.084  play Pecharunt (hand[7])
+       3   -0.1867   -0.1533   0.053  evolve Eevee (bench[1]) -> Sylveon
+       3   -0.2257   -0.1844   0.062  evolve Eevee (active[0]) -> Leafeon
+       3   -0.2097   -0.1664   0.062  evolve Eevee (bench[1]) -> Leafeon
+       2   -0.2012   -0.2144   0.044  attach Basic {G} Energy (hand[0]) -> Eevee (active[0])
+       2   -0.2524   -0.2655   0.051  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[0])
+       2   -0.2005   -0.2136   0.044  attach Basic {G} Energy (hand[0]) -> Eevee (bench[1])
+       2   -0.1908   -0.2277   0.036  play Judge (hand[1])
+       2   -0.2332   -0.1963   0.053  evolve Eevee (active[0]) -> Sylveon
+       2   -0.2667   -0.2653   0.053  play Poké Pad (hand[9])
+       2   -0.2648   -0.2605   0.059  play Energy Search (hand[13])
+       2   -0.2406   -0.2541   0.044  play Eevee (hand[15])
+       1   -0.2571   -0.2571   0.029  play Night Stretcher (hand[2])
+       1   -0.2077   -0.2077   0.019  attach Basic {P} Energy (hand[3]) -> Eevee (active[0])
+       1   -0.2618   -0.2618   0.021  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[0])
+       1   -0.2141   -0.2141   0.019  attach Basic {P} Energy (hand[3]) -> Eevee (bench[1])
+       1   -0.2462   -0.2462   0.036  play Judge (hand[4])
+       1   -0.2571   -0.2571   0.029  play Night Stretcher (hand[6])
+       1   -0.2492   -0.2492   0.036  play Judge (hand[10])
+       1   -0.2571   -0.2571   0.029  play Night Stretcher (hand[12])
+       1   -0.2594   -0.2594   0.030  play Energy Search Pro (hand[14])
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.84x  Full Metal Lab
+    0.95  3.73x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+    0.05  0.07x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Boss’s Orders
+    1x Duraludon
+    1x Relicanth
+    1x Hero’s Cape
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Night Stretcher
+    1x Archaludon ex
+    1x Ultra Ball
+    1x Pokégear 3.0
+  sampled opponent hand (this search):
+    6x Snorlax
+    2x Cinderace
+    1x Explorer’s Guidance
+    1x Jumbo Ice Cream
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0095)
+  2. [opponent] END turn  (v=-0.0393)
+  3. [Evee] END turn  (v=-0.0275)
+  4. [opponent] END turn  (v=-0.0436)
+  5. [Evee] END turn  (v=-0.0292)
+  6. [opponent] END turn  (v=-0.0439)
+  7. [Evee] END turn  (v=-0.0281)
+  8. [opponent] END turn  (v=-0.0464)
+  9. [Evee] END turn  (v=-0.0285)
+  10. [opponent] END turn  (v=-0.0494)
+  11. [Evee] END turn  (v=-0.0281)
+  12. [opponent] END turn  (v=-0.0540)
+  13. [Evee] END turn  (v=-0.0270)
+  14. [opponent] END turn  (v=-0.0606)
+  15. [Evee] END turn  (v=-0.0248)
+  16. [opponent] END turn  (v=-0.0722)
+  17. [Evee] END turn  (v=-0.0225)
+  18. [opponent] END turn  (v=-0.1023)
+  19. [Evee] END turn  (v=-0.0276)
+  20. [opponent] END turn  (v=-0.1669)
+  21. [Evee] play Hand Trimmer (hand[11])  (v=-0.1225)
+  22. [opponent] Explorer’s Guidance @ hand[0] (p1) + Snorlax @ hand[1] (p1) + Cinderace @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Jumbo Ice Cream @ hand[4] (p1) + Snorlax @ hand[5] (p1) + Snorlax @ hand[6] (p1) + Cinderace @ hand[7] (p1) + Snorlax @ hand[8] (p1) + Snorlax @ hand[9] (p1) + Snorlax @ hand[10] (p1) + Snorlax @ hand[12] (p1) + Snorlax @ hand[13] (p1) + Snorlax @ hand[14] (p1) + Snorlax @ hand[15] (p1)  (v=-0.1824)
+  23. [Evee] Basic {G} Energy @ hand[0] (p0) + Judge @ hand[1] (p0) + Night Stretcher @ hand[2] (p0) + Basic {P} Energy @ hand[3] (p0) + Judge @ hand[4] (p0) + Sylveon @ hand[5] (p0) + Night Stretcher @ hand[6] (p0) + Pecharunt @ hand[7] (p0) + Leafeon @ hand[8] (p0) + Poké Pad @ hand[9] (p0) + Judge @ hand[10] (p0) + Night Stretcher @ hand[11] (p0) + Energy Search @ hand[12] (p0) + Energy Search Pro @ hand[13] (p0) + Eevee @ hand[14] (p0) + Basic {P} Energy @ hand[15] (p0) + Crushing Hammer @ hand[16] (p0) + Judge @ hand[17] (p0) + Energy Search Pro @ hand[18] (p0) + Basic {G} Energy @ hand[21] (p0)  (v=-0.1928)

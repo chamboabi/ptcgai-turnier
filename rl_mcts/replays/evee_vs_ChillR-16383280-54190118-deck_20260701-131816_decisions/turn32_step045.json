@@ -1,0 +1,436 @@
+{
+  "turn": 32,
+  "turn_action_count": 3,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 6.672,
+  "chosen_action": "ability Munkidori",
+  "candidates": [
+    {
+      "action": "ability Munkidori",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.1327,
+      "nn_value": -0.0431,
+      "visits": 949,
+      "search_mean_value": 7.0376,
+      "expanded": true,
+      "policy_target": 0.3656
+    },
+    {
+      "action": "END turn",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.1185,
+      "nn_value": 0.1882,
+      "visits": 19,
+      "search_mean_value": -0.039,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "ATTACK (attackId 1296)",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0367,
+      "nn_value": 0.1882,
+      "visits": 11,
+      "search_mean_value": 0.0714,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Judge (hand[5])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.1168,
+      "nn_value": -0.0245,
+      "visits": 9,
+      "search_mean_value": 0.0476,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Night Stretcher (hand[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.18,
+      "nn_value": -0.0372,
+      "visits": 3,
+      "search_mean_value": -0.0539,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "evolve Eevee (bench[1]) -> Leafeon",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1291,
+      "nn_value": 0.0457,
+      "visits": 3,
+      "search_mean_value": -0.0192,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Judge (hand[6])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1168,
+      "nn_value": -0.0111,
+      "visits": 3,
+      "search_mean_value": -0.0085,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Judge (hand[4])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1168,
+      "nn_value": -0.0631,
+      "visits": 2,
+      "search_mean_value": -0.065,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "retreat",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0525,
+      "nn_value": -0.0431,
+      "visits": 1,
+      "search_mean_value": -0.0431,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.9764
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.9858,
+        "expected_copies": 3.6099
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.9858,
+        "expected_copies": 3.8794
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.9385,
+        "expected_copies": 0.9385
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1087,
+        "expected_copies": 0.1324
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.1064,
+        "expected_copies": 0.2293
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0284,
+        "expected_copies": 0.052
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 3
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 2
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 2
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 2
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 17
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 3
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 2
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 2
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ability Munkidori",
+      "value": 7.0376
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Pecharunt @ active[0] (p0)",
+      "value": 7.045
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "number 3",
+      "value": 7.0644
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Archaludon ex @ active[0] (p1)",
+      "value": 7.0687
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "retreat",
+      "value": 8.2339
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "energy x1 @ active[0]",
+      "value": 8.4095
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Munkidori @ bench[0] (p0)",
+      "value": 8.7252
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 141)",
+      "value": 8.8193
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "ATTACK (attackId 253)",
+      "value": 8.7983
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "Full Metal Lab @ prize[3] (p1)",
+      "value": 8.8055
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Eevee @ bench[1] (p0)",
+      "value": 8.8962
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 9.017
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 8.8333
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 9.1111
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Snorlax (hand[1])",
+      "value": 9.1042
+    }
+  ]
+}

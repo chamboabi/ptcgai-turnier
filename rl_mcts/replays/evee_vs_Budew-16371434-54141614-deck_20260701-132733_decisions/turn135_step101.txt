@@ -1,0 +1,67 @@
+Turn 135  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0601
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     933   +0.0740   +0.1453   0.079  END turn
+      11   -0.0844   +0.1453   0.068  play Hand Trimmer (hand[10])
+       8   -0.1310   -0.1643   0.110  play Pecharunt (hand[6])
+       8   -0.0678   -0.1661   0.043  ATTACK (attackId 39)
+       6   -0.1168   -0.1698   0.068  play Lillie's Determination (hand[0])
+       6   -0.1666   -0.1665   0.101  play Crispin (hand[4])
+       6   -0.1666   -0.1665   0.101  play Crispin (hand[5])
+       4   -0.1711   -0.1685   0.075  play Energy Search (hand[7])
+       4   -0.1746   -0.1737   0.076  play Poké Pad (hand[8])
+       2   -0.1688   -0.1626   0.045  play Night Stretcher (hand[1])
+       2   -0.1688   -0.1626   0.045  play Night Stretcher (hand[2])
+       2   -0.1688   -0.1626   0.045  play Night Stretcher (hand[3])
+       2   -0.1176   -0.1181   0.025  attach Basic {P} Energy (hand[9]) -> Eevee (active[0])
+       2   -0.1143   -0.1148   0.030  attach Basic {P} Energy (hand[9]) -> Sylveon (bench[0])
+       2   -0.1860   -0.1661   0.038  retreat
+       1   -0.1643   -0.1643   0.030  attach Basic {P} Energy (hand[9]) -> Pecharunt (bench[1])
+       1   -0.1133   -0.1133   0.021  attach Basic {P} Energy (hand[9]) -> Munkidori (bench[2])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.10  0.12x  Judge
+    0.04  0.06x  Xerosic’s Machinations
+    0.01  0.02x  Hand Trimmer
+  known (visible) opponent cards:
+    7x Basic {M} Energy
+    4x Boss’s Orders
+    3x Archaludon ex
+    3x Lillie's Determination
+    3x Night Stretcher
+    2x Duraludon
+    2x Ultra Ball
+    2x Pokégear 3.0
+    2x Jumbo Ice Cream
+    1x Relicanth
+    1x Hero’s Cape
+    1x Poké Pad
+    1x Full Metal Lab
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    8x Snorlax
+    2x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.0740)
+  2. [opponent] END turn  (v=+0.0480)
+  3. [Evee] END turn  (v=+0.0652)
+  4. [opponent] END turn  (v=+0.0128)
+  5. [Evee] END turn  (v=+0.0308)
+  6. [opponent] END turn  (v=+0.0109)
+  7. [Evee] END turn  (v=+0.0563)
+  8. [opponent] END turn  (v=+0.0190)
+  9. [Evee] play Judge (hand[14])  (v=+0.0927)
+  10. [Evee] END turn  (v=+0.1444)
+  11. [opponent] END turn  (v=+0.0984)
+  12. [Evee] END turn  (v=+0.3071)
+  13. [opponent] END turn  (v=-0.0661)
+  14. [Evee] END turn  (v=-0.0137)
+  15. [opponent] END turn  (v=-0.1263)

@@ -1,0 +1,59 @@
+Turn 18  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +4.8087
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     990   +4.8607   +0.1506   0.187  ability Munkidori
+       3   +0.1422   +0.1617   0.161  play Crushing Hammer (hand[1])
+       2   +0.1417   +0.1500   0.131  play Poké Pad (hand[0])
+       2   +0.1417   +0.1500   0.131  play Poké Pad (hand[2])
+       2   +0.1246   +0.1506   0.169  retreat
+       1   +0.0332   +0.0332   0.221  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    3x Kadabra
+    3x Abra
+    3x Buddy-Buddy Poffin
+    3x Poké Pad
+    2x Telepath Psychic Energy
+    1x Shaymin
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Dunsparce
+    1x Boss’s Orders
+    1x Dawn
+    1x Enriching Energy
+    1x Sacred Ash
+  sampled opponent hand (this search):
+    4x Snorlax
+    2x Nighttime Mine
+    1x Hilda
+    1x Lana’s Aid
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+4.8607)
+  2. [Evee] Leafeon @ active[0] (p0)  (v=+4.8655)
+  3. [Evee] number 2  (v=+4.0816)
+  4. [Evee] Shaymin @ bench[0] (p1)  (v=+4.1040)
+  5. [Evee] play Crushing Hammer (hand[1])  (v=+4.1254)
+  6. [Evee] energy x1 @ active[0]  (v=+4.1301)
+  7. [Evee] play Poké Pad (hand[0])  (v=+4.1457)
+  8. [Evee] card @ deck[7] (p0)  (v=+4.1655)
+  9. [Evee] play Poké Pad (hand[0])  (v=+4.1988)
+  10. [Evee] card @ deck[4] (p0)  (v=+4.1896)

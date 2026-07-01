@@ -1,0 +1,46 @@
+Turn 66  (action #9, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.8668
+CHOSEN: ATTACK (attackId 459)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     998   +6.8870   +7.1970   0.329  ATTACK (attackId 459)
+       2   +0.1754   +0.1941   0.671  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.31  0.31x  Relicanth
+  known (visible) opponent cards:
+    11x Basic {M} Energy
+    4x Duraludon
+    4x Night Stretcher
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    3x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 459)  (v=+6.8870)
+  2. [opponent] play Snorlax (hand[0])  (v=+6.8405)
+  3. [opponent] play Snorlax (hand[0])  (v=+6.9189)
+  4. [opponent] END turn  (v=+6.9187)
+  5. [Evee] retreat  (v=+7.0338)
+  6. [Evee] energy x1 @ active[0]  (v=+7.0337)
+  7. [Evee] Pecharunt @ bench[1] (p0)  (v=+7.0421)
+  8. [Evee] attach Basic {D} Energy (hand[2]) -> Sylveon (bench[1])  (v=+7.0523)
+  9. [Evee] END turn  (v=+7.0477)
+  10. [opponent] END turn  (v=+7.0456)
+  11. [Evee] play Night Stretcher (hand[2])  (v=+7.0374)
+  12. [Evee] Leafeon @ discard[13] (p0)  (v=+7.0363)

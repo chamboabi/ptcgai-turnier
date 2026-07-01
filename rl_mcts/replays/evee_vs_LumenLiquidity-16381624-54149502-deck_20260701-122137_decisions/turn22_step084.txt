@@ -1,0 +1,64 @@
+Turn 22  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +2.2319
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     660   +3.4095   +0.0835   0.165  retreat
+      69   -0.0037   +0.1447   0.069  attach Basic {P} Energy (hand[0]) -> Espeon ex (active[0])
+      65   -0.1103   +0.1436   0.121  attach Basic {P} Energy (hand[0]) -> Sylveon (bench[0])
+      51   -0.0217   +0.0910   0.148  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])
+      51   -0.0217   +0.0910   0.148  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[3])
+      51   -0.0217   +0.0910   0.148  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[4])
+      39   -0.1122   +0.1457   0.067  attach Basic {P} Energy (hand[0]) -> Munkidori (bench[2])
+      14   -0.0792   -0.0181   0.134  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    4x Poké Pad
+    3x Kadabra
+    3x Buddy-Buddy Poffin
+    3x Telepath Psychic Energy
+    2x Alakazam
+    2x Dawn
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Handheld Fan
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+  sampled opponent hand (this search):
+    4x Snorlax
+    3x Hilda
+    2x Dunsparce
+    2x Nighttime Mine
+    1x Dudunsparce
+    1x Lana’s Aid
+    1x Rare Candy
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=+3.4095)
+  2. [Evee] energy x1 @ active[0]  (v=+4.0988)
+  3. [Evee] Munkidori @ bench[2] (p0)  (v=+4.9122)
+  4. [Evee] attach Basic {P} Energy (hand[0]) -> Munkidori (active[0])  (v=+5.1028)
+  5. [Evee] ATTACK (attackId 141)  (v=+5.1261)
+  6. [opponent] ATTACK (attackId 1072)  (v=+5.8928)
+  7. [opponent] Enhanced Hammer @ prize[2] (p1)  (v=+5.8962)
+  8. [Evee] Sylveon @ bench[0] (p0)  (v=+5.9061)
+  9. [Evee] attach Basic {P} Energy (hand[0]) -> Sylveon (active[0])  (v=+5.9294)
+  10. [Evee] END turn  (v=+5.8868)

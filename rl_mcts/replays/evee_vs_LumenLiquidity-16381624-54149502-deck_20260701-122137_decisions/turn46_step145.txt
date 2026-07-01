@@ -1,0 +1,62 @@
+Turn 46  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0600
+CHOSEN: play Hand Trimmer (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     561   -0.0433   +0.1098   0.180  play Hand Trimmer (hand[0])
+     327   -0.0505   +0.1327   0.291  END turn
+      65   -0.0692   -0.1437   0.172  play Poké Pad (hand[1])
+      19   -0.5960   -0.1556   0.176  play Lillie's Determination (hand[5])
+      17   -0.1039   -0.1334   0.091  play Energy Search (hand[2])
+      11   -0.1352   -0.1353   0.090  retreat
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    4x Kadabra
+    4x Poké Pad
+    4x Telepath Psychic Energy
+    3x Buddy-Buddy Poffin
+    3x Dawn
+    2x Alakazam
+    2x Basic {P} Energy
+    2x Handheld Fan
+    2x Boss’s Orders
+    2x Sacred Ash
+    2x Hilda
+    1x Shaymin
+    1x Genesect
+    1x Enriching Energy
+  sampled opponent hand (this search):
+    2x Dunsparce
+    1x Snorlax
+    1x Dudunsparce
+    1x Nighttime Mine
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] play Hand Trimmer (hand[0])  (v=-0.0433)
+  2. [opponent] Enhanced Hammer @ hand[5] (p1)  (v=-0.0699)
+  3. [Evee] END turn  (v=-0.0634)
+  4. [opponent] END turn  (v=-0.0946)
+  5. [Evee] END turn  (v=-0.0754)
+  6. [opponent] END turn  (v=-0.1170)
+  7. [Evee] END turn  (v=-0.0888)
+  8. [opponent] END turn  (v=-0.1565)
+  9. [Evee] END turn  (v=-0.1243)
+  10. [opponent] END turn  (v=-0.2312)
+  11. [Evee] END turn  (v=-0.1926)
+  12. [opponent] END turn  (v=-0.2965)
+  13. [Evee] attach Basic {P} Energy (hand[9]) -> Pecharunt (bench[1])  (v=-0.2993)

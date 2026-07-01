@@ -1,0 +1,52 @@
+Turn 85  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0240
+CHOSEN: ATTACK (attackId 39)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     925   +0.0369   -0.2148   0.095  ATTACK (attackId 39)
+      32   -0.0857   +0.1731   0.175  END turn
+      21   -0.1082   -0.1766   0.248  play Munkidori (hand[3])
+      11   -0.2207   -0.2173   0.229  play Crispin (hand[1])
+       8   -0.2120   -0.2163   0.166  play Energy Search (hand[0])
+       3   -0.2504   -0.2148   0.086  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    1x Xerosic’s Machinations
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 39)  (v=+0.0369)
+  2. [Evee] card @ deck[23] (p0)  (v=+0.0436)
+  3. [opponent] END turn  (v=+0.0394)
+  4. [Evee] attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])  (v=+0.0382)
+  5. [Evee] END turn  (v=+0.0577)
+  6. [opponent] END turn  (v=+0.0262)
+  7. [Evee] END turn  (v=+0.0629)
+  8. [opponent] END turn  (v=+0.0146)
+  9. [Evee] END turn  (v=+0.0808)
+  10. [opponent] END turn  (v=-0.0170)

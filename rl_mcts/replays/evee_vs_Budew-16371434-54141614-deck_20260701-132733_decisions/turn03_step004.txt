@@ -1,0 +1,75 @@
+Turn 3  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1029
+CHOSEN: play Lillie's Determination (hand[4])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     809   -0.0782   -0.4766   0.114  play Lillie's Determination (hand[4])
+     158   -0.1762   +0.3835   0.142  END turn
+      12   -0.2909   -0.4526   0.200  play Munkidori (hand[6])
+       7   -0.3448   -0.4012   0.142  evolve Eevee (bench[0]) -> Espeon ex
+       6   -0.3443   +0.3604   0.117  play Hand Trimmer (hand[3])
+       3   -0.4239   -0.4400   0.090  attach Basic {D} Energy (hand[0]) -> Pecharunt (active[0])
+       3   -0.4470   -0.4787   0.114  play Lillie's Determination (hand[5])
+       2   -0.4334   -0.4568   0.081  attach Basic {D} Energy (hand[0]) -> Eevee (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  11.31x  Basic {M} Energy
+    1.00  4.00x  Duraludon
+    1.00  4.00x  Archaludon ex
+    1.00  3.10x  Night Stretcher
+    1.00  3.99x  Ultra Ball
+    1.00  3.94x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.71x  Boss’s Orders
+    0.99  3.84x  Full Metal Lab
+    0.95  3.71x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.73x  Explorer’s Guidance
+    0.17  0.36x  Judge
+  known (visible) opponent cards:
+    1x Relicanth
+  sampled opponent hand (this search):
+    2x Boss’s Orders
+    1x Ultra Ball
+    1x Hero’s Cape
+    1x Jumbo Ice Cream
+    1x Archaludon ex
+    1x Basic {M} Energy
+
+Predicted line (principal variation):
+  1. [Evee] play Lillie's Determination (hand[4])  (v=-0.0782)
+  2. [Evee] evolve Eevee (bench[0]) -> Sylveon  (v=-0.0739)
+  3. [Evee] END turn  (v=-0.0804)
+  4. [opponent] END turn  (v=-0.1026)
+  5. [Evee] END turn  (v=-0.0818)
+  6. [opponent] END turn  (v=-0.1031)
+  7. [Evee] END turn  (v=-0.0795)
+  8. [opponent] END turn  (v=-0.1042)
+  9. [Evee] END turn  (v=-0.0771)
+  10. [opponent] END turn  (v=-0.1051)
+  11. [Evee] END turn  (v=-0.0681)
+  12. [opponent] END turn  (v=-0.1008)
+  13. [Evee] END turn  (v=-0.0540)
+  14. [opponent] END turn  (v=-0.0940)
+  15. [Evee] END turn  (v=-0.0197)
+  16. [opponent] END turn  (v=-0.0769)
+  17. [Evee] END turn  (v=+0.0212)
+  18. [opponent] END turn  (v=-0.0683)
+  19. [Evee] END turn  (v=+0.0530)
+  20. [opponent] END turn  (v=-0.0869)
+  21. [Evee] END turn  (v=+0.0288)
+  22. [opponent] END turn  (v=-0.1202)
+  23. [Evee] END turn  (v=+0.0005)
+  24. [opponent] END turn  (v=-0.1056)
+  25. [Evee] END turn  (v=-0.0420)
+  26. [opponent] END turn  (v=-0.1304)
+  27. [Evee] END turn  (v=-0.0427)
+  28. [opponent] END turn  (v=-0.1883)
+  29. [Evee] END turn  (v=-0.0446)
+  30. [opponent] END turn  (v=-0.4755)

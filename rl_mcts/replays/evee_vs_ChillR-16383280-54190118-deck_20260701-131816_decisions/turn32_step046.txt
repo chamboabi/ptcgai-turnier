@@ -1,0 +1,52 @@
+Turn 32  (action #4, P0 Evee)
+Selecting: CARD / REMOVE_DAMAGE_COUNTER
+Root value: +6.4080
+CHOSEN: Pecharunt @ active[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +6.4145   -0.0431   1.000  Pecharunt @ active[0] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    1x Archaludon ex
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Relicanth
+    1x Pokégear 3.0
+    1x Lillie's Determination
+    1x Cinderace
+    1x Poké Pad
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] Pecharunt @ active[0] (p0)  (v=+6.4145)
+  2. [Evee] number 3  (v=+6.4309)
+  3. [Evee] Archaludon ex @ active[0] (p1)  (v=+6.4344)
+  4. [Evee] play Night Stretcher (hand[0])  (v=+5.9614)
+  5. [Evee] Pecharunt @ discard[4] (p0)  (v=+5.9614)
+  6. [Evee] play Pecharunt (hand[6])  (v=+6.0052)
+  7. [Evee] play Judge (hand[4])  (v=+5.9806)
+  8. [Evee] play Munkidori (hand[1])  (v=+5.8834)
+  9. [Evee] END turn  (v=+5.7088)
+  10. [opponent] END turn  (v=+6.0801)
+  11. [Evee] attach Basic {P} Energy (hand[0]) -> Sylveon (bench[2])  (v=+6.1066)

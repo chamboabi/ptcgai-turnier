@@ -1,0 +1,59 @@
+Turn 24  (action #7, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.4164
+CHOSEN: ATTACK (attackId 141)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     991   +1.4332   +5.9171   0.292  ATTACK (attackId 141)
+       5   -0.5995   -0.0597   0.445  END turn
+       2   +0.1216   +0.1216   0.131  play Wondrous Patch (hand[0])
+       2   +0.0683   +0.0962   0.132  retreat
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    2x Nighttime Mine
+    2x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 141)  (v=+1.4332)
+  2. [opponent] energy x1 @ active[0]  (v=+1.3632)
+  3. [opponent] Espeon ex @ bench[2] (p0)  (v=+1.2862)
+  4. [opponent] ATTACK (attackId 1071)  (v=+1.2665)
+  5. [Evee] Basic {G} Energy @ prize[2] (p0)  (v=+1.5918)
+  6. [opponent] Alakazam @ bench[2] (p1)  (v=+1.5912)
+  7. [Evee] attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[1])  (v=+1.9638)
+  8. [Evee] ability Munkidori  (v=+2.0349)
+  9. [Evee] Munkidori @ active[0] (p0)  (v=+2.0473)
+  10. [Evee] number 1  (v=+2.0974)
+  11. [Evee] Shaymin @ bench[0] (p1)  (v=+2.1053)
+  12. [Evee] END turn  (v=+2.0780)
+  13. [opponent] END turn  (v=+2.0757)
+  14. [Evee] END turn  (v=+2.0917)
+  15. [opponent] END turn  (v=+2.0542)

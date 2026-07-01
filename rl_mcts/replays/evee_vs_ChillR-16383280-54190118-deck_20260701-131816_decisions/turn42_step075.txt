@@ -1,0 +1,48 @@
+Turn 42  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1513
+CHOSEN: play Wondrous Patch (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     583   +0.1649   -0.0435   0.345  play Wondrous Patch (hand[1])
+     417   +0.1327   +0.2284   0.655  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  1.00x  Hero’s Cape
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Night Stretcher
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    2x Lillie's Determination
+    2x Poké Pad
+    1x Archaludon ex
+    1x Duraludon
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Boss’s Orders
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] play Wondrous Patch (hand[1])  (v=+0.1649)
+  2. [Evee] Basic {P} Energy @ discard[12] (p0)  (v=+0.1680)
+  3. [Evee] Sylveon @ bench[1] (p0)  (v=+0.1616)
+  4. [Evee] END turn  (v=+0.1624)
+  5. [opponent] play Snorlax (hand[0])  (v=+0.0883)
+  6. [opponent] play Snorlax (hand[1])  (v=+0.0042)
+  7. [opponent] play Snorlax (hand[2])  (v=-0.0375)
+  8. [opponent] play Snorlax (hand[2])  (v=-0.0580)
+  9. [opponent] END turn  (v=-0.1620)
+  10. [Evee] play Lillie's Determination (hand[1])  (v=-0.1887)

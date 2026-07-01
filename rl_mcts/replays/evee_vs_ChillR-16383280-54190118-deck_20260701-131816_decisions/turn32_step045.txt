@@ -1,0 +1,62 @@
+Turn 32  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.6720
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     949   +7.0376   -0.0431   0.133  ability Munkidori
+      19   -0.0390   +0.1882   0.118  END turn
+      11   +0.0714   +0.1882   0.037  ATTACK (attackId 1296)
+       9   +0.0476   -0.0245   0.117  play Judge (hand[5])
+       3   -0.0539   -0.0372   0.180  play Night Stretcher (hand[0])
+       3   -0.0192   +0.0457   0.129  evolve Eevee (bench[1]) -> Leafeon
+       3   -0.0085   -0.0111   0.117  play Judge (hand[6])
+       2   -0.0650   -0.0631   0.117  play Judge (hand[4])
+       1   -0.0431   -0.0431   0.052  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    3x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    1x Archaludon ex
+    1x Night Stretcher
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    3x Pokégear 3.0
+    3x Snorlax
+    2x Cinderace
+    1x Lillie's Determination
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+7.0376)
+  2. [Evee] Pecharunt @ active[0] (p0)  (v=+7.0450)
+  3. [Evee] number 3  (v=+7.0644)
+  4. [Evee] Archaludon ex @ active[0] (p1)  (v=+7.0687)
+  5. [Evee] retreat  (v=+8.2339)
+  6. [Evee] energy x1 @ active[0]  (v=+8.4095)
+  7. [Evee] Munkidori @ bench[0] (p0)  (v=+8.7252)
+  8. [Evee] ATTACK (attackId 141)  (v=+8.8193)
+  9. [opponent] ATTACK (attackId 253)  (v=+8.7983)
+  10. [opponent] Full Metal Lab @ prize[3] (p1)  (v=+8.8055)
+  11. [Evee] Eevee @ bench[1] (p0)  (v=+8.8962)
+  12. [Evee] END turn  (v=+9.0170)
+  13. [opponent] END turn  (v=+8.8333)
+  14. [Evee] END turn  (v=+9.1111)
+  15. [opponent] play Snorlax (hand[1])  (v=+9.1042)

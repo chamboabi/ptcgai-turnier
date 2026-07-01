@@ -1,0 +1,61 @@
+Turn 8  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0398
+CHOSEN: attach Basic {G} Energy (hand[2]) -> Eevee (bench[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     289   +0.0538   +0.0754   0.055  attach Basic {G} Energy (hand[2]) -> Eevee (bench[0])
+     172   +0.0437   +0.2368   0.049  ATTACK (attackId 11)
+     124   +0.0453   +0.0754   0.055  attach Basic {G} Energy (hand[2]) -> Eevee (bench[2])
+      87   +0.0261   +0.0296   0.182  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])
+      76   +0.0248   +0.0131   0.167  attach Basic {G} Energy (hand[2]) -> Pecharunt (bench[1])
+      51   +0.0340   +0.0768   0.068  attach Basic {P} Energy (hand[0]) -> Eevee (bench[0])
+      51   +0.0340   +0.0768   0.068  attach Basic {P} Energy (hand[0]) -> Eevee (bench[2])
+      38   +0.0355   +0.0348   0.049  attach Basic {P} Energy (hand[0]) -> Leafeon (active[0])
+      36   +0.0341   +0.0257   0.049  play Energy Search (hand[1])
+      33   -0.0033   +0.0037   0.155  END turn
+      26   +0.0317   +0.0323   0.043  attach Basic {G} Energy (hand[2]) -> Leafeon (active[0])
+      17   +0.0102   +0.0254   0.061  ATTACK (attackId 10)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Telepath Psychic Energy
+    1x Dunsparce
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+  sampled opponent hand (this search):
+    1x Lana’s Aid
+    1x Snorlax
+    1x Xerosic’s Machinations
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {G} Energy (hand[2]) -> Eevee (bench[0])  (v=+0.0538)
+  2. [Evee] play Energy Search (hand[1])  (v=+0.0677)
+  3. [Evee] card @ deck[7] (p0)  (v=+0.0639)
+  4. [Evee] END turn  (v=+0.0206)
+  5. [opponent] play Lana’s Aid (hand[0])  (v=+0.0111)
+  6. [opponent] Abra @ discard[0] (p1)  (v=+0.0157)
+  7. [opponent] play Abra (hand[4])  (v=+0.0307)

@@ -1,0 +1,58 @@
+Turn 60  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +5.5142
+CHOSEN: attach Basic {D} Energy (hand[1]) -> Munkidori (bench[3])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     953   +5.7844   +0.1989   0.106  attach Basic {D} Energy (hand[1]) -> Munkidori (bench[3])
+      10   +0.1533   +0.1831   0.154  attach Basic {D} Energy (hand[1]) -> Sylveon (bench[1])
+      10   +0.1754   +0.1989   0.106  attach Basic {D} Energy (hand[1]) -> Munkidori (bench[4])
+       7   +0.1556   +0.1822   0.125  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[2])
+       6   +0.1296   +0.1360   0.154  attach Basic {D} Energy (hand[1]) -> Sylveon (bench[0])
+       5   +0.1328   +0.1394   0.125  attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+       3   +0.1576   +0.1543   0.054  play Wondrous Patch (hand[2])
+       3   +0.1138   +0.1437   0.099  END turn
+       2   +0.1178   +0.1423   0.044  retreat
+       1   +0.1437   +0.1437   0.033  ATTACK (attackId 1296)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.86  1.76x  Boss’s Orders
+    0.42  0.42x  Relicanth
+  known (visible) opponent cards:
+    10x Basic {M} Energy
+    4x Duraludon
+    4x Poké Pad
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Lillie's Determination
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Explorer’s Guidance
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Pokégear 3.0
+    1x Full Metal Lab
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Boss’s Orders
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[1]) -> Munkidori (bench[3])  (v=+5.7844)
+  2. [Evee] ability Munkidori  (v=+5.8260)
+  3. [Evee] Pecharunt @ active[0] (p0)  (v=+5.8379)
+  4. [Evee] number 3  (v=+5.8527)
+  5. [Evee] Archaludon ex @ bench[1] (p1)  (v=+5.8581)
+  6. [Evee] play Wondrous Patch (hand[1])  (v=+5.8901)
+  7. [Evee] Basic {P} Energy @ discard[22] (p0)  (v=+5.8885)
+  8. [Evee] Munkidori @ bench[3] (p0)  (v=+5.9398)
+  9. [Evee] retreat  (v=+6.0039)
+  10. [Evee] energy x1 @ active[0]  (v=+5.9942)
+  11. [Evee] Munkidori @ bench[3] (p0)  (v=+6.2695)
+  12. [Evee] ATTACK (attackId 141)  (v=+6.3077)
+  13. [opponent] ATTACK (attackId 223)  (v=+5.0569)
+  14. [Evee] ability Munkidori  (v=+6.1371)
+  15. [Evee] Sylveon @ bench[0] (p0)  (v=+6.1371)

@@ -1,0 +1,54 @@
+Turn 18  (action #9, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0760
+CHOSEN: play Pecharunt (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     677   +0.0831   +0.1992   0.288  play Pecharunt (hand[1])
+     157   +0.0741   +0.1360   0.179  play Poké Pad (hand[0])
+      84   +0.0443   +0.0450   0.303  END turn
+      82   +0.0527   +0.1525   0.230  retreat
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    3x Kadabra
+    3x Abra
+    3x Buddy-Buddy Poffin
+    3x Poké Pad
+    2x Telepath Psychic Energy
+    1x Shaymin
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Dunsparce
+    1x Boss’s Orders
+    1x Dawn
+    1x Enriching Energy
+    1x Sacred Ash
+  sampled opponent hand (this search):
+    4x Snorlax
+    2x Enhanced Hammer
+    1x Nighttime Mine
+    1x Rare Candy
+    1x Dudunsparce
+
+Predicted line (principal variation):
+  1. [Evee] play Pecharunt (hand[1])  (v=+0.0831)
+  2. [Evee] END turn  (v=+0.0895)
+  3. [opponent] evolve Dunsparce (bench[3]) -> Dudunsparce  (v=+0.0787)
+  4. [opponent] ability Dudunsparce  (v=+0.0596)
+  5. [opponent] play Hilda (hand[11])  (v=+0.0799)
+  6. [opponent] card @ deck[3] (p1)  (v=+0.0772)
+  7. [opponent] play Nighttime Mine (hand[3])  (v=+0.0388)

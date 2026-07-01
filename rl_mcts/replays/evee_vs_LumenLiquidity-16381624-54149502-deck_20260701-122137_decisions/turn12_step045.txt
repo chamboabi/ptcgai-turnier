@@ -1,0 +1,49 @@
+Turn 12  (action #13, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.5577
+CHOSEN: ATTACK (attackId 39)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     507   -0.9529   -0.0449   0.257  ATTACK (attackId 39)
+     493   -0.1523   -0.0435   0.743  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Enriching Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Dawn
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 39)  (v=-0.9529)
+  2. [Evee] card @ deck[4] (p0)  (v=-0.9462)
+  3. [opponent] ATTACK (attackId 1070)  (v=-1.0249)
+  4. [opponent] Abra @ bench[1] (p1)  (v=-1.0230)
+  5. [Evee] attach Basic {D} Energy (hand[2]) -> Pecharunt (bench[1])  (v=-1.0284)
+  6. [Evee] END turn  (v=-1.0390)
+  7. [opponent] play Dawn (hand[0])  (v=-1.0457)

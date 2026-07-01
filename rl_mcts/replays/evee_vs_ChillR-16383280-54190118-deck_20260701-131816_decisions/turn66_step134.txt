@@ -1,0 +1,57 @@
+Turn 66  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.3089
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     969   +6.5125   +0.1232   0.108  ability Munkidori
+       6   +0.1727   +0.1743   0.101  attach Basic {D} Energy (hand[1]) -> Munkidori (bench[4])
+       5   +0.1598   +0.1530   0.117  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[2])
+       4   +0.1390   +0.1012   0.144  attach Basic {D} Energy (hand[1]) -> Sylveon (active[0])
+       4   +0.1303   +0.1080   0.144  attach Basic {D} Energy (hand[1]) -> Sylveon (bench[0])
+       4   +0.1381   +0.1175   0.117  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[1])
+       4   +0.1581   +0.2070   0.095  END turn
+       2   +0.1117   +0.1117   0.101  attach Basic {D} Energy (hand[1]) -> Munkidori (bench[3])
+       2   +0.1051   +0.1232   0.073  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    0.31  0.31x  Relicanth
+  known (visible) opponent cards:
+    11x Basic {M} Energy
+    4x Duraludon
+    4x Night Stretcher
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    1x Cinderace
+    1x Relicanth
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+6.5125)
+  2. [Evee] Sylveon @ bench[0] (p0)  (v=+6.5191)
+  3. [Evee] number 3  (v=+6.5358)
+  4. [Evee] Archaludon ex @ bench[1] (p1)  (v=+7.3140)
+  5. [Evee] attach Basic {D} Energy (hand[1]) -> Munkidori (bench[4])  (v=+8.6830)
+  6. [Evee] retreat  (v=+10.0097)
+  7. [Evee] energy x1 @ active[0]  (v=+11.1446)
+  8. [Evee] Sylveon @ bench[0] (p0)  (v=+12.7632)
+  9. [Evee] ATTACK (attackId 459)  (v=+13.0995)
+  10. [opponent] play Snorlax (hand[2])  (v=+13.0910)
+  11. [opponent] play Snorlax (hand[2])  (v=+13.0758)
+  12. [opponent] END turn  (v=+13.0747)
+  13. [Evee] attach Basic {D} Energy (hand[2]) -> Sylveon (bench[0])  (v=+13.0941)
+  14. [Evee] END turn  (v=+13.0891)

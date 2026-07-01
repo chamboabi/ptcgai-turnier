@@ -1,0 +1,58 @@
+Turn 7  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -1.4109
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     960   -1.2761   +0.0286   0.090  END turn
+      18   -4.3964   -0.4955   0.128  play Energy Search (hand[4])
+       9   -4.3973   -0.5041   0.139  play Poké Pad (hand[5])
+       2   -4.8929   -0.5119   0.068  attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])
+       2   -4.8929   -0.5119   0.068  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+       2   -4.8929   -0.5119   0.068  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+       2   -4.8929   -0.5119   0.068  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       2   -4.8903   -0.5092   0.082  play Lillie's Determination (hand[6])
+       2   -4.9244   -0.5435   0.135  play Judge (hand[8])
+       1   -9.2650   -9.2650   0.153  ATTACK (attackId 1296)
+
+Opponent belief:
+  archetype: Hop’s Choice Band 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  4.00x  Telepath Psychic Energy
+    1.00  1.00x  Fezandipiti ex
+    1.00  1.00x  Latias ex
+    1.00  1.00x  Lillie’s Clefairy ex
+    1.00  1.00x  Unfair Stamp
+    1.00  3.00x  Pokégear 3.0
+    1.00  4.00x  Poké Pad
+    1.00  4.00x  Boss’s Orders
+    1.00  4.00x  Lillie's Determination
+    1.00  4.00x  Postwick
+  known (visible) opponent cards:
+    3x Hop’s Choice Band
+    2x Hop’s Snorlax
+    2x Hop's Trevenant
+    2x Hop's Phantump
+    2x Iris’s Fighting Spirit
+    1x Mist Energy
+    1x Hop’s Cramorant
+    1x Ultra Ball
+    1x Hop’s Bag
+    1x Night Stretcher
+  sampled opponent hand (this search):
+    1x Snorlax
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-1.2761)
+  2. [opponent] play Snorlax (hand[0])  (v=-1.6561)
+  3. [opponent] play Pokégear 3.0 (hand[1])  (v=-1.7936)
+  4. [opponent] card @ looking[1] (p1)  (v=-2.0638)
+  5. [opponent] play Lillie's Determination (hand[1])  (v=-2.1555)
+  6. [opponent] attach Telepath Psychic Energy (hand[6]) -> Hop’s Snorlax (active[0])  (v=-2.2682)
+  7. [opponent] ATTACK (attackId 422)  (v=-2.2825)
+  8. [Evee] card @ deck[18] (p0)  (v=-1.1160)
+  9. [opponent] Postwick @ prize[5] (p1)  (v=-1.0871)
+  10. [Evee] Pecharunt @ prize[3] (p0)  (v=-1.0000)

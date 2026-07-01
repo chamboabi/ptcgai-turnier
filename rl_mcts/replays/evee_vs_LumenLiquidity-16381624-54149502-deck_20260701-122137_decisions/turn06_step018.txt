@@ -1,0 +1,49 @@
+Turn 6  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0465
+CHOSEN: play Eevee (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     511   -0.0413   +0.0428   0.330  play Eevee (hand[0])
+     253   -0.0495   -0.0051   0.323  END turn
+     125   -0.0494   +0.2393   0.104  ATTACK (attackId 11)
+     111   -0.0610   +0.0285   0.243  retreat
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Shaymin
+    1x Telepath Psychic Energy
+  sampled opponent hand (this search):
+    2x Snorlax
+    2x Buddy-Buddy Poffin
+    1x Dawn
+    1x Xerosic’s Machinations
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] play Eevee (hand[0])  (v=-0.0413)
+  2. [Evee] END turn  (v=-0.0382)
+  3. [opponent] play Snorlax (hand[5])  (v=-0.0594)
+  4. [opponent] play Snorlax (hand[0])  (v=-0.0888)
+  5. [opponent] evolve Abra (bench[1]) -> Kadabra  (v=-0.0947)
+  6. [opponent] YES  (v=-0.0710)
+  7. [opponent] play Dawn (hand[1])  (v=-0.1170)

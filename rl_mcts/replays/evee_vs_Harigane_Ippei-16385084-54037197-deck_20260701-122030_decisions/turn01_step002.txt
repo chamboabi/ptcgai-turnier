@@ -1,0 +1,54 @@
+Turn 1  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.2617
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     930   +0.2628   +0.3051   0.112  END turn
+      60   +0.3566   -0.2803   0.191  attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+       3   -0.3434   -0.3357   0.168  play Energy Search (hand[5])
+       3   -0.3462   -0.3488   0.178  play Poké Pad (hand[6])
+       1   -0.3574   -0.3574   0.088  attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])
+       1   -0.3574   -0.3574   0.088  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+       1   -0.3574   -0.3574   0.088  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       1   -0.3574   -0.3574   0.088  attach Basic {P} Energy (hand[4]) -> Pecharunt (active[0])
+
+Opponent belief:
+  archetype: Postwick 64%, Hop’s Choice Band 36%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Telepath Psychic Energy
+    1.00  4.00x  Hop's Phantump
+    1.00  2.89x  Hop's Trevenant
+    1.00  3.74x  Pokégear 3.0
+    1.00  3.49x  Poké Pad
+    1.00  4.00x  Hop’s Choice Band
+    1.00  3.97x  Lillie's Determination
+    1.00  3.97x  Postwick
+    0.98  3.92x  Mist Energy
+    0.97  3.21x  Hop’s Bag
+    0.97  2.51x  Night Stretcher
+    0.95  2.05x  Boss’s Orders
+    0.70  2.70x  Buddy-Buddy Poffin
+    0.67  2.05x  Dudunsparce
+    0.66  1.26x  Colress’s Tenacity
+  known (visible) opponent cards:
+    1x Hop’s Snorlax
+  sampled opponent hand (this search):
+    1x Poké Pad
+    1x Lillie's Determination
+    1x Dunsparce
+    1x Colress’s Tenacity
+    1x Mist Energy
+    1x Telepath Psychic Energy
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.2628)
+  2. [opponent] play Dunsparce (hand[2])  (v=+0.2431)
+  3. [opponent] attach Mist Energy (hand[3]) -> Dunsparce (bench[0])  (v=+0.2187)
+  4. [opponent] play Poké Pad (hand[0])  (v=+0.2122)
+  5. [opponent] card @ deck[45] (p1)  (v=+0.1992)
+  6. [opponent] play Hop's Phantump (hand[3])  (v=+0.1305)
+  7. [opponent] END turn  (v=+0.0924)
+  8. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])  (v=+0.9641)
+  9. [Evee] ATTACK (attackId 1296)  (v=+2.2254)

@@ -1,0 +1,75 @@
+Turn 99  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1062
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     836   -0.0954   +0.1516   0.070  END turn
+      29   -0.1365   -0.1829   0.098  play Munkidori (hand[3])
+      29   -0.1365   -0.1829   0.098  play Munkidori (hand[4])
+      18   -0.1434   -0.1063   0.071  evolve Eevee (bench[1]) -> Espeon ex
+      15   -0.1427   +0.1524   0.061  play Hand Trimmer (hand[10])
+       9   -0.2139   -0.2123   0.090  play Crispin (hand[1])
+       8   -0.2232   -0.2124   0.091  retreat
+       7   -0.2133   -0.2160   0.067  play Poké Pad (hand[5])
+       7   -0.2014   -0.2310   0.061  play Eevee (hand[6])
+       6   -0.2137   -0.2128   0.066  play Energy Search (hand[0])
+       5   -0.1547   -0.1665   0.026  attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])
+       5   -0.1547   -0.1665   0.026  attach Basic {P} Energy (hand[7]) -> Sylveon (active[0])
+       5   -0.1547   -0.1665   0.026  attach Basic {P} Energy (hand[8]) -> Sylveon (active[0])
+       4   -0.1538   -0.1678   0.023  attach Basic {P} Energy (hand[2]) -> Eevee (bench[1])
+       4   -0.1538   -0.1678   0.023  attach Basic {P} Energy (hand[7]) -> Eevee (bench[1])
+       4   -0.1538   -0.1678   0.023  attach Basic {P} Energy (hand[8]) -> Eevee (bench[1])
+       3   -0.1878   -0.2067   0.026  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+       3   -0.1878   -0.2067   0.026  attach Basic {P} Energy (hand[7]) -> Pecharunt (bench[0])
+       3   -0.1878   -0.2067   0.026  attach Basic {P} Energy (hand[8]) -> Pecharunt (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    12x Snorlax
+    1x Full Metal Lab
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0954)
+  2. [opponent] END turn  (v=-0.1075)
+  3. [Evee] END turn  (v=-0.0941)
+  4. [opponent] END turn  (v=-0.1039)
+  5. [Evee] END turn  (v=-0.0887)
+  6. [opponent] END turn  (v=-0.1006)
+  7. [Evee] END turn  (v=-0.0829)
+  8. [opponent] END turn  (v=-0.1004)
+  9. [Evee] END turn  (v=-0.0802)
+  10. [opponent] END turn  (v=-0.1027)
+  11. [Evee] END turn  (v=-0.0771)
+  12. [opponent] END turn  (v=-0.1116)
+  13. [Evee] END turn  (v=-0.0766)
+  14. [opponent] END turn  (v=-0.1522)
+  15. [Evee] END turn  (v=-0.0915)
+  16. [opponent] END turn  (v=-0.1695)
+  17. [Evee] attach Mist Energy (hand[18]) -> Sylveon (active[0])  (v=-0.1418)
+  18. [Evee] play Munkidori (hand[3])  (v=-0.1325)

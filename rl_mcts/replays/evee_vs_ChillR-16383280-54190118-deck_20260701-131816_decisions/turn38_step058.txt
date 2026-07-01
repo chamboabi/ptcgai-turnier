@@ -1,0 +1,55 @@
+Turn 38  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0900
+CHOSEN: play Judge (hand[4])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     870   +0.1017   -0.0720   0.178  play Judge (hand[4])
+      60   +0.0501   +0.1403   0.188  END turn
+      34   -0.0069   -0.1434   0.279  play Night Stretcher (hand[0])
+      20   -0.0169   -0.0950   0.178  play Judge (hand[2])
+      16   -0.0411   -0.1068   0.178  play Judge (hand[3])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  1.00x  Hero’s Cape
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    2x Poké Pad
+    1x Archaludon ex
+    1x Night Stretcher
+    1x Explorer’s Guidance
+    1x Lillie's Determination
+  sampled opponent hand (this search):
+    6x Snorlax
+    1x Boss’s Orders
+    1x Cinderace
+    1x Full Metal Lab
+    1x Pokégear 3.0
+
+Predicted line (principal variation):
+  1. [Evee] play Judge (hand[4])  (v=+0.1017)
+  2. [Evee] play Night Stretcher (hand[1])  (v=+0.0906)
+  3. [Evee] Munkidori @ discard[12] (p0)  (v=+0.1030)
+  4. [Evee] play Munkidori (hand[3])  (v=+0.1167)
+  5. [Evee] END turn  (v=+0.1236)
+  6. [opponent] END turn  (v=+0.1927)
+  7. [Evee] play Munkidori (hand[2])  (v=+0.2883)
+  8. [Evee] attach Basic {D} Energy (hand[0]) -> Munkidori (bench[3])  (v=+0.9700)
+  9. [Evee] ability Munkidori  (v=+2.3857)
+  10. [Evee] Pecharunt @ bench[0] (p0)  (v=+3.1357)
+  11. [Evee] number 3  (v=+4.6358)
+  12. [Evee] Archaludon ex @ active[0] (p1)  (v=+6.1355)

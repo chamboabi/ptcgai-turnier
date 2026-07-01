@@ -1,0 +1,52 @@
+Turn 42  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1249
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +0.1251   +0.2641   1.000  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  1.00x  Hero’s Cape
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Night Stretcher
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    2x Lillie's Determination
+    2x Poké Pad
+    1x Archaludon ex
+    1x Duraludon
+    1x Explorer’s Guidance
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Cinderace
+    1x Hero’s Cape
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.1251)
+  2. [opponent] END turn  (v=+0.1053)
+  3. [Evee] play Hand Trimmer (hand[0])  (v=+0.1120)
+  4. [opponent] Snorlax @ hand[0] (p1)  (v=+0.0839)
+  5. [Evee] END turn  (v=+0.0840)
+  6. [opponent] attach Hero’s Cape (hand[2]) -> Archaludon ex (active[0])  (v=+0.0558)
+  7. [opponent] play Snorlax (hand[3])  (v=+0.0513)
+  8. [opponent] play Snorlax (hand[1])  (v=+0.0316)
+  9. [opponent] play Snorlax (hand[2])  (v=+0.0244)
+  10. [opponent] END turn  (v=+0.0742)
+  11. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[2])  (v=+0.4700)
+  12. [Evee] END turn  (v=+0.5782)
+  13. [opponent] END turn  (v=-0.0370)
+  14. [Evee] END turn  (v=+0.0494)

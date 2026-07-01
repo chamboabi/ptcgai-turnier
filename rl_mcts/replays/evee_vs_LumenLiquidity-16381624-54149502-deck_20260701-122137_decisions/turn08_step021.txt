@@ -1,0 +1,62 @@
+Turn 8  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0008
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     536   +0.0092   +0.0399   0.122  retreat
+      86   +0.0043   +0.0404   0.046  play Energy Search (hand[1])
+      59   -0.0017   +0.0892   0.051  attach Basic {G} Energy (hand[2]) -> Eevee (bench[2])
+      55   -0.0250   +0.0433   0.169  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])
+      52   -0.0033   +0.0921   0.064  attach Basic {P} Energy (hand[0]) -> Eevee (active[0])
+      50   -0.0269   +0.0268   0.154  attach Basic {G} Energy (hand[2]) -> Pecharunt (bench[1])
+      46   -0.0017   +0.0915   0.051  attach Basic {G} Energy (hand[2]) -> Eevee (active[0])
+      45   -0.0059   +0.0908   0.064  attach Basic {P} Energy (hand[0]) -> Eevee (bench[2])
+      24   -0.0127   +0.0411   0.046  attach Basic {P} Energy (hand[0]) -> Leafeon (bench[0])
+      20   -0.0198   +0.0299   0.039  attach Basic {G} Energy (hand[2]) -> Leafeon (bench[0])
+      14   -0.1107   -0.0775   0.144  END turn
+      13   -0.0460   +0.0399   0.051  ATTACK (attackId 39)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Basic {P} Energy
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Telepath Psychic Energy
+    1x Dunsparce
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+  sampled opponent hand (this search):
+    1x Nighttime Mine
+    1x Dudunsparce
+    1x Dawn
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=+0.0092)
+  2. [Evee] energy x1 @ active[0]  (v=+0.0092)
+  3. [Evee] Leafeon @ bench[0] (p0)  (v=+0.0177)
+  4. [Evee] ATTACK (attackId 11)  (v=+0.0300)
+  5. [Evee] Munkidori @ prize[0] (p0)  (v=+0.0148)
+  6. [opponent] Dunsparce @ bench[2] (p1)  (v=-0.0121)
+  7. [opponent] evolve Abra (bench[1]) -> Kadabra  (v=-0.0625)
+  8. [opponent] YES  (v=-0.0056)

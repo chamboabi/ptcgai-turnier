@@ -1,0 +1,53 @@
+Turn 2  (action #7, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.6191
+CHOSEN: card @ deck[32] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     128   -0.6287   -0.0211   0.223  card @ deck[32] (p0)
+     126   -0.6211   -0.0189   0.158  card @ deck[1] (p0)
+     126   -0.6236   -0.0189   0.158  card @ deck[33] (p0)
+     125   -0.6167   -0.0219   0.092  card @ deck[37] (p0)
+     124   -0.6175   -0.0219   0.092  card @ deck[12] (p0)
+     124   -0.6163   -0.0219   0.092  card @ deck[23] (p0)
+     124   -0.6173   -0.0219   0.092  card @ deck[31] (p0)
+     123   -0.6157   -0.0219   0.092  card @ deck[0] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic (B) 42%, Alakazam Psychic 32%, Dawn 26%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.10x  Basic {P} Energy
+    1.00  2.74x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.45x  Alakazam
+    1.00  3.32x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  1.23x  Sacred Ash
+    1.00  3.97x  Poké Pad
+    1.00  3.97x  Hilda
+    1.00  3.84x  Dawn
+    0.94  0.94x  Enriching Energy
+    0.90  2.26x  Boss’s Orders
+    0.87  2.65x  Enhanced Hammer
+    0.84  2.71x  Dunsparce
+    0.84  0.90x  Lana’s Aid
+  known (visible) opponent cards:
+    3x Abra
+    1x Telepath Psychic Energy
+    1x Shaymin
+  sampled opponent hand (this search):
+    1x Dudunsparce
+    1x Alakazam
+    1x Buddy-Buddy Poffin
+    1x Dawn
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[32] (p0)  (v=-0.6287)
+  2. [Evee] ATTACK (attackId 39)  (v=-0.6115)
+  3. [Evee] card @ deck[17] (p0)  (v=-0.6553)
+  4. [opponent] ATTACK (attackId 1070)  (v=-1.0459)
+  5. [opponent] Abra @ bench[1] (p1)  (v=-1.0482)
+  6. [Evee] END turn  (v=-1.0538)
+  7. [opponent] play Dawn (hand[3])  (v=-1.0451)

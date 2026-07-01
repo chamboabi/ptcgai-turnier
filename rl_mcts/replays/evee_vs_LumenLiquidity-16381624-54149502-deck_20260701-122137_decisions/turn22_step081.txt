@@ -1,0 +1,61 @@
+Turn 22  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0179
+CHOSEN: play Poké Pad (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     469   +0.0283   +0.0524   0.084  play Poké Pad (hand[0])
+     134   +0.0234   +0.1250   0.075  attach Basic {P} Energy (hand[1]) -> Espeon ex (active[0])
+     122   +0.0170   +0.1245   0.130  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])
+     106   +0.0223   +0.1265   0.071  attach Basic {P} Energy (hand[1]) -> Munkidori (bench[2])
+      52   -0.0086   +0.0715   0.160  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])
+      52   -0.0086   +0.0715   0.160  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[3])
+      49   -0.0150   +0.0604   0.177  retreat
+      16   -0.0846   -0.0365   0.144  END turn
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    4x Poké Pad
+    3x Kadabra
+    3x Buddy-Buddy Poffin
+    3x Telepath Psychic Energy
+    2x Alakazam
+    2x Dawn
+    1x Basic {P} Energy
+    1x Shaymin
+    1x Handheld Fan
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+  sampled opponent hand (this search):
+    4x Snorlax
+    3x Hilda
+    2x Nighttime Mine
+    2x Dunsparce
+    1x Rare Candy
+    1x Dudunsparce
+    1x Xerosic’s Machinations
+    1x Lucky Helmet
+
+Predicted line (principal variation):
+  1. [Evee] play Poké Pad (hand[0])  (v=+0.0283)
+  2. [Evee] card @ deck[8] (p0)  (v=+0.0310)
+  3. [Evee] play Pecharunt (hand[1])  (v=+0.0528)
+  4. [Evee] attach Basic {P} Energy (hand[0]) -> Espeon ex (active[0])  (v=+0.0785)
+  5. [Evee] retreat  (v=+0.1021)
+  6. [Evee] energy x1 @ active[0]  (v=+0.0857)
+  7. [Evee] Munkidori @ bench[2] (p0)  (v=+0.0741)

@@ -1,0 +1,69 @@
+Turn 87  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0956
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     849   -0.0845   +0.1625   0.119  END turn
+      51   -0.1275   -0.2050   0.166  play Munkidori (hand[3])
+      51   -0.1275   -0.2050   0.166  play Munkidori (hand[4])
+      13   -0.2264   -0.2397   0.155  retreat
+      12   -0.2418   -0.2442   0.153  play Crispin (hand[1])
+      10   -0.2195   -0.2312   0.113  play Energy Search (hand[0])
+       5   -0.1788   -0.1875   0.045  attach Basic {P} Energy (hand[2]) -> Sylveon (active[0])
+       5   -0.1813   -0.1893   0.038  attach Basic {P} Energy (hand[2]) -> Eevee (bench[1])
+       4   -0.2158   -0.2280   0.044  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.98x  Cinderace
+    0.99  3.93x  Explorer’s Guidance
+    0.98  3.88x  Full Metal Lab
+    0.12  0.16x  Judge
+    0.05  0.08x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.02  0.05x  Carmine
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    5x Basic {M} Energy
+    2x Archaludon ex
+    2x Boss’s Orders
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Ultra Ball
+    1x Relicanth
+    1x Hero’s Cape
+    1x Duraludon
+    1x Poké Pad
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    6x Snorlax
+    1x Explorer’s Guidance
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0845)
+  2. [opponent] END turn  (v=-0.0962)
+  3. [Evee] END turn  (v=-0.0835)
+  4. [opponent] END turn  (v=-0.0967)
+  5. [Evee] END turn  (v=-0.0816)
+  6. [opponent] END turn  (v=-0.0964)
+  7. [Evee] END turn  (v=-0.0783)
+  8. [opponent] END turn  (v=-0.0922)
+  9. [Evee] END turn  (v=-0.0727)
+  10. [opponent] END turn  (v=-0.0898)
+  11. [Evee] END turn  (v=-0.0682)
+  12. [opponent] END turn  (v=-0.0903)
+  13. [Evee] END turn  (v=-0.0646)
+  14. [opponent] END turn  (v=-0.0932)
+  15. [Evee] END turn  (v=-0.0612)
+  16. [opponent] END turn  (v=-0.1067)
+  17. [Evee] END turn  (v=-0.0509)
+  18. [opponent] END turn  (v=-0.1565)
+  19. [Evee] END turn  (v=-0.0880)
+  20. [opponent] END turn  (v=-0.2004)
+  21. [Evee] evolve Eevee (bench[1]) -> Espeon ex  (v=-0.1713)
+  22. [Evee] play Munkidori (hand[3])  (v=-0.1956)

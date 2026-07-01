@@ -1,0 +1,60 @@
+Turn 16  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0353
+CHOSEN: attach Basic {P} Energy (hand[0]) -> Sylveon (bench[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     771   +0.0494   -0.0727   0.147  attach Basic {P} Energy (hand[0]) -> Sylveon (bench[0])
+      58   -0.0022   +0.1306   0.155  END turn
+      47   +0.0048   -0.0673   0.085  attach Basic {P} Energy (hand[0]) -> Espeon ex (bench[2])
+      47   +0.0056   -0.0653   0.079  attach Basic {P} Energy (hand[0]) -> Munkidori (bench[3])
+      36   -0.0171   -0.1223   0.176  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])
+      20   -0.0204   -0.1191   0.111  play Crushing Hammer (hand[2])
+       9   -0.0159   -0.0717   0.047  attach Basic {P} Energy (hand[0]) -> Leafeon (active[0])
+       6   -0.1378   -0.1350   0.090  play Poké Pad (hand[1])
+       6   -0.1639   -0.1297   0.111  retreat
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  1.00x  Genesect
+    1.00  4.00x  Kadabra
+    1.00  3.00x  Alakazam
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  2.00x  Sacred Ash
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Hilda
+    1.00  4.00x  Dawn
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Abra
+    2x Telepath Psychic Energy
+    2x Buddy-Buddy Poffin
+    1x Shaymin
+    1x Enriching Energy
+    1x Basic {P} Energy
+    1x Handheld Fan
+    1x Boss’s Orders
+    1x Poké Pad
+    1x Dunsparce
+  sampled opponent hand (this search):
+    2x Dawn
+    2x Nighttime Mine
+    1x Rare Candy
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {P} Energy (hand[0]) -> Sylveon (bench[0])  (v=+0.0494)
+  2. [Evee] END turn  (v=+0.0583)
+  3. [opponent] evolve Abra (bench[0]) -> Kadabra  (v=+0.0453)
+  4. [opponent] YES  (v=+0.0421)
+  5. [opponent] END turn  (v=+0.0230)
+  6. [Evee] END turn  (v=+0.0639)
+  7. [opponent] END turn  (v=+0.0193)
+  8. [Evee] END turn  (v=+0.0918)
+  9. [opponent] play Dawn (hand[1])  (v=+0.0919)

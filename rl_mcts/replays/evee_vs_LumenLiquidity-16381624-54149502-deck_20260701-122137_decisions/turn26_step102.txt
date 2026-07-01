@@ -1,0 +1,50 @@
+Turn 26  (action #7, P0 Evee)
+Selecting: CARD / ATTACH_FROM
+Root value: -0.0898
+CHOSEN: Sylveon @ bench[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     824   -0.0801   +0.1437   0.279  Sylveon @ bench[0] (p0)
+     176   -0.1360   +0.0974   0.721  Espeon ex @ bench[2] (p0)
+
+Opponent belief:
+  archetype: Dawn 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  2.00x  Dudunsparce
+    1.00  3.00x  Dunsparce
+    1.00  3.00x  Rare Candy
+    1.00  3.00x  Enhanced Hammer
+    1.00  1.00x  Lana’s Aid
+    1.00  1.00x  Xerosic’s Machinations
+    1.00  4.00x  Nighttime Mine
+    0.33  0.33x  Lucky Helmet
+  known (visible) opponent cards:
+    4x Kadabra
+    4x Abra
+    4x Telepath Psychic Energy
+    4x Poké Pad
+    3x Buddy-Buddy Poffin
+    2x Handheld Fan
+    2x Alakazam
+    2x Dawn
+    1x Shaymin
+    1x Genesect
+    1x Boss’s Orders
+    1x Enriching Energy
+    1x Sacred Ash
+    1x Hilda
+    1x Basic {P} Energy
+  sampled opponent hand (this search):
+    2x Snorlax
+    2x Nighttime Mine
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] Sylveon @ bench[0] (p0)  (v=-0.0801)
+  2. [Evee] play Night Stretcher (hand[2])  (v=-0.0718)
+  3. [Evee] Basic {P} Energy @ discard[17] (p0)  (v=-0.0400)
+  4. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[1])  (v=-0.4164)
+  5. [Evee] retreat  (v=+0.1550)
+  6. [Evee] energy x1 @ active[0]  (v=+0.1402)
+  7. [Evee] Pecharunt @ bench[1] (p0)  (v=+0.1157)

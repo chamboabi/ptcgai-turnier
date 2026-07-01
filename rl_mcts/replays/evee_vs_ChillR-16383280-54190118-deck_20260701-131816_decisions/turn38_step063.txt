@@ -1,0 +1,49 @@
+Turn 38  (action #8, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1020
+CHOSEN: play Pecharunt (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     708   -0.0954   -0.0899   0.429  play Pecharunt (hand[1])
+     292   -0.1181   +0.1756   0.571  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Cinderace
+    1.00  3.98x  Pokégear 3.0
+    1.00  1.00x  Hero’s Cape
+    0.99  3.61x  Boss’s Orders
+    0.99  3.88x  Full Metal Lab
+    0.94  0.94x  Relicanth
+    0.11  0.13x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Duraludon
+    2x Ultra Ball
+    2x Jumbo Ice Cream
+    2x Poké Pad
+    1x Archaludon ex
+    1x Night Stretcher
+    1x Explorer’s Guidance
+    1x Lillie's Determination
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Hero’s Cape
+    1x Cinderace
+
+Predicted line (principal variation):
+  1. [Evee] play Pecharunt (hand[1])  (v=-0.0954)
+  2. [Evee] END turn  (v=-0.0954)
+  3. [opponent] play Snorlax (hand[0])  (v=-0.0965)
+  4. [opponent] ATTACK (attackId 253)  (v=-0.1171)
+  5. [opponent] Pokégear 3.0 @ prize[0] (p1)  (v=-0.1017)
+  6. [Evee] Pecharunt @ bench[3] (p0)  (v=-0.0590)
+  7. [Evee] attach Basic {P} Energy (hand[1]) -> Sylveon (bench[1])  (v=+0.0090)
+  8. [Evee] play Judge (hand[0])  (v=-0.0752)
+  9. [Evee] END turn  (v=-0.0692)
+  10. [opponent] END turn  (v=-0.1618)
+  11. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])  (v=-0.1899)

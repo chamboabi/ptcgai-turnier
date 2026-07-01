@@ -1,0 +1,51 @@
+Turn 64  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +13.3230
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     996  +13.3853   +0.1334   0.391  ability Munkidori
+       2   +0.1205   +0.1424   0.344  END turn
+       1   +4.1441   +4.1441   0.113  ATTACK (attackId 1296)
+       1   +0.1334   +0.1334   0.152  retreat
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    0.85  1.72x  Boss’s Orders
+    0.41  0.41x  Relicanth
+  known (visible) opponent cards:
+    11x Basic {M} Energy
+    4x Duraludon
+    4x Explorer’s Guidance
+    4x Lillie's Determination
+    4x Poké Pad
+    4x Pokégear 3.0
+    3x Night Stretcher
+    3x Ultra Ball
+    3x Xerosic’s Machinations
+    2x Archaludon ex
+    2x Jumbo Ice Cream
+    1x Hero’s Cape
+    1x Full Metal Lab
+    1x Cinderace
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Relicanth
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+13.3853)
+  2. [Evee] Sylveon @ bench[0] (p0)  (v=+13.3986)
+  3. [Evee] number 3  (v=+13.4357)
+  4. [Evee] Archaludon ex @ bench[0] (p1)  (v=+13.4683)
+  5. [Evee] ATTACK (attackId 1296)  (v=+13.4981)
+  6. [opponent] play Snorlax (hand[1])  (v=+13.5017)
+  7. [opponent] play Snorlax (hand[1])  (v=+13.5359)
+  8. [opponent] END turn  (v=+13.5951)
+  9. [Evee] ability Munkidori  (v=+15.4215)
+  10. [Evee] Sylveon @ bench[0] (p0)  (v=+15.5629)
+  11. [Evee] number 3  (v=+15.9500)
+  12. [Evee] Archaludon ex @ bench[0] (p1)  (v=+16.0379)
+  13. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[2])  (v=+16.0486)
+  14. [Evee] play Lillie's Determination (hand[1])  (v=+16.0235)

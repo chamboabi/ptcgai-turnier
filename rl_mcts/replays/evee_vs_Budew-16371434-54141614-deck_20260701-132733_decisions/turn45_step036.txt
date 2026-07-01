@@ -1,0 +1,100 @@
+Turn 45  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0427
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     937   -0.0311   +0.3133   0.037  END turn
+       9   -0.1626   +0.3163   0.032  play Hand Trimmer (hand[11])
+       3   -0.1985   -0.1373   0.034  evolve Eevee (bench[1]) -> Sylveon
+       3   -0.2270   -0.2280   0.055  play Pecharunt (hand[7])
+       3   -0.2151   -0.1540   0.040  evolve Eevee (bench[1]) -> Leafeon
+       3   -0.1915   -0.1503   0.038  evolve Eevee (bench[1]) -> Espeon ex
+       3   -0.1807   -0.1864   0.038  attach Mist Energy (hand[21]) -> Eevee (bench[1])
+       2   -0.1959   -0.2049   0.029  attach Basic {G} Energy (hand[0]) -> Eevee (active[0])
+       2   -0.1940   -0.2030   0.029  attach Basic {G} Energy (hand[0]) -> Eevee (bench[1])
+       2   -0.2240   -0.1829   0.034  evolve Eevee (active[0]) -> Sylveon
+       2   -0.2108   -0.1697   0.040  evolve Eevee (active[0]) -> Leafeon
+       2   -0.2533   -0.2524   0.035  play Poké Pad (hand[9])
+       2   -0.2509   -0.2487   0.038  play Energy Search (hand[13])
+       2   -0.2492   -0.2478   0.049  play Crispin (hand[17])
+       2   -0.2483   -0.2075   0.038  evolve Eevee (active[0]) -> Espeon ex
+       2   -0.2005   -0.2096   0.038  attach Mist Energy (hand[21]) -> Eevee (active[0])
+       2   -0.2330   -0.2423   0.043  attach Mist Energy (hand[21]) -> Pecharunt (bench[0])
+       1   -0.2552   -0.2552   0.033  attach Basic {G} Energy (hand[0]) -> Pecharunt (bench[0])
+       1   -0.2393   -0.2393   0.023  play Judge (hand[1])
+       1   -0.2477   -0.2477   0.019  play Night Stretcher (hand[2])
+       1   -0.1962   -0.1962   0.012  attach Basic {P} Energy (hand[3]) -> Eevee (active[0])
+       1   -0.2469   -0.2469   0.014  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[0])
+       1   -0.2004   -0.2004   0.012  attach Basic {P} Energy (hand[3]) -> Eevee (bench[1])
+       1   -0.1999   -0.1999   0.023  play Judge (hand[4])
+       1   -0.2477   -0.2477   0.019  play Night Stretcher (hand[6])
+       1   -0.2302   -0.2302   0.023  play Judge (hand[10])
+       1   -0.2477   -0.2477   0.019  play Night Stretcher (hand[12])
+       1   -0.2481   -0.2481   0.020  play Energy Search Pro (hand[14])
+       1   -0.2453   -0.2453   0.029  play Eevee (hand[15])
+       1   -0.2666   -0.2666   0.030  play Lillie's Determination (hand[16])
+       1   -0.1962   -0.1962   0.012  attach Basic {P} Energy (hand[20]) -> Eevee (active[0])
+       1   -0.2469   -0.2469   0.014  attach Basic {P} Energy (hand[20]) -> Pecharunt (bench[0])
+       1   -0.2004   -0.2004   0.012  attach Basic {P} Energy (hand[20]) -> Eevee (bench[1])
+       1   -0.1962   -0.1962   0.012  attach Basic {P} Energy (hand[22]) -> Eevee (active[0])
+       1   -0.2469   -0.2469   0.014  attach Basic {P} Energy (hand[22]) -> Pecharunt (bench[0])
+       1   -0.2004   -0.2004   0.012  attach Basic {P} Energy (hand[22]) -> Eevee (bench[1])
+
+Opponent belief:
+  archetype: Archaludon Metal 94%, Carmine 6%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    0.99  3.84x  Full Metal Lab
+    0.95  3.73x  Jumbo Ice Cream
+    0.94  3.77x  Cinderace
+    0.94  3.72x  Explorer’s Guidance
+    0.17  0.36x  Judge
+    0.07  0.25x  Carmine
+    0.05  0.10x  Switch
+    0.05  0.07x  Xerosic’s Machinations
+    0.03  0.05x  Hand Trimmer
+  known (visible) opponent cards:
+    4x Basic {M} Energy
+    2x Boss’s Orders
+    1x Duraludon
+    1x Relicanth
+    1x Hero’s Cape
+    1x Lillie's Determination
+    1x Poké Pad
+    1x Night Stretcher
+    1x Archaludon ex
+    1x Ultra Ball
+    1x Pokégear 3.0
+  sampled opponent hand (this search):
+    12x Snorlax
+    2x Cinderace
+    1x Judge
+    1x Explorer’s Guidance
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0311)
+  2. [opponent] END turn  (v=-0.0399)
+  3. [Evee] END turn  (v=-0.0270)
+  4. [opponent] END turn  (v=-0.0389)
+  5. [Evee] END turn  (v=-0.0243)
+  6. [opponent] END turn  (v=-0.0373)
+  7. [Evee] END turn  (v=-0.0212)
+  8. [opponent] END turn  (v=-0.0357)
+  9. [Evee] attach Mist Energy (hand[21]) -> Eevee (bench[1])  (v=-0.0159)
+  10. [Evee] END turn  (v=-0.0026)
+  11. [opponent] END turn  (v=-0.0207)
+  12. [Evee] END turn  (v=-0.0034)
+  13. [opponent] END turn  (v=-0.0261)
+  14. [Evee] END turn  (v=-0.0041)
+  15. [opponent] END turn  (v=-0.0333)
+  16. [Evee] END turn  (v=-0.0008)
+  17. [opponent] END turn  (v=-0.0460)
+  18. [Evee] END turn  (v=-0.0007)
+  19. [opponent] END turn  (v=-0.0918)
+  20. [Evee] play Hand Trimmer (hand[11])  (v=-0.0493)
+  21. [opponent] Cinderace @ hand[0] (p1) + Snorlax @ hand[1] (p1) + Snorlax @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Snorlax @ hand[4] (p1) + Snorlax @ hand[5] (p1) + Snorlax @ hand[6] (p1) + Judge @ hand[7] (p1) + Snorlax @ hand[8] (p1) + Snorlax @ hand[9] (p1) + Snorlax @ hand[10] (p1) + Snorlax @ hand[11] (p1) + Cinderace @ hand[12] (p1) + Explorer’s Guidance @ hand[13] (p1) + Snorlax @ hand[14] (p1) + Full Metal Lab @ hand[15] (p1) + Snorlax @ hand[16] (p1) + Snorlax @ hand[17] (p1) + Snorlax @ hand[18] (p1) + Snorlax @ hand[19] (p1) + Snorlax @ hand[20] (p1)  (v=-0.0652)
+  22. [Evee] Basic {G} Energy @ hand[0] (p0) + Judge @ hand[1] (p0) + Night Stretcher @ hand[2] (p0) + Basic {P} Energy @ hand[3] (p0) + Judge @ hand[4] (p0) + Sylveon @ hand[5] (p0) + Night Stretcher @ hand[6] (p0) + Pecharunt @ hand[7] (p0) + Leafeon @ hand[8] (p0) + Poké Pad @ hand[9] (p0) + Judge @ hand[10] (p0) + Night Stretcher @ hand[11] (p0) + Energy Search @ hand[12] (p0) + Energy Search Pro @ hand[13] (p0) + Eevee @ hand[14] (p0) + Lillie's Determination @ hand[15] (p0) + Crispin @ hand[16] (p0) + Espeon ex @ hand[17] (p0) + Wondrous Patch @ hand[18] (p0) + Basic {P} Energy @ hand[19] (p0) + Basic {P} Energy @ hand[20] (p0) + Basic {G} Energy @ hand[21] (p0) + Energy Search @ hand[24] (p0) + Basic {G} Energy @ hand[26] (p0) + Lillie's Determination @ hand[28] (p0)  (v=-0.0332)
+  23. [Evee] END turn  (v=+0.0065)
+  24. [opponent] END turn  (v=-0.0892)
