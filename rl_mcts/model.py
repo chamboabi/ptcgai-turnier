@@ -6,11 +6,6 @@ import torch.nn
 import torch.nn.functional
 
 import config as cfg
-
-_cg_lib = glob.glob("/kaggle/input/**/cg-lib", recursive=True)
-if _cg_lib:
-    sys.path.append(_cg_lib[0])
-
 from cg.api import (
     AreaType,
     Card,
@@ -23,6 +18,9 @@ from cg.api import (
     all_card_data,
 )
 
+_cg_lib = glob.glob("/kaggle/input/**/cg-lib", recursive=True)
+if _cg_lib:
+    sys.path.append(_cg_lib[0])
 all_card = all_card_data()
 card_table = {c.cardId: c for c in all_card}
 card_count = max(all_card, key=lambda c: c.cardId).cardId + 1
