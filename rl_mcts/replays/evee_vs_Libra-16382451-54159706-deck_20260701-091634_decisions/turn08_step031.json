@@ -1,0 +1,639 @@
+{
+  "turn": 8,
+  "turn_action_count": 9,
+  "acting_player_index": 0,
+  "selecting": "CARD / TO_HAND",
+  "root_value": 0.0408,
+  "chosen_action": "card @ deck[39] (p0)",
+  "candidates": [
+    {
+      "action": "card @ deck[39] (p0)",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3234,
+      "visits": 395,
+      "search_mean_value": 0.0812,
+      "expanded": true,
+      "policy_target": 0.0405
+    },
+    {
+      "action": "card @ deck[8] (p0)",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3234,
+      "visits": 350,
+      "search_mean_value": 0.0087,
+      "expanded": true,
+      "policy_target": -0.0321
+    },
+    {
+      "action": "card @ deck[24] (p0)",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3234,
+      "visits": 42,
+      "search_mean_value": 0.0245,
+      "expanded": true,
+      "policy_target": -0.0163
+    },
+    {
+      "action": "card @ deck[16] (p0)",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3234,
+      "visits": 41,
+      "search_mean_value": 0.0121,
+      "expanded": true,
+      "policy_target": -0.0287
+    },
+    {
+      "action": "card @ deck[20] (p0)",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.088,
+      "nn_value": -0.3281,
+      "visits": 38,
+      "search_mean_value": 0.0511,
+      "expanded": true,
+      "policy_target": 0.0103
+    },
+    {
+      "action": "card @ deck[29] (p0)",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.088,
+      "nn_value": -0.3281,
+      "visits": 38,
+      "search_mean_value": 0.0518,
+      "expanded": true,
+      "policy_target": 0.011
+    },
+    {
+      "action": "card @ deck[28] (p0)",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3234,
+      "visits": 28,
+      "search_mean_value": 0.0262,
+      "expanded": true,
+      "policy_target": -0.0146
+    },
+    {
+      "action": "card @ deck[34] (p0)",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.0877,
+      "nn_value": -0.3234,
+      "visits": 28,
+      "search_mean_value": 0.0347,
+      "expanded": true,
+      "policy_target": -0.006
+    },
+    {
+      "action": "card @ deck[1] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.088,
+      "nn_value": -0.3281,
+      "visits": 25,
+      "search_mean_value": 0.0256,
+      "expanded": true,
+      "policy_target": -0.0152
+    },
+    {
+      "action": "card @ deck[13] (p0)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.088,
+      "nn_value": -0.3281,
+      "visits": 11,
+      "search_mean_value": -0.0419,
+      "expanded": true,
+      "policy_target": -0.0827
+    },
+    {
+      "action": "card @ deck[9] (p0)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0305,
+      "nn_value": -0.3244,
+      "visits": 1,
+      "search_mean_value": -0.3244,
+      "expanded": true,
+      "policy_target": -0.3652
+    },
+    {
+      "action": "card @ deck[21] (p0)",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0305,
+      "nn_value": -0.3244,
+      "visits": 1,
+      "search_mean_value": -0.3244,
+      "expanded": true,
+      "policy_target": -0.3652
+    },
+    {
+      "action": "card @ deck[27] (p0)",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0305,
+      "nn_value": -0.3244,
+      "visits": 1,
+      "search_mean_value": -0.3244,
+      "expanded": true,
+      "policy_target": -0.3652
+    },
+    {
+      "action": "card @ deck[33] (p0)",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.0305,
+      "nn_value": -0.3244,
+      "visits": 1,
+      "search_mean_value": -0.3244,
+      "expanded": true,
+      "policy_target": -0.3652
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Alakazam Psychic": 0.6378,
+      "Alakazam Psychic (B)": 0.1811,
+      "Dawn": 0.1811,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 1.0,
+        "expected_copies": 2.6614
+      },
+      {
+        "card_id": 19,
+        "name": "Telepath Psychic Energy",
+        "probability": 1.0,
+        "expected_copies": 3.9921
+      },
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 1.0,
+        "expected_copies": 3.0551
+      },
+      {
+        "card_id": 742,
+        "name": "Kadabra",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 743,
+        "name": "Alakazam",
+        "probability": 1.0,
+        "expected_copies": 3.7087
+      },
+      {
+        "card_id": 1079,
+        "name": "Rare Candy",
+        "probability": 1.0,
+        "expected_copies": 3.6142
+      },
+      {
+        "card_id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 3.9921
+      },
+      {
+        "card_id": 1225,
+        "name": "Hilda",
+        "probability": 1.0,
+        "expected_copies": 3.8661
+      },
+      {
+        "card_id": 1231,
+        "name": "Dawn",
+        "probability": 1.0,
+        "expected_copies": 3.937
+      },
+      {
+        "card_id": 1129,
+        "name": "Sacred Ash",
+        "probability": 0.9764,
+        "expected_copies": 1.189
+      },
+      {
+        "card_id": 1081,
+        "name": "Enhanced Hammer",
+        "probability": 0.9685,
+        "expected_copies": 3.3622
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.9606,
+        "expected_copies": 2.685
+      },
+      {
+        "card_id": 305,
+        "name": "Dunsparce",
+        "probability": 0.874,
+        "expected_copies": 3.1811
+      },
+      {
+        "card_id": 13,
+        "name": "Enriching Energy",
+        "probability": 0.8583,
+        "expected_copies": 0.8583
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 0.8346,
+        "expected_copies": 1.8189
+      },
+      {
+        "card_id": 1184,
+        "name": "Lana’s Aid",
+        "probability": 0.8268,
+        "expected_copies": 0.9134
+      },
+      {
+        "card_id": 1264,
+        "name": "Battle Cage",
+        "probability": 0.6693,
+        "expected_copies": 1.5039
+      },
+      {
+        "card_id": 140,
+        "name": "Fezandipiti ex",
+        "probability": 0.3543,
+        "expected_copies": 0.3543
+      },
+      {
+        "card_id": 1156,
+        "name": "Lucky Helmet",
+        "probability": 0.252,
+        "expected_copies": 0.4173
+      },
+      {
+        "card_id": 343,
+        "name": "Shaymin",
+        "probability": 0.2441,
+        "expected_copies": 0.2598
+      },
+      {
+        "card_id": 1146,
+        "name": "Wondrous Patch",
+        "probability": 0.1969,
+        "expected_copies": 0.1969
+      },
+      {
+        "card_id": 1266,
+        "name": "Nighttime Mine",
+        "probability": 0.1732,
+        "expected_copies": 0.5827
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.1654,
+        "expected_copies": 0.2362
+      },
+      {
+        "card_id": 65,
+        "name": "Dunsparce",
+        "probability": 0.1339,
+        "expected_copies": 0.4724
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 741,
+        "name": "Abra",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 4
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 4
+      },
+      {
+        "id": 65,
+        "name": "Dunsparce",
+        "count": 3
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 3
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 3
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 3
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 3
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 3
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 3
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 2
+      },
+      {
+        "id": 1266,
+        "name": "Nighttime Mine",
+        "count": 2
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 2
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 1
+      },
+      {
+        "id": 1146,
+        "name": "Wondrous Patch",
+        "count": 1
+      },
+      {
+        "id": 1174,
+        "name": "Air Balloon",
+        "count": 1
+      },
+      {
+        "id": 1264,
+        "name": "Battle Cage",
+        "count": 1
+      },
+      {
+        "id": 1184,
+        "name": "Lana’s Aid",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 1
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 1
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 1
+      },
+      {
+        "id": 1264,
+        "name": "Battle Cage",
+        "count": 1
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 65,
+        "name": "Dunsparce",
+        "count": 1
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 1
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 1
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[39] (p0)",
+      "value": 0.0812
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0823
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0667
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[0])",
+      "value": 0.0841
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0873
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0588
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0624
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0352
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0654
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0302
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.0767
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0313
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.1426
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.0629
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.1737
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": 0.1034
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 0.2012
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "attach Telepath Psychic Energy (hand[10]) -> Abra (active[0])",
+      "value": 0.1773
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "retreat",
+      "value": 0.1773
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+Turn 14  (action #5, P0 Evee)
+Selecting: CARD / TO_ACTIVE
+Root value: -0.1559
+CHOSEN: Munkidori @ bench[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.1565   +0.3143   1.000  Munkidori @ bench[0] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    3x Snorlax
+    2x Explorer’s Guidance
+    2x Poké Pad
+    2x Archaludon ex
+    1x Jumbo Ice Cream
+    1x Full Metal Lab
+    1x Pokégear 3.0
+
+Predicted line (principal variation):
+  1. [Evee] Munkidori @ bench[0] (p0)  (v=-0.1565)
+  2. [Evee] attach Basic {P} Energy (hand[4]) -> Munkidori (active[0])  (v=-0.1587)
+  3. [Evee] play Eevee (hand[1])  (v=-0.1560)
+  4. [Evee] play Eevee (hand[1])  (v=-0.1500)
+  5. [Evee] play Eevee (hand[2])  (v=-0.1525)
+  6. [Evee] retreat  (v=-0.1525)
+  7. [Evee] energy x1 @ active[0]  (v=-0.2013)
+  8. [Evee] Eevee @ bench[2] (p0)  (v=-0.3024)
+  9. [Evee] END turn  (v=-0.5234)
+  10. [opponent] play Snorlax (hand[1])  (v=-0.5210)

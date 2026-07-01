@@ -1,0 +1,450 @@
+{
+  "turn": 38,
+  "turn_action_count": 6,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 3.8271,
+  "chosen_action": "ATTACK (attackId 1296)",
+  "candidates": [
+    {
+      "action": "ATTACK (attackId 1296)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1637,
+      "nn_value": 3.8918,
+      "visits": 995,
+      "search_mean_value": 3.8508,
+      "expanded": true,
+      "policy_target": 0.0236
+    },
+    {
+      "action": "retreat",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.3893,
+      "nn_value": -0.0832,
+      "visits": 2,
+      "search_mean_value": -0.1074,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Crushing Hammer (hand[3])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.117,
+      "nn_value": -0.0768,
+      "visits": 1,
+      "search_mean_value": -0.0768,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "play Poké Pad (hand[4])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1025,
+      "nn_value": -0.0797,
+      "visits": 1,
+      "search_mean_value": -0.0797,
+      "expanded": true,
+      "policy_target": -1.0
+    },
+    {
+      "action": "END turn",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.2275,
+      "nn_value": -0.1068,
+      "visits": 1,
+      "search_mean_value": -0.1068,
+      "expanded": true,
+      "policy_target": -1.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Alakazam Psychic": 0.707,
+      "Dawn": 0.2103,
+      "Alakazam Psychic (B)": 0.0828,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 1.0,
+        "expected_copies": 2.7318
+      },
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 1.0,
+        "expected_copies": 3.0066
+      },
+      {
+        "card_id": 1129,
+        "name": "Sacred Ash",
+        "probability": 0.9801,
+        "expected_copies": 1.202
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 0.894,
+        "expected_copies": 1.9768
+      },
+      {
+        "card_id": 13,
+        "name": "Enriching Energy",
+        "probability": 0.8858,
+        "expected_copies": 0.8858
+      },
+      {
+        "card_id": 1184,
+        "name": "Lana’s Aid",
+        "probability": 0.8046,
+        "expected_copies": 0.9139
+      },
+      {
+        "card_id": 1264,
+        "name": "Battle Cage",
+        "probability": 0.6407,
+        "expected_copies": 1.2748
+      },
+      {
+        "card_id": 140,
+        "name": "Fezandipiti ex",
+        "probability": 0.3179,
+        "expected_copies": 0.3179
+      },
+      {
+        "card_id": 1156,
+        "name": "Lucky Helmet",
+        "probability": 0.2599,
+        "expected_copies": 0.4238
+      },
+      {
+        "card_id": 1266,
+        "name": "Nighttime Mine",
+        "probability": 0.2086,
+        "expected_copies": 0.6954
+      },
+      {
+        "card_id": 343,
+        "name": "Shaymin",
+        "probability": 0.1987,
+        "expected_copies": 0.1987
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.1738,
+        "expected_copies": 0.2467
+      },
+      {
+        "card_id": 1146,
+        "name": "Wondrous Patch",
+        "probability": 0.1325,
+        "expected_copies": 0.1325
+      },
+      {
+        "card_id": 1174,
+        "name": "Air Balloon",
+        "probability": 0.0993,
+        "expected_copies": 0.0993
+      },
+      {
+        "card_id": 142,
+        "name": "Genesect",
+        "probability": 0.0944,
+        "expected_copies": 0.0944
+      },
+      {
+        "card_id": 858,
+        "name": "Psyduck",
+        "probability": 0.0646,
+        "expected_copies": 0.0646
+      },
+      {
+        "card_id": 1161,
+        "name": "Handheld Fan",
+        "probability": 0.0497,
+        "expected_copies": 0.1192
+      },
+      {
+        "card_id": 214,
+        "name": "Togekiss",
+        "probability": 0.043,
+        "expected_copies": 0.043
+      },
+      {
+        "card_id": 959,
+        "name": "Togepi",
+        "probability": 0.043,
+        "expected_copies": 0.043
+      },
+      {
+        "card_id": 1137,
+        "name": "Tool Scrapper",
+        "probability": 0.043,
+        "expected_copies": 0.043
+      },
+      {
+        "card_id": 174,
+        "name": "Fan Rotom",
+        "probability": 0.0298,
+        "expected_copies": 0.0298
+      },
+      {
+        "card_id": 1247,
+        "name": "Neutralization Zone",
+        "probability": 0.0298,
+        "expected_copies": 0.0298
+      },
+      {
+        "card_id": 1155,
+        "name": "Survival Brace",
+        "probability": 0.0199,
+        "expected_copies": 0.0199
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 0.0149,
+        "expected_copies": 0.0149
+      },
+      {
+        "card_id": 1120,
+        "name": "Crushing Hammer",
+        "probability": 0.0132,
+        "expected_copies": 0.0265
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 741,
+        "name": "Abra",
+        "count": 4
+      },
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 3
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 3
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 3
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 3
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 3
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 2
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 2
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 1184,
+        "name": "Lana’s Aid",
+        "count": 1
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 1
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 1
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 6
+      },
+      {
+        "id": 1266,
+        "name": "Nighttime Mine",
+        "count": 3
+      },
+      {
+        "id": 1264,
+        "name": "Battle Cage",
+        "count": 2
+      },
+      {
+        "id": 140,
+        "name": "Fezandipiti ex",
+        "count": 1
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 1
+      },
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 1
+      },
+      {
+        "id": 13,
+        "name": "Enriching Energy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 2
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "ATTACK (attackId 1296)",
+      "value": 3.8508
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "attach Enriching Energy (hand[13]) -> Dunsparce (bench[2])",
+      "value": 3.839
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Xerosic’s Machinations (hand[11])",
+      "value": 3.8288
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Leafeon @ hand[0] (p0) + Espeon ex @ hand[2] (p0)",
+      "value": 3.8734
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "evolve Dunsparce (bench[3]) -> Dudunsparce",
+      "value": 3.8333
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "ability Dudunsparce",
+      "value": 3.8075
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Fezandipiti ex (hand[0])",
+      "value": 3.7742
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "play Nighttime Mine (hand[2])",
+      "value": 3.7762
+    }
+  ]
+}

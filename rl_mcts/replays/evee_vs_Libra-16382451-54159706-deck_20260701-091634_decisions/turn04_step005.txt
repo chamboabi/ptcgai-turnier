@@ -1,0 +1,63 @@
+Turn 4  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0772
+CHOSEN: play Lillie's Determination (hand[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     943   -0.0627   -0.3734   0.107  play Lillie's Determination (hand[0])
+      11   -0.3262   -0.3381   0.140  attach Basic {P} Energy (hand[4]) -> Sylveon (bench[0])
+      10   -0.2889   -0.3339   0.117  attach Basic {D} Energy (hand[3]) -> Sylveon (bench[0])
+       7   -0.2672   -0.3722   0.107  play Lillie's Determination (hand[2])
+       7   -0.2679   -0.3363   0.073  attach Basic {D} Energy (hand[3]) -> Pecharunt (active[0])
+       7   -0.2846   -0.3607   0.080  attach Basic {P} Energy (hand[4]) -> Pecharunt (active[0])
+       7   -0.3761   +0.3363   0.174  END turn
+       5   -0.3575   -0.3595   0.118  play Crispin (hand[1])
+       3   -0.3592   -0.3655   0.082  play Poké Pad (hand[5])
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    1x Basic {P} Energy
+    1x Telepath Psychic Energy
+    1x Buddy-Buddy Poffin
+    1x Hilda
+    1x Rare Candy
+    1x Alakazam
+    1x Enhanced Hammer
+    1x Dunsparce
+
+Predicted line (principal variation):
+  1. [Evee] play Lillie's Determination (hand[0])  (v=-0.0627)
+  2. [Evee] play Munkidori (hand[1])  (v=-0.0532)
+  3. [Evee] attach Basic {G} Energy (hand[4]) -> Sylveon (bench[0])  (v=-0.0156)
+  4. [Evee] play Poké Pad (hand[3])  (v=+0.0335)
+  5. [Evee] card @ deck[35] (p0)  (v=+0.1215)
+  6. [Evee] play Munkidori (hand[5])  (v=+0.1218)
+  7. [Evee] END turn  (v=+0.1272)
+  8. [opponent] END turn  (v=+0.1037)
+  9. [Evee] END turn  (v=+0.1669)
+  10. [opponent] END turn  (v=+0.1015)
+  11. [Evee] END turn  (v=+0.2560)
+  12. [opponent] END turn  (v=+0.1866)
+  13. [Evee] END turn  (v=+0.2864)
+  14. [opponent] attach Telepath Psychic Energy (hand[1]) -> Abra (active[0])  (v=+0.2514)
+  15. [opponent] play Boss’s Orders (hand[10])  (v=+0.2469)

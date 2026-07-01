@@ -1,0 +1,57 @@
+Turn 17  (action #4, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.1902
+CHOSEN: Eevee @ discard[11] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     388   +0.2495   +0.3460   0.144  Eevee @ discard[11] (p0)
+      94   +0.1530   +0.3460   0.144  Eevee @ discard[7] (p0)
+      94   +0.1530   +0.3460   0.144  Eevee @ discard[18] (p0)
+      77   +0.1631   +0.3492   0.043  Espeon ex @ discard[10] (p0)
+      77   +0.1631   +0.3492   0.043  Espeon ex @ discard[12] (p0)
+      42   +0.1518   +0.3477   0.066  Basic {P} Energy @ discard[0] (p0)
+      42   +0.1518   +0.3477   0.066  Basic {P} Energy @ discard[1] (p0)
+      42   +0.1518   +0.3477   0.066  Basic {P} Energy @ discard[6] (p0)
+      42   +0.1518   +0.3477   0.066  Basic {P} Energy @ discard[17] (p0)
+      24   +0.1323   +0.3385   0.040  Basic {D} Energy @ discard[4] (p0)
+      24   +0.1323   +0.3385   0.040  Basic {D} Energy @ discard[9] (p0)
+      18   +0.1384   +0.3440   0.045  Pecharunt @ discard[2] (p0)
+      18   +0.1384   +0.3440   0.045  Pecharunt @ discard[3] (p0)
+      18   +0.1384   +0.3440   0.045  Pecharunt @ discard[8] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  1.00x  Hero’s Cape
+    0.98  3.88x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Explorer’s Guidance
+    2x Poké Pad
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Ultra Ball
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Hero’s Cape
+    1x Archaludon ex
+
+Predicted line (principal variation):
+  1. [Evee] Eevee @ discard[11] (p0)  (v=+0.2495)
+  2. [Evee] play Carmine (hand[0])  (v=+0.2713)
+  3. [Evee] play Night Stretcher (hand[1])  (v=+0.2889)
+  4. [Evee] Eevee @ discard[17] (p0)  (v=+0.2628)
+  5. [Evee] attach Mist Energy (hand[3]) -> Munkidori (active[0])  (v=+0.1649)
+  6. [Evee] play Eevee (hand[0])  (v=+0.3640)

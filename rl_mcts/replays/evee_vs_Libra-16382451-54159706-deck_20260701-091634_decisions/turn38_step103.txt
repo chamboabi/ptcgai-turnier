@@ -1,0 +1,66 @@
+Turn 38  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +3.6597
+CHOSEN: attach Basic {D} Energy (hand[3]) -> Pecharunt (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     959   +3.8239   -0.0332   0.067  attach Basic {D} Energy (hand[3]) -> Pecharunt (active[0])
+       9   -0.0628   -0.0710   0.087  play Crushing Hammer (hand[4])
+       5   -0.0715   -0.0316   0.067  attach Basic {D} Energy (hand[3]) -> Pecharunt (bench[1])
+       4   -0.0902   -0.0833   0.104  attach Basic {G} Energy (hand[1]) -> Sylveon (bench[0])
+       4   -0.0929   -0.0855   0.106  attach Basic {D} Energy (hand[3]) -> Sylveon (bench[0])
+       4   -0.0909   -0.0794   0.098  attach Basic {D} Energy (hand[3]) -> Munkidori (bench[2])
+       4   -0.0755   -0.0724   0.076  play Poké Pad (hand[5])
+       3   -0.0853   -0.0625   0.067  attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])
+       3   -0.0984   -0.0882   0.092  attach Basic {G} Energy (hand[1]) -> Munkidori (bench[2])
+       3   -0.1969   -0.1170   0.169  END turn
+       2   -0.1062   -0.0883   0.067  attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[1])
+
+Opponent belief:
+  archetype: Alakazam Psychic 71%, Dawn 21%, Alakazam Psychic (B) 8%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.73x  Basic {P} Energy
+    1.00  3.01x  Dudunsparce
+    0.98  1.20x  Sacred Ash
+    0.89  1.98x  Night Stretcher
+    0.89  0.89x  Enriching Energy
+    0.80  0.91x  Lana’s Aid
+    0.64  1.27x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.26  0.42x  Lucky Helmet
+    0.21  0.70x  Nighttime Mine
+    0.20  0.20x  Shaymin
+    0.17  0.25x  Xerosic’s Machinations
+    0.13  0.13x  Wondrous Patch
+    0.10  0.10x  Air Balloon
+    0.09  0.09x  Genesect
+  known (visible) opponent cards:
+    4x Abra
+    3x Alakazam
+    3x Rare Candy
+    3x Buddy-Buddy Poffin
+    3x Dawn
+    3x Enhanced Hammer
+    2x Dunsparce
+    2x Telepath Psychic Energy
+    2x Boss’s Orders
+    2x Hilda
+    2x Poké Pad
+    1x Kadabra
+  sampled opponent hand (this search):
+    10x Snorlax
+    2x Basic {P} Energy
+    2x Night Stretcher
+    1x Enriching Energy
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[3]) -> Pecharunt (active[0])  (v=+3.8239)
+  2. [Evee] ATTACK (attackId 1296)  (v=+3.8483)
+  3. [opponent] attach Enriching Energy (hand[6]) -> Alakazam (active[0])  (v=+3.8219)
+  4. [opponent] retreat  (v=+3.8118)
+  5. [opponent] energy x1 @ active[0]  (v=+3.8112)
+  6. [opponent] Dunsparce @ bench[2] (p1)  (v=+3.7905)
+  7. [opponent] evolve Dunsparce (bench[3]) -> Dudunsparce  (v=+3.7630)
+  8. [opponent] evolve Dunsparce (active[0]) -> Dudunsparce  (v=+3.6808)
+  9. [opponent] ability Dudunsparce  (v=+3.7426)

@@ -1,0 +1,50 @@
+Turn 1  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0555
+CHOSEN: play hand[5]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     498   +0.0633   -0.1051   0.199  play hand[5]
+     202   +0.0588   +0.0874   0.147  play hand[2]
+     110   +0.0543   +0.0561   0.116  attach hand[0] -> active[0]
+      73   +0.0475   +0.0468   0.116  attach hand[0] -> bench[0]
+      66   +0.0524   +0.0529   0.073  attach hand[4] -> bench[0]
+      31   -0.0149   +0.0388   0.206  play hand[3]
+      14   +0.0049   +0.0293   0.073  attach hand[4] -> active[0]
+       6   -0.0722   -0.0785   0.069  END turn
+
+Opponent belief:
+  archetype: Mega Lucario ex 96%, Fighting Gong 4%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  13.45x  Basic {F} Energy
+    1.00  2.03x  Lunatone
+    1.00  3.97x  Fighting Gong
+    1.00  2.68x  Poké Pad
+    1.00  3.99x  Lillie's Determination
+    0.99  2.73x  Boss’s Orders
+    0.96  3.64x  Riolu
+    0.96  3.81x  Mega Lucario ex
+    0.96  3.79x  Dusk Ball
+    0.96  2.04x  Switch
+    0.96  3.79x  Premium Power Pro
+    0.96  0.96x  Hero’s Cape
+    0.92  3.60x  Carmine
+    0.89  1.06x  Gravity Mountain
+    0.89  1.80x  Makuhita
+  known (visible) opponent cards:
+    1x Solrock
+  sampled opponent hand (this search):
+    1x Hero’s Cape
+    1x Binacle
+    1x Lillie's Determination
+    1x Riolu
+    1x Dusk Ball
+    1x Mega Lucario ex
+
+Predicted line (principal variation):
+  1. [Evee] play hand[5]  (v=+0.0633)
+  2. [opponent] card @ hand[2] (p1)  (v=+0.0546)
+  3. [Evee] play hand[3]  (v=+0.0599)
+  4. [Evee] card @ deck[18] (p0)  (v=+0.0556)
+  5. [Evee] attach hand[0] -> active[0]  (v=+0.0583)

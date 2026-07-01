@@ -1,0 +1,42 @@
+Turn 16  (action #7, P0 Evee)
+Selecting: CARD / TO_ACTIVE
+Root value: +0.2000
+CHOSEN: Munkidori @ bench[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     571   +0.1966   +0.3269   0.748  Munkidori @ bench[0] (p0)
+     429   +0.2042   +0.3138   0.252  Eevee @ bench[1] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.94x  Jumbo Ice Cream
+    1.00  1.00x  Hero’s Cape
+    0.98  3.88x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Explorer’s Guidance
+    2x Poké Pad
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Ultra Ball
+    1x Pokégear 3.0
+  sampled opponent hand (this search):
+    6x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] Munkidori @ bench[0] (p0)  (v=+0.1966)
+  2. [Evee] play Night Stretcher (hand[1])  (v=+0.2109)
+  3. [Evee] Eevee @ discard[7] (p0)  (v=+0.1978)
+  4. [Evee] attach Basic {D} Energy (hand[1]) -> Munkidori (active[0])  (v=+0.1680)
+  5. [Evee] play Carmine (hand[0])  (v=+0.3225)

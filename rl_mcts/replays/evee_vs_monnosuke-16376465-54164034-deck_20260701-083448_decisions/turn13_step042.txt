@@ -1,0 +1,47 @@
+Turn 13  (action #5, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.2678
+CHOSEN: card @ discard[9] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     349   +0.2697   +0.3146   0.282  card @ discard[9] (p0)
+     325   +0.2698   +0.3146   0.282  card @ discard[5] (p0)
+     163   +0.2635   +0.3058   0.217  card @ discard[3] (p0)
+     163   +0.2635   +0.3058   0.217  card @ discard[10] (p0)
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    6x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    3x Fighting Gong
+    2x Lillie's Determination
+    2x Judge
+    1x Okidogi
+    1x Lunatone
+    1x Barbaracle
+    1x Binacle
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Boss’s Orders
+    1x Prism Energy
+    1x Night Stretcher
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Morty’s Conviction
+
+Predicted line (principal variation):
+  1. [Evee] card @ discard[9] (p0)  (v=+0.2697)
+  2. [Evee] play hand[0]  (v=+0.2881)
+  3. [Evee] attach hand[0] -> bench[0]  (v=+0.2222)
+  4. [Evee] evolve -> bench[1]  (v=+0.2995)

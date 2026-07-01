@@ -1,0 +1,49 @@
+Turn 17  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0655
+CHOSEN: play Night Stretcher (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     606   +0.0748   +0.3440   0.154  play Night Stretcher (hand[1])
+     127   +0.0609   +0.3380   0.163  attach Basic {D} Energy (hand[2]) -> Munkidori (active[0])
+     125   +0.0572   +0.3071   0.205  attach Basic {G} Energy (hand[3]) -> Munkidori (active[0])
+      61   +0.0479   +0.3252   0.134  attach Basic {G} Energy (hand[3]) -> Eevee (bench[0])
+      60   +0.0541   +0.3209   0.113  attach Basic {D} Energy (hand[2]) -> Eevee (bench[0])
+      19   -0.0242   +0.3140   0.149  play Carmine (hand[0])
+       2   -0.3431   -0.3497   0.081  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  1.00x  Hero’s Cape
+    0.98  3.88x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Explorer’s Guidance
+    2x Poké Pad
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Ultra Ball
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] play Night Stretcher (hand[1])  (v=+0.0748)
+  2. [Evee] Eevee @ discard[7] (p0)  (v=+0.0690)
+  3. [Evee] play Eevee (hand[3])  (v=+0.1101)
+  4. [Evee] play Carmine (hand[0])  (v=+0.1388)
+  5. [Evee] attach Basic {P} Energy (hand[0]) -> Munkidori (active[0])  (v=-0.0105)
+  6. [Evee] END turn  (v=-0.3672)

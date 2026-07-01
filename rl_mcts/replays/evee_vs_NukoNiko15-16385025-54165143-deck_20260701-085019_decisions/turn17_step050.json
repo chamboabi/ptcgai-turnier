@@ -1,0 +1,327 @@
+{
+  "turn": 17,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 0.2409,
+  "chosen_action": "play Hand Trimmer (hand[4])",
+  "candidates": [
+    {
+      "action": "play Hand Trimmer (hand[4])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.183,
+      "nn_value": -0.3755,
+      "visits": 887,
+      "search_mean_value": 0.2747,
+      "expanded": true,
+      "policy_target": 0.0337
+    },
+    {
+      "action": "play Night Stretcher (hand[1])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1262,
+      "nn_value": 0.3295,
+      "visits": 33,
+      "search_mean_value": -0.0096,
+      "expanded": true,
+      "policy_target": -0.2506
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Munkidori (active[0])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1335,
+      "nn_value": 0.3312,
+      "visits": 29,
+      "search_mean_value": -0.0125,
+      "expanded": true,
+      "policy_target": -0.2535
+    },
+    {
+      "action": "play Carmine (hand[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.1223,
+      "nn_value": 0.3336,
+      "visits": 14,
+      "search_mean_value": -0.0392,
+      "expanded": true,
+      "policy_target": -0.2801
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[2]) -> Eevee (bench[0])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.092,
+      "nn_value": 0.3139,
+      "visits": 12,
+      "search_mean_value": -0.0279,
+      "expanded": true,
+      "policy_target": -0.2689
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[3]) -> Munkidori (active[0])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1669,
+      "nn_value": 0.3006,
+      "visits": 12,
+      "search_mean_value": -0.0394,
+      "expanded": true,
+      "policy_target": -0.2803
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[3]) -> Eevee (bench[0])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.1094,
+      "nn_value": 0.3186,
+      "visits": 12,
+      "search_mean_value": -0.0294,
+      "expanded": true,
+      "policy_target": -0.2703
+    },
+    {
+      "action": "END turn",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0667,
+      "nn_value": -0.3729,
+      "visits": 1,
+      "search_mean_value": -0.3729,
+      "expanded": true,
+      "policy_target": -0.6139
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 190,
+        "name": "Archaludon ex",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 1.0,
+        "expected_copies": 3.9391
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.9848,
+        "expected_copies": 3.8782
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1168,
+        "expected_copies": 0.1421
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0508,
+        "expected_copies": 0.0863
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0305,
+        "expected_copies": 0.0558
+      },
+      {
+        "card_id": 1102,
+        "name": "Dusk Ball",
+        "probability": 0.0102,
+        "expected_copies": 0.0102
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 9
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 1
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 20
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 4
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 3
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 3
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Hand Trimmer (hand[4])",
+      "value": 0.2747
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "Jumbo Ice Cream @ hand[0] (p1)",
+      "value": 0.2375
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Night Stretcher (hand[1])",
+      "value": 0.2605
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Eevee @ discard[7] (p0)",
+      "value": 0.2397
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {D} Energy (hand[1]) -> Munkidori (active[0])",
+      "value": 0.1717
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Carmine (hand[0])",
+      "value": 0.3544
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "turn": 42,
+  "turn_action_count": 1,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 0.9838,
+  "chosen_action": "END turn",
+  "candidates": [
+    {
+      "action": "END turn",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.0933,
+      "nn_value": 1.0,
+      "visits": 984,
+      "search_mean_value": 1.0,
+      "expanded": true,
+      "policy_target": 0.0162
+    },
+    {
+      "action": "play Judge (hand[6])",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.1412,
+      "nn_value": 0.1198,
+      "visits": 3,
+      "search_mean_value": 0.1198,
+      "expanded": true,
+      "policy_target": -0.864
+    },
+    {
+      "action": "retreat",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.1598,
+      "nn_value": 0.0281,
+      "visits": 2,
+      "search_mean_value": 0.0234,
+      "expanded": true,
+      "policy_target": -0.9604
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0372,
+      "nn_value": 0.0388,
+      "visits": 1,
+      "search_mean_value": 0.0388,
+      "expanded": true,
+      "policy_target": -0.945
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Sylveon (bench[0])",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.058,
+      "nn_value": 0.0235,
+      "visits": 1,
+      "search_mean_value": 0.0235,
+      "expanded": true,
+      "policy_target": -0.9603
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[1])",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0372,
+      "nn_value": 0.0194,
+      "visits": 1,
+      "search_mean_value": 0.0194,
+      "expanded": true,
+      "policy_target": -0.9644
+    },
+    {
+      "action": "attach Basic {G} Energy (hand[1]) -> Munkidori (bench[2])",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0505,
+      "nn_value": 0.0182,
+      "visits": 1,
+      "search_mean_value": 0.0182,
+      "expanded": true,
+      "policy_target": -0.9656
+    },
+    {
+      "action": "play Crushing Hammer (hand[3])",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0481,
+      "nn_value": 0.0332,
+      "visits": 1,
+      "search_mean_value": 0.0332,
+      "expanded": true,
+      "policy_target": -0.9506
+    },
+    {
+      "action": "play Poké Pad (hand[4])",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0423,
+      "nn_value": 0.0324,
+      "visits": 1,
+      "search_mean_value": 0.0324,
+      "expanded": true,
+      "policy_target": -0.9514
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[5]) -> Pecharunt (active[0])",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0367,
+      "nn_value": 0.0744,
+      "visits": 1,
+      "search_mean_value": 0.0744,
+      "expanded": true,
+      "policy_target": -0.9094
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[5]) -> Sylveon (bench[0])",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0588,
+      "nn_value": 0.0259,
+      "visits": 1,
+      "search_mean_value": 0.0259,
+      "expanded": true,
+      "policy_target": -0.9579
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[5]) -> Pecharunt (bench[1])",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0367,
+      "nn_value": 0.0242,
+      "visits": 1,
+      "search_mean_value": 0.0242,
+      "expanded": true,
+      "policy_target": -0.9596
+    },
+    {
+      "action": "attach Basic {D} Energy (hand[5]) -> Munkidori (bench[2])",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0531,
+      "nn_value": 0.0315,
+      "visits": 1,
+      "search_mean_value": 0.0315,
+      "expanded": true,
+      "policy_target": -0.9523
+    },
+    {
+      "action": "ability Munkidori",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.1472,
+      "nn_value": 0.0281,
+      "visits": 1,
+      "search_mean_value": 0.0281,
+      "expanded": true,
+      "policy_target": -0.9557
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Alakazam Psychic": 0.698,
+      "Dawn": 0.2286,
+      "Alakazam Psychic (B)": 0.0735,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 1.0,
+        "expected_copies": 2.6408
+      },
+      {
+        "card_id": 1129,
+        "name": "Sacred Ash",
+        "probability": 0.9755,
+        "expected_copies": 1.1061
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 0.902,
+        "expected_copies": 2.0245
+      },
+      {
+        "card_id": 1184,
+        "name": "Lana’s Aid",
+        "probability": 0.8531,
+        "expected_copies": 0.9755
+      },
+      {
+        "card_id": 1264,
+        "name": "Battle Cage",
+        "probability": 0.698,
+        "expected_copies": 1.3347
+      },
+      {
+        "card_id": 140,
+        "name": "Fezandipiti ex",
+        "probability": 0.3224,
+        "expected_copies": 0.3224
+      },
+      {
+        "card_id": 1156,
+        "name": "Lucky Helmet",
+        "probability": 0.2204,
+        "expected_copies": 0.3184
+      },
+      {
+        "card_id": 1266,
+        "name": "Nighttime Mine",
+        "probability": 0.2204,
+        "expected_copies": 0.7265
+      },
+      {
+        "card_id": 343,
+        "name": "Shaymin",
+        "probability": 0.1837,
+        "expected_copies": 0.1837
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.1592,
+        "expected_copies": 0.2245
+      },
+      {
+        "card_id": 1174,
+        "name": "Air Balloon",
+        "probability": 0.1224,
+        "expected_copies": 0.1224
+      },
+      {
+        "card_id": 1146,
+        "name": "Wondrous Patch",
+        "probability": 0.1061,
+        "expected_copies": 0.1061
+      },
+      {
+        "card_id": 142,
+        "name": "Genesect",
+        "probability": 0.0776,
+        "expected_copies": 0.0776
+      },
+      {
+        "card_id": 858,
+        "name": "Psyduck",
+        "probability": 0.0531,
+        "expected_copies": 0.0531
+      },
+      {
+        "card_id": 1137,
+        "name": "Tool Scrapper",
+        "probability": 0.0531,
+        "expected_copies": 0.0531
+      },
+      {
+        "card_id": 214,
+        "name": "Togekiss",
+        "probability": 0.0408,
+        "expected_copies": 0.0408
+      },
+      {
+        "card_id": 959,
+        "name": "Togepi",
+        "probability": 0.0408,
+        "expected_copies": 0.0408
+      },
+      {
+        "card_id": 1161,
+        "name": "Handheld Fan",
+        "probability": 0.0408,
+        "expected_copies": 0.098
+      },
+      {
+        "card_id": 174,
+        "name": "Fan Rotom",
+        "probability": 0.0367,
+        "expected_copies": 0.0367
+      },
+      {
+        "card_id": 1120,
+        "name": "Crushing Hammer",
+        "probability": 0.0163,
+        "expected_copies": 0.0327
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 0.0163,
+        "expected_copies": 0.0327
+      },
+      {
+        "card_id": 65,
+        "name": "Dunsparce",
+        "probability": 0.0122,
+        "expected_copies": 0.0122
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 741,
+        "name": "Abra",
+        "count": 4
+      },
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 3
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 3
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 3
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 3
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 3
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 3
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 3
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 3
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 2
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 2
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 2
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 13,
+        "name": "Enriching Energy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 8
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 2
+      },
+      {
+        "id": 1264,
+        "name": "Battle Cage",
+        "count": 1
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 1
+      },
+      {
+        "id": 1156,
+        "name": "Lucky Helmet",
+        "count": 1
+      },
+      {
+        "id": 1184,
+        "name": "Lana’s Aid",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 4
+      },
+      {
+        "id": 1264,
+        "name": "Battle Cage",
+        "count": 1
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": 1.0
+    }
+  ]
+}

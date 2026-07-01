@@ -30,8 +30,10 @@ HERE = Path(__file__).parent
 SRC_CG = HERE / "cg"
 SRC_MAIN = HERE / "main.py"
 # extra modules main.py now imports (shaping + opponent-deck prediction)
+# Ship the numpy/sklearn-free *lite* predictor so the Kaggle agent (torch-only
+# image) doesn't crash on `import sklearn`. Same load/predict interface.
 SRC_REWARDS = HERE.parent / "rewards"
-SRC_PREDICT = HERE.parent / "deck_predict.py"
+SRC_PREDICT = HERE / "deck_predict_lite.py"
 SRC_ARCHETYPES = HERE.parent / "data" / "archetypes.json"
 
 

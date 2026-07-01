@@ -1,0 +1,58 @@
+Turn 32  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0035
+CHOSEN: play Judge (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     641   -0.0198   +0.0145   0.329  play Judge (hand[1])
+     147   +0.1808   -0.0391   0.216  END turn
+     125   -0.0373   -0.0311   0.082  play Night Stretcher (hand[2])
+      87   -0.0658   -0.0259   0.374  retreat
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Buddy-Buddy Poffin
+    1x Hilda
+    1x Poké Pad
+  sampled opponent hand (this search):
+    6x Snorlax
+    1x Sacred Ash
+
+Predicted line (principal variation):
+  1. [Evee] play Judge (hand[1])  (v=-0.0198)
+  2. [Evee] play Munkidori (hand[3])  (v=-0.0154)
+  3. [Evee] retreat  (v=-0.0184)
+  4. [Evee] energy x1 @ active[0]  (v=-0.0239)
+  5. [Evee] Sylveon @ bench[0] (p0)  (v=-0.0144)
+  6. [Evee] play Night Stretcher (hand[0])  (v=+0.0262)
+  7. [Evee] Basic {P} Energy @ discard[16] (p0)  (v=-0.0345)
+  8. [Evee] END turn  (v=-0.1132)
+  9. [opponent] evolve Dunsparce (bench[1]) -> Dudunsparce  (v=-0.1819)

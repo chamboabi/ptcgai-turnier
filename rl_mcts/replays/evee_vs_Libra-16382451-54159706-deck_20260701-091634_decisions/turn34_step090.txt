@@ -1,0 +1,59 @@
+Turn 34  (action #14, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.3749
+CHOSEN: card @ deck[12] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     318   -0.3812   -0.0722   0.091  card @ deck[12] (p0)
+     315   -0.3839   -0.0722   0.091  card @ deck[0] (p0)
+     233   -0.3904   -0.0690   0.275  card @ deck[2] (p0)
+      99   -0.2604   -0.0782   0.272  card @ deck[1] (p0)
+      35   -0.4672   -0.0782   0.272  card @ deck[20] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Night Stretcher
+    1x Lana’s Aid
+    1x Basic {P} Energy
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[12] (p0)  (v=-0.3812)
+  2. [Evee] card @ deck[1] (p0)  (v=-0.3974)
+  3. [Evee] Sylveon @ bench[0] (p0)  (v=-0.3771)
+  4. [Evee] END turn  (v=-0.3890)
+  5. [opponent] ability Dudunsparce  (v=-0.0869)
+  6. [opponent] attach Basic {P} Energy (hand[4]) -> Kadabra (active[0])  (v=-0.0722)

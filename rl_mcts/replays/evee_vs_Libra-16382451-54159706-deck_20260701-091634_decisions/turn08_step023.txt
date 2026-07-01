@@ -1,0 +1,55 @@
+Turn 8  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1183
+CHOSEN: attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     812   -0.0993   -0.3251   0.131  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+      69   -0.2032   +0.2578   0.292  END turn
+      43   -0.2014   -0.3020   0.233  attach Basic {P} Energy (hand[2]) -> Sylveon (bench[1])
+      41   -0.1899   -0.3506   0.131  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+      35   -0.1994   -0.3244   0.214  play Energy Search (hand[3])
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    2x Telepath Psychic Energy
+    1x Dawn
+    1x Dudunsparce
+    1x Rare Candy
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])  (v=-0.0993)
+  2. [Evee] retreat  (v=-0.0913)
+  3. [Evee] energy x1 @ active[0]  (v=-0.0910)
+  4. [Evee] Sylveon @ bench[1] (p0)  (v=-0.0842)
+  5. [Evee] play Energy Search (hand[2])  (v=-0.0755)
+  6. [Evee] card @ deck[2] (p0)  (v=-0.0644)
+  7. [Evee] END turn  (v=-0.0629)
+  8. [opponent] attach Telepath Psychic Energy (hand[2]) -> Abra (bench[0])  (v=-0.1220)
+  9. [opponent] card @ deck[44] (p1)  (v=-0.1260)
+  10. [opponent] END turn  (v=-0.1440)
+  11. [Evee] attach Basic {G} Energy (hand[2]) -> Sylveon (active[0])  (v=-0.1639)
+  12. [Evee] END turn  (v=-0.1583)
+  13. [opponent] attach Telepath Psychic Energy (hand[0]) -> Abra (active[0])  (v=-0.5188)
+  14. [opponent] ATTACK (attackId 1070)  (v=-1.0680)
+  15. [opponent] Dedenne @ bench[1] (p1)  (v=-1.1662)

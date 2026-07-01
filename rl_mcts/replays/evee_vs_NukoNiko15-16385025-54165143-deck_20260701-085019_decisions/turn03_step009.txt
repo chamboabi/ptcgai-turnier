@@ -1,0 +1,61 @@
+Turn 3  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.9319
+CHOSEN: attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     977   +1.9777   +0.4013   0.060  attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+       3   +0.1138   +0.4153   0.084  attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])
+       3   +0.1138   +0.4153   0.084  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       2   -0.0547   +0.3973   0.084  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[0])
+       2   -0.0547   +0.3973   0.084  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])
+       2   -0.0498   +0.4013   0.103  attach Basic {P} Energy (hand[0]) -> Munkidori (bench[2])
+       2   +0.4062   +0.4062   0.074  attach Basic {D} Energy (hand[1]) -> Munkidori (bench[2])
+       2   -0.0547   +0.3973   0.084  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[0])
+       2   -0.0547   +0.3973   0.084  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[1])
+       2   -0.0498   +0.4013   0.103  attach Basic {P} Energy (hand[3]) -> Munkidori (bench[2])
+       1   +0.3948   +0.3948   0.060  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[0])
+       1   +0.3948   +0.3948   0.060  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[1])
+       1   -0.4852   -0.4852   0.037  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Carmine 0%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Duraludon
+    1.00  4.00x  Archaludon ex
+    1.00  3.10x  Night Stretcher
+    1.00  4.00x  Ultra Ball
+    1.00  3.98x  Pokégear 3.0
+    1.00  3.85x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    1.00  4.00x  Lillie's Determination
+    0.99  3.93x  Explorer’s Guidance
+    0.99  3.60x  Boss’s Orders
+    0.99  3.87x  Full Metal Lab
+    0.93  0.93x  Relicanth
+    0.11  0.14x  Judge
+    0.11  0.23x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    1x Cinderace
+    1x Basic {M} Energy
+  sampled opponent hand (this search):
+    2x Snorlax
+    2x Lillie's Determination
+    1x Poké Pad
+    1x Jumbo Ice Cream
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])  (v=+1.9777)
+  2. [Evee] ATTACK (attackId 1296)  (v=+1.9851)
+  3. [opponent] play Poké Pad (hand[0])  (v=+1.9684)
+  4. [opponent] card @ deck[1] (p1)  (v=+1.8447)
+  5. [opponent] play Lillie's Determination (hand[4])  (v=+1.8139)
+  6. [opponent] play Snorlax (hand[0])  (v=+1.6789)
+  7. [opponent] retreat  (v=+1.6087)
+  8. [opponent] Snorlax @ bench[0] (p1)  (v=+1.6091)
+  9. [opponent] play Full Metal Lab (hand[6])  (v=+1.5798)
+  10. [opponent] play Snorlax (hand[1])  (v=+1.5289)
+  11. [opponent] attach Hero’s Cape (hand[0]) -> Snorlax (bench[1])  (v=+1.5180)
+  12. [opponent] play Snorlax (hand[0])  (v=+1.5222)

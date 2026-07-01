@@ -1,0 +1,75 @@
+Turn 15  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +2.3267
+CHOSEN: ATTACK (attackId 10)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     969   +2.3951   +0.2522   0.086  ATTACK (attackId 10)
+       6   +0.2864   +0.2888   0.087  play hand[4]
+       3   +0.2835   +0.2630   0.051  attach hand[5] -> active[0]
+       2   +0.2578   +0.2577   0.072  play hand[0]
+       2   +0.2620   +0.2506   0.066  attach hand[1] -> active[0]
+       2   +0.2726   +0.2808   0.051  play hand[2]
+       2   +0.2750   +0.2630   0.051  attach hand[7] -> active[0]
+       1   +0.2432   +0.2432   0.056  attach hand[1] -> bench[0]
+       1   +0.2454   +0.2454   0.041  attach hand[1] -> bench[1]
+       1   +0.2442   +0.2442   0.041  attach hand[1] -> bench[2]
+       1   +0.2442   +0.2442   0.041  attach hand[1] -> bench[3]
+       1   +0.2531   +0.2531   0.045  attach hand[5] -> bench[0]
+       1   +0.2528   +0.2528   0.032  attach hand[5] -> bench[1]
+       1   +0.2524   +0.2524   0.032  attach hand[5] -> bench[2]
+       1   +0.2524   +0.2524   0.032  attach hand[5] -> bench[3]
+       1   +0.2531   +0.2531   0.045  attach hand[7] -> bench[0]
+       1   +0.2528   +0.2528   0.032  attach hand[7] -> bench[1]
+       1   +0.2524   +0.2524   0.032  attach hand[7] -> bench[2]
+       1   +0.2524   +0.2524   0.032  attach hand[7] -> bench[3]
+       1   +0.2522   +0.2522   0.052  retreat
+       1   -0.0764   -0.0764   0.024  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    6x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    3x Fighting Gong
+    2x Lillie's Determination
+    2x Judge
+    1x Okidogi
+    1x Lunatone
+    1x Barbaracle
+    1x Binacle
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Boss’s Orders
+    1x Prism Energy
+    1x Night Stretcher
+    1x Tarragon
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Team Rocket's Watchtower
+    1x Basic {D} Energy
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 10)  (v=+2.3951)
+  2. [Evee] card @ hand[1] (p0)  (v=+2.3974)
+  3. [Evee] card @ bench[1] (p0)  (v=+2.4073)
+  4. [opponent] attach hand[3] -> active[0]  (v=+2.3430)
+  5. [opponent] retreat  (v=+2.3330)
+  6. [opponent] energy x1 @ active[0]  (v=+2.3037)
+  7. [opponent] energy x1 @ active[0]  (v=+2.2988)
+  8. [opponent] card @ bench[0] (p1)  (v=+2.2740)
+  9. [opponent] ATTACK (attackId 979)  (v=+2.2638)
+  10. [Evee] play hand[8]  (v=+2.2757)
+  11. [Evee] card @ deck[14] (p0)  (v=+2.2821)
+  12. [Evee] play hand[3]  (v=+2.2966)
+  13. [Evee] play hand[1]  (v=+2.3349)
+  14. [Evee] attach hand[0] -> active[0]  (v=+2.3397)

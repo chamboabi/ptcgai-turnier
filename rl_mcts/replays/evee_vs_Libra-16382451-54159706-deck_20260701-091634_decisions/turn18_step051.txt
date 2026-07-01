@@ -1,0 +1,67 @@
+Turn 18  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.2031
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     480   -0.1859   -0.1852   0.212  retreat
+     465   -0.1570   +0.0931   0.122  END turn
+       6   -0.6868   -0.1696   0.053  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+       6   -0.6693   -0.1452   0.095  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])
+       6   -0.6966   -0.1960   0.053  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])
+       6   -0.6897   -0.1757   0.049  attach Basic {G} Energy (hand[2]) -> Pecharunt (active[0])
+       6   -0.6668   -0.1441   0.075  attach Basic {G} Energy (hand[2]) -> Sylveon (bench[0])
+       6   -0.6946   -0.1991   0.049  attach Basic {G} Energy (hand[2]) -> Pecharunt (bench[1])
+       6   -0.6868   -0.1696   0.053  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+       6   -0.6693   -0.1452   0.095  attach Basic {P} Energy (hand[3]) -> Sylveon (bench[0])
+       6   -0.6966   -0.1960   0.053  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[1])
+       1   -3.9753   -3.9753   0.089  ATTACK (attackId 1296)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+    0.18  0.26x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    2x Dudunsparce
+    2x Dawn
+    1x Basic {P} Energy
+    1x Snorlax
+    1x Sacred Ash
+    1x Fezandipiti ex
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=-0.1859)
+  2. [Evee] energy x1 @ active[0]  (v=-0.1859)
+  3. [Evee] Pecharunt @ bench[1] (p0)  (v=-0.1721)
+  4. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])  (v=-0.1545)
+  5. [Evee] END turn  (v=-0.1525)
+  6. [opponent] END turn  (v=-0.0705)
+  7. [Evee] END turn  (v=+0.0255)
+  8. [opponent] attach Basic {P} Energy (hand[1]) -> Dunsparce (bench[1])  (v=+0.0148)
+  9. [opponent] evolve Dunsparce (bench[1]) -> Dudunsparce  (v=+0.0107)
+  10. [opponent] ability Dudunsparce  (v=+0.1327)

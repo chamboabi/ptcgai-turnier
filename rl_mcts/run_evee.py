@@ -15,6 +15,8 @@ import rewards
 from agent import Agent
 from cg.api import all_card_data
 from cg.recorder import GameRecorder
+from decision_log import write_decision
+from deck_predict import load_model
 from mcts import mcts_agent
 from run_match import (
     DECKLISTS,
@@ -45,9 +47,18 @@ def main() -> int:
     model = build_model()
     mcfg = make_mcts_cfg()
 
+    # Attach the archetype model to Evee so its opponent belief (sampled deck /
+    # hand + per-card predictions) is real, not all-UNKNOWN. Needed for the
+    # decision log's "what he thinks the opponent has".
+    arch_path = HERE / "data" / "archetypes.json"
+    archetype_model = load_model(str(arch_path)) if arch_path.exists() else None
+    if archetype_model is None:
+        print("No data/archetypes.json — opponent belief will be UNKNOWN cards.")
+
     # P0 = Evee deck + evee shape; P1 = random deck + base shape.
     agents = [
-        Agent(deck=evee_deck, model=model, mcts_cfg=mcfg, reward_fn=rewards.evee),
+        Agent(deck=evee_deck, model=model, mcts_cfg=mcfg, reward_fn=rewards.evee,
+              archetype_model=archetype_model),
         Agent(deck=opp_deck, model=model, mcts_cfg=mcfg, reward_fn=rewards.base),
     ]
 
@@ -57,14 +68,25 @@ def main() -> int:
         print(f"Deck error (player {start.errorPlayer}, type {start.errorType}).", file=sys.stderr)
         return 1
 
-    tracer = TurnPathTracer({c.cardId: c.name for c in all_card_data()}, p0_label="evee", p1_label="base")
+    names = {c.cardId: c.name for c in all_card_data()}
+    tracer = TurnPathTracer(names, p0_label="evee", p1_label="base")
+
+    # One folder per run holding a JSON + txt dump of every Evee (P0) decision.
+    stamp = time.strftime("%Y%m%d-%H%M%S")
+    decisions_dir = REPLAYS / f"evee_vs_{opp_file.stem}_{stamp}_decisions"
 
     step = 0
+    decision_idx = 0
     with torch.inference_mode():
         while obs["current"]["result"] < 0:
             cur = obs["current"]
             set_base_baselines(cur)
-            selected, _ = mcts_agent(obs, agents[cur["yourIndex"]])
+            # Only dump Evee's own decisions (P0); opponent runs plain.
+            dbg = {} if cur["yourIndex"] == 0 else None
+            selected, _ = mcts_agent(obs, agents[cur["yourIndex"]], debug_out=dbg)
+            if dbg:
+                write_decision(decisions_dir, decision_idx, dbg, names)
+                decision_idx += 1
             obs = rec.select(selected)
             tracer.feed(obs.get("logs"), obs["current"]["turn"])
             step += 1
@@ -78,12 +100,12 @@ def main() -> int:
     print(f"Result: {outcome} after {step} actions, turn {obs['current']['turn']}.")
 
     REPLAYS.mkdir(parents=True, exist_ok=True)
-    stamp = time.strftime("%Y%m%d-%H%M%S")
     base = REPLAYS / f"evee_vs_{opp_file.stem}_{stamp}"
     rec.save(f"{base}.json")
     rec.save_visualizer(f"{base}_vis.json")
     print(f"Saved replay:     {base}.json")
     print(f"Saved visualizer: {base}_vis.json")
+    print(f"Saved decisions:  {decisions_dir}/ ({decision_idx} Evee decisions)")
     print("Open debug/visualizer.html in a browser and load the *_vis.json file.")
     return 0
 

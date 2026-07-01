@@ -1,0 +1,55 @@
+Turn 28  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0749
+CHOSEN: play Hand Trimmer (hand[6])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     517   -0.0644   +0.0250   0.173  play Hand Trimmer (hand[6])
+     332   -0.0699   +0.0238   0.220  END turn
+      84   -0.1315   -0.0996   0.389  retreat
+      43   -0.0989   -0.0914   0.102  play Poké Pad (hand[4])
+      24   -0.1273   -0.0979   0.117  play Crushing Hammer (hand[5])
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+    0.18  0.26x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    3x Poké Pad
+    3x Snorlax
+    2x Dawn
+    2x Battle Cage
+    1x Lana’s Aid
+    1x Nighttime Mine
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] play Hand Trimmer (hand[6])  (v=-0.0644)
+  2. [opponent] Poké Pad @ hand[0] (p1) + Snorlax @ hand[1] (p1) + Snorlax @ hand[2] (p1) + Poké Pad @ hand[3] (p1) + Dawn @ hand[4] (p1) + Lana’s Aid @ hand[5] (p1) + Enhanced Hammer @ hand[9] (p1) + Snorlax @ hand[12] (p1)  (v=-0.0650)
+  3. [Evee] Espeon ex @ hand[0] (p0)  (v=-0.0501)
+  4. [Evee] retreat  (v=-0.0757)

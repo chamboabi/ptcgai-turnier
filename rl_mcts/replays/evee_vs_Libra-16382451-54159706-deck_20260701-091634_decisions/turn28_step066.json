@@ -1,0 +1,439 @@
+{
+  "turn": 28,
+  "turn_action_count": 4,
+  "acting_player_index": 0,
+  "selecting": "CARD / DISCARD",
+  "root_value": -0.121,
+  "chosen_action": "Espeon ex @ hand[2] (p0)",
+  "candidates": [
+    {
+      "action": "Espeon ex @ hand[2] (p0)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1994,
+      "nn_value": -0.1247,
+      "visits": 678,
+      "search_mean_value": -0.0975,
+      "expanded": true,
+      "policy_target": 0.0235
+    },
+    {
+      "action": "Basic {P} Energy @ hand[1] (p0)",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.1697,
+      "nn_value": -0.1189,
+      "visits": 72,
+      "search_mean_value": -0.1656,
+      "expanded": true,
+      "policy_target": -0.0446
+    },
+    {
+      "action": "Basic {P} Energy @ hand[3] (p0)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.1697,
+      "nn_value": -0.1189,
+      "visits": 71,
+      "search_mean_value": -0.1712,
+      "expanded": true,
+      "policy_target": -0.0502
+    },
+    {
+      "action": "Espeon ex @ hand[0] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.1994,
+      "nn_value": -0.1247,
+      "visits": 69,
+      "search_mean_value": -0.1664,
+      "expanded": true,
+      "policy_target": -0.0454
+    },
+    {
+      "action": "Poké Pad @ hand[4] (p0)",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.1058,
+      "nn_value": -0.1144,
+      "visits": 59,
+      "search_mean_value": -0.167,
+      "expanded": true,
+      "policy_target": -0.046
+    },
+    {
+      "action": "Crushing Hammer @ hand[5] (p0)",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.156,
+      "nn_value": -0.1147,
+      "visits": 51,
+      "search_mean_value": -0.186,
+      "expanded": true,
+      "policy_target": -0.0651
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Alakazam Psychic": 0.6834,
+      "Dawn": 0.2272,
+      "Alakazam Psychic (B)": 0.0894,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 1.0,
+        "expected_copies": 2.6276
+      },
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 1.0,
+        "expected_copies": 2.9423
+      },
+      {
+        "card_id": 1129,
+        "name": "Sacred Ash",
+        "probability": 0.9777,
+        "expected_copies": 1.1378
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 0.8734,
+        "expected_copies": 1.9348
+      },
+      {
+        "card_id": 1184,
+        "name": "Lana’s Aid",
+        "probability": 0.8305,
+        "expected_copies": 0.9385
+      },
+      {
+        "card_id": 1264,
+        "name": "Battle Cage",
+        "probability": 0.6946,
+        "expected_copies": 1.3855
+      },
+      {
+        "card_id": 140,
+        "name": "Fezandipiti ex",
+        "probability": 0.3333,
+        "expected_copies": 0.3333
+      },
+      {
+        "card_id": 1156,
+        "name": "Lucky Helmet",
+        "probability": 0.2328,
+        "expected_copies": 0.3613
+      },
+      {
+        "card_id": 1266,
+        "name": "Nighttime Mine",
+        "probability": 0.2197,
+        "expected_copies": 0.7374
+      },
+      {
+        "card_id": 343,
+        "name": "Shaymin",
+        "probability": 0.2104,
+        "expected_copies": 0.2104
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.1676,
+        "expected_copies": 0.2272
+      },
+      {
+        "card_id": 1146,
+        "name": "Wondrous Patch",
+        "probability": 0.1229,
+        "expected_copies": 0.1229
+      },
+      {
+        "card_id": 1174,
+        "name": "Air Balloon",
+        "probability": 0.108,
+        "expected_copies": 0.108
+      },
+      {
+        "card_id": 142,
+        "name": "Genesect",
+        "probability": 0.1061,
+        "expected_copies": 0.1061
+      },
+      {
+        "card_id": 858,
+        "name": "Psyduck",
+        "probability": 0.0615,
+        "expected_copies": 0.0615
+      },
+      {
+        "card_id": 214,
+        "name": "Togekiss",
+        "probability": 0.0559,
+        "expected_copies": 0.0559
+      },
+      {
+        "card_id": 959,
+        "name": "Togepi",
+        "probability": 0.0559,
+        "expected_copies": 0.0559
+      },
+      {
+        "card_id": 1137,
+        "name": "Tool Scrapper",
+        "probability": 0.0559,
+        "expected_copies": 0.0559
+      },
+      {
+        "card_id": 1161,
+        "name": "Handheld Fan",
+        "probability": 0.0559,
+        "expected_copies": 0.1341
+      },
+      {
+        "card_id": 174,
+        "name": "Fan Rotom",
+        "probability": 0.0335,
+        "expected_copies": 0.0335
+      },
+      {
+        "card_id": 1120,
+        "name": "Crushing Hammer",
+        "probability": 0.0223,
+        "expected_copies": 0.0447
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 0.0223,
+        "expected_copies": 0.0447
+      },
+      {
+        "card_id": 521,
+        "name": "Elgyem",
+        "probability": 0.0112,
+        "expected_copies": 0.0112
+      },
+      {
+        "card_id": 1121,
+        "name": "Ultra Ball",
+        "probability": 0.0112,
+        "expected_copies": 0.0112
+      },
+      {
+        "card_id": 1186,
+        "name": "Eri",
+        "probability": 0.0112,
+        "expected_copies": 0.0112
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 741,
+        "name": "Abra",
+        "count": 3
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 3
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 3
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 2
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 2
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 1
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 1
+      },
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 1
+      },
+      {
+        "id": 13,
+        "name": "Enriching Energy",
+        "count": 1
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 1
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 21
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 2
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 1
+      },
+      {
+        "id": 1146,
+        "name": "Wondrous Patch",
+        "count": 1
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 4
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 4
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 2
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Espeon ex @ hand[2] (p0)",
+      "value": -0.0975
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0759
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "END turn",
+      "value": -0.1237
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Judge (hand[5])",
+      "value": -0.0705
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Munkidori (hand[1])",
+      "value": -0.024
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Munkidori (hand[2])",
+      "value": 0.0046
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "retreat",
+      "value": 0.0067
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "energy x1 @ active[0]",
+      "value": 0.0008
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Sylveon @ bench[0] (p0)",
+      "value": -0.0017
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "END turn",
+      "value": -0.0906
+    }
+  ]
+}

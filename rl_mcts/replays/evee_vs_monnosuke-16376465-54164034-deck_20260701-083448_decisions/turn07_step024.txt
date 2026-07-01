@@ -1,0 +1,47 @@
+Turn 7  (action #6, P0 Evee)
+Selecting: CARD / SWITCH
+Root value: +0.0203
+CHOSEN: card @ bench[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     503   -0.0050   +0.2649   0.386  card @ bench[0] (p0)
+     497   +0.0455   +0.2769   0.614  card @ bench[1] (p0)
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  4.00x  Prism Energy
+    1.00  2.00x  Binacle
+    1.00  2.00x  Barbaracle
+    1.00  3.00x  Night Stretcher
+    1.00  4.00x  Fighting Gong
+    1.00  2.67x  Boss’s Orders
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    3x Solrock
+    2x Poké Pad
+    2x Basic {F} Energy
+    1x Lunatone
+    1x Okidogi
+    1x Lillie's Determination
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Judge
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Barbaracle
+
+Predicted line (principal variation):
+  1. [Evee] card @ bench[0] (p0)  (v=-0.0050)
+  2. [Evee] play hand[6]  (v=+0.0068)
+  3. [Evee] evolve -> active[0]  (v=+0.0320)
+  4. [Evee] attach hand[3] -> active[0]  (v=-0.0297)
+  5. [Evee] END turn  (v=-0.1892)
+  6. [opponent] play hand[0]  (v=-0.1867)

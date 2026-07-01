@@ -1,0 +1,52 @@
+Turn 7  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.6709
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     995   +1.6795   +1.4841   0.304  ATTACK (attackId 1296)
+       2   +0.3975   +0.3954   0.249  retreat
+       1   +0.4202   +0.4202   0.153  play Eevee (hand[2])
+       1   +0.4202   +0.4202   0.153  play Eevee (hand[3])
+       1   -0.5170   -0.5170   0.141  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    6x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Poké Pad
+    1x Archaludon ex
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+1.6795)
+  2. [opponent] retreat  (v=+1.6388)
+  3. [opponent] Relicanth @ bench[1] (p1)  (v=+1.6334)
+  4. [opponent] play Poké Pad (hand[0])  (v=+1.6250)
+  5. [opponent] card @ deck[4] (p1)  (v=+1.6218)
+  6. [opponent] play Snorlax (hand[2])  (v=+1.6697)
+  7. [opponent] play Snorlax (hand[2])  (v=+1.5806)
+  8. [opponent] play Snorlax (hand[2])  (v=+1.5852)

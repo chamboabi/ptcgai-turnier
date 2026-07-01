@@ -1,0 +1,46 @@
+Turn 1  (action #6, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0541
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     661   -0.0457   -0.0275   0.217  END turn
+     189   -0.0720   +0.0435   0.456  play hand[1]
+     150   -0.0693   +0.0632   0.327  retreat
+
+Opponent belief:
+  archetype: Mega Lucario ex 96%, Fighting Gong 4%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  13.45x  Basic {F} Energy
+    1.00  2.03x  Lunatone
+    1.00  3.97x  Fighting Gong
+    1.00  3.99x  Lillie's Determination
+    0.99  2.73x  Boss’s Orders
+    0.96  3.64x  Riolu
+    0.96  3.81x  Mega Lucario ex
+    0.96  3.79x  Dusk Ball
+    0.96  2.04x  Switch
+    0.96  3.79x  Premium Power Pro
+    0.96  0.96x  Hero’s Cape
+    0.92  3.60x  Carmine
+    0.89  1.06x  Gravity Mountain
+    0.89  1.80x  Makuhita
+    0.89  1.81x  Hariyama
+  known (visible) opponent cards:
+    1x Solrock
+    1x Poké Pad
+  sampled opponent hand (this search):
+    1x Carmine
+    1x Fighting Gong
+    1x Lillie's Determination
+    1x Hariyama
+    1x Basic {F} Energy
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0457)
+  2. [opponent] play hand[0]  (v=-0.0543)
+  3. [opponent] play hand[2]  (v=-0.0682)
+  4. [opponent] card @ deck[11] (p1)  (v=-0.0698)
+  5. [opponent] play hand[0]  (v=-0.0793)
+  6. [opponent] play hand[2]  (v=-0.0653)

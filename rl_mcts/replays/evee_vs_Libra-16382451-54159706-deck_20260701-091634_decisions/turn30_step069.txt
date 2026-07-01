@@ -1,0 +1,61 @@
+Turn 30  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1441
+CHOSEN: play Poké Pad (hand[3])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     513   -0.1305   -0.0927   0.057  play Poké Pad (hand[3])
+     321   -0.1248   -0.1418   0.190  play Judge (hand[4])
+      46   -0.2297   -0.1025   0.218  retreat
+      23   -0.1615   -0.0938   0.054  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+      23   -0.1680   -0.1150   0.054  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])
+      21   -0.1751   -0.0938   0.054  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+      19   -0.2024   -0.1150   0.054  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[1])
+      16   -0.2828   -0.0655   0.097  attach Basic {P} Energy (hand[2]) -> Sylveon (bench[0])
+      13   -0.3463   -0.0655   0.097  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])
+       5   -0.4757   -0.0274   0.125  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Buddy-Buddy Poffin
+    1x Hilda
+    1x Poké Pad
+  sampled opponent hand (this search):
+    5x Snorlax
+    1x Fan Rotom
+
+Predicted line (principal variation):
+  1. [Evee] play Poké Pad (hand[3])  (v=-0.1305)
+  2. [Evee] card @ deck[11] (p0)  (v=-0.1169)
+  3. [Evee] play Pecharunt (hand[4])  (v=-0.0746)
+  4. [Evee] play Judge (hand[3])  (v=-0.0280)
+  5. [Evee] play Eevee (hand[3])  (v=-0.0291)
+  6. [Evee] retreat  (v=-0.0070)

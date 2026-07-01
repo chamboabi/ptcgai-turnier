@@ -1,0 +1,67 @@
+Turn 9  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.2204
+CHOSEN: attach hand[3] -> active[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     633   +0.2461   +0.2294   0.059  attach hand[3] -> active[0]
+      60   +0.1939   +0.2695   0.056  play hand[0]
+      60   +0.1939   +0.2695   0.056  play hand[7]
+      47   +0.1876   +0.2494   0.086  attach hand[4] -> active[0]
+      42   +0.1975   +0.2134   0.047  evolve -> bench[1]
+      14   +0.1582   +0.1794   0.089  play hand[1]
+      12   +0.1259   +0.2204   0.076  attach hand[4] -> bench[2]
+      11   +0.1824   +0.2026   0.030  attach hand[2] -> active[0]
+      11   +0.1529   +0.2219   0.056  attach hand[3] -> bench[1]
+      11   +0.1119   +0.2192   0.086  attach hand[4] -> bench[1]
+      11   +0.1836   +0.2026   0.030  attach hand[6] -> active[0]
+      11   +0.1677   +0.2354   0.022  attach hand[6] -> bench[0]
+      10   +0.1648   +0.2354   0.022  attach hand[2] -> bench[0]
+      10   +0.1547   +0.2273   0.027  attach hand[2] -> bench[1]
+      10   +0.1495   +0.2270   0.042  attach hand[3] -> bench[0]
+      10   +0.1537   +0.2260   0.042  attach hand[3] -> bench[2]
+      10   +0.1511   +0.2197   0.076  attach hand[4] -> bench[0]
+      10   +0.1551   +0.2273   0.027  attach hand[6] -> bench[1]
+      10   +0.1528   +0.2343   0.022  attach hand[6] -> bench[2]
+       6   +0.1813   +0.2343   0.022  attach hand[2] -> bench[2]
+       1   -0.1402   -0.1402   0.025  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  2.00x  Binacle
+    1.00  2.00x  Barbaracle
+    1.00  3.00x  Night Stretcher
+    1.00  4.00x  Fighting Gong
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    3x Solrock
+    3x Poké Pad
+    2x Basic {F} Energy
+    1x Lunatone
+    1x Prism Energy
+    1x Okidogi
+    1x Lillie's Determination
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Judge
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    1x Fighting Gong
+    1x Legacy Energy
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] attach hand[3] -> active[0]  (v=+0.2461)
+  2. [Evee] play hand[1]  (v=+0.2569)
+  3. [Evee] play hand[3]  (v=+0.2630)
+  4. [Evee] card @ deck[3] (p0)  (v=+0.2624)
+  5. [Evee] card @ deck[1] (p0)  (v=+0.2623)
+  6. [Evee] card @ deck[21] (p0)  (v=+0.2599)

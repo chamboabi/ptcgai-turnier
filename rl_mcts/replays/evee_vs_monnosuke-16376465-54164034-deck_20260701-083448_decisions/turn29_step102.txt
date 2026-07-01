@@ -1,0 +1,42 @@
+Turn 29  (action #8, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.9618
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.9632   -0.0669   1.000  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.10  0.10x  Basic {D} Energy
+    0.10  0.10x  Munkidori
+    0.10  0.20x  Morty’s Conviction
+  known (visible) opponent cards:
+    8x Basic {F} Energy
+    4x Poké Pad
+    4x Lillie's Determination
+    3x Solrock
+    3x Prism Energy
+    3x Judge
+    3x Boss’s Orders
+    3x Fighting Gong
+    3x Night Stretcher
+    2x Air Balloon
+    2x Pokégear 3.0
+    2x Tarragon
+    1x Okidogi
+    1x Barbaracle
+    1x Binacle
+    1x Lunatone
+    1x Tool Scrapper
+  sampled opponent hand (this search):
+    4x Snorlax
+    3x Team Rocket's Watchtower
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.9632)
+  2. [opponent] END turn  (v=-1.0000)

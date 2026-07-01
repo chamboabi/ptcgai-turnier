@@ -1,0 +1,58 @@
+Turn 6  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0812
+CHOSEN: play Judge (hand[3])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     683   +0.0903   -0.1760   0.312  play Judge (hand[3])
+     215   +0.0762   +0.2987   0.191  END turn
+      52   +0.0594   -0.2503   0.121  play Lillie's Determination (hand[5])
+      43   +0.0538   -0.2242   0.121  play Lillie's Determination (hand[2])
+       5   -0.2944   -0.2224   0.178  retreat
+       2   -0.2307   -0.2285   0.077  play Night Stretcher (hand[0])
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    3x Poké Pad
+    2x Basic {P} Energy
+    1x Kadabra
+    1x Dudunsparce
+    1x Enriching Energy
+    1x Dunsparce
+
+Predicted line (principal variation):
+  1. [Evee] play Judge (hand[3])  (v=+0.0903)
+  2. [Evee] END turn  (v=+0.0984)
+  3. [opponent] attach Lucky Helmet (hand[3]) -> Abra (active[0])  (v=+0.0898)
+  4. [opponent] END turn  (v=+0.0757)
+  5. [Evee] END turn  (v=+0.0981)
+  6. [opponent] END turn  (v=+0.0755)
+  7. [Evee] END turn  (v=+0.1116)
+  8. [opponent] END turn  (v=+0.0758)
+  9. [Evee] END turn  (v=+0.1431)
+  10. [opponent] END turn  (v=+0.0978)
+  11. [Evee] END turn  (v=+0.2057)
+  12. [opponent] END turn  (v=+0.1531)
+  13. [Evee] END turn  (v=+0.2338)
+  14. [opponent] play Boss’s Orders (hand[7])  (v=+0.2280)
+  15. [opponent] Pecharunt @ bench[1] (p0)  (v=+0.2245)

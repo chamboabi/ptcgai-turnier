@@ -1,0 +1,64 @@
+Turn 30  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1094
+CHOSEN: play Crushing Hammer (hand[4])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     182   -0.0944   -0.1017   0.062  play Crushing Hammer (hand[4])
+     169   -0.0897   -0.1000   0.051  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+     169   -0.0925   -0.1001   0.054  play Poké Pad (hand[3])
+     148   -0.1018   -0.1000   0.051  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+      91   -0.1203   -0.1085   0.178  play Judge (hand[5])
+      74   -0.0894   -0.1211   0.051  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[1])
+      61   -0.1251   -0.1211   0.051  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])
+      40   -0.1471   -0.0304   0.116  END turn
+      31   -0.1857   -0.1081   0.204  retreat
+      18   -0.2671   -0.0715   0.091  attach Basic {P} Energy (hand[2]) -> Sylveon (bench[0])
+      17   -0.2760   -0.0715   0.091  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Buddy-Buddy Poffin
+    1x Hilda
+    1x Poké Pad
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Dudunsparce
+    1x Basic {P} Energy
+
+Predicted line (principal variation):
+  1. [Evee] play Crushing Hammer (hand[4])  (v=-0.0944)
+  2. [Evee] energy x1 @ bench[1]  (v=-0.1234)
+  3. [Evee] retreat  (v=-0.0457)
+  4. [Evee] energy x1 @ active[0]  (v=-0.0373)
+  5. [Evee] Sylveon @ bench[0] (p0)  (v=-0.0160)
+  6. [Evee] play Judge (hand[4])  (v=-0.0178)
+  7. [Evee] attach Basic {P} Energy (hand[3]) -> Sylveon (active[0])  (v=-0.0004)

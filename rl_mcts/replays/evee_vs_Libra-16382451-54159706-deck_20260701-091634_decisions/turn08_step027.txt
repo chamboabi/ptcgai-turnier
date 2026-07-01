@@ -1,0 +1,58 @@
+Turn 8  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0546
+CHOSEN: play Wondrous Patch (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     830   +0.0665   -0.3281   0.316  play Wondrous Patch (hand[1])
+     146   +0.0121   +0.2540   0.396  END turn
+      24   -0.0837   -0.3287   0.289  play Energy Search (hand[2])
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    1x Dunsparce
+    1x Boss’s Orders
+    1x Dudunsparce
+    1x Hilda
+    1x Alakazam
+
+Predicted line (principal variation):
+  1. [Evee] play Wondrous Patch (hand[1])  (v=+0.0665)
+  2. [Evee] Basic {P} Energy @ discard[4] (p0)  (v=+0.0670)
+  3. [Evee] Sylveon @ bench[1] (p0)  (v=+0.0675)
+  4. [Evee] END turn  (v=+0.0748)
+  5. [opponent] play Boss’s Orders (hand[1])  (v=+0.0662)
+  6. [opponent] Sylveon @ bench[1] (p0)  (v=+0.0639)
+  7. [opponent] END turn  (v=+0.0653)
+  8. [Evee] END turn  (v=+0.0827)
+  9. [opponent] END turn  (v=+0.0652)
+  10. [Evee] END turn  (v=+0.0886)
+  11. [opponent] END turn  (v=+0.0661)
+  12. [Evee] END turn  (v=+0.1223)
+  13. [opponent] END turn  (v=+0.0808)
+  14. [Evee] END turn  (v=+0.1467)
+  15. [opponent] END turn  (v=+0.0494)
+  16. [Evee] play Judge (hand[5])  (v=+0.1052)
+  17. [Evee] END turn  (v=+0.1599)
+  18. [opponent] play Boss’s Orders (hand[3])  (v=+0.2474)
+  19. [opponent] Pecharunt @ bench[1] (p0)  (v=+0.2502)

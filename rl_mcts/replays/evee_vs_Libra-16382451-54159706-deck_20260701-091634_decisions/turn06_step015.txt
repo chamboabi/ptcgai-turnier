@@ -1,0 +1,58 @@
+Turn 6  (action #4, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.8979
+CHOSEN: Basic {P} Energy @ discard[1] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.8985   -0.2609   1.000  Basic {P} Energy @ discard[1] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    1x Enhanced Hammer
+    1x Rare Candy
+    1x Telepath Psychic Energy
+    1x Dunsparce
+
+Predicted line (principal variation):
+  1. [Evee] Basic {P} Energy @ discard[1] (p0)  (v=-0.8985)
+  2. [Evee] retreat  (v=-0.8959)
+  3. [Evee] energy x1 @ active[0]  (v=-0.8969)
+  4. [Evee] Pecharunt @ bench[1] (p0)  (v=-0.8960)
+  5. [Evee] play Wondrous Patch (hand[1])  (v=-0.8847)
+  6. [Evee] Basic {P} Energy @ discard[3] (p0)  (v=-0.8872)
+  7. [Evee] Sylveon @ bench[1] (p0)  (v=-0.8897)
+  8. [Evee] END turn  (v=-0.8924)
+  9. [opponent] attach Telepath Psychic Energy (hand[2]) -> Abra (active[0])  (v=-0.9362)
+  10. [opponent] ATTACK (attackId 1070)  (v=-0.9632)
+  11. [opponent] Abra @ bench[0] (p1)  (v=-0.9642)
+  12. [Evee] attach Basic {P} Energy (hand[2]) -> Sylveon (bench[1])  (v=-0.9434)
+  13. [Evee] END turn  (v=-0.9410)
+  14. [opponent] play Dunsparce (hand[2])  (v=-0.9455)
+  15. [opponent] END turn  (v=-0.9506)
+  16. [Evee] END turn  (v=-0.9414)
+  17. [opponent] END turn  (v=-0.9454)
+  18. [Evee] END turn  (v=-0.8903)
+  19. [opponent] END turn  (v=-0.9465)
+  20. [Evee] END turn  (v=-0.8142)
+  21. [opponent] attach Telepath Psychic Energy (hand[6]) -> Abra (active[0])  (v=-0.8468)
+  22. [opponent] retreat  (v=-0.8468)

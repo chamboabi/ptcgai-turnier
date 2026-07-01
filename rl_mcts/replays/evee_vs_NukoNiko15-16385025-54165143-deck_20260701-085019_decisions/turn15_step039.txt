@@ -1,0 +1,52 @@
+Turn 15  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0243
+CHOSEN: play Carmine (hand[3])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     464   +0.0179   +0.3519   0.399  play Carmine (hand[3])
+     461   +0.0324   +0.3782   0.235  play Eevee (hand[1])
+      69   +0.0409   +0.3622   0.150  retreat
+       6   -0.3502   -0.3568   0.216  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    7x Snorlax
+    3x Full Metal Lab
+    1x Explorer’s Guidance
+    1x Archaludon ex
+
+Predicted line (principal variation):
+  1. [Evee] play Carmine (hand[3])  (v=+0.0179)
+  2. [Evee] play Energy Search (hand[2])  (v=+0.0282)
+  3. [Evee] card @ deck[11] (p0)  (v=+0.0117)
+  4. [Evee] play Munkidori (hand[2])  (v=+0.0007)
+  5. [Evee] retreat  (v=+0.0020)
+  6. [Evee] energy x1 @ active[0]  (v=-0.0447)
+  7. [Evee] Munkidori @ bench[2] (p0)  (v=-0.1463)
+  8. [Evee] END turn  (v=-0.4013)
+  9. [opponent] attach Hero’s Cape (hand[12]) -> Duraludon (bench[0])  (v=-0.4007)

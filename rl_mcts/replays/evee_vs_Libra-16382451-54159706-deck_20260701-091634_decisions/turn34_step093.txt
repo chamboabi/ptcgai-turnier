@@ -1,0 +1,56 @@
+Turn 34  (action #17, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.3337
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -0.3340   -0.1203   1.000  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    5x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.3340)
+  2. [opponent] ATTACK (attackId 1071)  (v=-0.3015)
+  3. [Evee] ability Munkidori  (v=-0.2591)
+  4. [Evee] Pecharunt @ bench[1] (p0)  (v=-0.2506)
+  5. [Evee] number 3  (v=-0.2301)
+  6. [Evee] Dudunsparce @ bench[3] (p1)  (v=-0.1481)
+  7. [Evee] END turn  (v=+0.2006)
+  8. [opponent] ability Dudunsparce  (v=-0.1200)
+  9. [opponent] attach Basic {P} Energy (hand[5]) -> Alakazam (bench[0])  (v=-0.1299)
+  10. [opponent] END turn  (v=-0.1179)

@@ -1,0 +1,64 @@
+Turn 22  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0882
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     524   -0.0651   +0.0545   0.153  END turn
+     108   -0.0899   -0.1456   0.067  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+     108   -0.0899   -0.1456   0.067  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+      99   -0.0951   -0.1706   0.067  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])
+      99   -0.0951   -0.1706   0.067  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[1])
+      18   -0.2934   -0.1591   0.268  retreat
+      16   -0.2764   -0.1204   0.120  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])
+      16   -0.2764   -0.1204   0.120  attach Basic {P} Energy (hand[3]) -> Sylveon (bench[0])
+      12   -0.1316   -0.1494   0.070  play Poké Pad (hand[4])
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+    0.18  0.26x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    3x Snorlax
+    2x Hilda
+    1x Poké Pad
+    1x Dudunsparce
+    1x Basic {P} Energy
+    1x Xerosic’s Machinations
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.0651)
+  2. [opponent] END turn  (v=-0.1157)
+  3. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])  (v=-0.0802)
+  4. [Evee] retreat  (v=-0.0566)
+  5. [Evee] energy x1 @ active[0]  (v=-0.0477)
+  6. [Evee] Sylveon @ bench[0] (p0)  (v=-0.0373)
+  7. [Evee] END turn  (v=-0.0250)
+  8. [opponent] evolve Dunsparce (bench[1]) -> Dudunsparce  (v=-0.0190)
+  9. [opponent] ability Dudunsparce  (v=+0.0746)

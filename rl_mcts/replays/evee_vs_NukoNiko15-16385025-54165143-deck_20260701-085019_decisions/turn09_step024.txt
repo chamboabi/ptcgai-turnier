@@ -1,0 +1,53 @@
+Turn 9  (action #3, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.1496
+CHOSEN: Basic {D} Energy @ discard[3] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     213   +0.1513   +0.3901   0.132  Basic {D} Energy @ discard[3] (p0)
+     213   +0.1513   +0.3901   0.132  Basic {D} Energy @ discard[5] (p0)
+     168   +0.1589   +0.3887   0.152  Pecharunt @ discard[2] (p0)
+     153   +0.1433   +0.3829   0.216  Basic {P} Energy @ discard[0] (p0)
+     153   +0.1433   +0.3829   0.216  Basic {P} Energy @ discard[1] (p0)
+     100   +0.1433   +0.3887   0.152  Pecharunt @ discard[4] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Explorer’s Guidance
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+    1x Hero’s Cape
+
+Predicted line (principal variation):
+  1. [Evee] Basic {D} Energy @ discard[3] (p0)  (v=+0.1513)
+  2. [Evee] play Eevee (hand[2])  (v=+0.1509)
+  3. [Evee] attach Basic {D} Energy (hand[3]) -> Pecharunt (active[0])  (v=+0.1524)
+  4. [Evee] play Eevee (hand[2])  (v=+0.2672)
+  5. [Evee] ATTACK (attackId 1296)  (v=+0.3321)
+  6. [opponent] ATTACK (attackId 965)  (v=-2.5993)
+  7. [Evee] attach Basic {P} Energy (hand[1]) -> Munkidori (bench[0])  (v=-2.6004)

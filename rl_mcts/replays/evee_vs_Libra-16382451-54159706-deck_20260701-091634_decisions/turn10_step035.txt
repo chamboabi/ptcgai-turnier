@@ -1,0 +1,51 @@
+Turn 10  (action #3, P0 Evee)
+Selecting: ENERGY / DISCARD_ENERGY
+Root value: +0.0406
+CHOSEN: energy x1 @ active[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +0.0409   -0.3046   1.000  energy x1 @ active[0]
+
+Opponent belief:
+  archetype: Alakazam Psychic 62%, Dawn 19%, Alakazam Psychic (B) 19%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.67x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.03x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.70x  Alakazam
+    1.00  3.60x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.86x  Hilda
+    1.00  3.93x  Dawn
+    0.99  3.43x  Enhanced Hammer
+    0.98  1.18x  Sacred Ash
+    0.87  1.89x  Night Stretcher
+    0.87  0.87x  Enriching Energy
+    0.87  3.15x  Dunsparce
+  known (visible) opponent cards:
+    2x Abra
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    2x Alakazam
+    1x Dudunsparce
+    1x Sacred Ash
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] energy x1 @ active[0]  (v=+0.0409)
+  2. [Evee] Sylveon @ bench[1] (p0)  (v=+0.0471)
+  3. [Evee] END turn  (v=+0.0474)
+  4. [opponent] play Poké Pad (hand[4])  (v=+0.0319)
+  5. [opponent] card @ deck[11] (p1)  (v=+0.0303)
+  6. [opponent] play Buddy-Buddy Poffin (hand[4])  (v=+0.0176)
+  7. [opponent] END turn  (v=+0.0039)
+  8. [Evee] END turn  (v=+0.0110)
+  9. [opponent] play Shaymin (hand[4])  (v=-0.0229)
+  10. [opponent] END turn  (v=-0.0574)
+  11. [Evee] END turn  (v=+0.0132)
+  12. [opponent] END turn  (v=-0.0884)
+  13. [Evee] END turn  (v=-0.0081)
+  14. [opponent] END turn  (v=-0.1778)

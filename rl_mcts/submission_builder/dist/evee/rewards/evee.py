@@ -1,7 +1,11 @@
 """Evee (evoli) reward shape preset.
 
+Evee always runs the base shape first (damage / win / hand pressure, etc.) and
+layers its own deck-specific shapes on top — so attacking still pays via base,
+while evee adds energy-loading, racing, devolving and disruption.
+
 Functions stay defined in rewards.core; here they are imported, bound to any
-deck-specific ids, and assigned weights to build the evee compound reward.
+deck-specific ids, and assigned weights to build the evee-specific compound.
 
 Absolute-state shapes (energy on a pokemon, a card being in play) are scored as a
 *delta* from a baseline snapshotted at the search root, so board state that already
@@ -16,12 +20,14 @@ from rewards.core import (
     Observation,
     attach_energy_type_shape,
     big_hand_penalty_shape,
+    compose_shapes,
     make_compound_shape,
     opp_evolved_devolves_shape,
     opp_hand_discard_shape,
     race_vs_ex_shape,
     search_card_shape,
 )
+from rewards.shapes import make_base_shape
 
 # ============================================================
 #  Deck-specific ids — fill in
@@ -74,7 +80,10 @@ _NEEDS_BASELINE = frozenset(
 def make_evee_shape(obs0: Observation, your_index: int):
     """Build the evee reward shape for one agent call, freezing baselines from obs0.
 
-    Call once at the search root each turn; reuse the returned fn for every MCTS
-    leaf eval. Re-snapshot next turn.
+    Runs the base shape first, then layers the evee-specific shapes on top of its
+    output. Call once at the search root each turn; reuse the returned fn for every
+    MCTS leaf eval. Re-snapshot next turn.
     """
-    return make_compound_shape(WEIGHTS, _NEEDS_BASELINE, obs0, your_index)
+    base = make_base_shape(obs0, your_index)
+    evee = make_compound_shape(WEIGHTS, _NEEDS_BASELINE, obs0, your_index)
+    return compose_shapes(base, evee)

@@ -13,13 +13,13 @@ from collections import Counter
 from dataclasses import dataclass
 from typing import Callable
 
-from cg.api import AreaType, CardType, LogType, Observation, all_attack, all_card_data
+from cg.api import AreaType, CardData, CardType, LogType, Observation, all_attack, all_card_data
 
 ENERGY_IDS = frozenset(
     cd.cardId for cd in all_card_data() if cd.cardType in (CardType.BASIC_ENERGY, CardType.SPECIAL_ENERGY)
 )
 ATTACK_BY_ID = {a.attackId: a for a in all_attack()}
-CARD_BY_ID = {cd.cardId: cd for cd in all_card_data()}
+CARD_BY_ID: CardData = {cd.cardId: cd for cd in all_card_data()}
 ENERGY_NEEDED = {
     cd.cardId: max(
         (len(ATTACK_BY_ID[aid].energies) for aid in cd.attacks if aid in ATTACK_BY_ID),
@@ -233,6 +233,40 @@ def attack_energy_overload_shape(
     return nn_value + matched * weight
 
 
+def _attack_fill(atk, poke) -> int:
+    """Slots of `atk`'s cost filled by `poke`'s attached energy (specific first, then colorless)."""
+    remaining = Counter(energy_type(e) for e in poke.energyCards)
+    matched = 0
+    colorless = 0
+    for need in atk.energies:
+        if need == COLORLESS:
+            colorless += 1
+        elif remaining.get(need, 0) > 0:
+            remaining[need] -= 1
+            matched += 1
+    leftover = sum(c for c in remaining.values() if c > 0)
+    return matched + min(colorless, leftover)
+
+
+def attached_energy_shape_attack(
+    obs: Observation, your_index: int, nn_value: float, weight: float = 0.1
+) -> float:
+    """Reward the right energy combination across your whole board (no poke_id binding).
+
+    For each in-play pokemon, take its best-fillable attack (the one whose cost its
+    attached energy covers most) and reward the filled slots. Peaks when a mon holds
+    exactly the combination one of its own attacks needs; wrong-type or excess energy
+    pays nothing.
+    """
+    you = obs.current.players[your_index]
+    matched = 0
+    for poke in board(you):
+        if poke is None:
+            continue
+        matched += max((_attack_fill(atk, poke) for atk in attacks_of(poke)), default=0)
+    return nn_value + matched * weight
+
+
 # ============================================================
 #  Damage shapes
 # ============================================================
@@ -287,6 +321,27 @@ def opp_discarded_energy_shape(
     return nn_value * (1.0 - weight) + signal * weight
 
 
+def knockout_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Reward knocking out opponent pokemon this step (mon card sent ACTIVE/BENCH -> DISCARD).
+
+    Counts this step's log events moving an opponent POKEMON card off the field into
+    the discard pile (a KO). Only pokemon cards count, so energy/tools dumped by the
+    same KO are ignored. Each KO in the step adds weight.
+    """
+    opp = 1 - your_index
+    field = (AreaType.ACTIVE, AreaType.BENCH)
+    kos = sum(
+        1
+        for log in obs.logs
+        if log.playerIndex == opp
+        and log.fromArea in field
+        and log.toArea == AreaType.DISCARD
+        and (cd := CARD_BY_ID.get(log.cardId)) is not None
+        and cd.cardType == CardType.POKEMON
+    )
+    return nn_value + kos * weight
+
+
 # ============================================================
 #  Niche shapes (probably only used for one pokemon/deck)
 # ============================================================
@@ -326,6 +381,9 @@ def opp_active_is_ex(obs: Observation, your_index: int) -> bool:
     if not active or active[0] is None:
         return False
     cd = CARD_BY_ID.get(active[0].id)
+    if cd is not None and cd.ex:
+        print("I see a EX card called:", cd.name)
+
     return cd is not None and cd.ex
 
 
@@ -385,6 +443,15 @@ def play_card_penalty_shape(obs: Observation, your_index: int, nn_value: float, 
     return nn_value - played * weight
 
 
+def evolve_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Reward evolving one of your pokemon this step (advancing up the evolution line).
+
+    Counts this step's EVOLVE log events by you; adds weight per evolution.
+    """
+    evolved = sum(1 for log in obs.logs if log.type == LogType.EVOLVE and log.playerIndex == your_index)
+    return nn_value + evolved * weight
+
+
 def search_card_shape(
     obs: Observation, your_index: int, nn_value: float, target: int | None = None, weight: float = 0.1
 ) -> float:
@@ -420,6 +487,28 @@ def opp_hand_discard_shape(obs: Observation, your_index: int, nn_value: float, w
         if log.playerIndex == opp and log.fromArea == AreaType.HAND and log.toArea == AreaType.DISCARD
     )
     return nn_value + discarded * weight
+
+
+STATUS_LOG_TYPES = (
+    LogType.POISONED,
+    LogType.BURNED,
+    LogType.ASLEEP,
+    LogType.PARALYZED,
+    LogType.CONFUSED,
+)
+
+
+def inflict_status_shape(obs: Observation, your_index: int, nn_value: float, weight: float = 0.1) -> float:
+    """Reward inflicting a special condition on the opponent this step (poison/burn/sleep/paralyze/confuse).
+
+    Counts this step's status log events on opponent pokemon. Only applies while it is
+    your turn (so the opponent's own upkeep re-logs don't pay); adds weight per condition.
+    """
+    if turn_owner(obs.current) != your_index:
+        return nn_value
+    opp = 1 - your_index
+    inflicted = sum(1 for log in obs.logs if log.type in STATUS_LOG_TYPES and log.playerIndex == opp)
+    return nn_value + inflicted * weight
 
 
 def opp_target_leaves_field_shape(
@@ -560,12 +649,17 @@ def _shape_contribution(shape_fn: RewardShapeFn, obs: Observation, your_index: i
     return shape_fn(obs, your_index, 0.0, weight=weight)
 
 
-def _delta_shape(shape_fn: RewardShapeFn, weight: float, baseline: float) -> RewardShapeFn:
-    """Wrap an absolute shape to score current contribution minus a frozen baseline."""
+def _delta_shape(shape_fn: RewardShapeFn, weight: float, baselines: dict[int, float]) -> RewardShapeFn:
+    """Wrap an absolute shape to score current contribution minus a frozen baseline.
+
+    `baselines` holds one frozen contribution per player index, because mcts shapes
+    each node from the side-to-move's perspective (which flips during search); the
+    delta is taken against the baseline for that same side.
+    """
 
     def shape(obs: Observation, your_index: int, nn_value: float) -> float:
         now = shape_fn(obs, your_index, 0.0, weight=weight)
-        return nn_value + (now - baseline)
+        return nn_value + (now - baselines[your_index])
 
     return shape
 
@@ -578,14 +672,18 @@ def make_compound_shape(weights, needs_baseline, obs0: Observation, your_index: 
     baseline snapshotted at the search root. Per-step-log and outcome shapes are
     already deltas, so they are left as plain weighted shapes.
 
+    Baselines are frozen for BOTH player perspectives (the search shapes opponent
+    nodes from the opponent's side-to-move view), so the `your_index` argument is
+    unused here and kept only to satisfy the ShapeFactoryFn signature.
+
     Call once per turn at the search root; reuse the returned fn for every MCTS
     leaf eval. Re-snapshot next turn.
     """
     parts = []
     for fn, w in weights.items():
         if fn in needs_baseline:
-            baseline = _shape_contribution(fn, obs0, your_index, w)
-            parts.append(_delta_shape(fn, w, baseline))
+            baselines = {i: _shape_contribution(fn, obs0, i, w) for i in (0, 1)}
+            parts.append(_delta_shape(fn, w, baselines))
         else:
             parts.append(functools.partial(fn, weight=w))
     return compose_shapes(*parts)

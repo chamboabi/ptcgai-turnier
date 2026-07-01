@@ -1,0 +1,47 @@
+Turn 6  (action #16, P0 Evee)
+Selecting: CARD / TO_ACTIVE
+Root value: +0.3276
+CHOSEN: Pecharunt @ bench[1] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     863   +0.3382   +0.3973   0.368  Pecharunt @ bench[1] (p0)
+      95   +0.2640   +0.3988   0.368  Pecharunt @ bench[0] (p0)
+      42   +0.2511   +0.3568   0.265  Munkidori @ bench[2] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    6x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Xerosic’s Machinations
+    1x Poké Pad
+
+Predicted line (principal variation):
+  1. [Evee] Pecharunt @ bench[1] (p0)  (v=+0.3382)
+  2. [Evee] play Lillie's Determination (hand[4])  (v=+0.3508)
+  3. [Evee] play Energy Search (hand[6])  (v=+0.3646)
+  4. [Evee] card @ deck[3] (p0)  (v=+0.3619)
+  5. [Evee] attach Basic {G} Energy (hand[0]) -> Munkidori (bench[1])  (v=+0.4025)
+  6. [Evee] play Night Stretcher (hand[1])  (v=+0.4064)

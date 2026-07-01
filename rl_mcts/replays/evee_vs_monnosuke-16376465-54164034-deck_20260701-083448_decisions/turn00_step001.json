@@ -1,0 +1,398 @@
+{
+  "turn": 0,
+  "turn_action_count": 3,
+  "acting_player_index": 0,
+  "selecting": "CARD / SETUP_ACTIVE_POKEMON",
+  "root_value": -0.251,
+  "chosen_action": "card @ hand[3] (p0)",
+  "candidates": [
+    {
+      "action": "card @ hand[3] (p0)",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.5,
+      "nn_value": -0.3965,
+      "visits": 509,
+      "search_mean_value": -0.2514,
+      "expanded": true,
+      "policy_target": -0.0004
+    },
+    {
+      "action": "card @ hand[0] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.5,
+      "nn_value": -0.3965,
+      "visits": 491,
+      "search_mean_value": -0.2512,
+      "expanded": true,
+      "policy_target": -0.0002
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 0.2962,
+      "Mega Lucario ex": 0.1864,
+      "Alakazam Psychic": 0.1127,
+      "Dragapult": 0.0654,
+      "Postwick": 0.0542,
+      "Mega Starmie": 0.0501,
+      "Alakazam Psychic (B)": 0.0334,
+      "Dawn": 0.032,
+      "Hop’s Choice Band": 0.0306,
+      "Canari": 0.025,
+      "Snorunt": 0.0195,
+      "Carmine": 0.0181,
+      "Munkidori": 0.0125,
+      "Cynthia's Garchomp": 0.0125,
+      "Team Rocket's Ariana": 0.0097,
+      "Team Rocket's Petrel": 0.0097,
+      "Rare Candy": 0.0083,
+      "Fighting Gong": 0.0083,
+      "Festival Grounds": 0.0056,
+      "Switch": 0.0056,
+      "Area Zero Underdepths": 0.0042
+    },
+    "card_predictions": [
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 0.9346,
+        "expected_copies": 3.3115
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 0.9221,
+        "expected_copies": 2.7163
+      },
+      {
+        "card_id": 1227,
+        "name": "Lillie's Determination",
+        "probability": 0.8095,
+        "expected_copies": 3.2142
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 0.7455,
+        "expected_copies": 1.9179
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 0.5744,
+        "expected_copies": 0.5744
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 0.5049,
+        "expected_copies": 1.911
+      },
+      {
+        "card_id": 1121,
+        "name": "Ultra Ball",
+        "probability": 0.4757,
+        "expected_copies": 1.6996
+      },
+      {
+        "card_id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "probability": 0.4492,
+        "expected_copies": 1.7455
+      },
+      {
+        "card_id": 666,
+        "name": "Cinderace",
+        "probability": 0.3421,
+        "expected_copies": 1.3658
+      },
+      {
+        "card_id": 8,
+        "name": "Basic {M} Energy",
+        "probability": 0.3143,
+        "expected_copies": 3.5786
+      },
+      {
+        "card_id": 169,
+        "name": "Duraludon",
+        "probability": 0.3143,
+        "expected_copies": 1.2573
+      },
+      {
+        "card_id": 190,
+        "name": "Archaludon ex",
+        "probability": 0.3143,
+        "expected_copies": 1.2573
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.3102,
+        "expected_copies": 1.2086
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 0.3088,
+        "expected_copies": 1.1683
+      },
+      {
+        "card_id": 1185,
+        "name": "Explorer’s Guidance",
+        "probability": 0.3004,
+        "expected_copies": 1.1933
+      },
+      {
+        "card_id": 57,
+        "name": "Relicanth",
+        "probability": 0.2949,
+        "expected_copies": 0.3088
+      },
+      {
+        "card_id": 1225,
+        "name": "Hilda",
+        "probability": 0.2809,
+        "expected_copies": 0.9583
+      },
+      {
+        "card_id": 1079,
+        "name": "Rare Candy",
+        "probability": 0.267,
+        "expected_copies": 0.8484
+      },
+      {
+        "card_id": 19,
+        "name": "Telepath Psychic Energy",
+        "probability": 0.267,
+        "expected_copies": 1.0668
+      },
+      {
+        "card_id": 5,
+        "name": "Basic {P} Energy",
+        "probability": 0.2587,
+        "expected_copies": 0.8289
+      },
+      {
+        "card_id": 66,
+        "name": "Dudunsparce",
+        "probability": 0.2531,
+        "expected_copies": 0.7622
+      },
+      {
+        "card_id": 1123,
+        "name": "Switch",
+        "probability": 0.2448,
+        "expected_copies": 0.5049
+      },
+      {
+        "card_id": 1142,
+        "name": "Fighting Gong",
+        "probability": 0.2128,
+        "expected_copies": 0.8387
+      },
+      {
+        "card_id": 6,
+        "name": "Basic {F} Energy",
+        "probability": 0.2114,
+        "expected_copies": 2.6871
+      },
+      {
+        "card_id": 1192,
+        "name": "Carmine",
+        "probability": 0.2045,
+        "expected_copies": 0.79
+      }
+    ],
+    "known_opponent_cards": [],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 11
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1145,
+        "name": "Mega Signal",
+        "count": 3
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 3
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 3
+      },
+      {
+        "id": 1031,
+        "name": "Mega Starmie ex",
+        "count": 3
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 3
+      },
+      {
+        "id": 1030,
+        "name": "Staryu",
+        "count": 3
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 2
+      },
+      {
+        "id": 121,
+        "name": "Dragapult ex",
+        "count": 2
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 2
+      },
+      {
+        "id": 304,
+        "name": "Hop’s Snorlax",
+        "count": 2
+      },
+      {
+        "id": 647,
+        "name": "Marnie's Morgrem",
+        "count": 2
+      },
+      {
+        "id": 676,
+        "name": "Solrock",
+        "count": 2
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 121,
+        "name": "Dragapult ex",
+        "count": 1
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 1
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 1
+      },
+      {
+        "id": 647,
+        "name": "Marnie's Morgrem",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 676,
+        "name": "Solrock",
+        "count": 1
+      },
+      {
+        "id": 1184,
+        "name": "Lana’s Aid",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ hand[3] (p0)",
+      "value": -0.2514
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "number 0",
+      "value": -0.2565
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ hand[0] (p0)",
+      "value": -0.2565
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "card @ hand[3] (p1)",
+      "value": -0.2562
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play hand[3]",
+      "value": -0.2478
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[18] (p0)",
+      "value": -0.236
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play hand[2]",
+      "value": -0.2135
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play hand[0]",
+      "value": -0.2346
+    }
+  ]
+}

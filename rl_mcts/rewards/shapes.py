@@ -9,12 +9,18 @@ that already existed before the turn keeps paying on every MCTS leaf. Use
 `make_base_shape(obs0, your_index)` once per agent call to bake in that baseline.
 """
 
-from rewards.core import Observation, make_compound_shape
 from rewards.core import (
+    Observation,
+    attached_energy_shape_attack,
     damage_taken_uncapped_shape,
+    evolve_shape,
+    inflict_status_shape,
     damage_uncapped_shape,
+    knockout_shape,
+    make_compound_shape,
     opp_discarded_energy_shape,
     play_card_penalty_shape,
+    prize_pressure_shape,
     small_opp_hand_shape,
     win_game_shape,
 )
@@ -25,10 +31,15 @@ from rewards.core import (
 
 WEIGHTS = {
     win_game_shape: 1.0,
+    prize_pressure_shape: 0.3,
     damage_uncapped_shape: 0.1,
     damage_taken_uncapped_shape: 0.1,
+    attached_energy_shape_attack: 0.05,
     opp_discarded_energy_shape: 0.1,
     small_opp_hand_shape: 0.1,
+    knockout_shape: 0.2,
+    evolve_shape: 0.1,
+    inflict_status_shape: 0.1,
     play_card_penalty_shape: 0.0001,
 }
 # attack_energy_match_shape needs poke_id / attack_index (no defaults) -> it can't
@@ -36,18 +47,24 @@ WEIGHTS = {
 
 # Shapes scored as a delta from a per-turn baseline (read absolute board state).
 # Everything else is left as-is: win/loss outcome and per-step log events are
-# already deltas, so they need no baseline.
-_NEEDS_BASELINE = frozenset({
-    damage_uncapped_shape,
-    damage_taken_uncapped_shape,
-    opp_discarded_energy_shape,
-    small_opp_hand_shape,
-})
+# already deltas, so they need no baseline. prize_pressure is baselined so taking a
+# prize pays even when the KO'd mon leaves the board (board-damage signal vanishes).
+_NEEDS_BASELINE = frozenset(
+    {
+        prize_pressure_shape,
+        damage_uncapped_shape,
+        damage_taken_uncapped_shape,
+        opp_discarded_energy_shape,
+        small_opp_hand_shape,
+        attached_energy_shape_attack,
+    }
+)
 
 
 # ============================================================
 #  Compound reward
 # ============================================================
+
 
 def make_base_shape(obs0: Observation, your_index: int):
     """Build the base reward shape for one agent call, freezing baselines from obs0.

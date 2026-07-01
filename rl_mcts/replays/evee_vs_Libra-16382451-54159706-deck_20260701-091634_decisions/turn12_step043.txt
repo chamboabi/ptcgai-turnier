@@ -1,0 +1,59 @@
+Turn 12  (action #6, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -1.7100
+CHOSEN: Basic {P} Energy @ discard[6] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     506   -1.7098   -0.2040   0.500  Basic {P} Energy @ discard[6] (p0)
+     494   -1.7133   -0.2040   0.500  Basic {P} Energy @ discard[7] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    1x Nighttime Mine
+    1x Psyduck
+    1x Night Stretcher
+    1x Enhanced Hammer
+    1x Snorlax
+    1x Telepath Psychic Energy
+
+Predicted line (principal variation):
+  1. [Evee] Basic {P} Energy @ discard[6] (p0)  (v=-1.7098)
+  2. [Evee] END turn  (v=-1.7128)
+  3. [opponent] attach Telepath Psychic Energy (hand[5]) -> Kadabra (active[0])  (v=-3.1431)
+  4. [opponent] ATTACK (attackId 1071)  (v=-3.2385)
+  5. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])  (v=-3.1748)
+  6. [Evee] play Lillie's Determination (hand[1])  (v=-3.1353)
+  7. [Evee] retreat  (v=-3.0710)
+  8. [Evee] energy x1 @ active[0]  (v=-3.0688)
+  9. [Evee] Sylveon @ bench[0] (p0)  (v=-3.0841)
+  10. [Evee] END turn  (v=-3.2700)
+  11. [opponent] END turn  (v=-3.0156)
+  12. [Evee] play Pecharunt (hand[5])  (v=-3.0156)
+  13. [Evee] play Pecharunt (hand[1])  (v=-2.9843)

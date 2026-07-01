@@ -1,0 +1,58 @@
+Turn 7  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.2302
+CHOSEN: play hand[5]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     391   +0.2421   +0.3015   0.053  play hand[5]
+      70   +0.2235   +0.2883   0.106  attach hand[4] -> active[0]
+      70   +0.2319   +0.2697   0.066  evolve -> bench[0]
+      64   +0.2326   +0.2861   0.043  retreat
+      62   +0.2261   +0.2736   0.080  attach hand[3] -> bench[1]
+      61   +0.2163   +0.2740   0.131  play hand[7]
+      60   +0.2138   +0.2666   0.121  attach hand[4] -> bench[0]
+      52   +0.2120   +0.2654   0.120  attach hand[4] -> bench[1]
+      47   +0.2262   +0.2740   0.058  attach hand[3] -> active[0]
+      46   +0.2297   +0.2830   0.043  attach hand[2] -> bench[1]
+      45   +0.2207   +0.2686   0.076  attach hand[3] -> bench[0]
+      19   +0.2332   +0.2815   0.038  attach hand[2] -> bench[0]
+      12   +0.1822   +0.2547   0.031  attach hand[2] -> active[0]
+       1   -0.1119   -0.1119   0.035  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  4.00x  Prism Energy
+    1.00  2.00x  Binacle
+    1.00  2.00x  Barbaracle
+    1.00  3.00x  Night Stretcher
+    1.00  4.00x  Fighting Gong
+    1.00  2.67x  Boss’s Orders
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    3x Solrock
+    2x Poké Pad
+    2x Basic {F} Energy
+    1x Lunatone
+    1x Okidogi
+    1x Lillie's Determination
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Judge
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Team Rocket's Watchtower
+
+Predicted line (principal variation):
+  1. [Evee] play hand[5]  (v=+0.2421)
+  2. [Evee] card @ discard[3] (p0)  (v=+0.2369)
+  3. [Evee] play hand[6]  (v=+0.2575)
+  4. [Evee] attach hand[4] -> active[0]  (v=+0.2863)
+  5. [Evee] evolve -> bench[0]  (v=+0.2717)

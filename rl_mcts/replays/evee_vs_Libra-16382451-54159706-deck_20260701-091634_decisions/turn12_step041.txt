@@ -1,0 +1,58 @@
+Turn 12  (action #4, P0 Evee)
+Selecting: CARD / SWITCH
+Root value: -1.4048
+CHOSEN: Pecharunt @ bench[1] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     560   -1.4050   -0.1995   0.493  Pecharunt @ bench[1] (p0)
+     440   -1.4072   -0.0986   0.506  Sylveon @ bench[0] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    1x Lana’s Aid
+    1x Snorlax
+    1x Dawn
+    1x Poké Pad
+    1x Enhanced Hammer
+    1x Night Stretcher
+
+Predicted line (principal variation):
+  1. [Evee] Pecharunt @ bench[1] (p0)  (v=-1.4050)
+  2. [Evee] play Night Stretcher (hand[1])  (v=-1.3969)
+  3. [Evee] Basic {P} Energy @ discard[6] (p0)  (v=-1.4094)
+  4. [Evee] END turn  (v=-1.4154)
+  5. [opponent] attach Telepath Psychic Energy (hand[6]) -> Kadabra (active[0])  (v=-2.9562)
+  6. [opponent] ATTACK (attackId 1071)  (v=-3.2599)
+  7. [Evee] play Lillie's Determination (hand[2])  (v=-3.2350)
+  8. [Evee] play Pecharunt (hand[1])  (v=-3.2249)
+  9. [Evee] END turn  (v=-3.2914)
+  10. [opponent] END turn  (v=-3.0445)
+  11. [Evee] END turn  (v=-3.0203)
+  12. [opponent] END turn  (v=-3.1469)

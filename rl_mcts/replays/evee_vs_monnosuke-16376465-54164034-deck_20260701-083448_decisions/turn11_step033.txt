@@ -1,0 +1,68 @@
+Turn 11  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.3016
+CHOSEN: play hand[1]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     536   +0.3139   +0.3121   0.097  play hand[1]
+     119   +0.3093   +0.3278   0.059  play hand[0]
+     119   +0.3093   +0.3278   0.059  play hand[6]
+      33   +0.2757   +0.3008   0.083  attach hand[3] -> active[0]
+      25   +0.2634   +0.2727   0.093  attach hand[3] -> bench[1]
+      22   +0.2488   +0.2709   0.094  attach hand[3] -> bench[0]
+      21   +0.2684   +0.2738   0.083  attach hand[3] -> bench[2]
+      21   +0.2846   +0.2720   0.051  evolve -> bench[1]
+      17   +0.2573   +0.2738   0.083  attach hand[3] -> bench[3]
+      10   +0.2614   +0.2782   0.030  attach hand[2] -> bench[1]
+      10   +0.2738   +0.2799   0.033  attach hand[5] -> bench[0]
+      10   +0.2676   +0.2782   0.030  attach hand[5] -> bench[1]
+      10   +0.2683   +0.2849   0.024  attach hand[5] -> bench[2]
+       9   +0.2629   +0.2799   0.033  attach hand[2] -> bench[0]
+       9   +0.2619   +0.2849   0.024  attach hand[2] -> bench[2]
+       9   +0.2607   +0.2849   0.024  attach hand[2] -> bench[3]
+       9   +0.2800   +0.2539   0.024  attach hand[5] -> active[0]
+       7   +0.2725   +0.2539   0.024  attach hand[2] -> active[0]
+       3   +0.1687   +0.2849   0.024  attach hand[5] -> bench[3]
+       1   -0.1001   -0.1001   0.027  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  2.00x  Barbaracle
+    1.00  3.00x  Night Stretcher
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    4x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    2x Lillie's Determination
+    2x Fighting Gong
+    1x Okidogi
+    1x Lunatone
+    1x Binacle
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Judge
+    1x Boss’s Orders
+    1x Prism Energy
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Barbaracle
+    1x Morty’s Conviction
+    1x Legacy Energy
+
+Predicted line (principal variation):
+  1. [Evee] play hand[1]  (v=+0.3139)
+  2. [Evee] play hand[1]  (v=+0.3233)
+  3. [Evee] card @ deck[5] (p0)  (v=+0.3231)
+  4. [Evee] card @ deck[6] (p0)  (v=+0.3223)
+  5. [Evee] card @ deck[14] (p0)  (v=+0.3222)
+  6. [Evee] play hand[1]  (v=+0.3154)
+  7. [Evee] card @ deck[5] (p0)  (v=+0.3137)

@@ -1,0 +1,58 @@
+Turn 25  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.8190
+CHOSEN: attach hand[1] -> active[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     944   +1.9172   +0.3070   0.098  attach hand[1] -> active[0]
+      29   +0.2280   +0.3322   0.133  attach hand[1] -> bench[2]
+       7   +0.1522   +0.3227   0.197  attach hand[1] -> bench[4]
+       5   +0.1722   +0.3268   0.098  attach hand[1] -> bench[0]
+       5   +0.1709   +0.3304   0.098  attach hand[1] -> bench[1]
+       5   +0.1627   +0.3277   0.131  attach hand[1] -> bench[3]
+       4   +0.1254   +0.3258   0.141  play hand[4]
+       1   -0.0840   -0.0840   0.105  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.14  0.14x  Basic {D} Energy
+    0.14  0.14x  Munkidori
+    0.14  0.29x  Morty’s Conviction
+  known (visible) opponent cards:
+    7x Basic {F} Energy
+    4x Poké Pad
+    3x Solrock
+    3x Lillie's Determination
+    3x Boss’s Orders
+    3x Fighting Gong
+    3x Night Stretcher
+    2x Air Balloon
+    2x Prism Energy
+    2x Pokégear 3.0
+    2x Judge
+    2x Tarragon
+    1x Barbaracle
+    1x Binacle
+    1x Lunatone
+    1x Okidogi
+    1x Tool Scrapper
+  sampled opponent hand (this search):
+    9x Snorlax
+    1x Team Rocket's Watchtower
+
+Predicted line (principal variation):
+  1. [Evee] attach hand[1] -> active[0]  (v=+1.9172)
+  2. [Evee] ATTACK (attackId 1296)  (v=+1.9262)
+  3. [opponent] retreat  (v=+1.9310)
+  4. [opponent] card @ bench[0] (p1)  (v=+1.9230)
+  5. [opponent] play hand[10]  (v=+1.9123)
+  6. [opponent] card @ hand[0] (p1)  (v=+1.9157)
+  7. [opponent] ATTACK (attackId 979)  (v=+1.9016)
+  8. [Evee] card @ deck[6] (p0)  (v=+2.2199)
+  9. [opponent] card @ prize[3] (p1)  (v=+2.2422)
+  10. [Evee] card @ bench[4] (p0)  (v=+2.2683)
+  11. [Evee] attach hand[5] -> active[0]  (v=+2.2767)

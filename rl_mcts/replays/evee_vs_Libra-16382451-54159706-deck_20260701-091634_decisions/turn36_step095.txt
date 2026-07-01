@@ -1,0 +1,63 @@
+Turn 36  (action #2, P0 Evee)
+Selecting: CARD / REMOVE_DAMAGE_COUNTER
+Root value: +2.7765
+CHOSEN: Pecharunt @ bench[1] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     996   +2.7848   -0.0737   0.500  Pecharunt @ bench[1] (p0)
+       4   +1.4255   -0.0737   0.500  Pecharunt @ active[0] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Basic {P} Energy
+    1x Lana’s Aid
+
+Predicted line (principal variation):
+  1. [Evee] Pecharunt @ bench[1] (p0)  (v=+2.7848)
+  2. [Evee] number 3  (v=+2.8026)
+  3. [Evee] Abra @ bench[2] (p1)  (v=+2.8498)
+  4. [Evee] END turn  (v=+2.8377)
+  5. [opponent] retreat  (v=+2.5945)
+  6. [opponent] energy x1 @ active[0]  (v=+2.5927)
+  7. [opponent] Abra @ bench[2] (p1)  (v=+2.4074)
+  8. [opponent] attach Basic {P} Energy (hand[2]) -> Abra (active[0])  (v=+2.3593)
+  9. [opponent] ability Dudunsparce  (v=+2.2159)
+  10. [opponent] ATTACK (attackId 1070)  (v=+2.0391)
+  11. [opponent] Alakazam @ bench[0] (p1)  (v=+2.0687)
+  12. [Evee] END turn  (v=+1.9734)
+  13. [opponent] END turn  (v=+1.9211)
+  14. [Evee] ability Munkidori  (v=+1.9211)

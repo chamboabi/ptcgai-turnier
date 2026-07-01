@@ -1,0 +1,54 @@
+Turn 10  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0471
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     938   +0.0526   -0.2963   0.639  retreat
+      62   -0.0297   +0.2555   0.360  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic 62%, Dawn 19%, Alakazam Psychic (B) 19%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.67x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.03x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.70x  Alakazam
+    1.00  3.60x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.86x  Hilda
+    1.00  3.93x  Dawn
+    0.99  3.43x  Enhanced Hammer
+    0.98  1.18x  Sacred Ash
+    0.87  1.89x  Night Stretcher
+    0.87  0.87x  Enriching Energy
+    0.87  3.15x  Dunsparce
+  known (visible) opponent cards:
+    2x Abra
+    1x Boss’s Orders
+  sampled opponent hand (this search):
+    2x Poké Pad
+    1x Dawn
+    1x Kadabra
+    1x Night Stretcher
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=+0.0526)
+  2. [Evee] energy x1 @ active[0]  (v=+0.0530)
+  3. [Evee] Sylveon @ bench[1] (p0)  (v=+0.0594)
+  4. [Evee] END turn  (v=+0.0597)
+  5. [opponent] evolve Abra (bench[0]) -> Kadabra  (v=+0.0521)
+  6. [opponent] YES  (v=+0.0613)
+  7. [opponent] END turn  (v=+0.0364)
+  8. [Evee] play Eevee (hand[2])  (v=+0.0768)
+  9. [Evee] END turn  (v=+0.0674)
+  10. [opponent] END turn  (v=+0.0192)
+  11. [Evee] END turn  (v=+0.0814)
+  12. [opponent] END turn  (v=+0.0180)
+  13. [Evee] END turn  (v=+0.1400)
+  14. [opponent] END turn  (v=+0.0196)
+  15. [Evee] END turn  (v=+0.1270)
+  16. [opponent] attach Basic {P} Energy (hand[10]) -> Abra (active[0])  (v=+0.2046)

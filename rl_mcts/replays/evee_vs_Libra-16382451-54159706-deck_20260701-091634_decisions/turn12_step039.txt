@@ -1,0 +1,58 @@
+Turn 12  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.8227
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     605   -0.8205   -0.1862   0.556  retreat
+     296   -0.8132   -0.1964   0.122  play Night Stretcher (hand[1])
+      99   -0.8715   +0.1399   0.322  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Dudunsparce
+    1x Xerosic’s Machinations
+    1x Telepath Psychic Energy
+    1x Enhanced Hammer
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=-0.8205)
+  2. [Evee] energy x1 @ active[0]  (v=-0.8216)
+  3. [Evee] Sylveon @ bench[0] (p0)  (v=-0.8222)
+  4. [Evee] play Night Stretcher (hand[1])  (v=-0.8109)
+  5. [Evee] Basic {P} Energy @ discard[6] (p0)  (v=-0.8104)
+  6. [Evee] END turn  (v=-0.8171)
+  7. [opponent] attach Telepath Psychic Energy (hand[4]) -> Kadabra (active[0])  (v=-2.1094)
+  8. [opponent] ATTACK (attackId 1071)  (v=-2.9616)
+  9. [Evee] attach Basic {P} Energy (hand[1]) -> Sylveon (active[0])  (v=-2.8968)
+  10. [Evee] ATTACK (attackId 459)  (v=-2.8339)
+  11. [Evee] Sylveon @ prize[3] (p0)  (v=-2.8095)
+  12. [opponent] Alakazam @ bench[0] (p1)  (v=-2.7516)

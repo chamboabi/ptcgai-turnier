@@ -1,0 +1,60 @@
+Turn 34  (action #9, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: -0.0712
+CHOSEN: Espeon ex @ discard[11] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     408   -0.0631   -0.0438   0.321  Espeon ex @ discard[11] (p0)
+     204   -0.0725   -0.0442   0.096  Basic {D} Energy @ discard[9] (p0)
+     194   -0.0790   -0.0532   0.292  Basic {P} Energy @ discard[6] (p0)
+     194   -0.0790   -0.0532   0.292  Basic {P} Energy @ discard[10] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Xerosic’s Machinations
+    1x Sacred Ash
+
+Predicted line (principal variation):
+  1. [Evee] Espeon ex @ discard[11] (p0)  (v=-0.0631)
+  2. [Evee] play Crispin (hand[0])  (v=-0.0392)
+  3. [Evee] card @ deck[17] (p0)  (v=-0.1016)
+  4. [Evee] card @ deck[3] (p0)  (v=-0.3543)
+  5. [Evee] Sylveon @ bench[0] (p0)  (v=-0.6593)
+  6. [Evee] retreat  (v=-0.8131)
+  7. [Evee] energy x1 @ active[0]  (v=-1.6532)
+  8. [Evee] Sylveon @ bench[0] (p0)  (v=-3.3038)
+  9. [Evee] ATTACK (attackId 459)  (v=-6.6907)

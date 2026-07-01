@@ -1,0 +1,59 @@
+Turn 34  (action #8, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1570
+CHOSEN: play Night Stretcher (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     463   -0.1503   -0.0562   0.098  play Night Stretcher (hand[1])
+     451   -0.1372   -0.0188   0.172  play Crispin (hand[0])
+      59   -0.2910   -0.0412   0.457  retreat
+      27   -0.3121   -0.1172   0.274  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Lana’s Aid
+    1x Basic {P} Energy
+
+Predicted line (principal variation):
+  1. [Evee] play Night Stretcher (hand[1])  (v=-0.1503)
+  2. [Evee] Espeon ex @ discard[11] (p0)  (v=-0.1512)
+  3. [Evee] retreat  (v=-0.2084)
+  4. [Evee] energy x1 @ active[0]  (v=-0.3657)
+  5. [Evee] Sylveon @ bench[0] (p0)  (v=-0.0606)
+  6. [Evee] play Crispin (hand[0])  (v=-0.0297)
+  7. [Evee] card @ deck[4] (p0)  (v=-0.0547)
+  8. [Evee] END turn  (v=-0.1306)

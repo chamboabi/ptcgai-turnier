@@ -1,0 +1,64 @@
+Turn 36  (action #4, P0 Evee)
+Selecting: CARD / DAMAGE_COUNTER
+Root value: -0.2219
+CHOSEN: Abra @ bench[2] (p1)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     519   -0.1067   -0.0715   0.145  Abra @ bench[2] (p1)
+     146   -0.3179   -0.0715   0.074  Dunsparce @ bench[4] (p1)
+     139   -0.3339   -0.0715   0.288  Alakazam @ bench[0] (p1)
+     131   -0.3540   -0.0715   0.287  Dudunsparce @ bench[3] (p1)
+      64   -0.3231   -0.0715   0.074  Dunsparce @ bench[1] (p1)
+       1   -6.8427   -6.8427   0.131  Kadabra @ active[0] (p1)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Genesect
+    1x Lana’s Aid
+
+Predicted line (principal variation):
+  1. [Evee] Abra @ bench[2] (p1)  (v=-0.1067)
+  2. [Evee] END turn  (v=+0.0311)
+  3. [opponent] retreat  (v=+0.0043)
+  4. [opponent] energy x1 @ active[0]  (v=+0.0048)
+  5. [opponent] Dudunsparce @ bench[3] (p1)  (v=-0.0170)
+  6. [opponent] ability Dudunsparce  (v=-0.0271)
+  7. [opponent] Kadabra @ bench[3] (p1)  (v=-0.0405)
+  8. [opponent] END turn  (v=+0.0484)
+  9. [Evee] ability Munkidori  (v=+0.5526)
+  10. [Evee] Pecharunt @ active[0] (p0)  (v=+0.8857)
+  11. [Evee] number 2  (v=+1.8852)

@@ -1,0 +1,43 @@
+Turn 17  (action #7, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.9922
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     991   -0.9863   +0.3519   0.411  retreat
+       9   -1.7896   -0.3550   0.589  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  1.00x  Hero’s Cape
+    0.98  3.88x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+  known (visible) opponent cards:
+    9x Basic {M} Energy
+    2x Lillie's Determination
+    2x Night Stretcher
+    2x Explorer’s Guidance
+    2x Poké Pad
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Ultra Ball
+    1x Pokégear 3.0
+    1x Jumbo Ice Cream
+  sampled opponent hand (this search):
+    5x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=-0.9863)
+  2. [Evee] energy x1 @ active[0]  (v=-0.9877)
+  3. [Evee] Eevee @ bench[0] (p0)  (v=-0.9890)
+  4. [Evee] END turn  (v=-0.9904)
+  5. [opponent] ATTACK (attackId 965)  (v=-0.9996)
+  6. [opponent] Snorlax @ prize[0] (p1)  (v=-1.0000)

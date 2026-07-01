@@ -38,14 +38,18 @@ def _opponent_known_cards(opp: PlayerState) -> list[int]:
 
 def _sample_opponent_deck(
     agent: Agent, opp: PlayerState
-) -> tuple[list[int], list[int], list[int]]:
-    """Return (deck, prize, hand) card-ID lists using per-card predictions.
+) -> tuple[list[int], list[int], list[int], dict]:
+    """Return (deck, prize, hand, info) card-ID lists using per-card predictions.
 
     Each CardPrediction carries:
       probability     = P(card is in deck)
       expected_copies = E[copies] unconditional (= probability * E[copies | in deck])
 
     We Bernoulli-sample inclusion, then add E[copies | in deck] rounded copies.
+
+    `info` carries the belief for decision logging: {"known": [...ids...],
+    "result": PredictionResult | None}. `result` is None when no archetype model
+    is attached (belief collapses to UNKNOWN cards).
     """
     deck_n = opp.deckCount
     prize_n = len(opp.prize)
@@ -53,10 +57,12 @@ def _sample_opponent_deck(
     total = deck_n + prize_n + hand_n
 
     if agent.archetype_model is None:
-        return [_UNKNOWN] * deck_n, [1] * prize_n, [1] * hand_n
+        info = {"known": [], "result": None}
+        return [_UNKNOWN] * deck_n, [1] * prize_n, [1] * hand_n, info
 
     known = _opponent_known_cards(opp)
     result = agent.archetype_model.predict(known)
+    info = {"known": known, "result": result}
 
     pool: list[int] = []
     for pred in result.card_predictions:
@@ -69,7 +75,7 @@ def _sample_opponent_deck(
     pool += [_UNKNOWN] * (total - len(pool))
     random.shuffle(pool)
 
-    return pool[:deck_n], pool[deck_n : deck_n + prize_n], pool[deck_n + prize_n : total]
+    return pool[:deck_n], pool[deck_n : deck_n + prize_n], pool[deck_n + prize_n : total], info
 
 
 class LearnSample:
@@ -145,8 +151,11 @@ def create_node(
         sv_dec = get_decoder_input(obs, actions)
         value, policy = eval_nn(sv_enc, sv_dec, agent.model)
 
-        # shape affects tree search; raw value goes into LearnSample for learning
-        shaped = agent.reward_fn.shape(obs, your_index, value)
+        # shape affects tree search; raw value goes into LearnSample for learning.
+        # Shape from the side-to-move's perspective so the negation below stays
+        # consistent: a one-sided P0 bonus must NOT be flipped at opponent nodes
+        # (else dealing damage / ending the turn looks bad -> agent never attacks).
+        shaped = agent.reward_fn.shape(obs, state.yourIndex, value)
         v = shaped if state.yourIndex == your_index else -shaped
         node.value = v
         node.backprop(v)
@@ -163,7 +172,9 @@ def create_node(
     return (node, sample)
 
 
-def mcts_agent(obs_dict: dict, agent: Agent) -> tuple[list[int], LearnSample]:
+def mcts_agent(
+    obs_dict: dict, agent: Agent, debug_out: dict | None = None
+) -> tuple[list[int], LearnSample]:
     obs = to_observation_class(obs_dict)
     your_index = obs.current.yourIndex
     state = obs.current
@@ -174,7 +185,7 @@ def mcts_agent(obs_dict: dict, agent: Agent) -> tuple[list[int], LearnSample]:
         shape = agent.reward_fn.shape_factory(obs, your_index)
         agent = replace(agent, reward_fn=replace(agent.reward_fn, shape=shape))
     opp = state.players[1 - your_index]
-    opp_deck, opp_prize, opp_hand = _sample_opponent_deck(agent, opp)
+    opp_deck, opp_prize, opp_hand, belief_info = _sample_opponent_deck(agent, opp)
     search_state = search_begin(
         obs,
         your_deck=random.sample(agent.deck, state.players[your_index].deckCount),
@@ -239,5 +250,92 @@ def mcts_agent(obs_dict: dict, agent: Agent) -> tuple[list[int], LearnSample]:
             v = child.node.total / child.node.visit - v
         sample.policy[i] = max(-1.0, min(1.0, v))
 
+    if debug_out is not None:
+        _fill_debug(debug_out, obs, state, your_index, root, sample,
+                    max_child, belief_info, opp_deck, opp_prize, opp_hand)
+
     search_end()
     return (max_child.select, sample)
+
+
+def _fill_debug(dbg, obs, state, your_index, root, sample, max_child,
+                belief_info, opp_deck, opp_prize, opp_hand):
+    """Populate a decision-log dict from a finished search (see decision_log.py).
+
+    Records the chosen action, every root candidate with its NN prior / NN value
+    / visit stats and learn-target, the opponent belief, and the principal
+    variation (most-visited path) so the caller can see the expected line of play
+    for BOTH players.
+    """
+    candidates = []
+    for i, child in enumerate(root.children):
+        node = child.node
+        candidates.append({
+            "select": list(child.select),
+            "prob": child.prob,
+            "expanded": node is not None,
+            "nn_value": None if node is None else node.value,
+            "visit": 0 if node is None else node.visit,
+            "mean_value": None if (node is None or node.visit == 0) else node.total / node.visit,
+            "policy_target": sample.policy[i],
+        })
+
+    result = belief_info["result"]
+    card_predictions = None
+    archetype_probs = None
+    if result is not None:
+        archetype_probs = dict(result.archetype_probs)
+        card_predictions = [
+            {
+                "card_id": p.card_id,
+                "name": p.name,
+                "probability": round(p.probability, 4),
+                "expected_copies": round(p.expected_copies, 4),
+            }
+            for p in result.card_predictions[:25]
+        ]
+
+    # Principal variation: follow the most-visited child from the root through
+    # opponent nodes, so the caller can read what the agent expects to happen.
+    predicted_line = []
+    current = root
+    for _ in range(40):
+        best, best_visit = None, -1
+        for child in current.children:
+            if child.node is not None and child.node.visit > best_visit:
+                best, best_visit = child, child.node.visit
+        if best is None:
+            break
+        node_obs = current.state.observation
+        predicted_line.append({
+            "yourIndex": node_obs.current.yourIndex,
+            "select": list(best.select),
+            "options": node_obs.select.option if node_obs.select is not None else [],
+            "state": node_obs.current,
+            "value": best.node.total / best.node.visit if best.node.visit else best.node.value,
+        })
+        current = best.node
+        if current.state.observation.current.result >= 0:
+            break
+
+    dbg.update({
+        "turn": state.turn,
+        "turnActionCount": state.turnActionCount,
+        "yourIndex": your_index,
+        "select_type": int(obs.select.type),
+        "select_context": int(obs.select.context),
+        "root_value": sample.value,
+        "chosen_select": list(max_child.select),
+        "options": obs.select.option,
+        "state": state,
+        "candidates": candidates,
+        "belief": {
+            "archetype_probs": archetype_probs,
+            "card_predictions": card_predictions,
+            "known_cards": belief_info["known"],
+            "sampled_deck": opp_deck,
+            "sampled_prize": opp_prize,
+            "sampled_hand": opp_hand,
+        },
+        "predicted_line": predicted_line,
+    })

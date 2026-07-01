@@ -1,0 +1,61 @@
+Turn 7  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1794
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     262   +0.1898   +0.3001   0.041  retreat
+     158   +0.1829   +0.2887   0.123  play hand[6]
+     124   +0.1866   +0.2818   0.062  evolve -> bench[0]
+      83   +0.1745   +0.3049   0.101  attach hand[4] -> active[0]
+      71   +0.1833   +0.2913   0.055  attach hand[3] -> active[0]
+      45   +0.1591   +0.2834   0.114  attach hand[4] -> bench[0]
+      43   +0.1648   +0.2908   0.075  attach hand[3] -> bench[1]
+      43   +0.1577   +0.2822   0.113  attach hand[4] -> bench[1]
+      41   +0.1710   +0.2858   0.072  attach hand[3] -> bench[0]
+      33   +0.1735   +0.2948   0.040  attach hand[2] -> bench[1]
+      33   +0.1735   +0.2948   0.040  attach hand[7] -> bench[1]
+      24   +0.1777   +0.2931   0.036  attach hand[2] -> bench[0]
+      23   +0.1739   +0.2931   0.036  attach hand[7] -> bench[0]
+       8   +0.1515   +0.2665   0.029  attach hand[2] -> active[0]
+       8   +0.1515   +0.2665   0.029  attach hand[7] -> active[0]
+       1   -0.1262   -0.1262   0.033  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  4.00x  Prism Energy
+    1.00  2.00x  Binacle
+    1.00  2.00x  Barbaracle
+    1.00  3.00x  Night Stretcher
+    1.00  4.00x  Fighting Gong
+    1.00  2.67x  Boss’s Orders
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    3x Solrock
+    2x Poké Pad
+    2x Basic {F} Energy
+    1x Lunatone
+    1x Okidogi
+    1x Lillie's Determination
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Judge
+  sampled opponent hand (this search):
+    3x Snorlax
+    1x Prism Energy
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=+0.1898)
+  2. [Evee] energy x1 @ active[0]  (v=+0.1894)
+  3. [Evee] card @ bench[0] (p0)  (v=+0.1986)
+  4. [Evee] play hand[6]  (v=+0.2216)
+  5. [Evee] evolve -> active[0]  (v=+0.2856)
+  6. [Evee] attach hand[3] -> active[0]  (v=+0.2892)

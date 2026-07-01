@@ -1,0 +1,349 @@
+{
+  "turn": 7,
+  "turn_action_count": 3,
+  "acting_player_index": 0,
+  "selecting": "CARD / TO_HAND",
+  "root_value": 0.2139,
+  "chosen_action": "card @ discard[3] (p0)",
+  "candidates": [
+    {
+      "action": "card @ discard[3] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.3687,
+      "nn_value": 0.3001,
+      "visits": 295,
+      "search_mean_value": 0.2103,
+      "expanded": true,
+      "policy_target": -0.0036
+    },
+    {
+      "action": "card @ discard[7] (p0)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.229,
+      "nn_value": 0.2991,
+      "visits": 267,
+      "search_mean_value": 0.2165,
+      "expanded": true,
+      "policy_target": 0.0026
+    },
+    {
+      "action": "card @ discard[4] (p0)",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.229,
+      "nn_value": 0.2991,
+      "visits": 258,
+      "search_mean_value": 0.2149,
+      "expanded": true,
+      "policy_target": 0.001
+    },
+    {
+      "action": "card @ discard[5] (p0)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.1732,
+      "nn_value": 0.2895,
+      "visits": 180,
+      "search_mean_value": 0.2139,
+      "expanded": true,
+      "policy_target": 0.0
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Fighting Gong": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 12,
+        "name": "Legacy Energy",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 16,
+        "name": "Prism Energy",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1051,
+        "name": "Binacle",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1052,
+        "name": "Barbaracle",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1142,
+        "name": "Fighting Gong",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1182,
+        "name": "Boss’s Orders",
+        "probability": 1.0,
+        "expected_copies": 2.6667
+      },
+      {
+        "card_id": 1238,
+        "name": "Tarragon",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1256,
+        "name": "Team Rocket's Watchtower",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 7,
+        "name": "Basic {D} Energy",
+        "probability": 0.3333,
+        "expected_copies": 0.3333
+      },
+      {
+        "card_id": 112,
+        "name": "Munkidori",
+        "probability": 0.3333,
+        "expected_copies": 0.3333
+      },
+      {
+        "card_id": 1187,
+        "name": "Morty’s Conviction",
+        "probability": 0.3333,
+        "expected_copies": 0.6667
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 676,
+        "name": "Solrock",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 6,
+        "name": "Basic {F} Energy",
+        "count": 2
+      },
+      {
+        "id": 675,
+        "name": "Lunatone",
+        "count": 1
+      },
+      {
+        "id": 116,
+        "name": "Okidogi",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1174,
+        "name": "Air Balloon",
+        "count": 1
+      },
+      {
+        "id": 1137,
+        "name": "Tool Scrapper",
+        "count": 1
+      },
+      {
+        "id": 1213,
+        "name": "Judge",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 18
+      },
+      {
+        "id": 1142,
+        "name": "Fighting Gong",
+        "count": 4
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1051,
+        "name": "Binacle",
+        "count": 2
+      },
+      {
+        "id": 16,
+        "name": "Prism Energy",
+        "count": 2
+      },
+      {
+        "id": 1256,
+        "name": "Team Rocket's Watchtower",
+        "count": 2
+      },
+      {
+        "id": 1238,
+        "name": "Tarragon",
+        "count": 2
+      },
+      {
+        "id": 1052,
+        "name": "Barbaracle",
+        "count": 1
+      },
+      {
+        "id": 7,
+        "name": "Basic {D} Energy",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1052,
+        "name": "Barbaracle",
+        "count": 1
+      },
+      {
+        "id": 1256,
+        "name": "Team Rocket's Watchtower",
+        "count": 1
+      },
+      {
+        "id": 16,
+        "name": "Prism Energy",
+        "count": 1
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 12,
+        "name": "Legacy Energy",
+        "count": 1
+      },
+      {
+        "id": 16,
+        "name": "Prism Energy",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ discard[3] (p0)",
+      "value": 0.2103
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "retreat",
+      "value": 0.2343
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "energy x1 @ active[0]",
+      "value": 0.2335
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ bench[1] (p0)",
+      "value": 0.2287
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play hand[6]",
+      "value": 0.2566
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach hand[4] -> active[0]",
+      "value": 0.2655
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "evolve -> bench[0]",
+      "value": 0.254
+    }
+  ]
+}

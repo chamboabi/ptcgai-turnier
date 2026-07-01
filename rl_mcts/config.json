@@ -11,10 +11,10 @@
     "num_layers_decoder": 1
   },
   "mcts": {
-    "search_count": 3000,
+    "search_count": 1000,
     "max_action_combinations": 64,
     "ucb_exploration": 0.4,
-    "policy_temperature": 10.0,
+    "policy_temperature": 1.0,
     "unvisited_penalty": 0.03
   },
   "training": {

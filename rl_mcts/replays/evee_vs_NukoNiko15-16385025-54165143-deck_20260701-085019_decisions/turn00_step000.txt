@@ -1,0 +1,44 @@
+Turn 0  (action #1, P0 Evee)
+Selecting: YES_NO / IS_FIRST
+Root value: +0.2075
+CHOSEN: YES
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     971   +0.2151   +0.3546   0.367  YES
+      29   -0.0549   -0.3583   0.633  NO
+
+Opponent belief:
+  archetype: Archaludon Metal 30%, Mega Lucario ex 19%, Alakazam Psychic 11%, Dragapult 7%, Postwick 5%
+  likely cards (P, E[copies]):
+    0.93  3.31x  Poké Pad
+    0.92  2.72x  Boss’s Orders
+    0.81  3.21x  Lillie's Determination
+    0.75  1.92x  Night Stretcher
+    0.57  0.57x  Hero’s Cape
+    0.50  1.91x  Pokégear 3.0
+    0.48  1.70x  Ultra Ball
+    0.45  1.75x  Buddy-Buddy Poffin
+    0.34  1.37x  Cinderace
+    0.31  3.58x  Basic {M} Energy
+    0.31  1.26x  Duraludon
+    0.31  1.26x  Archaludon ex
+    0.31  1.21x  Full Metal Lab
+    0.31  1.17x  Jumbo Ice Cream
+    0.30  1.19x  Explorer’s Guidance
+  known (visible) opponent cards:
+  sampled opponent hand (this search):
+
+Predicted line (principal variation):
+  1. [Evee] YES  (v=+0.2151)
+  2. [Evee] Eevee @ hand[3] (p0)  (v=+0.2149)
+  3. [opponent] Dunsparce @ hand[3] (p1)  (v=+0.2035)
+  4. [Evee] Eevee @ hand[5] (p0)  (v=+0.2030)
+  5. [opponent] Abra @ hand[3] (p1) + Abra @ hand[4] (p1)  (v=+0.2044)
+  6. [Evee] play Carmine (hand[5])  (v=+0.2205)
+  7. [Evee] play Night Stretcher (hand[3])  (v=+0.2382)
+  8. [Evee] Basic {P} Energy @ discard[4] (p0)  (v=+0.2320)
+  9. [Evee] attach Basic {P} Energy (hand[1]) -> Eevee (active[0])  (v=+0.2577)
+  10. [Evee] retreat  (v=+0.3740)
+  11. [Evee] energy x1 @ active[0]  (v=+0.3724)
+  12. [Evee] Eevee @ bench[0] (p0)  (v=+0.3724)

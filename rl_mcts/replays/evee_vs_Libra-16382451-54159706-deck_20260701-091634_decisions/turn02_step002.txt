@@ -1,0 +1,54 @@
+Turn 2  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0213
+CHOSEN: play Eevee (hand[6])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     962   -0.0111   -0.3991   0.233  play Eevee (hand[6])
+       9   -0.2244   -0.3989   0.125  play Lillie's Determination (hand[3])
+       8   -0.2125   -0.4183   0.125  play Lillie's Determination (hand[1])
+       8   -0.2282   -0.4100   0.093  attach Basic {P} Energy (hand[5]) -> Pecharunt (active[0])
+       7   -0.3357   +0.3312   0.201  END turn
+       4   -0.4065   -0.4092   0.137  play Crispin (hand[2])
+       2   -0.3733   -0.3845   0.085  attach Basic {D} Energy (hand[4]) -> Pecharunt (active[0])
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    1x Sacred Ash
+    1x Telepath Psychic Energy
+    1x Dudunsparce
+    1x Nighttime Mine
+    1x Boss’s Orders
+    1x Dunsparce
+    1x Kadabra
+
+Predicted line (principal variation):
+  1. [Evee] play Eevee (hand[6])  (v=-0.0111)
+  2. [Evee] attach Basic {D} Energy (hand[4]) -> Eevee (bench[0])  (v=+0.0060)
+  3. [Evee] END turn  (v=-0.0099)
+  4. [opponent] END turn  (v=+0.0007)
+  5. [Evee] play Hand Trimmer (hand[5])  (v=+0.0161)
+  6. [opponent] Boss’s Orders @ hand[4] (p1) + Kadabra @ hand[6] (p1) + Boss’s Orders @ hand[7] (p1)  (v=+0.0918)
+  7. [Evee] evolve Eevee (bench[0]) -> Sylveon  (v=+0.0998)
+  8. [Evee] END turn  (v=+0.1993)
+  9. [opponent] attach Telepath Psychic Energy (hand[1]) -> Abra (active[0])  (v=+0.1684)

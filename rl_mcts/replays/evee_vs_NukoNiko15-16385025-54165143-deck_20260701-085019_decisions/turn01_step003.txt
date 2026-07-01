@@ -1,0 +1,56 @@
+Turn 1  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -2.1805
+CHOSEN: play Munkidori (hand[4])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     351   -2.1605   +0.4035   0.061  play Munkidori (hand[4])
+     148   -2.1731   +0.3975   0.109  attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])
+     148   -2.1731   +0.3975   0.109  attach Basic {P} Energy (hand[2]) -> Pecharunt (active[0])
+     147   -2.1659   +0.3840   0.078  attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])
+      32   -2.2529   +0.3799   0.109  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[0])
+      32   -2.2529   +0.3799   0.109  attach Basic {P} Energy (hand[0]) -> Pecharunt (bench[1])
+      32   -2.2395   +0.3773   0.078  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[0])
+      32   -2.2395   +0.3773   0.078  attach Basic {D} Energy (hand[1]) -> Pecharunt (bench[1])
+      32   -2.2529   +0.3799   0.109  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[0])
+      32   -2.2529   +0.3799   0.109  attach Basic {P} Energy (hand[2]) -> Pecharunt (bench[1])
+      14   -2.2475   -0.4598   0.048  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 87%, Mega Starmie 12%, Mega Lucario ex 0%, Team Rocket's Petrel 0%, Carmine 0%
+  likely cards (P, E[copies]):
+    1.00  3.98x  Lillie's Determination
+    0.99  2.93x  Night Stretcher
+    0.99  3.95x  Pokégear 3.0
+    0.99  0.99x  Hero’s Cape
+    0.98  3.60x  Ultra Ball
+    0.98  3.28x  Boss’s Orders
+    0.89  3.55x  Poké Pad
+    0.87  9.79x  Basic {M} Energy
+    0.87  3.48x  Duraludon
+    0.87  3.48x  Archaludon ex
+    0.87  3.35x  Jumbo Ice Cream
+    0.86  3.42x  Explorer’s Guidance
+    0.86  3.37x  Full Metal Lab
+    0.81  0.81x  Relicanth
+    0.13  1.25x  Basic {W} Energy
+  known (visible) opponent cards:
+    1x Cinderace
+  sampled opponent hand (this search):
+    2x Pokégear 3.0
+    1x Basic {M} Energy
+    1x Ultra Ball
+    1x Night Stretcher
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] play Munkidori (hand[4])  (v=-2.1605)
+  2. [Evee] attach Basic {P} Energy (hand[0]) -> Pecharunt (active[0])  (v=-2.0922)
+  3. [Evee] retreat  (v=-2.0940)
+  4. [Evee] energy x1 @ active[0]  (v=-2.1462)
+  5. [Evee] Pecharunt @ bench[1] (p0)  (v=-2.2526)
+  6. [Evee] END turn  (v=-2.4302)
+  7. [opponent] attach Basic {M} Energy (hand[0]) -> Cinderace (active[0])  (v=-4.2034)
+  8. [opponent] ATTACK (attackId 965)  (v=-4.7278)
+  9. [opponent] card @ deck[1] (p1) + card @ deck[8] (p1) + card @ deck[15] (p1)  (v=-4.5932)

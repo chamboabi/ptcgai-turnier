@@ -1,0 +1,58 @@
+Turn 13  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.2763
+CHOSEN: play hand[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     477   +0.2892   +0.3171   0.054  play hand[0]
+      79   +0.2701   +0.3102   0.108  play hand[1]
+      56   +0.2799   +0.3054   0.046  retreat
+      49   +0.2710   +0.2882   0.069  evolve -> bench[1]
+      49   +0.2710   +0.2882   0.069  evolve -> bench[1]
+      34   +0.2704   +0.3120   0.048  attach hand[6] -> active[0]
+      34   +0.2613   +0.3012   0.067  attach hand[6] -> bench[0]
+      33   +0.2615   +0.3015   0.061  attach hand[2] -> active[0]
+      33   +0.2564   +0.2958   0.083  attach hand[2] -> bench[0]
+      33   +0.2588   +0.2968   0.061  attach hand[2] -> bench[2]
+      33   +0.2588   +0.2968   0.061  attach hand[2] -> bench[3]
+      32   +0.2535   +0.2913   0.080  attach hand[2] -> bench[1]
+      19   +0.2485   +0.2984   0.061  attach hand[6] -> bench[1]
+      19   +0.2553   +0.3022   0.048  attach hand[6] -> bench[2]
+      19   +0.2553   +0.3022   0.048  attach hand[6] -> bench[3]
+       1   -0.0817   -0.0817   0.036  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    6x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    3x Fighting Gong
+    2x Lillie's Determination
+    2x Judge
+    1x Okidogi
+    1x Lunatone
+    1x Barbaracle
+    1x Binacle
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Boss’s Orders
+    1x Prism Energy
+    1x Night Stretcher
+  sampled opponent hand (this search):
+    4x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] play hand[0]  (v=+0.2892)
+  2. [Evee] card @ discard[9] (p0)  (v=+0.2881)
+  3. [Evee] play hand[0]  (v=+0.3165)
+  4. [Evee] attach hand[0] -> active[0]  (v=+0.3178)

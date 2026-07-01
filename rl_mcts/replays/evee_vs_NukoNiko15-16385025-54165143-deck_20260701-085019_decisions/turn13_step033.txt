@@ -1,0 +1,53 @@
+Turn 13  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +6.7508
+CHOSEN: ATTACK (attackId 1296)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     994   +6.7968   +6.5075   0.179  ATTACK (attackId 1296)
+       1   +0.3450   +0.3450   0.089  play Eevee (hand[1])
+       1   +0.3450   +0.3450   0.089  play Eevee (hand[2])
+       1   +0.3261   +0.3261   0.184  attach Basic {P} Energy (hand[4]) -> Pecharunt (active[0])
+       1   +0.3110   +0.3110   0.231  attach Basic {P} Energy (hand[4]) -> Munkidori (bench[0])
+       1   +0.3235   +0.3235   0.144  retreat
+       1   -0.4982   -0.4982   0.084  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    5x Snorlax
+    2x Pokégear 3.0
+    1x Poké Pad
+    1x Archaludon ex
+    1x Explorer’s Guidance
+
+Predicted line (principal variation):
+  1. [Evee] ATTACK (attackId 1296)  (v=+6.7968)
+  2. [opponent] play Poké Pad (hand[1])  (v=+6.7404)
+  3. [opponent] card @ deck[5] (p1)  (v=+6.7612)
+  4. [opponent] play Snorlax (hand[0])  (v=+6.8217)
+  5. [opponent] ATTACK (attackId 965)  (v=+7.8366)
+  6. [Evee] card @ deck[27] (p0)  (v=+11.3487)

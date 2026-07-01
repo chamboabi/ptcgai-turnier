@@ -1,0 +1,67 @@
+Turn 19  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.7385
+CHOSEN: attach hand[4] -> active[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     720   +0.9423   +0.3133   0.092  attach hand[4] -> active[0]
+     138   +0.2378   +0.3019   0.065  play hand[0]
+      28   +0.2228   +0.2787   0.061  attach hand[3] -> active[0]
+      27   +0.2120   +0.2921   0.094  evolve -> bench[4]
+      18   +0.2096   +0.3028   0.085  attach hand[4] -> bench[4]
+      12   +0.1781   +0.2930   0.104  attach hand[4] -> bench[3]
+       7   +0.1780   +0.3060   0.045  attach hand[3] -> bench[0]
+       7   +0.1752   +0.3087   0.045  attach hand[3] -> bench[1]
+       7   +0.1779   +0.3072   0.045  attach hand[3] -> bench[2]
+       7   +0.1778   +0.3078   0.062  attach hand[3] -> bench[3]
+       7   +0.1793   +0.3034   0.055  attach hand[3] -> bench[4]
+       7   +0.1763   +0.3020   0.066  attach hand[4] -> bench[0]
+       7   +0.1690   +0.3030   0.066  attach hand[4] -> bench[1]
+       7   +0.1734   +0.3021   0.066  attach hand[4] -> bench[2]
+       1   -0.1209   -0.1209   0.049  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    7x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    3x Fighting Gong
+    2x Lillie's Determination
+    2x Judge
+    2x Boss’s Orders
+    1x Okidogi
+    1x Lunatone
+    1x Barbaracle
+    1x Binacle
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Prism Energy
+    1x Night Stretcher
+    1x Tarragon
+  sampled opponent hand (this search):
+    2x Team Rocket's Watchtower
+    1x Legacy Energy
+    1x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] attach hand[4] -> active[0]  (v=+0.9423)
+  2. [Evee] evolve -> bench[4]  (v=+1.0634)
+  3. [Evee] retreat  (v=+1.6924)
+  4. [Evee] energy x1 @ active[0]  (v=+1.6965)
+  5. [Evee] card @ bench[0] (p0)  (v=+1.8559)
+  6. [Evee] ATTACK (attackId 1296)  (v=+1.8784)
+  7. [opponent] attach hand[1] -> bench[0]  (v=+1.7754)
+  8. [opponent] ATTACK (attackId 147)  (v=+1.8845)
+  9. [Evee] card @ deck[12] (p0)  (v=+2.1891)
+  10. [opponent] card @ prize[0] (p1)  (v=+2.2018)
+  11. [Evee] card @ bench[4] (p0)  (v=+2.2279)
+  12. [Evee] attach hand[2] -> active[0]  (v=+2.2129)

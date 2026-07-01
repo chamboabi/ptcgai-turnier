@@ -1,0 +1,64 @@
+Turn 36  (action #3, P0 Evee)
+Selecting: COUNT / REMOVE_DAMAGE_COUNTER_COUNT
+Root value: +2.8199
+CHOSEN: number 3
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     992   +2.8379   +2.9285   0.299  number 3
+       7   +0.9442   +1.9277   0.430  number 2
+       1   +0.9270   +0.9270   0.271  number 1
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Wondrous Patch
+    1x Basic {P} Energy
+
+Predicted line (principal variation):
+  1. [Evee] number 3  (v=+2.8379)
+  2. [Evee] Dudunsparce @ bench[3] (p1)  (v=+2.8945)
+  3. [Evee] attach Basic {D} Energy (hand[3]) -> Pecharunt (bench[1])  (v=+2.9721)
+  4. [Evee] END turn  (v=+2.9037)
+  5. [opponent] retreat  (v=+2.6662)
+  6. [opponent] energy x1 @ active[0]  (v=+2.6646)
+  7. [opponent] Abra @ bench[2] (p1)  (v=+2.4569)
+  8. [opponent] attach Basic {P} Energy (hand[3]) -> Abra (active[0])  (v=+2.3891)
+  9. [opponent] ATTACK (attackId 1070)  (v=+2.4480)
+  10. [opponent] Alakazam @ bench[0] (p1)  (v=+2.5940)
+  11. [Evee] ability Munkidori  (v=+3.4926)
+  12. [Evee] Pecharunt @ active[0] (p0)  (v=+3.9925)
+  13. [Evee] number 2  (v=+4.9922)
+  14. [Evee] Alakazam @ active[0] (p1)  (v=+5.9926)

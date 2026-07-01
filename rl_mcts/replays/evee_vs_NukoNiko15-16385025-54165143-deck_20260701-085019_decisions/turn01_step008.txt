@@ -1,0 +1,46 @@
+Turn 1  (action #6, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -4.5131
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   -4.5181   -0.4859   1.000  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 87%, Mega Starmie 12%, Mega Lucario ex 0%, Team Rocket's Petrel 0%, Carmine 0%
+  likely cards (P, E[copies]):
+    1.00  3.98x  Lillie's Determination
+    0.99  2.93x  Night Stretcher
+    0.99  3.95x  Pokégear 3.0
+    0.99  0.99x  Hero’s Cape
+    0.98  3.60x  Ultra Ball
+    0.98  3.28x  Boss’s Orders
+    0.89  3.55x  Poké Pad
+    0.87  9.79x  Basic {M} Energy
+    0.87  3.48x  Duraludon
+    0.87  3.48x  Archaludon ex
+    0.87  3.35x  Jumbo Ice Cream
+    0.86  3.42x  Explorer’s Guidance
+    0.86  3.37x  Full Metal Lab
+    0.81  0.81x  Relicanth
+    0.13  1.25x  Basic {W} Energy
+  known (visible) opponent cards:
+    1x Cinderace
+  sampled opponent hand (this search):
+    1x Jumbo Ice Cream
+    1x Snorlax
+    1x Crushing Hammer
+    1x Night Stretcher
+    1x Full Metal Lab
+    1x Basic {M} Energy
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-4.5181)
+  2. [opponent] attach Basic {M} Energy (hand[5]) -> Cinderace (active[0])  (v=-4.5689)
+  3. [opponent] ATTACK (attackId 965)  (v=-4.5906)
+  4. [opponent] card @ deck[3] (p1) + card @ deck[14] (p1) + card @ deck[17] (p1)  (v=-4.5834)
+  5. [Evee] attach Basic {D} Energy (hand[1]) -> Pecharunt (active[0])  (v=-4.8652)
+  6. [Evee] ATTACK (attackId 1296)  (v=-4.8298)
+  7. [opponent] ATTACK (attackId 965)  (v=-5.8316)
+  8. [opponent] card @ deck[5] (p1) + card @ deck[6] (p1) + card @ deck[8] (p1)  (v=-5.6089)

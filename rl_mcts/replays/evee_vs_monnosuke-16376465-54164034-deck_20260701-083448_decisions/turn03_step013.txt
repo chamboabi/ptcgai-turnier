@@ -1,0 +1,55 @@
+Turn 3  (action #6, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0648
+CHOSEN: evolve -> bench[1]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     142   -0.0623   +0.1494   0.110  evolve -> bench[1]
+     141   -0.0622   +0.1494   0.110  evolve -> bench[0]
+     140   -0.0641   +0.1218   0.127  attach hand[1] -> bench[0]
+     139   -0.0639   +0.1218   0.127  attach hand[1] -> bench[1]
+     138   -0.0642   +0.1218   0.127  attach hand[2] -> bench[0]
+     138   -0.0640   +0.1218   0.127  attach hand[2] -> bench[1]
+      68   -0.0703   +0.1346   0.097  attach hand[1] -> active[0]
+      68   -0.0703   +0.1346   0.097  attach hand[2] -> active[0]
+      26   -0.0886   -0.1002   0.077  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  9.17x  Basic {F} Energy
+    1.00  4.00x  Prism Energy
+    1.00  2.00x  Lunatone
+    1.00  2.00x  Binacle
+    1.00  2.00x  Barbaracle
+    1.00  2.67x  Night Stretcher
+    1.00  4.00x  Fighting Gong
+    1.00  2.83x  Boss’s Orders
+    1.00  2.17x  Tarragon
+    0.83  0.83x  Legacy Energy
+    0.83  1.83x  Pokégear 3.0
+    0.83  1.33x  Tool Scrapper
+    0.67  2.00x  Judge
+    0.50  0.50x  Munkidori
+    0.50  1.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    2x Solrock
+    2x Poké Pad
+    1x Okidogi
+    1x Air Balloon
+    1x Lillie's Determination
+  sampled opponent hand (this search):
+    1x Tool Scrapper
+    1x Boss’s Orders
+    1x Pokégear 3.0
+    1x Morty’s Conviction
+    1x Basic {F} Energy
+
+Predicted line (principal variation):
+  1. [Evee] evolve -> bench[1]  (v=-0.0623)
+  2. [Evee] attach hand[1] -> bench[0]  (v=-0.0578)
+  3. [Evee] END turn  (v=-0.0658)
+  4. [opponent] play hand[1]  (v=-0.0855)
+  5. [opponent] card @ bench[1] (p0)  (v=-0.0984)
+  6. [opponent] attach hand[3] -> active[0]  (v=-0.1000)

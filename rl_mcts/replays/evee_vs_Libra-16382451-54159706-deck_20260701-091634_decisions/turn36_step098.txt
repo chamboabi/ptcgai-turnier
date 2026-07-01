@@ -1,0 +1,72 @@
+Turn 36  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.1707
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     634   -0.1453   -0.1404   0.188  END turn
+      61   -0.1744   -0.0747   0.107  attach Basic {D} Energy (hand[3]) -> Munkidori (bench[2])
+      60   -0.1737   -0.0815   0.115  attach Basic {D} Energy (hand[3]) -> Sylveon (bench[0])
+      59   -0.1701   -0.0786   0.111  attach Basic {G} Energy (hand[1]) -> Sylveon (bench[0])
+      59   -0.1749   -0.0827   0.099  attach Basic {G} Energy (hand[1]) -> Munkidori (bench[2])
+      51   -0.1484   -0.0828   0.072  attach Basic {G} Energy (hand[1]) -> Pecharunt (bench[1])
+      36   -0.1665   -0.0284   0.071  attach Basic {D} Energy (hand[3]) -> Pecharunt (bench[1])
+      27   -0.3525   -0.0630   0.095  play Crushing Hammer (hand[4])
+       8   -0.8913   -0.0561   0.072  attach Basic {G} Energy (hand[1]) -> Pecharunt (active[0])
+       5   -1.4169   -0.0302   0.071  attach Basic {D} Energy (hand[3]) -> Pecharunt (active[0])
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    4x Snorlax
+    1x Basic {P} Energy
+    1x Battle Cage
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=-0.1453)
+  2. [opponent] retreat  (v=-0.2105)
+  3. [opponent] energy x1 @ active[0]  (v=-0.2107)
+  4. [opponent] Abra @ bench[2] (p1)  (v=-0.2518)
+  5. [opponent] attach Basic {P} Energy (hand[4]) -> Abra (active[0])  (v=-0.2805)
+  6. [opponent] ability Dudunsparce  (v=-0.3108)
+  7. [opponent] play Snorlax (hand[0])  (v=-0.2925)
+  8. [opponent] ATTACK (attackId 1070)  (v=-0.3061)
+  9. [opponent] Alakazam @ bench[0] (p1)  (v=-0.1819)
+  10. [Evee] ability Munkidori  (v=+1.2811)
+  11. [Evee] Pecharunt @ active[0] (p0)  (v=+1.7501)
+  12. [Evee] number 2  (v=+2.4537)
+  13. [Evee] Alakazam @ active[0] (p1)  (v=+2.9599)
+  14. [Evee] END turn  (v=+2.9720)
+  15. [opponent] attach Basic {P} Energy (hand[5]) -> Dunsparce (bench[3])  (v=+2.9447)

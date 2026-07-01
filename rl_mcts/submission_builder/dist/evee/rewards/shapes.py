@@ -9,13 +9,14 @@ that already existed before the turn keeps paying on every MCTS leaf. Use
 `make_base_shape(obs0, your_index)` once per agent call to bake in that baseline.
 """
 
-from rewards.core import Observation, make_compound_shape
 from rewards.core import (
-    attached_energy_shape,
+    Observation,
     damage_taken_uncapped_shape,
     damage_uncapped_shape,
+    make_compound_shape,
     opp_discarded_energy_shape,
     play_card_penalty_shape,
+    prize_pressure_shape,
     small_opp_hand_shape,
     win_game_shape,
 )
@@ -26,7 +27,7 @@ from rewards.core import (
 
 WEIGHTS = {
     win_game_shape: 1.0,
-    attached_energy_shape: 0.001,
+    prize_pressure_shape: 0.3,
     damage_uncapped_shape: 0.1,
     damage_taken_uncapped_shape: 0.1,
     opp_discarded_energy_shape: 0.1,
@@ -38,19 +39,23 @@ WEIGHTS = {
 
 # Shapes scored as a delta from a per-turn baseline (read absolute board state).
 # Everything else is left as-is: win/loss outcome and per-step log events are
-# already deltas, so they need no baseline.
-_NEEDS_BASELINE = frozenset({
-    attached_energy_shape,
-    damage_uncapped_shape,
-    damage_taken_uncapped_shape,
-    opp_discarded_energy_shape,
-    small_opp_hand_shape,
-})
+# already deltas, so they need no baseline. prize_pressure is baselined so taking a
+# prize pays even when the KO'd mon leaves the board (board-damage signal vanishes).
+_NEEDS_BASELINE = frozenset(
+    {
+        prize_pressure_shape,
+        damage_uncapped_shape,
+        damage_taken_uncapped_shape,
+        opp_discarded_energy_shape,
+        small_opp_hand_shape,
+    }
+)
 
 
 # ============================================================
 #  Compound reward
 # ============================================================
+
 
 def make_base_shape(obs0: Observation, your_index: int):
     """Build the base reward shape for one agent call, freezing baselines from obs0.

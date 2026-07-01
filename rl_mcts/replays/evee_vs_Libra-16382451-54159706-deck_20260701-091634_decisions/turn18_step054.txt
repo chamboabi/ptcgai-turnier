@@ -1,0 +1,63 @@
+Turn 18  (action #4, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -2.3664
+CHOSEN: attach Basic {G} Energy (hand[2]) -> Pecharunt (bench[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     108   -2.3620   -0.2026   0.070  attach Basic {G} Energy (hand[2]) -> Pecharunt (bench[1])
+     103   -2.3682   -0.1697   0.076  attach Basic {P} Energy (hand[3]) -> Pecharunt (active[0])
+     102   -2.3626   -0.1697   0.076  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+     102   -2.3634   -0.1989   0.076  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])
+     102   -2.3634   -0.1989   0.076  attach Basic {P} Energy (hand[3]) -> Pecharunt (bench[1])
+     101   -2.3760   -0.1487   0.137  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])
+     101   -2.3695   -0.1477   0.108  attach Basic {G} Energy (hand[2]) -> Sylveon (bench[0])
+     101   -2.3760   -0.1487   0.137  attach Basic {P} Energy (hand[3]) -> Sylveon (bench[0])
+      96   -2.3818   +0.0920   0.175  END turn
+      84   -2.3636   -0.1780   0.070  attach Basic {G} Energy (hand[2]) -> Pecharunt (active[0])
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+    0.18  0.26x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    2x Snorlax
+    1x Lana’s Aid
+    1x Night Stretcher
+    1x Dawn
+    1x Enhanced Hammer
+    1x Shaymin
+    1x Basic {P} Energy
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {G} Energy (hand[2]) -> Pecharunt (bench[1])  (v=-2.3620)
+  2. [Evee] END turn  (v=-2.3822)
+  3. [opponent] ATTACK (attackId 1071)  (v=-3.0387)
+  4. [Evee] END turn  (v=-3.1058)
+  5. [opponent] attach Basic {P} Energy (hand[6]) -> Dunsparce (bench[3])  (v=-3.0045)
+  6. [opponent] END turn  (v=-3.0767)
+  7. [Evee] END turn  (v=-2.9631)

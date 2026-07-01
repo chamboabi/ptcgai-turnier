@@ -1,0 +1,507 @@
+{
+  "turn": 11,
+  "turn_action_count": 2,
+  "acting_player_index": 0,
+  "selecting": "MAIN / MAIN",
+  "root_value": 0.3016,
+  "chosen_action": "play hand[1]",
+  "candidates": [
+    {
+      "action": "play hand[1]",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0966,
+      "nn_value": 0.3121,
+      "visits": 536,
+      "search_mean_value": 0.3139,
+      "expanded": true,
+      "policy_target": 0.0123
+    },
+    {
+      "action": "play hand[0]",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0589,
+      "nn_value": 0.3278,
+      "visits": 119,
+      "search_mean_value": 0.3093,
+      "expanded": true,
+      "policy_target": 0.0077
+    },
+    {
+      "action": "play hand[6]",
+      "select": [
+        18
+      ],
+      "nn_policy_prior": 0.0589,
+      "nn_value": 0.3278,
+      "visits": 119,
+      "search_mean_value": 0.3093,
+      "expanded": true,
+      "policy_target": 0.0077
+    },
+    {
+      "action": "attach hand[3] -> active[0]",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.083,
+      "nn_value": 0.3008,
+      "visits": 33,
+      "search_mean_value": 0.2757,
+      "expanded": true,
+      "policy_target": -0.026
+    },
+    {
+      "action": "attach hand[3] -> bench[1]",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0933,
+      "nn_value": 0.2727,
+      "visits": 25,
+      "search_mean_value": 0.2634,
+      "expanded": true,
+      "policy_target": -0.0382
+    },
+    {
+      "action": "attach hand[3] -> bench[0]",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0941,
+      "nn_value": 0.2709,
+      "visits": 22,
+      "search_mean_value": 0.2488,
+      "expanded": true,
+      "policy_target": -0.0528
+    },
+    {
+      "action": "attach hand[3] -> bench[2]",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.083,
+      "nn_value": 0.2738,
+      "visits": 21,
+      "search_mean_value": 0.2684,
+      "expanded": true,
+      "policy_target": -0.0332
+    },
+    {
+      "action": "evolve -> bench[1]",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.0513,
+      "nn_value": 0.272,
+      "visits": 21,
+      "search_mean_value": 0.2846,
+      "expanded": true,
+      "policy_target": -0.017
+    },
+    {
+      "action": "attach hand[3] -> bench[3]",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.083,
+      "nn_value": 0.2738,
+      "visits": 17,
+      "search_mean_value": 0.2573,
+      "expanded": true,
+      "policy_target": -0.0443
+    },
+    {
+      "action": "attach hand[2] -> bench[1]",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0296,
+      "nn_value": 0.2782,
+      "visits": 10,
+      "search_mean_value": 0.2614,
+      "expanded": true,
+      "policy_target": -0.0402
+    },
+    {
+      "action": "attach hand[5] -> bench[0]",
+      "select": [
+        14
+      ],
+      "nn_policy_prior": 0.0329,
+      "nn_value": 0.2799,
+      "visits": 10,
+      "search_mean_value": 0.2738,
+      "expanded": true,
+      "policy_target": -0.0278
+    },
+    {
+      "action": "attach hand[5] -> bench[1]",
+      "select": [
+        15
+      ],
+      "nn_policy_prior": 0.0296,
+      "nn_value": 0.2782,
+      "visits": 10,
+      "search_mean_value": 0.2676,
+      "expanded": true,
+      "policy_target": -0.0341
+    },
+    {
+      "action": "attach hand[5] -> bench[2]",
+      "select": [
+        16
+      ],
+      "nn_policy_prior": 0.0244,
+      "nn_value": 0.2849,
+      "visits": 10,
+      "search_mean_value": 0.2683,
+      "expanded": true,
+      "policy_target": -0.0333
+    },
+    {
+      "action": "attach hand[2] -> bench[0]",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0329,
+      "nn_value": 0.2799,
+      "visits": 9,
+      "search_mean_value": 0.2629,
+      "expanded": true,
+      "policy_target": -0.0388
+    },
+    {
+      "action": "attach hand[2] -> bench[2]",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0244,
+      "nn_value": 0.2849,
+      "visits": 9,
+      "search_mean_value": 0.2619,
+      "expanded": true,
+      "policy_target": -0.0397
+    },
+    {
+      "action": "attach hand[2] -> bench[3]",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0244,
+      "nn_value": 0.2849,
+      "visits": 9,
+      "search_mean_value": 0.2607,
+      "expanded": true,
+      "policy_target": -0.0409
+    },
+    {
+      "action": "attach hand[5] -> active[0]",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.0244,
+      "nn_value": 0.2539,
+      "visits": 9,
+      "search_mean_value": 0.28,
+      "expanded": true,
+      "policy_target": -0.0217
+    },
+    {
+      "action": "attach hand[2] -> active[0]",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0244,
+      "nn_value": 0.2539,
+      "visits": 7,
+      "search_mean_value": 0.2725,
+      "expanded": true,
+      "policy_target": -0.0292
+    },
+    {
+      "action": "attach hand[5] -> bench[3]",
+      "select": [
+        17
+      ],
+      "nn_policy_prior": 0.0244,
+      "nn_value": 0.2849,
+      "visits": 3,
+      "search_mean_value": 0.1687,
+      "expanded": true,
+      "policy_target": -0.133
+    },
+    {
+      "action": "END turn",
+      "select": [
+        19
+      ],
+      "nn_policy_prior": 0.0267,
+      "nn_value": -0.1001,
+      "visits": 1,
+      "search_mean_value": -0.1001,
+      "expanded": true,
+      "policy_target": -0.4017
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Fighting Gong": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Archaludon Metal": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 12,
+        "name": "Legacy Energy",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1052,
+        "name": "Barbaracle",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1097,
+        "name": "Night Stretcher",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 1238,
+        "name": "Tarragon",
+        "probability": 1.0,
+        "expected_copies": 2.0
+      },
+      {
+        "card_id": 1256,
+        "name": "Team Rocket's Watchtower",
+        "probability": 1.0,
+        "expected_copies": 3.0
+      },
+      {
+        "card_id": 7,
+        "name": "Basic {D} Energy",
+        "probability": 0.3333,
+        "expected_copies": 0.3333
+      },
+      {
+        "card_id": 112,
+        "name": "Munkidori",
+        "probability": 0.3333,
+        "expected_copies": 0.3333
+      },
+      {
+        "card_id": 1187,
+        "name": "Morty’s Conviction",
+        "probability": 0.3333,
+        "expected_copies": 0.6667
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 6,
+        "name": "Basic {F} Energy",
+        "count": 4
+      },
+      {
+        "id": 676,
+        "name": "Solrock",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 3
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 2
+      },
+      {
+        "id": 1142,
+        "name": "Fighting Gong",
+        "count": 2
+      },
+      {
+        "id": 116,
+        "name": "Okidogi",
+        "count": 1
+      },
+      {
+        "id": 675,
+        "name": "Lunatone",
+        "count": 1
+      },
+      {
+        "id": 1051,
+        "name": "Binacle",
+        "count": 1
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 1
+      },
+      {
+        "id": 1174,
+        "name": "Air Balloon",
+        "count": 1
+      },
+      {
+        "id": 1137,
+        "name": "Tool Scrapper",
+        "count": 1
+      },
+      {
+        "id": 1213,
+        "name": "Judge",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 16,
+        "name": "Prism Energy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 16
+      },
+      {
+        "id": 1256,
+        "name": "Team Rocket's Watchtower",
+        "count": 3
+      },
+      {
+        "id": 1238,
+        "name": "Tarragon",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 1187,
+        "name": "Morty’s Conviction",
+        "count": 1
+      },
+      {
+        "id": 1052,
+        "name": "Barbaracle",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 1052,
+        "name": "Barbaracle",
+        "count": 1
+      },
+      {
+        "id": 1187,
+        "name": "Morty’s Conviction",
+        "count": 1
+      },
+      {
+        "id": 12,
+        "name": "Legacy Energy",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 5
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play hand[1]",
+      "value": 0.3139
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play hand[1]",
+      "value": 0.3233
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[5] (p0)",
+      "value": 0.3231
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[6] (p0)",
+      "value": 0.3223
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[14] (p0)",
+      "value": 0.3222
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play hand[1]",
+      "value": 0.3154
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[5] (p0)",
+      "value": 0.3137
+    }
+  ]
+}

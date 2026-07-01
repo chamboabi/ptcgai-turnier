@@ -21,7 +21,6 @@ import torch.nn.functional
 
 import deck_predict
 import rewards
-
 from cg.api import (
     AreaType,
     Card,
@@ -54,10 +53,13 @@ DECODER_ATTACK_OFFSET = 14
 
 # MCTS knobs. SEARCH_COUNT trades strength for time; raise for stronger play if
 # the per-turn time budget allows (repo training used 3000).
-SEARCH_COUNT = 3000
+SEARCH_COUNT = 500
 MAX_ACTION_COMBINATIONS = 64
 UCB_EXPLORATION = 0.4
-POLICY_TEMPERATURE = 10.0
+# Multiplies policy logits inside exp() -> higher = sharper prior. At 10 an untrained
+# model's prior collapses near one-hot and PUCT starves low-prior actions (e.g. ATTACK)
+# of all exploration. Keep in sync with config.json mcts.policy_temperature.
+POLICY_TEMPERATURE = 1.0
 UNVISITED_PENALTY = 0.03
 
 _UNKNOWN = 1072  # filler card id for hidden opponent cards
@@ -442,7 +444,9 @@ def create_node(parent, search_state, your_index, deck, model, reward_fn):
         value, policy = eval_nn(sv_enc, sv_dec, model)
         # shape bends the NN value before it is backed up through the tree, so it
         # steers MCTS toward good intermediate states (same as training mcts.py).
-        shaped = reward_fn.shape(obs, your_index, value)
+        # Shape from the side-to-move so the negation below stays consistent (a
+        # one-sided bonus must not be flipped at opponent nodes).
+        shaped = reward_fn.shape(obs, state.yourIndex, value)
         v = shaped if state.yourIndex == your_index else -shaped
         node.value = v
         node.backprop(v)

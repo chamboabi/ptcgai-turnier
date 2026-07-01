@@ -1,0 +1,62 @@
+Turn 32  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0190
+CHOSEN: attach Basic {P} Energy (hand[1]) -> Munkidori (bench[2])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     670   +0.0140   +0.0241   0.102  attach Basic {P} Energy (hand[1]) -> Munkidori (bench[2])
+     166   -0.0382   -0.0066   0.054  play Night Stretcher (hand[3])
+      54   -0.1065   -0.0047   0.218  play Judge (hand[2])
+      32   -0.1616   +0.0256   0.111  attach Basic {P} Energy (hand[1]) -> Sylveon (bench[0])
+      27   -0.1435   -0.0036   0.249  retreat
+      25   -0.0998   -0.0103   0.061  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+      22   -0.1191   -0.0240   0.061  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[1])
+       4   -0.5262   -0.0483   0.143  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Buddy-Buddy Poffin
+    1x Hilda
+    1x Poké Pad
+  sampled opponent hand (this search):
+    6x Snorlax
+    1x Sacred Ash
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {P} Energy (hand[1]) -> Munkidori (bench[2])  (v=+0.0140)
+  2. [Evee] play Judge (hand[1])  (v=+0.0260)
+  3. [Evee] play Energy Search Pro (hand[2])  (v=+0.0393)
+  4. [Evee] card @ deck[6] (p0)  (v=+0.0171)
+  5. [Evee] card @ deck[4] (p0)  (v=-0.0112)
+  6. [Evee] retreat  (v=+0.0468)
+  7. [Evee] energy x1 @ active[0]  (v=+0.0465)
+  8. [Evee] Sylveon @ bench[0] (p0)  (v=+0.0634)
+  9. [Evee] play Pecharunt (hand[2])  (v=+0.1548)

@@ -1,0 +1,61 @@
+Turn 6  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0293
+CHOSEN: attach Basic {P} Energy (hand[5]) -> Sylveon (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     532   +0.0349   -0.1724   0.109  attach Basic {P} Energy (hand[5]) -> Sylveon (active[0])
+     161   +0.0249   +0.3060   0.133  END turn
+     146   +0.0564   -0.2344   0.084  play Lillie's Determination (hand[2])
+      98   +0.0258   -0.1702   0.087  attach Basic {G} Energy (hand[4]) -> Sylveon (active[0])
+      49   -0.0139   -0.1949   0.217  play Judge (hand[3])
+       4   -0.2016   -0.2450   0.084  play Lillie's Determination (hand[6])
+       2   -0.2395   -0.2354   0.053  play Night Stretcher (hand[0])
+       2   -0.2270   -0.2414   0.056  attach Basic {G} Energy (hand[4]) -> Pecharunt (bench[0])
+       2   -0.2386   -0.2414   0.056  attach Basic {G} Energy (hand[4]) -> Pecharunt (bench[1])
+       2   -0.2262   -0.2448   0.061  attach Basic {P} Energy (hand[5]) -> Pecharunt (bench[0])
+       2   -0.2460   -0.2448   0.061  attach Basic {P} Energy (hand[5]) -> Pecharunt (bench[1])
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    2x Hilda
+    1x Dudunsparce
+    1x Telepath Psychic Energy
+    1x Battle Cage
+    1x Rare Candy
+    1x Dunsparce
+    1x Poké Pad
+    1x Xerosic’s Machinations
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {P} Energy (hand[5]) -> Sylveon (active[0])  (v=+0.0349)
+  2. [Evee] play Judge (hand[3])  (v=+0.0459)
+  3. [Evee] play Pecharunt (hand[1])  (v=+0.0513)
+  4. [Evee] END turn  (v=+0.0608)
+  5. [opponent] play Boss’s Orders (hand[3])  (v=+0.0362)
+  6. [opponent] Pecharunt @ bench[0] (p0)  (v=+0.0181)
+  7. [opponent] END turn  (v=-0.0246)
+  8. [Evee] END turn  (v=+0.0626)
+  9. [opponent] play Xerosic’s Machinations (hand[2])  (v=+0.0293)
+  10. [Evee] Espeon ex @ hand[2] (p0)  (v=+0.0264)
+  11. [opponent] END turn  (v=-0.1403)

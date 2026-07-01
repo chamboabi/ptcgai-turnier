@@ -1,0 +1,47 @@
+Turn 1  (action #3, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -1.1955
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     753   -1.1936   +0.4119   0.638  retreat
+     247   -1.2077   -0.5008   0.362  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 87%, Mega Starmie 12%, Mega Lucario ex 0%, Team Rocket's Petrel 0%, Carmine 0%
+  likely cards (P, E[copies]):
+    1.00  3.98x  Lillie's Determination
+    0.99  2.93x  Night Stretcher
+    0.99  3.95x  Pokégear 3.0
+    0.99  0.99x  Hero’s Cape
+    0.98  3.60x  Ultra Ball
+    0.98  3.28x  Boss’s Orders
+    0.89  3.55x  Poké Pad
+    0.87  9.79x  Basic {M} Energy
+    0.87  3.48x  Duraludon
+    0.87  3.48x  Archaludon ex
+    0.87  3.35x  Jumbo Ice Cream
+    0.86  3.42x  Explorer’s Guidance
+    0.86  3.37x  Full Metal Lab
+    0.81  0.81x  Relicanth
+    0.13  1.25x  Basic {W} Energy
+  known (visible) opponent cards:
+    1x Cinderace
+  sampled opponent hand (this search):
+    2x Lillie's Determination
+    1x Crushing Hammer
+    1x Pokégear 3.0
+    1x Night Stretcher
+    1x Explorer’s Guidance
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=-1.1936)
+  2. [Evee] energy x1 @ active[0]  (v=-1.1957)
+  3. [Evee] Pecharunt @ bench[1] (p0)  (v=-1.1896)
+  4. [Evee] END turn  (v=-1.1936)
+  5. [opponent] play Lillie's Determination (hand[4])  (v=-0.2781)
+  6. [opponent] play Ultra Ball (hand[3])  (v=-0.2908)
+  7. [opponent] Hilda @ hand[0] (p1) + Jumbo Ice Cream @ hand[3] (p1)  (v=-0.2468)
+  8. [opponent] card @ deck[19] (p1)  (v=-0.0441)
+  9. [opponent] END turn  (v=+0.4261)

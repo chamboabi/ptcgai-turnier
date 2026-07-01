@@ -1,0 +1,54 @@
+Turn 15  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.1893
+CHOSEN: play Hand Trimmer (hand[1])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     954   +0.1985   -0.3891   0.333  play Hand Trimmer (hand[1])
+      15   -0.0038   +0.3306   0.230  play Night Stretcher (hand[3])
+      11   +0.0206   +0.3318   0.084  retreat
+       9   +0.0167   +0.3364   0.115  play Energy Search (hand[0])
+       9   +0.0167   +0.3364   0.115  play Energy Search (hand[4])
+       2   -0.3585   -0.3628   0.122  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    5x Snorlax
+    3x Pokégear 3.0
+    1x Explorer’s Guidance
+    1x Jumbo Ice Cream
+    1x Poké Pad
+    1x Full Metal Lab
+
+Predicted line (principal variation):
+  1. [Evee] play Hand Trimmer (hand[1])  (v=+0.1985)
+  2. [opponent] Snorlax @ hand[0] (p1) + Explorer’s Guidance @ hand[1] (p1) + Jumbo Ice Cream @ hand[2] (p1) + Snorlax @ hand[3] (p1) + Snorlax @ hand[5] (p1) + Poké Pad @ hand[8] (p1) + Full Metal Lab @ hand[10] (p1)  (v=+0.1843)
+  3. [Evee] play Energy Search (hand[0])  (v=+0.1849)
+  4. [Evee] card @ deck[15] (p0)  (v=+0.1866)
+  5. [Evee] play Energy Search (hand[2])  (v=+0.2195)
+  6. [Evee] card @ deck[4] (p0)  (v=+0.1369)
+  7. [Evee] play Night Stretcher (hand[1])  (v=+0.3952)

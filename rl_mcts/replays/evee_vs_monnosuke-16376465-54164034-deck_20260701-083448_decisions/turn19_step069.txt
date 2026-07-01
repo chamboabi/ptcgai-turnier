@@ -1,0 +1,68 @@
+Turn 19  (action #12, P0 Evee)
+Selecting: CARD / SWITCH
+Root value: +0.3924
+CHOSEN: card @ bench[3] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     979   +0.4254   +0.2831   0.180  card @ bench[3] (p0)
+       6   -0.5654   +0.2947   0.225  card @ bench[0] (p0)
+       5   -1.4405   +0.3275   0.225  card @ bench[1] (p0)
+       5   -1.4373   +0.3191   0.225  card @ bench[2] (p0)
+       5   -1.2454   +0.2942   0.145  card @ bench[4] (p0)
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    7x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    3x Fighting Gong
+    2x Lillie's Determination
+    2x Judge
+    2x Boss’s Orders
+    1x Okidogi
+    1x Lunatone
+    1x Barbaracle
+    1x Binacle
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Prism Energy
+    1x Night Stretcher
+    1x Tarragon
+  sampled opponent hand (this search):
+    4x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] card @ bench[3] (p0)  (v=+0.4254)
+  2. [Evee] evolve -> bench[4]  (v=+0.4290)
+  3. [Evee] END turn  (v=+0.4292)
+  4. [opponent] END turn  (v=+0.4067)
+  5. [Evee] attach hand[4] -> bench[4]  (v=+0.4339)
+  6. [Evee] END turn  (v=+0.4342)
+  7. [opponent] END turn  (v=+0.4088)
+  8. [Evee] attach hand[2] -> bench[4]  (v=+0.4283)
+  9. [Evee] END turn  (v=+0.4285)
+  10. [opponent] END turn  (v=+0.4008)
+  11. [Evee] attach hand[4] -> bench[4]  (v=+0.4265)
+  12. [Evee] END turn  (v=+0.4268)
+  13. [opponent] END turn  (v=+0.3960)
+  14. [Evee] attach hand[4] -> bench[4]  (v=+0.4259)
+  15. [Evee] END turn  (v=+0.4262)
+  16. [opponent] END turn  (v=+0.3909)
+  17. [Evee] attach hand[1] -> bench[4]  (v=+0.3955)
+  18. [Evee] END turn  (v=+0.3959)
+  19. [opponent] END turn  (v=+0.3367)
+  20. [Evee] attach hand[4] -> bench[4]  (v=+0.3671)
+  21. [Evee] END turn  (v=+0.3675)
+  22. [opponent] END turn  (v=+0.3197)
+  23. [Evee] play hand[4]  (v=+0.3536)
+  24. [opponent] card @ hand[0] (p1) + card @ hand[1] (p1) + card @ hand[2] (p1) + card @ hand[3] (p1) + card @ hand[4] (p1) + card @ hand[5] (p1)  (v=+0.3550)
+  25. [Evee] attach hand[1] -> active[0]  (v=+0.3392)

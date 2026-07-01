@@ -13,13 +13,13 @@ from collections import Counter
 from dataclasses import dataclass
 from typing import Callable
 
-from cg.api import AreaType, CardType, LogType, Observation, all_attack, all_card_data
+from cg.api import AreaType, CardData, CardType, LogType, Observation, all_attack, all_card_data
 
 ENERGY_IDS = frozenset(
     cd.cardId for cd in all_card_data() if cd.cardType in (CardType.BASIC_ENERGY, CardType.SPECIAL_ENERGY)
 )
 ATTACK_BY_ID = {a.attackId: a for a in all_attack()}
-CARD_BY_ID = {cd.cardId: cd for cd in all_card_data()}
+CARD_BY_ID: CardData = {cd.cardId: cd for cd in all_card_data()}
 ENERGY_NEEDED = {
     cd.cardId: max(
         (len(ATTACK_BY_ID[aid].energies) for aid in cd.attacks if aid in ATTACK_BY_ID),
@@ -326,6 +326,9 @@ def opp_active_is_ex(obs: Observation, your_index: int) -> bool:
     if not active or active[0] is None:
         return False
     cd = CARD_BY_ID.get(active[0].id)
+    if cd is not None and cd.ex:
+        print("I see a EX card called:", cd.name)
+
     return cd is not None and cd.ex
 
 
@@ -560,12 +563,17 @@ def _shape_contribution(shape_fn: RewardShapeFn, obs: Observation, your_index: i
     return shape_fn(obs, your_index, 0.0, weight=weight)
 
 
-def _delta_shape(shape_fn: RewardShapeFn, weight: float, baseline: float) -> RewardShapeFn:
-    """Wrap an absolute shape to score current contribution minus a frozen baseline."""
+def _delta_shape(shape_fn: RewardShapeFn, weight: float, baselines: dict[int, float]) -> RewardShapeFn:
+    """Wrap an absolute shape to score current contribution minus a frozen baseline.
+
+    `baselines` holds one frozen contribution per player index, because mcts shapes
+    each node from the side-to-move's perspective (which flips during search); the
+    delta is taken against the baseline for that same side.
+    """
 
     def shape(obs: Observation, your_index: int, nn_value: float) -> float:
         now = shape_fn(obs, your_index, 0.0, weight=weight)
-        return nn_value + (now - baseline)
+        return nn_value + (now - baselines[your_index])
 
     return shape
 
@@ -578,14 +586,18 @@ def make_compound_shape(weights, needs_baseline, obs0: Observation, your_index: 
     baseline snapshotted at the search root. Per-step-log and outcome shapes are
     already deltas, so they are left as plain weighted shapes.
 
+    Baselines are frozen for BOTH player perspectives (the search shapes opponent
+    nodes from the opponent's side-to-move view), so the `your_index` argument is
+    unused here and kept only to satisfy the ShapeFactoryFn signature.
+
     Call once per turn at the search root; reuse the returned fn for every MCTS
     leaf eval. Re-snapshot next turn.
     """
     parts = []
     for fn, w in weights.items():
         if fn in needs_baseline:
-            baseline = _shape_contribution(fn, obs0, your_index, w)
-            parts.append(_delta_shape(fn, w, baseline))
+            baselines = {i: _shape_contribution(fn, obs0, i, w) for i in (0, 1)}
+            parts.append(_delta_shape(fn, w, baselines))
         else:
             parts.append(functools.partial(fn, weight=w))
     return compose_shapes(*parts)

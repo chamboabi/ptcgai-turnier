@@ -1,0 +1,56 @@
+Turn 21  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.0919
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     926   +0.1067   -0.1100   0.318  END turn
+      74   -0.0956   +0.3171   0.682  retreat
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    7x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    3x Lillie's Determination
+    3x Fighting Gong
+    3x Night Stretcher
+    2x Air Balloon
+    2x Prism Energy
+    2x Judge
+    2x Boss’s Orders
+    1x Barbaracle
+    1x Binacle
+    1x Lunatone
+    1x Okidogi
+    1x Pokégear 3.0
+    1x Tool Scrapper
+    1x Tarragon
+  sampled opponent hand (this search):
+    6x Snorlax
+    1x Munkidori
+    1x Team Rocket's Watchtower
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.1067)
+  2. [opponent] END turn  (v=+0.0930)
+  3. [Evee] attach hand[1] -> bench[2]  (v=+0.0861)
+  4. [Evee] retreat  (v=+0.0910)
+  5. [Evee] energy x1 @ active[0]  (v=+0.0886)
+  6. [Evee] card @ bench[2] (p0)  (v=+0.1211)
+  7. [Evee] ATTACK (attackId 1296)  (v=+0.1353)
+  8. [opponent] retreat  (v=+0.0301)
+  9. [opponent] card @ bench[0] (p1)  (v=+1.7691)
+  10. [opponent] ATTACK (attackId 979)  (v=+1.7385)
+  11. [Evee] card @ deck[8] (p0)  (v=+2.1553)
+  12. [opponent] card @ prize[2] (p1)  (v=+2.1765)
+  13. [Evee] card @ bench[4] (p0)  (v=+2.1997)
+  14. [Evee] attach hand[1] -> active[0]  (v=+2.1864)

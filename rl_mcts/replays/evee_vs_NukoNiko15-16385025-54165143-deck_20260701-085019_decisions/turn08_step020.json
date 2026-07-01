@@ -1,0 +1,786 @@
+{
+  "turn": 8,
+  "turn_action_count": 5,
+  "acting_player_index": 0,
+  "selecting": "CARD / TO_HAND",
+  "root_value": 8.0096,
+  "chosen_action": "card @ deck[24] (p0)",
+  "candidates": [
+    {
+      "action": "card @ deck[24] (p0)",
+      "select": [
+        24
+      ],
+      "nn_policy_prior": 0.046,
+      "nn_value": 7.2858,
+      "visits": 959,
+      "search_mean_value": 8.0485,
+      "expanded": true,
+      "policy_target": 0.0389
+    },
+    {
+      "action": "card @ deck[0] (p0)",
+      "select": [
+        0
+      ],
+      "nn_policy_prior": 0.0175,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[1] (p0)",
+      "select": [
+        1
+      ],
+      "nn_policy_prior": 0.0149,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[2] (p0)",
+      "select": [
+        2
+      ],
+      "nn_policy_prior": 0.0261,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[3] (p0)",
+      "select": [
+        3
+      ],
+      "nn_policy_prior": 0.0186,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[4] (p0)",
+      "select": [
+        4
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[5] (p0)",
+      "select": [
+        5
+      ],
+      "nn_policy_prior": 0.0152,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[6] (p0)",
+      "select": [
+        6
+      ],
+      "nn_policy_prior": 0.0261,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[7] (p0)",
+      "select": [
+        7
+      ],
+      "nn_policy_prior": 0.0406,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[8] (p0)",
+      "select": [
+        8
+      ],
+      "nn_policy_prior": 0.0406,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[9] (p0)",
+      "select": [
+        9
+      ],
+      "nn_policy_prior": 0.0255,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[10] (p0)",
+      "select": [
+        10
+      ],
+      "nn_policy_prior": 0.0344,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[11] (p0)",
+      "select": [
+        11
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[12] (p0)",
+      "select": [
+        12
+      ],
+      "nn_policy_prior": 0.0241,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[13] (p0)",
+      "select": [
+        13
+      ],
+      "nn_policy_prior": 0.017,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[14] (p0)",
+      "select": [
+        14
+      ],
+      "nn_policy_prior": 0.0255,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[15] (p0)",
+      "select": [
+        15
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[16] (p0)",
+      "select": [
+        16
+      ],
+      "nn_policy_prior": 0.0175,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[17] (p0)",
+      "select": [
+        17
+      ],
+      "nn_policy_prior": 0.0145,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[18] (p0)",
+      "select": [
+        18
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[19] (p0)",
+      "select": [
+        19
+      ],
+      "nn_policy_prior": 0.0255,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[20] (p0)",
+      "select": [
+        20
+      ],
+      "nn_policy_prior": 0.013,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[21] (p0)",
+      "select": [
+        21
+      ],
+      "nn_policy_prior": 0.0328,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[22] (p0)",
+      "select": [
+        22
+      ],
+      "nn_policy_prior": 0.0157,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[23] (p0)",
+      "select": [
+        23
+      ],
+      "nn_policy_prior": 0.0241,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[25] (p0)",
+      "select": [
+        25
+      ],
+      "nn_policy_prior": 0.0261,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[26] (p0)",
+      "select": [
+        26
+      ],
+      "nn_policy_prior": 0.0406,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[27] (p0)",
+      "select": [
+        27
+      ],
+      "nn_policy_prior": 0.046,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[28] (p0)",
+      "select": [
+        28
+      ],
+      "nn_policy_prior": 0.0157,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[29] (p0)",
+      "select": [
+        29
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[30] (p0)",
+      "select": [
+        30
+      ],
+      "nn_policy_prior": 0.0152,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[31] (p0)",
+      "select": [
+        31
+      ],
+      "nn_policy_prior": 0.0157,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[32] (p0)",
+      "select": [
+        32
+      ],
+      "nn_policy_prior": 0.0261,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[33] (p0)",
+      "select": [
+        33
+      ],
+      "nn_policy_prior": 0.0241,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[34] (p0)",
+      "select": [
+        34
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[35] (p0)",
+      "select": [
+        35
+      ],
+      "nn_policy_prior": 0.0255,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[36] (p0)",
+      "select": [
+        36
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[37] (p0)",
+      "select": [
+        37
+      ],
+      "nn_policy_prior": 0.0157,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[38] (p0)",
+      "select": [
+        38
+      ],
+      "nn_policy_prior": 0.0175,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[39] (p0)",
+      "select": [
+        39
+      ],
+      "nn_policy_prior": 0.0241,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[40] (p0)",
+      "select": [
+        40
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    },
+    {
+      "action": "card @ deck[41] (p0)",
+      "select": [
+        41
+      ],
+      "nn_policy_prior": 0.0214,
+      "nn_value": 7.2858,
+      "visits": 1,
+      "search_mean_value": 7.2858,
+      "expanded": true,
+      "policy_target": -0.7238
+    }
+  ],
+  "opponent_belief": {
+    "archetype_probs": {
+      "Archaludon Metal": 1.0,
+      "Alakazam Psychic (B)": 0.0,
+      "Mega Lucario ex": 0.0,
+      "Postwick": 0.0,
+      "Dragapult": 0.0,
+      "Mega Starmie": 0.0,
+      "Rare Candy": 0.0,
+      "Munkidori": 0.0,
+      "Canari": 0.0,
+      "Dawn": 0.0,
+      "Cynthia's Garchomp": 0.0,
+      "Alakazam Psychic": 0.0,
+      "Team Rocket's Ariana": 0.0,
+      "Team Rocket's Petrel": 0.0,
+      "Hop’s Choice Band": 0.0,
+      "Festival Grounds": 0.0,
+      "Snorunt": 0.0,
+      "Fighting Gong": 0.0,
+      "Carmine": 0.0,
+      "Switch": 0.0,
+      "Area Zero Underdepths": 0.0
+    },
+    "card_predictions": [
+      {
+        "card_id": 190,
+        "name": "Archaludon ex",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1122,
+        "name": "Pokégear 3.0",
+        "probability": 1.0,
+        "expected_copies": 3.9747
+      },
+      {
+        "card_id": 1147,
+        "name": "Jumbo Ice Cream",
+        "probability": 1.0,
+        "expected_copies": 3.9343
+      },
+      {
+        "card_id": 1152,
+        "name": "Poké Pad",
+        "probability": 1.0,
+        "expected_copies": 4.0
+      },
+      {
+        "card_id": 1159,
+        "name": "Hero’s Cape",
+        "probability": 1.0,
+        "expected_copies": 1.0
+      },
+      {
+        "card_id": 1185,
+        "name": "Explorer’s Guidance",
+        "probability": 0.9949,
+        "expected_copies": 3.9495
+      },
+      {
+        "card_id": 1244,
+        "name": "Full Metal Lab",
+        "probability": 0.9848,
+        "expected_copies": 3.8737
+      },
+      {
+        "card_id": 1213,
+        "name": "Judge",
+        "probability": 0.1162,
+        "expected_copies": 0.1414
+      },
+      {
+        "card_id": 1197,
+        "name": "Xerosic’s Machinations",
+        "probability": 0.0505,
+        "expected_copies": 0.0859
+      },
+      {
+        "card_id": 1087,
+        "name": "Hand Trimmer",
+        "probability": 0.0303,
+        "expected_copies": 0.0556
+      },
+      {
+        "card_id": 1102,
+        "name": "Dusk Ball",
+        "probability": 0.0101,
+        "expected_copies": 0.0101
+      },
+      {
+        "card_id": 1192,
+        "name": "Carmine",
+        "probability": 0.0101,
+        "expected_copies": 0.0253
+      }
+    ],
+    "known_opponent_cards": [
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 8
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 1
+      },
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 1
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_deck": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 13
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 4
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 4
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 3
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 3
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 1213,
+        "name": "Judge",
+        "count": 1
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_hand": [
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 1
+      }
+    ],
+    "sampled_opponent_prize": [
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 2
+      },
+      {
+        "id": 1072,
+        "name": "Snorlax",
+        "count": 2
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 1
+      }
+    ]
+  },
+  "predicted_line": [
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "card @ deck[24] (p0)",
+      "value": 8.0485
+    },
+    {
+      "actor": "opponent",
+      "player_index": 1,
+      "action": "Explorer’s Guidance @ prize[0] (p1)",
+      "value": 8.0395
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "Pecharunt @ bench[0] (p0)",
+      "value": 8.0396
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Eevee (hand[4])",
+      "value": 8.0461
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Eevee (hand[2])",
+      "value": 8.0757
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Eevee (hand[2])",
+      "value": 8.1385
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])",
+      "value": 8.122
+    },
+    {
+      "actor": "Evee",
+      "player_index": 0,
+      "action": "play Carmine (hand[1])",
+      "value": 8.3586
+    }
+  ]
+}

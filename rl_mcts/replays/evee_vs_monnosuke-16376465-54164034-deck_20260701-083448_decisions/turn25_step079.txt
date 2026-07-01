@@ -1,0 +1,64 @@
+Turn 25  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.3926
+CHOSEN: retreat
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     775   +1.7251   +0.3274   0.182  retreat
+      98   +0.2708   +0.3151   0.115  play hand[4]
+      24   +0.2310   +0.3235   0.161  attach hand[1] -> bench[4]
+      23   +0.2406   +0.3014   0.109  attach hand[1] -> active[0]
+      21   +0.2379   +0.3278   0.081  attach hand[1] -> bench[2]
+      20   +0.2336   +0.3277   0.107  attach hand[1] -> bench[3]
+      19   +0.2486   +0.3264   0.081  attach hand[1] -> bench[0]
+      19   +0.2506   +0.3304   0.081  attach hand[1] -> bench[1]
+       1   -0.0885   -0.0885   0.085  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.14  0.14x  Basic {D} Energy
+    0.14  0.14x  Munkidori
+    0.14  0.29x  Morty’s Conviction
+  known (visible) opponent cards:
+    7x Basic {F} Energy
+    4x Poké Pad
+    3x Solrock
+    3x Lillie's Determination
+    3x Boss’s Orders
+    3x Fighting Gong
+    3x Night Stretcher
+    2x Air Balloon
+    2x Prism Energy
+    2x Pokégear 3.0
+    2x Judge
+    2x Tarragon
+    1x Barbaracle
+    1x Binacle
+    1x Lunatone
+    1x Okidogi
+    1x Tool Scrapper
+  sampled opponent hand (this search):
+    6x Snorlax
+    2x Team Rocket's Watchtower
+    1x Morty’s Conviction
+    1x Basic {D} Energy
+
+Predicted line (principal variation):
+  1. [Evee] retreat  (v=+1.7251)
+  2. [Evee] energy x1 @ active[0]  (v=+1.7269)
+  3. [Evee] card @ bench[0] (p0)  (v=+1.8197)
+  4. [Evee] ATTACK (attackId 1296)  (v=+1.8479)
+  5. [opponent] retreat  (v=+1.8332)
+  6. [opponent] card @ bench[0] (p1)  (v=+1.8203)
+  7. [opponent] play hand[2]  (v=+1.7963)
+  8. [opponent] card @ hand[3] (p1)  (v=+1.7951)
+  9. [opponent] attach hand[2] -> active[0]  (v=+1.8138)
+  10. [opponent] ATTACK (attackId 979)  (v=+1.7830)
+  11. [Evee] card @ deck[0] (p0)  (v=+2.1997)
+  12. [opponent] card @ prize[1] (p1)  (v=+2.2243)
+  13. [Evee] card @ bench[0] (p0)  (v=+2.2020)
+  14. [Evee] attach hand[1] -> bench[3]  (v=+2.2040)

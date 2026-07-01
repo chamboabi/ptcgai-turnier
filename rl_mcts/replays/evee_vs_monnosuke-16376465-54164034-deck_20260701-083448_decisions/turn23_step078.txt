@@ -1,0 +1,49 @@
+Turn 23  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +0.2329
+CHOSEN: END turn
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+    1000   +0.2329   -0.0543   1.000  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  3.00x  Team Rocket's Watchtower
+    0.25  0.25x  Basic {D} Energy
+    0.25  0.25x  Munkidori
+    0.25  0.50x  Morty’s Conviction
+  known (visible) opponent cards:
+    7x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    3x Lillie's Determination
+    3x Boss’s Orders
+    3x Fighting Gong
+    3x Night Stretcher
+    2x Prism Energy
+    2x Air Balloon
+    2x Judge
+    1x Lunatone
+    1x Barbaracle
+    1x Binacle
+    1x Okidogi
+    1x Pokégear 3.0
+    1x Tool Scrapper
+    1x Tarragon
+  sampled opponent hand (this search):
+    7x Snorlax
+    1x Legacy Energy
+
+Predicted line (principal variation):
+  1. [Evee] END turn  (v=+0.2329)
+  2. [opponent] END turn  (v=+0.1726)
+  3. [Evee] END turn  (v=+0.2859)
+  4. [opponent] END turn  (v=+0.1205)
+  5. [Evee] retreat  (v=+0.1352)
+  6. [Evee] energy x1 @ active[0]  (v=+0.1318)
+  7. [Evee] card @ bench[0] (p0)  (v=+0.1142)
+  8. [Evee] attach hand[1] -> bench[4]  (v=+0.0959)
+  9. [Evee] END turn  (v=-0.0670)

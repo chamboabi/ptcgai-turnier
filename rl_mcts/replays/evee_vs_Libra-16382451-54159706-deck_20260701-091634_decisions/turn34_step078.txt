@@ -1,0 +1,62 @@
+Turn 34  (action #2, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +5.7892
+CHOSEN: ability Munkidori
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     991   +5.8482   -0.0588   0.264  ability Munkidori
+       4   -0.0522   -0.0588   0.285  retreat
+       2   -0.0331   -0.0405   0.107  play Crispin (hand[0])
+       1   -0.0690   -0.0690   0.061  play Night Stretcher (hand[1])
+       1   -0.0566   -0.0566   0.114  play Energy Search (hand[3])
+       1   -0.1189   -0.1189   0.169  END turn
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.63x  Basic {P} Energy
+    0.98  1.14x  Sacred Ash
+    0.87  1.93x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.39x  Battle Cage
+    0.33  0.33x  Fezandipiti ex
+    0.23  0.36x  Lucky Helmet
+    0.22  0.74x  Nighttime Mine
+    0.21  0.21x  Shaymin
+    0.17  0.23x  Xerosic’s Machinations
+    0.12  0.12x  Wondrous Patch
+    0.11  0.11x  Air Balloon
+    0.11  0.11x  Genesect
+    0.06  0.06x  Psyduck
+    0.06  0.06x  Togekiss
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    3x Enhanced Hammer
+    2x Boss’s Orders
+    2x Rare Candy
+    2x Dawn
+    2x Hilda
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Dudunsparce
+    1x Buddy-Buddy Poffin
+    1x Poké Pad
+  sampled opponent hand (this search):
+    5x Snorlax
+
+Predicted line (principal variation):
+  1. [Evee] ability Munkidori  (v=+5.8482)
+  2. [Evee] Pecharunt @ active[0] (p0)  (v=+5.8602)
+  3. [Evee] number 3  (v=+5.8972)
+  4. [Evee] Kadabra @ active[0] (p1)  (v=+5.9215)
+  5. [Evee] play Energy Search (hand[3])  (v=+5.9390)
+  6. [Evee] card @ deck[17] (p0)  (v=+5.9622)
+  7. [Evee] play Crispin (hand[0])  (v=+5.9942)
+  8. [Evee] card @ deck[11] (p0)  (v=+6.0004)
+  9. [Evee] card @ deck[15] (p0)  (v=+5.9926)
+  10. [Evee] Sylveon @ bench[0] (p0)  (v=+5.9805)
+  11. [Evee] retreat  (v=+6.0319)

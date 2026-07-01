@@ -1,0 +1,59 @@
+Turn 16  (action #4, P0 Evee)
+Selecting: CARD / ATTACH_FROM
+Root value: +0.9932
+CHOSEN: Pecharunt @ active[0] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     972   +1.0234   -0.1411   0.250  Pecharunt @ active[0] (p0)
+      16   -0.0215   -0.1418   0.500  Sylveon @ bench[0] (p0)
+      12   +0.0016   -0.1413   0.250  Pecharunt @ bench[1] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 68%, Dawn 23%, Alakazam Psychic (B) 9%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.61x  Basic {P} Energy
+    1.00  2.94x  Dudunsparce
+    1.00  3.99x  Poké Pad
+    1.00  3.89x  Hilda
+    1.00  3.95x  Dawn
+    0.99  3.55x  Enhanced Hammer
+    0.98  1.14x  Sacred Ash
+    0.87  1.92x  Night Stretcher
+    0.83  0.94x  Lana’s Aid
+    0.69  1.42x  Battle Cage
+    0.32  0.32x  Fezandipiti ex
+    0.24  0.39x  Lucky Helmet
+    0.22  0.75x  Nighttime Mine
+    0.22  0.22x  Shaymin
+    0.18  0.26x  Xerosic’s Machinations
+  known (visible) opponent cards:
+    3x Abra
+    3x Dunsparce
+    2x Boss’s Orders
+    1x Kadabra
+    1x Telepath Psychic Energy
+    1x Alakazam
+    1x Enriching Energy
+    1x Rare Candy
+    1x Buddy-Buddy Poffin
+  sampled opponent hand (this search):
+    2x Basic {P} Energy
+    1x Dawn
+    1x Poké Pad
+    1x Enhanced Hammer
+    1x Snorlax
+    1x Hilda
+
+Predicted line (principal variation):
+  1. [Evee] Pecharunt @ active[0] (p0)  (v=+1.0234)
+  2. [Evee] ATTACK (attackId 1296)  (v=+1.0438)
+  3. [opponent] ATTACK (attackId 1071)  (v=+0.8828)
+  4. [Evee] END turn  (v=+0.9243)
+  5. [opponent] END turn  (v=+0.8405)
+  6. [Evee] play Hand Trimmer (hand[4])  (v=+0.9552)
+  7. [opponent] Dawn @ hand[0] (p1) + Snorlax @ hand[3] (p1) + Basic {P} Energy @ hand[4] (p1) + Basic {P} Energy @ hand[5] (p1)  (v=+0.6166)
+  8. [Evee] END turn  (v=+0.8060)
+  9. [opponent] END turn  (v=+0.9977)
+  10. [Evee] END turn  (v=+1.0744)
+  11. [opponent] play Sacred Ash (hand[6])  (v=+1.0813)

@@ -1,0 +1,56 @@
+Turn 7  (action #1, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: +1.6226
+CHOSEN: attach Basic {D} Energy (hand[4]) -> Pecharunt (active[0])
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     984   +1.6445   +0.3954   0.104  attach Basic {D} Energy (hand[4]) -> Pecharunt (active[0])
+       3   +0.4137   +0.4058   0.141  attach Basic {P} Energy (hand[1]) -> Pecharunt (active[0])
+       3   +0.4072   +0.3910   0.178  attach Basic {P} Energy (hand[1]) -> Munkidori (bench[1])
+       2   +0.4004   +0.3882   0.141  attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[0])
+       2   +0.4219   +0.4284   0.069  play Eevee (hand[2])
+       2   +0.4219   +0.4284   0.069  play Eevee (hand[3])
+       2   +0.4024   +0.4024   0.129  attach Basic {D} Energy (hand[4]) -> Munkidori (bench[1])
+       1   +0.3907   +0.3907   0.104  attach Basic {D} Energy (hand[4]) -> Pecharunt (bench[0])
+       1   -0.4916   -0.4916   0.064  END turn
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    6x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    2x Explorer’s Guidance
+    2x Snorlax
+    1x Jumbo Ice Cream
+
+Predicted line (principal variation):
+  1. [Evee] attach Basic {D} Energy (hand[4]) -> Pecharunt (active[0])  (v=+1.6445)
+  2. [Evee] ATTACK (attackId 1296)  (v=+1.6530)
+  3. [opponent] retreat  (v=+1.6327)
+  4. [opponent] Relicanth @ bench[1] (p1)  (v=+1.6272)
+  5. [opponent] play Snorlax (hand[5])  (v=+1.6149)
+  6. [opponent] play Explorer’s Guidance (hand[0])  (v=+1.6118)
+  7. [opponent] card @ looking[3] (p1) + card @ looking[4] (p1)  (v=+1.6817)
+  8. [opponent] play Snorlax (hand[2])  (v=+1.5707)
+  9. [opponent] play Snorlax (hand[2])  (v=+1.5777)

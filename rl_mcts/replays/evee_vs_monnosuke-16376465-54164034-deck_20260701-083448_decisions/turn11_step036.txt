@@ -1,0 +1,61 @@
+Turn 11  (action #5, P0 Evee)
+Selecting: MAIN / MAIN
+Root value: -0.0512
+CHOSEN: attach hand[1] -> active[0]
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     208   -0.0465   +0.2991   0.125  attach hand[1] -> active[0]
+     175   -0.0431   +0.3002   0.053  attach hand[3] -> active[0]
+      99   -0.0547   +0.2720   0.125  attach hand[1] -> bench[3]
+      98   -0.0546   +0.2720   0.125  attach hand[1] -> bench[2]
+      76   -0.0620   +0.2708   0.141  attach hand[1] -> bench[1]
+      61   -0.0499   +0.2865   0.053  attach hand[3] -> bench[2]
+      61   -0.0499   +0.2865   0.053  attach hand[3] -> bench[3]
+      59   -0.0691   +0.2689   0.141  attach hand[1] -> bench[0]
+      58   -0.0540   +0.2828   0.069  attach hand[3] -> bench[1]
+      57   -0.0557   +0.2845   0.074  attach hand[3] -> bench[0]
+      48   -0.0498   -0.0793   0.040  END turn
+
+Opponent belief:
+  archetype: Fighting Gong 100%, Alakazam Psychic (B) 0%, Archaludon Metal 0%, Mega Lucario ex 0%, Postwick 0%
+  likely cards (P, E[copies]):
+    1.00  1.00x  Legacy Energy
+    1.00  2.00x  Barbaracle
+    1.00  3.00x  Night Stretcher
+    1.00  2.00x  Tarragon
+    1.00  3.00x  Team Rocket's Watchtower
+    0.33  0.33x  Basic {D} Energy
+    0.33  0.33x  Munkidori
+    0.33  0.67x  Morty’s Conviction
+  known (visible) opponent cards:
+    4x Basic {F} Energy
+    3x Solrock
+    3x Poké Pad
+    2x Lillie's Determination
+    2x Fighting Gong
+    1x Okidogi
+    1x Lunatone
+    1x Binacle
+    1x Pokégear 3.0
+    1x Air Balloon
+    1x Tool Scrapper
+    1x Judge
+    1x Boss’s Orders
+    1x Prism Energy
+  sampled opponent hand (this search):
+    1x Snorlax
+    1x Barbaracle
+    1x Team Rocket's Watchtower
+    1x Night Stretcher
+
+Predicted line (principal variation):
+  1. [Evee] attach hand[1] -> active[0]  (v=-0.0465)
+  2. [Evee] retreat  (v=-0.0450)
+  3. [Evee] energy x1 @ active[0]  (v=-0.0477)
+  4. [Evee] card @ bench[2] (p0)  (v=-0.0438)
+  5. [Evee] END turn  (v=-0.0515)
+  6. [opponent] play hand[3]  (v=-0.0909)
+  7. [opponent] card @ discard[4] (p1)  (v=-0.0902)
+  8. [opponent] attach hand[4] -> bench[0]  (v=-0.0878)
+  9. [opponent] evolve -> bench[4]  (v=-0.0863)

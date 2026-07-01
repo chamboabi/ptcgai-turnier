@@ -1,0 +1,69 @@
+Turn 8  (action #9, P0 Evee)
+Selecting: CARD / TO_HAND
+Root value: +0.0408
+CHOSEN: card @ deck[39] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     395   +0.0812   -0.3234   0.088  card @ deck[39] (p0)
+     350   +0.0087   -0.3234   0.088  card @ deck[8] (p0)
+      42   +0.0245   -0.3234   0.088  card @ deck[24] (p0)
+      41   +0.0121   -0.3234   0.088  card @ deck[16] (p0)
+      38   +0.0511   -0.3281   0.088  card @ deck[20] (p0)
+      38   +0.0518   -0.3281   0.088  card @ deck[29] (p0)
+      28   +0.0262   -0.3234   0.088  card @ deck[28] (p0)
+      28   +0.0347   -0.3234   0.088  card @ deck[34] (p0)
+      25   +0.0256   -0.3281   0.088  card @ deck[1] (p0)
+      11   -0.0419   -0.3281   0.088  card @ deck[13] (p0)
+       1   -0.3244   -0.3244   0.030  card @ deck[9] (p0)
+       1   -0.3244   -0.3244   0.030  card @ deck[21] (p0)
+       1   -0.3244   -0.3244   0.030  card @ deck[27] (p0)
+       1   -0.3244   -0.3244   0.030  card @ deck[33] (p0)
+
+Opponent belief:
+  archetype: Alakazam Psychic 64%, Alakazam Psychic (B) 18%, Dawn 18%, Archaludon Metal 0%, Mega Lucario ex 0%
+  likely cards (P, E[copies]):
+    1.00  2.66x  Basic {P} Energy
+    1.00  3.99x  Telepath Psychic Energy
+    1.00  3.06x  Dudunsparce
+    1.00  4.00x  Kadabra
+    1.00  3.71x  Alakazam
+    1.00  3.61x  Rare Candy
+    1.00  4.00x  Buddy-Buddy Poffin
+    1.00  3.99x  Poké Pad
+    1.00  3.87x  Hilda
+    1.00  3.94x  Dawn
+    0.98  1.19x  Sacred Ash
+    0.97  3.36x  Enhanced Hammer
+    0.96  2.69x  Boss’s Orders
+    0.87  3.18x  Dunsparce
+    0.86  0.86x  Enriching Energy
+  known (visible) opponent cards:
+    2x Abra
+  sampled opponent hand (this search):
+    1x Dawn
+    1x Hilda
+    1x Buddy-Buddy Poffin
+    1x Battle Cage
+    1x Rare Candy
+
+Predicted line (principal variation):
+  1. [Evee] card @ deck[39] (p0)  (v=+0.0812)
+  2. [Evee] END turn  (v=+0.0823)
+  3. [opponent] END turn  (v=+0.0667)
+  4. [Evee] attach Basic {P} Energy (hand[1]) -> Pecharunt (bench[0])  (v=+0.0841)
+  5. [Evee] END turn  (v=+0.0873)
+  6. [opponent] END turn  (v=+0.0588)
+  7. [Evee] END turn  (v=+0.0624)
+  8. [opponent] END turn  (v=+0.0352)
+  9. [Evee] END turn  (v=+0.0654)
+  10. [opponent] END turn  (v=+0.0302)
+  11. [Evee] END turn  (v=+0.0767)
+  12. [opponent] END turn  (v=+0.0313)
+  13. [Evee] END turn  (v=+0.1426)
+  14. [opponent] END turn  (v=+0.0629)
+  15. [Evee] END turn  (v=+0.1737)
+  16. [opponent] END turn  (v=+0.1034)
+  17. [Evee] END turn  (v=+0.2012)
+  18. [opponent] attach Telepath Psychic Energy (hand[10]) -> Abra (active[0])  (v=+0.1773)
+  19. [opponent] retreat  (v=+0.1773)

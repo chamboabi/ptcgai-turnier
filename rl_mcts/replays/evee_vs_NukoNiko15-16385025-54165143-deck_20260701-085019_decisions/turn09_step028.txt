@@ -1,0 +1,46 @@
+Turn 9  (action #7, P0 Evee)
+Selecting: CARD / SWITCH
+Root value: -0.4551
+CHOSEN: Eevee @ bench[1] (p0)
+
+Candidate actions (most-visited first):
+  visits      mean    nn_val   prior  action
+     964   -0.4432   +0.3304   0.264  Eevee @ bench[1] (p0)
+      36   -0.7963   +0.3443   0.736  Munkidori @ bench[0] (p0)
+
+Opponent belief:
+  archetype: Archaludon Metal 100%, Alakazam Psychic (B) 0%, Mega Lucario ex 0%, Postwick 0%, Dragapult 0%
+  likely cards (P, E[copies]):
+    1.00  4.00x  Archaludon ex
+    1.00  3.97x  Pokégear 3.0
+    1.00  3.93x  Jumbo Ice Cream
+    1.00  4.00x  Poké Pad
+    1.00  1.00x  Hero’s Cape
+    0.99  3.95x  Explorer’s Guidance
+    0.98  3.87x  Full Metal Lab
+    0.12  0.14x  Judge
+    0.05  0.09x  Xerosic’s Machinations
+    0.03  0.06x  Hand Trimmer
+    0.01  0.01x  Dusk Ball
+    0.01  0.03x  Carmine
+  known (visible) opponent cards:
+    8x Basic {M} Energy
+    1x Cinderace
+    1x Duraludon
+    1x Relicanth
+    1x Boss’s Orders
+    1x Lillie's Determination
+    1x Night Stretcher
+    1x Ultra Ball
+  sampled opponent hand (this search):
+    5x Snorlax
+    1x Pokégear 3.0
+    1x Judge
+
+Predicted line (principal variation):
+  1. [Evee] Eevee @ bench[1] (p0)  (v=-0.4432)
+  2. [Evee] END turn  (v=-0.4229)
+  3. [opponent] play Poké Pad (hand[7])  (v=-0.4501)
+  4. [opponent] card @ deck[2] (p1)  (v=-0.4531)
+  5. [opponent] play Snorlax (hand[0])  (v=-0.5039)
+  6. [opponent] play Snorlax (hand[0])  (v=-0.5019)
