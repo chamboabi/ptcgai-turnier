@@ -13,6 +13,7 @@ from .baselines import set_base_baselines
 from .paths import REPLAYS
 from .tracer import TurnPathTracer
 from mcts import mcts_agent
+from viewer.client import ViewerStream
 
 OnStep = Callable[[dict, dict, int], list[int]]
 
@@ -39,11 +40,15 @@ def play_match(
     agents: list,
     tracer: TurnPathTracer,
     on_step: OnStep | None = None,
+    viewer: ViewerStream | None = None,
 ) -> tuple[dict, int]:
     """Drive `obs` to game end, feeding `tracer` and printing progress.
 
     `on_step(obs, cur, step)` picks the move for `cur["yourIndex"]`; defaults
     to plain `mcts_agent(obs, agents[cur["yourIndex"]])`. Returns (obs, steps).
+
+    If `viewer` is given (already started via `viewer.start_game(...)`),
+    each new step is streamed to it live for the Flutter viewer app.
     """
     step = 0
     with torch.inference_mode():
@@ -56,10 +61,14 @@ def play_match(
                 selected, _ = mcts_agent(obs, agents[cur["yourIndex"]])
             obs = rec.select(selected)
             tracer.feed(obs.get("logs"), obs["current"]["turn"])
+            if viewer is not None:
+                viewer.push(rec.new_vis_steps())
             step += 1
             if step % 20 == 0:
                 print(f"  ...{step} actions, turn {obs['current']['turn']}")
     rec.finish()
+    if viewer is not None:
+        viewer.finish(obs["current"]["result"])
     return obs, step
 
 

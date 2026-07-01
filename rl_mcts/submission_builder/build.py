@@ -59,6 +59,7 @@ _CONFIG_CONSTANTS = {
     "UCB_EXPLORATION": ("mcts", "ucb_exploration"),
     "POLICY_TEMPERATURE": ("mcts", "policy_temperature"),
     "UNVISITED_PENALTY": ("mcts", "unvisited_penalty"),
+    "DETERMINIZATIONS": ("mcts", "determinizations"),
 }
 
 

@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import importlib.util
+import os
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
@@ -57,6 +59,22 @@ def load_heuristic_player(folder: str | Path, name: str = "") -> Player:
         raise FileNotFoundError(f"no main.py in {path}")
     spec = importlib.util.spec_from_file_location(f"heuristic_player_{path.name}", main_path)
     module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
+    # These main.py scripts are written as Kaggle submission entry points: they load
+    # their own deck.csv relative to cwd, and import bundled helper modules (shared.py,
+    # heuristic_agent.py, ...) by bare name off sys.path. Several player folders reuse
+    # the same helper filenames, so sys.modules must be reset around each load, else the
+    # second player silently imports the first player's cached same-named module.
+    prev_cwd = Path.cwd()
+    prev_path = list(sys.path)
+    prev_modules = set(sys.modules)
+    try:
+        os.chdir(path)
+        sys.path.insert(0, str(path))
+        spec.loader.exec_module(module)
+    finally:
+        os.chdir(prev_cwd)
+        sys.path[:] = prev_path
+        for mod_name in set(sys.modules) - prev_modules:
+            del sys.modules[mod_name]
 
     return load_player(deck, module.agent, name=name or path.name)

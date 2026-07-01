@@ -13,4 +13,5 @@ def make_mcts_cfg() -> MCTSConfig:
         ucb_exploration=cfg.mcts["ucb_exploration"],
         policy_temperature=cfg.mcts["policy_temperature"],
         unvisited_penalty=cfg.mcts["unvisited_penalty"],
+        determinizations=cfg.mcts.get("determinizations", 1),
     )

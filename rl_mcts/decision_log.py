@@ -221,6 +221,27 @@ def _decision_dict(dbg: dict, names: dict[int, str]) -> dict:
             "value": round(ply["value"], 4),
         })
 
+    det = dbg.get("determinizations")
+    determinizations_out = None
+    if det is not None:
+        trees_out = []
+        for t in det["trees"]:
+            trees_out.append({
+                "index": t["index"],
+                "own_best_action": describe_action(t["own_best_select"], options, names, state, actor),
+                "own_best_visits": t["own_best_visit"],
+                "root_value": round(t["root_value"], 4),
+                "elapsed_sec": t["elapsed_sec"],
+                "agrees_with_chosen": t["agrees_with_pooled"],
+                "sampled_opponent_hand": _card_counts(t["sampled_hand"], names),
+            })
+        determinizations_out = {
+            "count": det["count"],
+            "agreement": round(det["agreement"], 4),
+            "total_elapsed_sec": det["total_elapsed_sec"],
+            "trees": trees_out,
+        }
+
     return {
         "turn": dbg["turn"],
         "turn_action_count": dbg["turnActionCount"],
@@ -231,6 +252,7 @@ def _decision_dict(dbg: dict, names: dict[int, str]) -> dict:
         "candidates": candidates,
         "opponent_belief": belief_out,
         "predicted_line": line,
+        "determinizations": determinizations_out,
     }
 
 
@@ -275,6 +297,24 @@ def _render_text(d: dict) -> str:
             L.append(f"  {i+1}. [{ply['actor']}] {ply['action']}  (v={ply['value']:+.4f})")
     else:
         L.append("  (root leaf — no expanded continuation)")
+    L.append("")
+
+    det = d["determinizations"]
+    if det:
+        L.append(f"Determinizations: {det['count']} trees, "
+                  f"agreement {det['agreement']:.0%}, total {det['total_elapsed_sec']:.2f}s")
+        L.append("  (agreement = fraction of trees whose own best action matches the")
+        L.append("   pooled decision above; low agreement = a genuinely uncertainty-")
+        L.append("   sensitive spot where sampling several opponent hands should matter)")
+        for t in det["trees"]:
+            mark = "==" if t["agrees_with_chosen"] else "!="
+            L.append(f"  [{t['index']}] {mark} chosen  v={t['root_value']:+.4f}  "
+                      f"visits={t['own_best_visits']:<5}  {t['elapsed_sec']:.2f}s  {t['own_best_action']}")
+            hand = ", ".join(f"{r['count']}x {r['name']}" for r in t["sampled_opponent_hand"][:8])
+            if hand:
+                L.append(f"       sampled hand: {hand}")
+    else:
+        L.append("Determinizations: (none logged)")
     return "\n".join(L) + "\n"
 
 

@@ -68,6 +68,7 @@ def make_mcts_cfg_from(cfg: dict[str, Any]) -> MCTSConfig:
         ucb_exploration=mcts["ucb_exploration"],
         policy_temperature=mcts["policy_temperature"],
         unvisited_penalty=mcts["unvisited_penalty"],
+        determinizations=mcts.get("determinizations", 1),
     )
 
 

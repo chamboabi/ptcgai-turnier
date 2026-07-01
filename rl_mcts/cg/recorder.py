@@ -39,6 +39,7 @@ class GameRecorder:
         self._obs_log: list = []    # obs the agent saw before each action; index 0 is ""
         self._action_log: list = [] # action taken at each step; index 0 is None
         self._vis_json: str | None = None  # raw visualize_data() output captured in finish()
+        self._vis_cursor = 0        # index of the next unread entry from visualize_data()
 
     def start(self, deck0: list[int], deck1: list[int]) -> tuple[dict, object]:
         set_seed(self.seed)
@@ -70,6 +71,25 @@ class GameRecorder:
 
     # ------------------------------------------------------------------
 
+    def _merge_step(self, i: int, entry: dict) -> dict:
+        """Merge in the obs the agent saw and the action it chose at step i."""
+        entry["obs"] = self._obs_log[i] if i < len(self._obs_log) else ""
+        entry["action"] = [self._action_log[i], self._action_log[i]] \
+            if i < len(self._action_log) else [None, None]
+        return entry
+
+    def new_vis_steps(self) -> list[dict]:
+        """Return vis-format steps produced since the last call.
+
+        Unlike save_visualizer(), this reads visualize_data() directly and
+        works mid-game (before finish()) — safe to call after every
+        rec.select() to stream the game live as it's played.
+        """
+        vis = json.loads(visualize_data())
+        new = [self._merge_step(i, vis[i]) for i in range(self._vis_cursor, len(vis))]
+        self._vis_cursor = len(vis)
+        return new
+
     def save(self, path: str | Path) -> None:
         record = {
             "seed": self.seed,
@@ -92,9 +112,7 @@ class GameRecorder:
 
         vis = json.loads(self._vis_json)
         for i in range(len(vis)):
-            vis[i]["obs"] = self._obs_log[i] if i < len(self._obs_log) else ""
-            vis[i]["action"] = [self._action_log[i], self._action_log[i]] \
-                if i < len(self._action_log) else [None, None]
+            self._merge_step(i, vis[i])
 
         Path(path).parent.mkdir(parents=True, exist_ok=True)
         Path(path).write_text(json.dumps(vis))

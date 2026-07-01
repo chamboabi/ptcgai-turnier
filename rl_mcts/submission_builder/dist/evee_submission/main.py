@@ -16,6 +16,7 @@ On the initial selection obs.select is None -> return the 60-card deck.
 import math
 import os
 import random
+import time
 from dataclasses import replace
 
 import torch
@@ -65,6 +66,16 @@ UCB_EXPLORATION = 0.4
 # of all exploration. build.py bakes this in from config.json mcts.policy_temperature.
 POLICY_TEMPERATURE = 1.0
 UNVISITED_PENALTY = 0.03
+# Number of independent MCTS trees built per decision, each against its own
+# sampled opponent hand/deck/prize (root-parallel / ensemble determinization);
+# their root visit counts are pooled to pick the final move, which avoids a
+# single hidden-information sample biasing the whole search ("strategy
+# fusion" -- see rl_mcts/mcts.py for the full rationale). This is a SEPARATE
+# knob from SEARCH_COUNT: raising it spends more total compute for a less
+# biased estimate, rather than splitting one fixed budget thinner. 1
+# reproduces the old single-tree behavior exactly. build.py bakes this in
+# from config.json mcts.determinizations.
+DETERMINIZATIONS = 4
 
 _UNKNOWN = 1072  # filler card id for hidden opponent cards
 
@@ -465,18 +476,20 @@ def create_node(parent, search_state, your_index, deck, model, reward_fn):
     return node
 
 
-def mcts_agent(obs_dict, deck, model, reward_fn, archetype_model):
-    obs = to_observation_class(obs_dict)
-    your_index = obs.current.yourIndex
-    state = obs.current
-    opp = state.players[1 - your_index]
+def _run_one_tree(obs, your_index, state, opp, deck, model, reward_fn, archetype_model):
+    """Sample one opponent determinization and run one full MCTS tree against it.
 
-    # Freeze per-turn baselines from the search root: rebuild the shape once here so
-    # absolute reward shapes score deltas caused by this move, not standing board
-    # state. Plain (factory-less) rewards pass through unchanged. (See rl_mcts/mcts.py.)
-    if reward_fn.shape_factory is not None:
-        reward_fn = replace(reward_fn, shape=reward_fn.shape_factory(obs, your_index))
+    Mirror of rl_mcts/mcts.py's _run_one_tree: a single sampled opponent hand/
+    deck/prize can bias an entire search toward a decision that only works
+    against that one guess ("strategy fusion"). mcts_agent below runs this
+    DETERMINIZATIONS times and pools the trees' root visit counts, which
+    averages that bias out. Each tree is fully self-contained
+    (search_begin -> sims -> search_end), so this doesn't depend on the
+    native search lib supporting multiple concurrently-open searches.
 
+    Returns (root, opp_deck, opp_prize, opp_hand, elapsed_seconds).
+    """
+    start = time.perf_counter()
     opp_deck, opp_prize, opp_hand = _sample_opponent_deck(archetype_model, opp)
     search_state = search_begin(
         obs,
@@ -520,18 +533,88 @@ def mcts_agent(obs_dict, deck, model, reward_fn, archetype_model):
                 current.backprop(current.value)
                 break
 
-    max_child = None
-    max_visit = -1
-    for child in root.children:
-        if child.node is not None and max_visit < child.node.visit:
-            max_child = child
-            max_visit = child.node.visit
-
     search_end()
-    if max_child is None:
-        # no expanded child (e.g. forced/degenerate state) — fall back to a legal pick
+    return root, opp_deck, opp_prize, opp_hand, time.perf_counter() - start
+
+
+def _own_best_index(root) -> int:
+    """Index of a tree's own most-visited root child, or -1 if none expanded."""
+    best_i, best_visit = -1, -1
+    for i, child in enumerate(root.children):
+        if child.node is not None and child.node.visit > best_visit:
+            best_i, best_visit = i, child.node.visit
+    return best_i
+
+
+# Populated by mcts_agent() each call; read by agent() to append an optional
+# one-line ensemble summary to the AGENT_LOG turn trace (no decision_log.py is
+# bundled with the submission, so this is the only observability channel
+# available at match time -- see _trace_logs/_write_turn below).
+_LAST_DET_INFO = None
+
+
+def mcts_agent(obs_dict, deck, model, reward_fn, archetype_model):
+    global _LAST_DET_INFO
+    obs = to_observation_class(obs_dict)
+    your_index = obs.current.yourIndex
+    state = obs.current
+    opp = state.players[1 - your_index]
+
+    # Freeze per-turn baselines from the search root: rebuild the shape once here so
+    # absolute reward shapes score deltas caused by this move, not standing board
+    # state. Plain (factory-less) rewards pass through unchanged. (See rl_mcts/mcts.py.)
+    if reward_fn.shape_factory is not None:
+        reward_fn = replace(reward_fn, shape=reward_fn.shape_factory(obs, your_index))
+
+    # Ensemble of independent trees (root parallelization), one per
+    # determinization. DETERMINIZATIONS=1 reproduces the old single-tree
+    # behavior exactly. See rl_mcts/mcts.py for the full rationale.
+    trees = [
+        _run_one_tree(obs, your_index, state, opp, deck, model, reward_fn, archetype_model)
+        for _ in range(max(1, DETERMINIZATIONS))
+    ]
+
+    ref_root = trees[0][0]
+    action_count = len(ref_root.children)
+    ref_select = [child.select for child in ref_root.children]
+    for root, *_ in trees[1:]:
+        # Root actions come from the real (public) game state, so every tree
+        # should enumerate identical candidate actions in identical order. If
+        # that invariant is ever broken, fall back to the reference tree alone
+        # rather than silently pooling stats across mismatched action lists.
+        if len(root.children) != action_count or [c.select for c in root.children] != ref_select:
+            trees = [trees[0]]
+            ref_root = trees[0][0]
+            action_count = len(ref_root.children)
+            ref_select = [child.select for child in ref_root.children]
+            break
+
+    # Pool visit counts across trees per action index -- this is what actually
+    # decides the move, so a single tree's bad-luck determinization can't
+    # dominate the outcome.
+    pooled_visit = [0] * action_count
+    for root, *_ in trees:
+        for i, child in enumerate(root.children):
+            if child.node is not None:
+                pooled_visit[i] += child.node.visit
+
+    max_i, max_visit = -1, -1
+    for i in range(action_count):
+        if pooled_visit[i] > 0 and pooled_visit[i] > max_visit:
+            max_visit, max_i = pooled_visit[i], i
+
+    agree = sum(1 for root, *_ in trees if _own_best_index(root) == max_i)
+    _LAST_DET_INFO = {
+        "count": len(trees),
+        "agreement": (agree / len(trees)) if trees else 0.0,
+        "elapsed": sum(t[-1] for t in trees),
+    }
+
+    if max_i < 0:
+        # no expanded child in any tree (e.g. forced/degenerate state) — fall
+        # back to a legal pick
         return random.sample(list(range(len(obs.select.option))), obs.select.maxCount)
-    return max_child.select
+    return list(ref_select[max_i])
 
 
 # --- bundled-asset loading (deck + weights live next to main.py) ---
@@ -670,4 +753,15 @@ def agent(obs_dict: dict) -> list[int]:
     if obs.select is None:
         return _DECK
     with torch.inference_mode():
-        return mcts_agent(obs_dict, _DECK, _MODEL, _REWARD, _ARCH)
+        selected = mcts_agent(obs_dict, _DECK, _MODEL, _REWARD, _ARCH)
+    if _LOG_FILE and _LAST_DET_INFO is not None:
+        info = _LAST_DET_INFO
+        # Ensemble summary for this decision: agreement = fraction of trees
+        # whose own best action matched the pooled choice above. Near 1.0 means
+        # the sampled hidden information didn't matter here; low values flag a
+        # genuinely uncertainty-sensitive spot -- see rl_mcts/mcts.py.
+        _TRACE["lines"].append(
+            f"[mcts] determinizations={info['count']} agreement={info['agreement']:.0%} "
+            f"time={info['elapsed']:.2f}s"
+        )
+    return selected

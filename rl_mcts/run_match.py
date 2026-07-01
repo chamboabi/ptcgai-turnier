@@ -24,6 +24,7 @@ from core import (
     save_replay,
     start_recorded_game,
 )
+from viewer.client import ViewerStream
 
 CUSTOM = CUSTOMDECKS / "abamasnow.csv"
 
@@ -57,14 +58,19 @@ def main() -> int:
 
     tracer = TurnPathTracer({c.cardId: c.name for c in all_card_data()}, "Abomasnow", "base")
 
-    obs, step = play_match(obs, rec, agents, tracer)
+    stamp = time.strftime("%Y%m%d-%H%M%S")
+    game_id = f"abomasnow_vs_{opp_file.stem}_{stamp}"
+    viewer = ViewerStream()
+    viewer.start_game(game_id, abomasnow_deck, opp_deck)
+
+    obs, step = play_match(obs, rec, agents, tracer, viewer=viewer)
+    viewer.close()
 
     result = obs["current"]["result"]
     outcome = {0: "P0 (Abomasnow) wins", 1: "P1 (base) wins", 2: "draw"}.get(result, "?")
     print(f"Result: {outcome} after {step} actions, turn {obs['current']['turn']}.")
 
-    stamp = time.strftime("%Y%m%d-%H%M%S")
-    base = REPLAYS / f"abomasnow_vs_{opp_file.stem}_{stamp}"
+    base = REPLAYS / game_id
     save_replay(rec, base)
     print("Open debug/visualizer.html in a browser and load the *_vis.json file.")
     return 0

@@ -1,0 +1,14 @@
+[
+  {
+    "measured": "evee",
+    "opponent": "alkazam",
+    "games": [
+      {
+        "seed": 1894350991,
+        "measured_is_p0": true,
+        "result": 1,
+        "steps": 159
+      }
+    ]
+  }
+]

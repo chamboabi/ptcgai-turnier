@@ -17,6 +17,16 @@ class MCTSConfig:
     ucb_exploration: float
     policy_temperature: float
     unvisited_penalty: float
+    # Number of independent MCTS trees to build per decision, each against its
+    # own sampled opponent hand/deck/prize (root-parallel / ensemble
+    # determinization). Their root visit stats are pooled to pick the final
+    # action, which avoids a single hidden-information sample biasing the
+    # whole search ("strategy fusion"). Each tree still runs the full
+    # search_count sims -- this is a SEPARATE knob from search_count, so
+    # raising it increases total compute (more accuracy) rather than
+    # splitting a fixed budget thinner. 1 reproduces the old single-tree
+    # behavior exactly.
+    determinizations: int = 1
 
 
 @dataclass
